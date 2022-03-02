@@ -1,0 +1,53 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~ VARIABLES ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+$hue-color: 216;
+$color-primary: #0749aa;
+$color-primary-light: #f2f5f9;
+$color-succes: #4caf50;
+$basick-white: #fff;
+
+$color-text: #333;
+
+:root {
+	/*font-family*/
+	--fm-1: "Roboto Condensed", sans-serif;
+
+	/*colors*/
+	--basic-black: #000;
+	--basick-dark: #333;
+	--basick-white: #fff;
+	--basick-red: #f44336;
+
+	--color-primary: #{$color-primary};
+	--color-primary-light: #{$color-primary-light};
+	--color-succes: #{$color-succes};
+
+	--color-text: #{$color-text};
+
+	--color-primary-hsl: hsl(#{$hue-color}, 92%, 35%);
+
+	--scroll-bar-color: hsl(#{$hue-color}, 42%, 90%);
+	--scroll-thumb-color: hsl(#{$hue-color}, 42%, 70%);
+	--scroll-thumb-color-hover: hsl(#{$hue-color}, 42%, 60%);
+}
+
+//breakpoints
+$desctop: 1920;
+$desctop-mid: 1450;
+$desctop-min: 1220;
+$table: 1070;
+$mobile: 768;
+$tel: 480;
+
+$breakpoints: (
+	"xl": #{$desctop-mid}px,
+	"lg": #{$desctop-min}px,
+	"md": #{$table}px,
+	"sm": #{$mobile}px,
+	"xs": #{$tel}px,
+) !default;
+
+$grid-columns: 12 !default;
+
+/***********************Main*/
+$duration: 0.3s;

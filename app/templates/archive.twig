@@ -1,0 +1,51 @@
+{% set title = "О компании" %}
+{% set classPage = "about-pg" %}
+{% extends "./includes/layouts/page.twig" %}
+{# ------ BREADCRUMBS ----- #}
+{% block breadcrumbs %}
+{% include "./includes/molecules/breadcrumbs.twig" with {
+		breadcrumbs: [
+			{text: 'Главная',href: "/"},
+			{text: 'О компании'},
+		]
+	} %}
+{% endblock breadcrumbs %}
+{# ------ CONTENT WRAP ----- #}
+{% block content %}
+	<main>
+		<!-- advantages block -->
+		<section class="advantages-b">
+			<div class="advantages-b__container container">
+				<h2 class="title-1">преимущества контекстной рекламы</h2>
+				<div class="advantages-b__list b-list">
+					<article class="advantages-card b-list__col">
+						<div class="advantages-card__img"
+							style="background-image: url(./assets/img/pages/promotion/advantages-b/bean.svg)">
+						</div>
+						<h5>БЫСТРЫЙ РЕЗУЛЬТАТ</h5>
+						<p>Быстрая настройка рекламной компании: на то требуется от 3 до 5 дней. Рост продаж уже
+							в первые дни запуска рекламы</p>
+					</article>
+					<article class="advantages-card b-list__col">
+						<div class="advantages-card__img"
+							style="background-image: url(./assets/img/pages/promotion/advantages-b/sprite.svg#riple)">
+						</div>
+						<h5>ТОЧНЫЙ ТАРГЕТИНГ</h5>
+						<p>
+							Привязка к любому региону. Таргетинг на страну, город, улицу или конкретный дом
+						</p>
+					</article>
+					<article class="advantages-card b-list__col">
+						<div class="advantages-card__img"
+							style="background-image: url(./assets/img/pages/promotion/advantages-b/sprite.svg#block)">
+						</div>
+						<h5>КОНТРОЛЬ БЮДЖЕТА</h5>
+						<p>
+							Можно менять бюджет в зависимости от ключевого слова, демографии, гегографии показов
+						</p>
+					</article>
+				</div>
+			</div>
+		</section>
+	</main>
+{% endblock content %}

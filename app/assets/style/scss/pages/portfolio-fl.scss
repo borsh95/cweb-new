@@ -1,0 +1,72 @@
+/*==================== PORTFOLIO FULL ====================*/
+.portfolio-fl-pg {
+	.section:not(.example-task-b) {
+		padding: 120px 0 0;
+	}
+	.application-b {
+		padding: 167px 0 0;
+	}
+
+	.case-card {
+		--air-side: 10%;
+		.twentytwenty-horizontal {
+			width: getPr(507, 1137);
+		}
+
+		&__img::before {
+			padding-bottom: getPr(380, 507);
+		}
+
+		&__content {
+			align-items: center;
+		}
+	}
+
+	&#{&}--target {
+		.project-desc-b__img {
+			padding: 0;
+			border: none;
+
+			img {
+				box-shadow: none;
+			}
+		}
+
+		.metrics-b {
+			&__item {
+				img {
+					border-radius: 10px;
+					box-shadow: 0px 0px 20px rgba(125, 151, 244, 0.4);
+				}
+			}
+		}
+	}
+
+	@include desctop-min {
+		.section:not(.example-task-b) {
+			padding: 90px 0 0;
+		}
+
+		.application-b {
+			padding: 120px 0 0;
+		}
+	}
+
+	@include table {
+		.case-card {
+			.twentytwenty-horizontal {
+				width: 100%;
+			}
+		}
+	}
+
+	@include mobile {
+		.section:not(.example-task-b) {
+			padding: 67px 0 0;
+		}
+
+		.application-b {
+			padding: 84px 0 0;
+		}
+	}
+}

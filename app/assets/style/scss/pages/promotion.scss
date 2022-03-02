@@ -1,0 +1,47 @@
+/*==================== PROMOTION PAGE ====================*/
+.promotion-pg {
+	.services-b {
+		padding: 67px 0 0;
+	} 
+
+	.cases-b,
+	.reviews-slider-b,
+	.band-slider-b,
+	.clients-b, 
+	.faq-b,
+	.blog-b,
+	.application-b {
+		padding: 110px 0 0;
+	}
+
+
+	@include desctop-min {
+		.cases-b,
+		.reviews-slider-b,
+		.band-slider-b,
+		.clients-b, 
+		.faq-b,
+		.blog-b,
+		.application-b {
+			padding: 90px 0 0;
+		}
+	}
+
+	@include table {
+		.content-wrap {
+			padding-top: 0;
+		}
+	}
+
+	@include mobile {
+		.cases-b,
+		.reviews-slider-b,
+		.band-slider-b,
+		.clients-b, 
+		.faq-b,
+		.blog-b,
+		.application-b {
+			padding: 70px 0 0;
+		}
+	}
+}

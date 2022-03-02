@@ -1,0 +1,16 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~ FONT FAMILY ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@mixin font-face($font-family, $weight, $url, $file-name, $style: normal) {
+	@font-face {
+		font-family: "#{$font-family}";
+		src: url("#{$url}#{$file-name}.woff2") format("woff2"), url("#{$url}#{$file-name}.woff") format("woff");
+		font-weight: #{$weight};
+		font-display: swap;
+		font-style: $style;
+	}
+}
+
+@include font-face("Roboto Condensed", 300, "./../../fonts/", "Robotocondensedlight");
+@include font-face("Roboto Condensed", 400, "./../../fonts/", "Robotocondensed");
+@include font-face("Roboto Condensed", 700, "./../../fonts/", "Robotocondensedbold");
+@include font-face("Roboto Condensed", 700, "./../../fonts/", "Roboto-Condensed-Bold-Italic", italic);

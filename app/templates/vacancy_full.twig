@@ -1,0 +1,176 @@
+{% set title = "Вакансии контент-менеджера в компании cweb" %}
+{% set classPage = "vacancy-pg" %}
+{% extends "./includes/layouts/page.twig" %}
+{# ------ BREADCRUMBS ----- #}
+{% block breadcrumbs %}
+{% include "./includes/molecules/breadcrumbs.twig" with {
+		breadcrumbs: [
+			{text: 'Главная',href: "/"},
+			{text: 'Вакансии контент-менеджера в компании cweb'},
+		]
+	} %}
+{% endblock breadcrumbs %}
+{# ------ CONTENT WRAP ----- #}
+{% block content %}
+<main>
+	<div class="section pt-0">
+		<div class="container">
+			<h1 class="section__title title-1">Вакансии контент-менеджера в компании cweb</h1>
+			<div class="desc-item">
+				<div class="desc-item__row">
+					<div class="desc-item__col desc-item__col--text content text">
+						<p>
+							Наше ключевое преимущество в том, что мы на одинаково высоком уровне можем разработать сайт,
+							продвинуть его в поиске, привести целевой платный трафик, переплести это в единую сеть и
+							отследить результат в реальных цифрах. В своей работе мы используем CRM и EPM системы, что
+							позволяет нам прогнозировать результаты и сроки проектов.
+						</p>
+						<p>
+							Crystal Web - не безликий бренд. Команда — наш главный капитал, в который мы постоянно
+							вкладываем ресурсы. Наша цель - стать номер 1 в создании и продвижении сайтов. Crystal Web -
+							это не сайты клиентов, это наши сайты.
+						</p>
+						<p>
+							Мы - не аутсорсинговая компания, а отдел интернет-маркетинга на удаленке, потому что вникаем
+							в ваш бизнес и становимся его неотъемлемой частью.
+							<b class="color-primary"><i>CWEB– обещаем только то, что можем выполнить!</i></b>
+						</p>
+					</div>
+					<div class="desc-item__col desc-item__col--img">
+						<img src="assets/img/other/content-manager.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<section class="section">
+		<div class="container">
+			<div class="row-cols-4 row-cols-md-6  row-cols-sm-12 justify-content-center">
+				<!-- info cell -->
+				<article class="info-cell">
+					<div class="info-cell__head" style="background-color: #65CA69;">
+						<h5>требования</h5>
+					</div>
+					<div class="info-cell__body">
+						<ul class="custom-list">
+							<li>Услуга, которая включена в тариф sdf sdfsdfdfsdfs dgar</li>
+							<li>Услуга, которая включена в тариф</li>
+							<li>Услуга, которая включена в тариф</li>
+							<li>Услуга, которая включена в тариф</li>
+							<li>Услуга, которая включена в тариф</li>
+							<li>Услуга, которая включена в тариф</li>
+						</ul>
+					</div>
+				</article>
+				<!-- info cell -->
+				<article class="info-cell">
+					<div class="info-cell__head" style="background-color: #F36F56;">
+						<h5>Обязанности</h5>
+					</div>
+					<div class="info-cell__body">
+						<ul class="custom-list">
+							<li>Услуга, которая включена в тариф sdf sdfsdfdfsdfs dgar</li>
+							<li>Услуга, которая включена в тариф</li>
+							<li>Услуга, которая включена в тариф</li>
+							<li>Услуга, которая включена в тариф</li>
+							<li>Услуга, которая включена в тариф</li>
+							<li>Услуга, которая включена в тариф</li>
+						</ul>
+					</div>
+				</article>
+				<!-- info cell -->
+				<article class="info-cell">
+					<div class="info-cell__head">
+						<h5>От нас</h5>
+					</div>
+					<div class="info-cell__body">
+						<ul class="custom-list">
+							<li>Услуга, которая включена в тариф sdf sdfsdfdfsdfs dgar</li>
+							<li>Услуга, которая включена в тариф</li>
+							<li>Услуга, которая включена в тариф</li>
+							<li>Услуга, которая включена в тариф</li>
+							<li>Услуга, которая включена в тариф</li>
+							<li>Услуга, которая включена в тариф</li>
+						</ul>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+	<div class="mt-32 mb-20 mt-sm-20">
+		<div class="container">
+			<form class="sending-resume" action="#">
+				<button class="sending-resume__submit btn">Откликнуться</button>
+				<label class="sending-resume__uploader b-input b-input--file js-label-file"
+					class="b-input b-input--file js-label-file">
+					<div class="b-input__input">
+						<input type="file" name="#"
+							accept="image/*,.doc,.docx,.xml,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+						<div class="b-input__ic">
+							<svg>
+								<use href="./assets/img/icons/sprite.svg#scraper"></use>
+							</svg>
+						</div>
+						<div class="b-input__placeholder js-label-file__text">Прикрепите резюме</div>
+					</div>
+				</label>
+			</form>
+		</div>
+	</div>
+	<section class="section">
+		<div class="container">
+			<h2 class="section__title title-2">Нет нужной вакансии?</h2>
+			<div class="row-cols-6 row-cols-md-12">
+				<div class="col">
+					<!-- vacancy form -->
+					<form action="#" class="vacancy-form ml-md-auto mr-md-auto">
+						<p class="mb-28 mb-sm-20 fz-18 fz-sm-12 text-center"><b>Напишите о себе!</b></p>
+						<div class="vacancy-form__inputs">
+							<label class="b-input">
+								<div class="b-input__input">
+									<input type="text" name="#" placeholder="Желаемая должность">
+								</div>
+							</label>
+							<label class="b-input">
+								<div class="b-input__input">
+									<textarea name="#" placeholder="Опыт работы"></textarea>
+								</div>
+							</label>
+							<label class="b-input b-input--file js-label-file">
+								<div class="b-input__input">
+									<input type="file" name="#"
+										accept="image/*,.doc,.docx,.xml,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+									<div class="b-input__ic">
+										<svg>
+											<use href="./assets/img/icons/sprite.svg#scraper"></use>
+										</svg>
+									</div>
+									<div class="b-input__placeholder js-label-file__text">Прикрепите резюме</div>
+								</div>
+							</label>
+							<label class="b-input">
+								<div class="b-input__input">
+									<input type="tel" name="#" placeholder="Телефон">
+								</div>
+							</label>
+							<label class="b-input">
+								<div class="b-input__input">
+									<input type="email" name="#" placeholder="E-mail">
+								</div>
+							</label>
+						</div>
+						<div class="vacancy-form__btns btns">
+							<button class="vacancy-form__submit btn" type="submit">Отправить</button>
+						</div>
+					</form>
+				</div>
+				<div class="col d-flex">
+					<p class="m-auto">
+						<img src="assets/img/other/cosmonauts.jpg" alt="" style="transform: scaleX(-1);">
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+{% endblock content %}

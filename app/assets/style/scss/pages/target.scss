@@ -1,0 +1,28 @@
+/*==================== TARGETED ====================*/
+.target-pg {
+	.advantages-b {
+		.info-card {
+			padding: 32px 16px 30px;
+
+			&__ic {
+				height: 65px;
+			}
+
+			&__title {
+				margin-top: getEm(25, 14);
+				font-size: 14px;
+			}
+		}
+	}
+
+	@include from($table) {
+		.info-card {
+			&__title {
+				min-height: getEm(35, 14);
+			}
+		}
+		.cards-slider__slide {
+			flex: 1;
+		}
+	}
+}

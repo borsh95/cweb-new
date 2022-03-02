@@ -1,0 +1,36 @@
+.content {
+	ol,
+	ul,
+	ol,
+	p {
+		margin-bottom: getEm(28, 16);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	ul,
+	ol {
+		padding-left: 1.5em;
+
+		li {
+			margin-bottom: 0.4em;
+			list-style-type: disc;
+		}
+	}
+
+	ol li {
+		list-style-type: decimal;
+	}
+
+	a:not(.btn) {
+		font-weight: 500;
+		color: var(--primary-color);
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}

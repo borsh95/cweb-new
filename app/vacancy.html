@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="ArtBro">
+	<title>Вакансии в компании cweb</title>
+	<!-- swiper -->
+	<link rel="stylesheet" href="./assets/style/css/libraries/swiper-bundle.min.css">
+	<!-- aos -->
+	<link rel="stylesheet" href="./assets/style/css/libraries/aos.css">
+	<!-- twentytwenty -->
+	<link rel="stylesheet" href="./assets/style/css/libraries/twentytwenty-no-compass.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="./assets/style/css/style.css">
+	<link type="text/css" rel="stylesheet"
+		href="https://cweb.bitrix24.by/bitrix/js/crm/site/form/dist/app.bundle.min.css?19033">
+</head>
+
+<body>
+	<div class="global-wrap vacancy-pg">
+		<!-- modal window - application -->
+		<div class="v-modal">
+			<div class="v-modal__inner">
+				<form action="#">
+					<button class="v-modal__close" data-button-type="closeModal" type="button"
+						aria-label="Закрыть окно"></button>
+					<h5 class="title">
+						начать работу :)
+					</h5>
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="text" name="username" placeholder=" ">
+							<div class="b-input__placeholder">Имя <span>*</span></div>
+							<div class="b-input__ic">
+								<svg>
+									<use href="./assets/img/icons/sprite.svg#input-user-ic"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="tel" name="tel" placeholder=" ">
+							<div class="b-input__placeholder">Телефон <span>*</span></div>
+							<div class="b-input__ic">
+								<svg>
+									<use href="./assets/img/icons/sprite.svg#input-tel-ic"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="email" name="emain" placeholder=" ">
+							<div class="b-input__placeholder">E-mail <span>*</span></div>
+							<div class="b-input__ic">
+								<svg>
+									<use href="./assets/img/icons/sprite.svg#input-mail-ic"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="url" name="url-site" placeholder=" ">
+							<div class="b-input__placeholder">Сайт <span style="color: #A9ABAE;">(необязательно)</span>
+							</div>
+							<div class="b-input__ic">
+								<svg>
+									<use href="./assets/img/icons/sprite.svg#input-build-ic"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="b-input">
+						<div class="b-input__input">
+							<textarea name="message" placeholder=" "></textarea>
+							<div class="b-input__placeholder">Сообщение</div>
+						</div>
+					</div>
+					<button class="btn btn--type-2" type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+		
+				
+
+<!-- HEADER -->
+<header class="header" >
+	<div class="header__container container vt-center">
+		<!-- hamburger -->
+		<button class="header__hamburger hamburger for-table" type="button">
+			<span></span>
+		</button>
+		<div class="header__left">
+			<!-- logo -->
+			<a class="header__logo logo" href="#">
+				<img class="logo__ic" src="assets/img/logo-ic.png" alt="логотип">
+				<span class="logo__text">CWEB</span>
+			</a>
+		</div>
+		<div class="header__row">
+			<div class="header__top vt-center">
+				<!-- sci -->
+				<div class="header__sci sci">
+					<a class="sci__link sci__link--tg" href="https://msngr.link/tg/375447310101">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#telegram-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--viber" href="https://msngr.link/vi/375447310101">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#viber-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--wp" href="https://msngr.link/wa/375447310101">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#wp-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--insta" href="https://msngr.link/wa/375447310101">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#insta-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--tel f-underline"
+						href="tel:+375447310101">+375&nbsp;44&nbsp;731&nbsp;01&nbsp;01</a>
+				</div>
+				<!-- firm information -->
+				<div class="header__firm-info-list firm-info-list flex">
+					<a class="firm-info firm-info--mail" href="mailto:info@cweb.by">
+						<svg class="firm-info__ic" width="16" height="12">
+							<use href="./assets/img/headerAndFooter/sprite.svg#mail-ic"></use>
+						</svg>
+						info@cweb.by
+					</a>
+					<a class="firm-info firm-info--clock">
+						<svg class="firm-info__ic" width="16" height="16">
+							<use href="./assets/img/headerAndFooter/sprite.svg#clock-ic"></use>
+						</svg>
+						ПН-ПТ с 10:00 до 17:00
+
+					</a>
+					<a class="firm-info firm-info--loc">
+						<svg class="firm-info__ic" width="12" height="16">
+							<use href="./assets/img/headerAndFooter/sprite.svg#loc-ic"></use>
+						</svg>
+						г. Минск, проспект Дзержинского 125а</a>
+				</div>
+			</div>
+			<div class="header__bottom header__burger">
+				<div class="header__burger-inner">
+					<!-- navigation -->
+					<nav class="header__nav bro-menu">
+						<ul class="menu bro-menu__container">
+							<li class="menu__item menu__item--drop">
+								<button class="menu__item-toggle hamburger" type="button" aria-label="Открыть подменю">
+									<span></span>
+								</button>
+								<a class="menu__link" href="#"><span>УСЛУГИ</span></a>
+								<ul class="menu__submenu">
+									<li class="menu__item active">
+										<a class="menu__link">
+											<span>seo&nbsp;-&nbsp;продвижение</span>
+											<span class="menu__arr">
+												<svg>
+													<use href="./assets/img/headerAndFooter/sprite.svg#menu-drop-arr">
+													</use>
+												</svg>
+											</span>
+										</a>
+										<ul class="menu__submenu">
+											<li class="menu__item active">
+												<span class="menu__link"><span>Продвижение в
+														Яндексе</span></span>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>Продвижение в
+														google</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>комплексное
+														продвижение</span></a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">
+											<span>Разработка сайтов</span>
+											<span class="menu__arr">
+												<svg>
+													<use href="./assets/img/headerAndFooter/sprite.svg#menu-drop-arr">
+													</use>
+												</svg>
+											</span>
+										</a>
+										<ul class="menu__submenu">
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>landing page</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>интернет-магазин</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>сайт на мodx</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>перенос на другую
+														cms</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>сайт услуги</span></a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">
+											<span>Таргетированная реклама</span>
+											<span class="menu__arr">
+												<svg>
+													<use href="./assets/img/headerAndFooter/sprite.svg#menu-drop-arr">
+													</use>
+												</svg>
+											</span>
+										</a>
+										<ul class="menu__submenu">
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>instagram</span></a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">
+											<span>Контекстная реклама</span>
+											<span class="menu__arr">
+												<svg>
+													<use href="./assets/img/headerAndFooter/sprite.svg#menu-drop-arr">
+													</use>
+												</svg>
+											</span>
+										</a>
+										<ul class="menu__submenu">
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>настройка
+														веб-аналитики</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>пополнение рекламнных
+														кабинетов</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>настройка google
+														merchant
+														centre</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>Настройкай яндекс
+														директ</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>настройка google
+														рекламы</span></a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item active">
+								<span class="menu__link"><span>наши работы</span></span>
+							</li>
+							<li class="menu__item active">
+								<span class="menu__link">
+									<span>Cтудия</span>
+									<span class="menu__item-arr">
+										<svg>
+											<use href="./assets/img/headerAndFooter/sprite.svg#arr-down">
+											</use>
+										</svg>
+									</span>
+								</span>
+								<ul class="menu__submenu">
+									<li class="menu__item">
+										<a class="menu__link" href="#"><span>landing page</span></a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#"><span>интернет-магазин</span></a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#"><span>сайт на мodx</span></a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#"><span>перенос на другую
+												cms</span></a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#"><span>сайт услуги</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#"><span>блог</span></a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#"><span>контакты</span></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<a class="header__sci-link sci-link" href="#">
+					<svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_45_316)">
+							<path
+								d="M32.1986 9.54476C32.12 7.81601 31.847 6.63543 31.4479 5.60255C31.0425 4.51887 30.4068 3.53728 29.5854 2.72594C28.7789 1.89973 27.8027 1.26013 26.7252 0.852228C25.698 0.451019 24.5244 0.17669 22.8055 0.0981339C21.0834 0.0188338 20.5332 0 16.1479 0C11.7625 0 11.2123 0.0188338 9.49022 0.0976382C7.77135 0.17669 6.59777 0.451267 5.57054 0.852724C4.49304 1.26038 3.51707 1.89973 2.71036 2.72594C1.88888 3.53703 1.25293 4.51862 0.847358 5.6023C0.448442 6.63543 0.175681 7.81601 0.0975731 9.54451C0.0187262 11.2767 0 11.8298 0 16.2404C0 20.6512 0.0187262 21.2046 0.0975731 22.9366C0.175927 24.6651 0.448935 25.8456 0.848098 26.8788C1.25342 27.9622 1.88912 28.944 2.71061 29.7551C3.51707 30.5813 4.49329 31.2207 5.57078 31.6283C6.59777 32.03 7.7716 32.3044 9.49046 32.3834C11.2128 32.4625 11.7627 32.4811 16.1481 32.4811C20.5335 32.4811 21.0837 32.4625 22.8057 32.3834C24.5246 32.3044 25.6982 32.03 26.7254 31.6283C28.8945 30.7848 30.6091 29.0603 31.4479 26.8788C31.8473 25.8456 32.12 24.6651 32.1986 22.9366C32.277 21.2043 32.2957 20.6512 32.2957 16.2407C32.2957 11.8298 32.277 11.2767 32.1986 9.54476ZM29.2919 22.8035C29.2202 24.387 28.957 25.2469 28.736 25.8191C28.1927 27.2356 27.0797 28.355 25.6713 28.9014C25.1024 29.1237 24.2474 29.3884 22.6729 29.4605C20.9706 29.5388 20.4598 29.5551 16.1479 29.5551C11.8357 29.5551 11.3251 29.5388 9.62253 29.4605C8.0483 29.3884 7.19331 29.1237 6.62413 28.9014C5.92289 28.641 5.28841 28.2259 4.76753 27.6864C4.23112 27.1625 3.81841 26.5246 3.55945 25.8191C3.33843 25.2469 3.07528 24.387 3.00358 22.8035C2.92596 21.0911 2.90945 20.5774 2.90945 16.2409C2.90945 11.9042 2.92596 11.3907 3.00358 9.67808C3.07552 8.09456 3.33843 7.23465 3.55945 6.66245C3.81841 5.95692 4.23137 5.31881 4.76753 4.79493C5.28841 4.25544 5.92289 3.84035 6.62438 3.58015C7.19331 3.35762 8.0483 3.0932 9.62278 3.02084C11.3254 2.94278 11.8362 2.92617 16.1479 2.92617H16.1476C20.4593 2.92617 20.9701 2.94278 22.6729 3.02109C24.2474 3.0932 25.1022 3.35786 25.6713 3.58015C26.3726 3.8406 27.0071 4.25569 27.5279 4.79493C28.0643 5.31881 28.4771 5.95692 28.7358 6.66245C28.957 7.23465 29.2202 8.09456 29.2919 9.67808C29.3695 11.3905 29.386 11.9042 29.386 16.2407C29.386 20.5774 29.3698 21.0908 29.2919 22.8035Z"
+								fill="url(#paint0_linear_45_316)" />
+							<path
+								d="M16.1476 7.90088C11.5681 7.90088 7.85565 11.6349 7.85565 16.2408C7.85565 20.8466 11.5681 24.5804 16.1476 24.5804C20.7274 24.5804 24.4399 20.8466 24.4399 16.2408C24.4399 11.6349 20.7274 7.90088 16.1476 7.90088ZM16.1476 21.6542C13.1751 21.654 10.7651 19.2304 10.7654 16.2405C10.7654 13.2509 13.1751 10.8271 16.1479 10.8271C19.1207 10.8273 21.5304 13.2509 21.5304 16.2405C21.5304 19.2304 19.1204 21.6542 16.1476 21.6542Z"
+								fill="url(#paint1_linear_45_316)" />
+							<path
+								d="M26.7052 7.57161C26.7052 8.64786 25.8377 9.52041 24.7676 9.52041C23.6972 9.52041 22.8297 8.64786 22.8297 7.57161C22.8297 6.49511 23.6972 5.62256 24.7676 5.62256C25.8377 5.62256 26.7052 6.49511 26.7052 7.57161Z"
+								fill="url(#paint2_linear_45_316)" />
+						</g>
+						<defs>
+							<linearGradient id="paint0_linear_45_316" x1="2.7102" y1="29.7553" x2="29.7395" y2="2.8804"
+								gradientUnits="userSpaceOnUse">
+								<stop stop-color="#FFD600" />
+								<stop offset="0.5" stop-color="#FF0100" />
+								<stop offset="1" stop-color="#D800B9" />
+							</linearGradient>
+							<linearGradient id="paint1_linear_45_316" x1="10.2844" y1="22.1378" x2="22.0784"
+								y2="10.4111" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#FF6400" />
+								<stop offset="0.5" stop-color="#FF0100" />
+								<stop offset="1" stop-color="#FD0056" />
+							</linearGradient>
+							<linearGradient id="paint2_linear_45_316" x1="23.3973" y1="8.94952" x2="26.1533"
+								y2="6.20925" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#F30072" />
+								<stop offset="1" stop-color="#E50097" />
+							</linearGradient>
+							<clipPath id="clip0_45_316">
+								<rect width="32.2957" height="32.4813" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</header>				
+		
+<div class="bread-crumb">
+	<div class="bread-crumb__container container">
+									<a href="/" class="bread-crumb__item">Главная</a>
+												<span class="bread-crumb__item">Вакансии в компании cweb</span>
+						</div>
+</div>
+		<!-- CONTENT WRAP -->
+		<div class="content-wrap">
+			
+<main>
+	<div class="section pt-0">
+		<div class="container">
+			<h1 class="section__title title-1">Вакансии в компании cweb</h1>
+			<div class="desc-item">
+				<div class="desc-item__row align-items-center">
+					<div class="desc-item__col desc-item__col--text content text">
+						<p>
+							Наше ключевое преимущество в том, что мы на одинаково высоком уровне можем разработать сайт,
+							продвинуть его в поиске, привести целевой платный трафик, переплести это в единую сеть и
+							отследить результат в реальных цифрах. В своей работе мы используем CRM и EPM системы, что
+							позволяет нам прогнозировать результаты и сроки проектов.
+						</p>
+						<p>
+							Crystal Web - не безликий бренд. Команда — наш главный капитал, в который мы постоянно
+							вкладываем ресурсы. Наша цель - стать номер 1 в создании и продвижении сайтов. Crystal Web -
+							это не сайты клиентов, это наши сайты.
+						</p>
+						<p>
+							Мы - не аутсорсинговая компания, а отдел интернет-маркетинга на удаленке, потому что вникаем
+							в ваш бизнес и становимся его неотъемлемой частью.
+							<b class="color-primary"><i>CWEB– обещаем только то, что можем выполнить!</i></b>
+						</p>
+					</div>
+					<div class="desc-item__col desc-item__col--img">
+						<img src="assets/img/pages/vacancy/note-img.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Ценности -->
+	<section class="section">
+		<div class="advantages-b__container container">
+			<h2 class="title-1 section__title mb-sm-44" data-aos="zoom-in" data-aos-duration="2500">
+				Наши ценности
+			</h2>
+			<div class="cards-slider-wrap slider-wrap">
+				<!-- slider -->
+				<div class="cards-slider swiper-container">
+					<div class="swiper-wrapper">
+						<!-- card -->
+						<div class="info-card cards-slider__slide swiper-slide">
+							<div class="info-card__ic">
+								<svg width="67" height="67" viewBox="0 0 67 67">
+									<path
+										d="M47.5624 11.7031V7.71875C47.5624 5.85395 46.8217 4.06552 45.503 2.74691C44.1844 1.42829 42.396 0.6875 40.5312 0.6875H35.8437C33.9789 0.6875 32.1905 1.42829 30.8719 2.74691C29.5532 4.06552 28.8124 5.85395 28.8124 7.71875V11.7031C22.9837 13.7532 17.9923 17.6656 14.6093 22.8359C14.44 23.0945 14.3233 23.3838 14.2659 23.6875C14.2084 23.9911 14.2113 24.3031 14.2745 24.6056C14.4019 25.2166 14.7669 25.7519 15.289 26.0938C15.8112 26.4356 16.4477 26.5561 17.0587 26.4286C17.6696 26.3012 18.2049 25.9362 18.5468 25.4141C20.9947 21.6504 24.4721 18.669 28.5654 16.8245C32.6587 14.9801 37.1957 14.3501 41.6366 15.0095C46.0776 15.6689 50.2358 17.59 53.6165 20.5443C56.9973 23.4986 59.4583 27.3618 60.707 31.6743C61.9557 35.9869 61.9394 40.5673 60.6602 44.8709C59.3809 49.1745 56.8925 53.0201 53.4909 55.9503C50.0893 58.8805 45.9176 60.7721 41.472 61.4C37.0265 62.0279 32.4941 61.3657 28.414 59.4922C27.8484 59.2342 27.2034 59.2115 26.621 59.4291C26.0386 59.6467 25.5665 60.0867 25.3085 60.6523C25.0506 61.218 25.0279 61.863 25.2455 62.4454C25.463 63.0277 25.903 63.4998 26.4687 63.7578C29.9279 65.3847 33.6825 66.2893 37.5031 66.4164C41.3237 66.5435 45.1301 65.8905 48.6898 64.4971C52.2495 63.1037 55.4878 60.9993 58.2069 58.3124C60.926 55.6255 63.0688 52.4125 64.5045 48.8696C65.9401 45.3267 66.6385 41.5284 66.5569 37.7065C66.4752 33.8847 65.6154 30.1196 64.0298 26.6413C62.4442 23.1629 60.1662 20.0443 57.3349 17.4759C54.5036 14.9075 51.1784 12.9433 47.5624 11.7031ZM33.4999 10.5078V7.71875C33.4999 7.09715 33.7469 6.50101 34.1864 6.06147C34.626 5.62193 35.2221 5.375 35.8437 5.375H40.5312C41.1528 5.375 41.7489 5.62193 42.1885 6.06147C42.628 6.50101 42.8749 7.09715 42.8749 7.71875V10.4844C41.327 10.213 39.759 10.0719 38.1874 10.0625C36.6153 10.0807 35.0474 10.2297 33.4999 10.5078Z"
+										fill="#0749AA" />
+									<path
+										d="M51.7344 27.3595C51.3477 26.8766 50.7857 26.5661 50.171 26.4959C49.5563 26.4256 48.9388 26.6013 48.4531 26.9845L41.8672 32.2345C40.7701 31.5282 39.4923 31.1538 38.1875 31.1564C36.7969 31.1564 35.4374 31.5687 34.2812 32.3413C33.1249 33.1139 32.2237 34.2121 31.6915 35.4969C31.1593 36.7817 31.0201 38.1954 31.2914 39.5593C31.5627 40.9233 32.2323 42.1761 33.2157 43.1595C34.199 44.1428 35.4518 44.8125 36.8158 45.0838C38.1797 45.3551 39.5934 45.2158 40.8782 44.6836C42.163 44.1515 43.2612 43.2503 44.0338 42.094C44.8064 40.9377 45.2187 39.5783 45.2187 38.1876C45.2157 37.3878 45.0729 36.5946 44.7969 35.8439L51.3594 30.5939C51.8288 30.2084 52.1303 29.6558 52.2002 29.0524C52.2702 28.4491 52.1031 27.8421 51.7344 27.3595ZM38.1875 40.5314C37.7239 40.5314 37.2708 40.3939 36.8854 40.1364C36.5 39.8788 36.1996 39.5128 36.0222 39.0845C35.8448 38.6563 35.7984 38.185 35.8888 37.7304C35.9792 37.2757 36.2024 36.8581 36.5302 36.5303C36.858 36.2026 37.2756 35.9793 37.7303 35.8889C38.1849 35.7985 38.6561 35.8449 39.0844 36.0223C39.5127 36.1997 39.8787 36.5001 40.1363 36.8855C40.3938 37.2709 40.5312 37.7241 40.5312 38.1876C40.5312 38.8092 40.2843 39.4054 39.8448 39.8449C39.4052 40.2844 38.8091 40.5314 38.1875 40.5314Z"
+										fill="#0749AA" />
+									<path
+										d="M21.7812 31.1562H7.71875C7.09715 31.1562 6.50101 31.4032 6.06147 31.8427C5.62193 32.2823 5.375 32.8784 5.375 33.5C5.375 34.1216 5.62193 34.7177 6.06147 35.1573C6.50101 35.5968 7.09715 35.8438 7.71875 35.8438H21.7812C22.4029 35.8438 22.999 35.5968 23.4385 35.1573C23.8781 34.7177 24.125 34.1216 24.125 33.5C24.125 32.8784 23.8781 32.2823 23.4385 31.8427C22.999 31.4032 22.4029 31.1562 21.7812 31.1562Z"
+										fill="#0749AA" />
+									<path
+										d="M21.7812 40.5312H3.03125C2.40965 40.5312 1.81351 40.7782 1.37397 41.2177C0.93443 41.6573 0.6875 42.2534 0.6875 42.875C0.6875 43.4966 0.93443 44.0927 1.37397 44.5323C1.81351 44.9718 2.40965 45.2188 3.03125 45.2188H21.7812C22.4029 45.2188 22.999 44.9718 23.4385 44.5323C23.8781 44.0927 24.125 43.4966 24.125 42.875C24.125 42.2534 23.8781 41.6573 23.4385 41.2177C22.999 40.7782 22.4029 40.5312 21.7812 40.5312Z"
+										fill="#0749AA" />
+									<path
+										d="M21.7812 49.9062H7.71875C7.09715 49.9062 6.50101 50.1532 6.06147 50.5927C5.62193 51.0323 5.375 51.6284 5.375 52.25C5.375 52.8716 5.62193 53.4677 6.06147 53.9073C6.50101 54.3468 7.09715 54.5938 7.71875 54.5938H21.7812C22.4029 54.5938 22.999 54.3468 23.4385 53.9073C23.8781 53.4677 24.125 52.8716 24.125 52.25C24.125 51.6284 23.8781 51.0323 23.4385 50.5927C22.999 50.1532 22.4029 49.9062 21.7812 49.9062Z"
+										fill="#0749AA" />
+								</svg>
+							</div>
+							<div class="info-card__title">Быстрый результат</div>
+							<div class="info-card__text">
+								<p>
+									Настройка рекламной кампании занимает до 7 рабочих дней.
+								</p>
+							</div>
+						</div>
+						<!-- card -->
+						<div class="info-card cards-slider__slide swiper-slide">
+							<div class="info-card__ic">
+								<svg width="75" height="75" viewBox="0 0 75 75">
+									<path
+										d="M74.9798 66.3766L73.2384 41.6804C73.05 39.0076 70.8035 36.9141 68.1242 36.9141H47.7729L46.984 22.7137C46.8332 19.9982 44.5846 17.8711 41.8651 17.8711H37.6053V12.8906C37.6053 5.78276 31.8225 0 24.7147 0C17.6068 0 11.8241 5.78276 11.8241 12.8906V17.8711H7.564C4.84452 17.8711 2.59584 19.9982 2.4451 22.7137L0.0127307 66.4964C-0.109584 68.6977 0.689196 70.8785 2.20428 72.48C3.71908 74.0815 5.85233 75 8.05692 75H66.9432C69.1703 75 71.3185 74.0656 72.837 72.4364C74.3553 70.8069 75.1364 68.5983 74.9798 66.3766ZM69.6221 69.4402C68.9219 70.1917 67.9705 70.6055 66.9432 70.6055H39.5272C38.4999 70.6055 37.5485 70.1917 36.8481 69.44C36.1478 68.6884 35.8018 67.7104 35.8742 66.6857L37.6157 41.9893C37.6427 41.6076 37.9635 41.3084 38.3462 41.3084H68.1243C68.5071 41.3084 68.828 41.6076 68.8548 41.9893L70.5962 66.6855C70.6683 67.7105 70.3224 68.6887 69.6221 69.4402ZM16.2186 12.8906C16.2186 8.20591 20.03 4.39453 24.7147 4.39453C29.3994 4.39453 33.2108 8.20591 33.2108 12.8906V17.8711H16.2186V12.8906ZM5.39662 69.4601C4.69774 68.7214 4.34398 67.7555 4.40038 66.7403L6.83275 22.9575C6.85428 22.5696 7.17552 22.2656 7.564 22.2656H11.8239V24.4629C11.8239 25.6764 12.8077 26.6602 14.0212 26.6602C15.2347 26.6602 16.2184 25.6764 16.2184 24.4629V22.2656H33.2106V24.4629C33.2106 25.6764 34.1944 26.6602 35.4079 26.6602C36.6214 26.6602 37.6052 25.6764 37.6052 24.4629V22.2656H41.8649C42.2534 22.2656 42.5746 22.5696 42.5962 22.9575L43.3717 36.9141H38.3461C35.6667 36.9141 33.4203 39.0076 33.2319 41.6804L31.4903 66.3766C31.3866 67.847 31.696 69.3105 32.3558 70.6055H8.05692C7.04003 70.6055 6.09535 70.1987 5.39662 69.4601Z"
+										fill="#0749AA" />
+									<path
+										d="M59.5863 45.7031C58.3728 45.7031 57.389 46.6869 57.389 47.9004V50.5579C57.389 52.8081 55.5584 54.6387 53.3084 54.6387C51.0583 54.6387 49.2277 52.8081 49.2277 50.5579V47.9004C49.2277 46.6869 48.2439 45.7031 47.0304 45.7031C45.8169 45.7031 44.8331 46.6869 44.8331 47.9004V50.5579C44.8331 55.2312 48.6351 59.0332 53.3084 59.0332C57.9816 59.0332 61.7836 55.2312 61.7836 50.5579V47.9004C61.7836 46.6869 60.7998 45.7031 59.5863 45.7031Z"
+										fill="#0749AA" />
+								</svg>
+							</div>
+							<div class="info-card__title">Первые продажи для молодого сайта</div>
+							<div class="info-card__text">
+								Бизнесу, недавно начавшему свою работу, реклама поможет повысить узнаваемость бренда и
+								принести первые продажи, в то время пока не будут достигнуты первые результаты по
+								SEO-оптимизации.
+							</div>
+						</div>
+						<!-- card -->
+						<div class="info-card cards-slider__slide swiper-slide">
+							<div class="info-card__ic">
+								<svg width="101" height="101" viewBox="0 0 101 101">
+									<g clip-path="url(#clip0_1235_2)">
+										<path
+											d="M58.0511 23.0078C55.604 22.3371 53.0635 21.997 50.5 21.997C34.7833 21.997 21.9969 34.7834 21.9969 50.5001C21.9969 66.2168 34.7833 79.0032 50.5 79.0032C66.2167 79.0032 79.0031 66.2168 79.0031 50.5001C79.0031 47.9366 78.663 45.3961 77.9923 42.949C77.5315 41.2679 78.5208 39.5315 80.2019 39.0707C81.882 38.6101 83.6193 39.5992 84.0801 41.2803C84.8998 44.271 85.3156 47.373 85.3156 50.5001C85.3156 69.6974 69.6973 85.3157 50.5 85.3157C31.3027 85.3157 15.6844 69.6974 15.6844 50.5001C15.6844 31.3028 31.3027 15.6845 50.5 15.6845C53.6273 15.6845 56.7291 16.1001 59.7198 16.92C61.1218 17.3042 62.0426 18.5758 62.0424 19.9626C62.0424 20.2386 62.0057 20.5191 61.9294 20.7982C61.4688 22.4793 59.7326 23.4692 58.0511 23.0078ZM95.0067 34.0166C93.3352 34.5115 92.3813 36.2674 92.8762 37.939C94.0781 41.9987 94.6875 46.2248 94.6875 50.5001C94.6875 74.8652 74.8651 94.6876 50.5 94.6876C26.1349 94.6876 6.3125 74.8652 6.3125 50.5001C6.3125 26.135 26.1349 6.31261 50.5 6.31261C54.7755 6.31261 59.0016 6.92196 63.0605 8.1237C64.7321 8.61884 66.488 7.66447 66.9829 5.99324C67.0713 5.69438 67.1135 5.39315 67.1135 5.09666C67.1139 3.73455 66.2252 2.47737 64.8525 2.07081C60.2112 0.696655 55.3825 0.00011056 50.5 0.00011056C37.011 0.00011056 24.3292 5.2531 14.791 14.7911C5.25299 24.3295 0 37.0111 0 50.5001C0 63.9891 5.25299 76.6709 14.791 86.2091C24.329 95.7473 37.011 101 50.5 101C63.989 101 76.6706 95.7471 86.209 86.2091C95.747 76.6709 101 63.9891 101 50.5001C101 45.618 100.303 40.7889 98.9291 36.1471C98.4344 34.4756 96.6779 33.5224 95.0067 34.0166ZM50.5 37.8751C50.9642 37.8751 51.4329 37.9007 51.8933 37.9513C53.6269 38.142 55.1851 36.8908 55.3748 35.1582C55.565 33.4254 54.3145 31.8666 52.5817 31.6766C51.8933 31.6009 51.1932 31.5626 50.5 31.5626C40.0577 31.5626 31.5625 40.0578 31.5625 50.5001C31.5625 60.9424 40.0577 69.4376 50.5 69.4376C60.9423 69.4376 69.4375 60.9424 69.4375 50.5001C69.4375 48.7569 68.0245 47.3439 66.2812 47.3439C64.538 47.3439 63.125 48.7569 63.125 50.5001C63.125 57.4616 57.4615 63.1251 50.5 63.1251C43.5385 63.1251 37.875 57.4616 37.875 50.5001C37.875 43.5386 43.5385 37.8751 50.5 37.8751ZM66.6154 29.9216L68.1876 14.1508C68.2598 13.4252 68.581 12.7474 69.0964 12.232L80.4043 0.924497C81.2754 0.0535695 82.573 -0.231085 83.7288 0.195206C84.8842 0.621497 85.6863 1.68121 85.7827 2.90919L86.6793 14.321L98.0909 15.2174C99.3189 15.3138 100.379 16.1159 100.805 17.2713C101.231 18.4269 100.947 19.7249 100.076 20.5958L88.768 31.9033C88.2527 32.4187 87.5747 32.7399 86.8493 32.8121L71.0789 34.3851L52.7319 52.732C52.1154 53.3482 51.3078 53.6563 50.5 53.6563C49.692 53.6563 48.8846 53.3482 48.2683 52.7318C47.0356 51.4992 47.0356 49.5008 48.2683 48.2682L66.6154 29.9216ZM73.1674 27.8331L85.1012 26.6428L90.7696 20.9744L83.4968 20.4031C81.9487 20.2814 80.7191 19.0516 80.5974 17.5037L80.0261 10.2303L74.3573 15.8989L73.1674 27.8331Z"
+											fill="#0749AA" />
+									</g>
+									<defs>
+										<clipPath id="clip0_1235_2">
+											<rect width="101" height="101" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+							</div>
+							<div class="info-card__title">Точный таргетинг</div>
+							<div class="info-card__text">
+								<p>
+									Вы сами выбираете, кому показывать вашу рекламу: рекламу можно сегментировать по
+									полу, возрасту, географии, интересам и другим настройкам.
+								</p>
+							</div>
+						</div>
+						<!-- card -->
+						<div class="info-card cards-slider__slide swiper-slide">
+							<div class="info-card__ic">
+								<svg width="75" height="75" viewBox="0 0 75 75">
+									<g clip-path="url(#clip0_1235_24)">
+										<path
+											d="M72.0615 38.4926H57.4413C57.2312 36.7091 56.8197 34.9866 56.2293 33.3485H72.2881C73.4969 33.3485 74.4806 32.3757 74.4938 31.1669C74.685 13.7659 60.6387 0 43.6968 0C42.4786 0 41.4909 0.987647 41.4909 2.20588V19.0473C39.8861 18.5234 38.2058 18.169 36.4703 18.0056V9.68823C36.4703 8.47 35.4827 7.48235 34.2644 7.48235C15.6061 7.48235 0.50415 22.5809 0.50415 41.2413C0.50415 59.8987 15.6043 75 34.2644 75C41.7336 75 48.8118 72.6096 54.734 68.0871C55.7083 67.3431 55.8869 65.949 55.1396 64.9835L50.0537 58.4131C51.5646 57.0226 52.8921 55.4362 53.9955 53.694L60.345 61.8972C61.0872 62.856 62.4643 63.0362 63.4283 62.3C70.2174 57.1148 74.168 49.2509 74.2672 40.7241C74.2813 39.496 73.289 38.4926 72.0615 38.4926ZM45.9027 4.50191C58.6112 5.54559 69.1002 15.7396 70.0187 28.9366H54.0884C52.0547 25.6716 49.2386 22.9425 45.9027 21.0153V4.50191ZM50.2413 65.8631C45.4899 68.9613 40.0105 70.5882 34.2644 70.5882C18.0816 70.5882 4.91591 57.4232 4.91591 41.2412C4.91591 25.8009 16.9018 13.1072 32.0586 11.976V18.0053C20.2189 19.12 10.923 29.1146 10.923 41.241C10.923 54.111 21.3934 64.5815 34.2634 64.5815C38.765 64.5815 42.9721 63.2991 46.5412 61.0826L50.2413 65.8631ZM34.2634 60.1697C23.8261 60.1697 15.3347 51.6784 15.3347 41.241C15.3347 30.8035 23.8261 22.3122 34.2634 22.3122C44.7008 22.3122 53.1921 30.8035 53.1921 41.241C53.1921 51.6784 44.7008 60.1697 34.2634 60.1697ZM62.4303 57.3835L56.1708 49.2965C56.9143 47.2809 57.3862 45.1354 57.544 42.9044H69.724C69.1278 48.4722 66.5552 53.5796 62.4303 57.3835Z"
+											fill="#0749AA" />
+										<path
+											d="M36.6321 39.0351H31.8946C30.7651 39.0351 29.8461 38.1161 29.8461 36.9864C29.8461 35.8533 30.7633 34.9379 31.894 34.9379C31.9049 34.938 31.9155 34.938 31.9261 34.938H36.463C37.2724 34.9461 38.073 35.3097 38.6602 35.9364C39.4934 36.8253 40.8892 36.8707 41.7782 36.0375C42.667 35.2044 42.7124 33.8085 41.8793 32.9195C40.4039 31.3453 38.3834 30.5264 36.4692 30.5264V28.6048C36.4692 27.3866 35.4815 26.3989 34.2633 26.3989C33.0451 26.3989 32.0574 27.3866 32.0574 28.6048V30.5264C28.0807 30.5264 25.4343 33.5998 25.4343 36.9866C25.4343 40.5489 28.3324 43.447 31.8946 43.447H36.6321C37.7617 43.447 38.6806 44.366 38.6806 45.4956C38.6806 46.5845 37.8202 47.5441 36.6006 47.5441H31.6507C31.079 47.5382 30.4717 47.332 29.9399 46.9631C28.9389 46.2683 27.5645 46.5172 26.8701 47.5179C26.1756 48.5189 26.424 49.8932 27.4249 50.5878C28.9729 51.6617 30.3883 51.9559 32.0573 51.9559V53.8775C32.0573 55.0957 33.0449 56.0834 34.2632 56.0834C35.4814 56.0834 36.469 55.0957 36.469 53.8775V51.9559C40.4786 51.9559 43.0923 48.8525 43.0923 45.4956C43.0926 41.9332 40.1945 39.0351 36.6321 39.0351Z"
+											fill="#0749AA" />
+									</g>
+									<defs>
+										<clipPath id="clip0_1235_24">
+											<rect width="75" height="75" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+
+							</div>
+							<div class="info-card__title">Возможность управления бюджетом</div>
+							<div class="info-card__text">
+								<p>
+									Вы можете контролировать распределение рекламного бюджета между используемыми
+									инструментами и категориями рекламируемых товаров.
+								</p>
+							</div>
+						</div>
+						<!-- card -->
+						<div class="info-card cards-slider__slide swiper-slide">
+							<div class="info-card__ic">
+								<svg width="75" height="75" viewBox="0 0 75 75">
+									<path
+										d="M60.793 32.518C59.5794 32.518 58.5956 33.5018 58.5956 34.7153V66.9429C58.5956 68.9623 56.9527 70.6051 54.9334 70.6051H8.0569C6.03755 70.6051 4.39467 68.9623 4.39467 66.9429V20.0664C4.39467 18.0471 6.03755 16.4042 8.0569 16.4042H40.2845C41.498 16.4042 42.4818 15.4204 42.4818 14.2069C42.4818 12.9933 41.498 12.0095 40.2845 12.0095H8.0569C3.61432 12.0095 0 15.6238 0 20.0664V66.9429C0 71.3855 3.61432 74.9998 8.0569 74.9998H54.9334C59.376 74.9998 62.9903 71.3855 62.9903 66.9429V34.7153C62.9903 33.5018 62.0065 32.518 60.793 32.518Z"
+										fill="#0749AA" />
+									<path
+										d="M73.5009 5.64269L69.3574 1.49924C67.3586 -0.499747 64.1059 -0.499747 62.1067 1.49924L28.9601 34.6459C28.6534 34.9527 28.4444 35.3433 28.3591 35.7687L26.2873 46.1271C26.1433 46.8476 26.3687 47.5923 26.8883 48.1118C27.3045 48.528 27.8651 48.7554 28.442 48.7554C28.5854 48.7554 28.7296 48.7414 28.8728 48.7128L39.2312 46.641C39.6566 46.5559 40.0473 46.3467 40.3541 46.04L73.5009 12.8935C73.5009 12.8935 73.501 12.8935 73.501 12.8933C75.4999 10.8945 75.4999 7.64182 73.5009 5.64269ZM37.7171 42.4621L31.2432 43.7571L32.5381 37.2831L59.517 10.3038L64.6963 15.4831L37.7171 42.4621ZM70.3934 9.78598L67.8038 12.3756L62.6245 7.19635L65.214 4.60686C65.4996 4.32121 65.9643 4.32106 66.25 4.60672L70.3932 8.75016C70.6791 9.03567 70.6791 9.50047 70.3934 9.78598Z"
+										fill="#0749AA" />
+								</svg>
+							</div>
+							<div class="info-card__title">Быстрое внесение изменений</div>
+							<div class="info-card__text">
+								<p>
+									Есть возможность моментально откорректировать ставки, стратегию и рекламные слова.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Рост компании -->
+	<section class="section company-path">
+		<div class="container">
+			<h2 class="title-1 section__title">Рост компании</h2>
+			<div class="company-path__list">
+				<!-- item -->
+				<div class="company-path__item">
+					<figure>
+						<img src="assets/img/components/company-path/2017.jpg" alt="">
+						<figcaption>2017</figcaption>
+						<div class="label-info label-info--pos_top-right label-info--bgc_primary-alpha">
+							<i>2</i>
+						</div>
+					</figure>
+				</div>
+				<!-- item -->
+				<div class="company-path__item">
+					<figure>
+						<img src="assets/img/components/company-path/2019.jpg" alt="">
+						<figcaption>2019</figcaption>
+						<div class="label-info label-info--pos_top-right label-info--bgc_primary-alpha">
+							<i>3</i>
+						</div>
+					</figure>
+				</div>
+				<!-- item -->
+				<div class="company-path__item">
+					<figure>
+						<img src="assets/img/components/company-path/2021.jpg" alt="">
+						<figcaption>2021</figcaption>
+						<div class="label-info label-info--pos_top-right label-info--bgc_primary-alpha">
+							<i>11</i>
+						</div>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Почему CWEB -->
+	<section class="section">
+		<div class="container">
+			<h2 class="title-1 section__title">Почему cweb?</h2>
+			<div class="row-cols-6 row-cols-md-12 gy-25 gy-sm-15">
+				<!-- msg-card -->
+				<div class="msg-card align-items-center">
+					<div class="msg-card__img">
+						<img src="assets/img/components/band/masha-s_ava.png" alt="">
+					</div>
+					<div class="msg-card__text-box">
+						<div class="msg-card__text">
+							<p>
+								Покидая великую страну победившего социализма, мы торжественно клянемся народу великого
+								социалистического государства и вам, любимый отец и гениальный учитель трудящихся всего
+								мира,
+							</p>
+						</div>
+						<div class="msg-card__name">
+							Мария Шиманович - дизайнер
+						</div>
+					</div>
+				</div>
+				<!-- msg-card -->
+				<div class="msg-card align-items-center">
+					<div class="msg-card__img">
+						<img src="assets/img/components/band/masha-s_ava.png" alt="">
+					</div>
+					<div class="msg-card__text-box">
+						<div class="msg-card__text">
+							<p>
+								Покидая великую страну победившего социализма, мы торжественно клянемся народу великого
+								социалистического государства и вам, любимый отец и гениальный учитель трудящихся всего
+								мира,
+							</p>
+						</div>
+						<div class="msg-card__name">
+							Мария Шиманович - дизайнер
+						</div>
+					</div>
+				</div>
+				<!-- msg-card -->
+				<div class="msg-card align-items-center">
+					<div class="msg-card__img">
+						<img src="assets/img/components/band/masha-s_ava.png" alt="">
+					</div>
+					<div class="msg-card__text-box">
+						<div class="msg-card__text">
+							<p>
+								Покидая великую страну победившего социализма, мы торжественно клянемся народу великого
+								социалистического государства и вам, любимый отец и гениальный учитель трудящихся всего
+								мира,
+							</p>
+						</div>
+						<div class="msg-card__name">
+							Мария Шиманович - дизайнер
+						</div>
+					</div>
+				</div>
+				<!-- msg-card -->
+				<div class="msg-card align-items-center">
+					<div class="msg-card__img">
+						<img src="assets/img/components/band/masha-s_ava.png" alt="">
+					</div>
+					<div class="msg-card__text-box">
+						<div class="msg-card__text">
+							<p>
+								Покидая великую страну победившего социализма, мы торжественно клянемся народу великого
+								социалистического государства и вам, любимый отец и гениальный учитель трудящихся всего
+								мира,
+							</p>
+						</div>
+						<div class="msg-card__name">
+							Мария Шиманович - дизайнер
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Открытые вакансии -->
+	<section class="section">
+		<div class="container">
+			<h2 class="title-1 section__title">Открытые вакансии</h2>
+			<div class="row-cols-4 row-cols-sm-6 gx-md-20 gy-md-20 gx-xs-10">
+				<!-- vacancy preview -->
+				<div class="vacancy-prev">
+					<div class="vacancy-prev__img">
+						<img src="assets/img/components/vacancy-prev/content-manager.jpg" alt="">
+					</div>
+					<div class="vacancy-prev__title">Контент-менеджер</div>
+					<div class="vacancy-prev__btns btns btns--multiple">
+						<a class="btn" href="#">Я готов!</a>
+					</div>
+				</div>
+				<!-- vacancy preview -->
+				<div class="vacancy-prev">
+					<div class="vacancy-prev__img">
+						<img src="assets/img/components/vacancy-prev/content-manager.jpg" alt="">
+					</div>
+					<div class="vacancy-prev__title">Контент-менеджер</div>
+					<div class="vacancy-prev__btns btns btns--multiple">
+						<a class="btn" href="#">Я готов!</a>
+					</div>
+				</div>
+				<!-- vacancy preview -->
+				<div class="vacancy-prev">
+					<div class="vacancy-prev__img">
+						<img src="assets/img/components/vacancy-prev/content-manager.jpg" alt="">
+					</div>
+					<div class="vacancy-prev__title">Контент-менеджер</div>
+					<div class="vacancy-prev__btns btns btns--multiple">
+						<a class="btn" href="#">Я готов!</a>
+					</div>
+				</div>
+				<!-- vacancy preview -->
+				<div class="vacancy-prev">
+					<div class="vacancy-prev__img">
+						<img src="assets/img/components/vacancy-prev/content-manager.jpg" alt="">
+					</div>
+					<div class="vacancy-prev__title">Контент-менеджер</div>
+					<div class="vacancy-prev__btns btns btns--multiple">
+						<a class="btn" href="#">Я готов!</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container">
+			<h2 class="section__title title-2">Нет нужной вакансии?</h2>
+			<div class="row-cols-6 row-cols-md-12">
+				<div class="col">
+					<!-- vacancy form -->
+					<form action="#" class="vacancy-form ml-md-auto mr-md-auto">
+						<p class="mb-28 mb-sm-20 fz-18 fz-sm-12 text-center"><b>Напишите о себе!</b></p>
+						<div class="vacancy-form__inputs">
+							<label class="b-input">
+								<div class="b-input__input">
+									<input type="text" name="#" placeholder="Желаемая должность">
+								</div>
+							</label>
+							<label class="b-input">
+								<div class="b-input__input">
+									<textarea name="#" placeholder="Опыт работы"></textarea>
+								</div>
+							</label>
+							<label class="b-input b-input--file js-label-file">
+								<div class="b-input__input">
+									<input type="file" name="#"
+										accept="image/*,.doc,.docx,.xml,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+									<div class="b-input__ic">
+										<svg>
+											<use href="./assets/img/icons/sprite.svg#scraper"></use>
+										</svg>
+									</div>
+									<div class="b-input__placeholder js-label-file__text">Прикрепите резюме</div>
+								</div>
+							</label>
+							<label class="b-input">
+								<div class="b-input__input">
+									<input type="tel" name="#" placeholder="Телефон">
+								</div>
+							</label>
+							<label class="b-input">
+								<div class="b-input__input">
+									<input type="email" name="#" placeholder="E-mail">
+								</div>
+							</label>
+						</div>
+						<div class="vacancy-form__btns btns">
+							<button class="vacancy-form__submit btn" type="submit">Отправить</button>
+						</div>
+					</form>
+				</div>
+				<div class="col d-flex">
+					<p class="m-auto">
+						<img src="assets/img/other/cosmonauts.jpg" alt="" style="transform: scaleX(-1);">
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+		</div>
+		
+				<!-- FOOTER -->
+<footer>
+	<div class="container">
+		<!-- top -->
+		<div class="footer__top flex">
+			<!-- logo -->
+			<a class="footer__logo logo" href="#">
+				<img class="logo__ic" src="assets/img/logo-ic.png" alt="логотип">
+				<span class="logo__text">CWEB</span>
+			</a>
+		</div>
+		<!-- middle -->
+		<div class="footer__middle">
+			<div class="footer__middle-col">
+				<p class="color-primary">Cоздание и продвижение сайтов</p>
+				<p>ООО «КристаллВеб»</p>
+				<p>УНП 193312909</p>
+			</div>
+			<!-- navigation -->
+			<ul class="footer__middle-col footer__nav">
+				<li><a href="#">Seo-продвижение</a></li>
+				<li><a href="#">Разработка сайтов</a></li>
+				<li><a href="#">Таргетированная реклама</a></li>
+				<li><a href="#">Контекстная реклама</a></li>
+				<li><a href="#">Реклама на youtube</a></li>
+			</ul>
+			<div class="footer__middle-col">
+				<!-- info firm -->
+				<div class="footer__firm-info-list firm-info-list flex-col">
+					<a class="firm-info firm-info--mail" href="mailto:info@cweb.by">
+						<svg class="firm-info__ic" width="16" height="12">
+							<use href="./assets/img/headerAndFooter/sprite.svg#mail-ic"></use>
+						</svg>
+						info@cweb.by
+					</a>
+					<a class="firm-info firm-info--clock">
+						<svg class="firm-info__ic" width="16" height="16">
+							<use href="./assets/img/headerAndFooter/sprite.svg#clock-ic"></use>
+						</svg>
+						ПН-ПТ с 10:00 до 17:00
+
+					</a>
+					<a class="firm-info firm-info--loc">
+						<svg class="firm-info__ic" width="12" height="16">
+							<use href="./assets/img/headerAndFooter/sprite.svg#loc-ic"></use>
+						</svg>
+						г. Минск, проспект Дзержинского 125а</a>
+				</div>
+			</div>
+			<div class="footer__middle-col">
+				<!-- contacts -->
+				<div class="footer__msgrs sci">
+					<a class="sci__link sci__link--tg" href="https://msngr.link/tg/375447310101">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#telegram-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--viber" href="https://msngr.link/vi/375447310101">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#viber-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--wp" href="https://msngr.link/wa/375447310101">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#wp-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--tel f-underline" href="tel:+375447310101">
+						+375&nbsp;44&nbsp;731&nbsp;01&nbsp;01
+					</a>
+				</div>
+				<!-- sci list -->
+				<div class="footer__sci-list">
+					<a class="sci__link sci__link--tiktok" href="https://www.tiktok.com/@cweb.by"
+						target="_blank">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#behance-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--ln" href="https://www.behance.net/cweb/" target="_blank">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#tiktok-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--ln" href="https://www.linkedin.com/company/crystal-web-bel/"
+						target="_blank">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#linkedin-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--insta" href="https://msngr.link/wa/375447310101"
+						target="_blank">
+						<img src="./assets/img/headerAndFooter/svg/insta-ic.svg" alt="">
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- bottom -->
+	<div class="footer__bottom">
+		<div class="container">
+			<div class="footer__bottom-content">
+				<p>Цены, представленные на сайте, не являются публичной офертой и носят исключительно рекламный
+					характер
+				</p>
+				<a href="assets/documents/privacy_policy_kupeliruru.pdf"
+					download="Политика конфиденциальности сайта cweb.by">Политика конфиденциальности</a>
+				<p class="footer__copyright">&copy; Copyright 2017-2021 ООО «Кристалл Веб»</p>
+			</div>
+		</div>
+	</div>
+</footer>		
+		
+			</div>
+	
+		<!-- jquery -->
+	<script src="assets/js/libraries/jquery.min.js"></script>
+	<!-- jquery event move -->
+	<script src="assets/js/libraries/jquery.event.move.js"></script>
+	<!-- twentytwenty -->
+	<script src="assets/js/libraries/jquery.twentytwenty.js"></script>
+	<!-- aos -->
+	<script src="assets/js/libraries/aos.js"></script>
+	<!-- swiper.js -->
+	<script src="assets/js/libraries/swiper-bundle.min.js"></script>
+	<!-- lightbox -->
+	<script src="assets/js/libraries/fslightbox.js"></script>
+	<script src="assets/js/main.js"></script>
+	</body>
+
+</html>

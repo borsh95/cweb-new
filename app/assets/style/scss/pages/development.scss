@@ -1,0 +1,116 @@
+/*==================== DEVELOPMENT PAGE ====================*/
+.development-pg {
+	.services-b {
+		padding: 103px 0 0;
+	}
+
+	.band-slider-b,
+	.examples-work-b,
+	.prices-b,
+	.stages-dev-b,
+	.faq-b,
+	.blog-b,
+	.application-b {
+		padding: 130px 0 0;
+	}
+
+	.clients-b {
+		padding: 100px 0 0;
+	}
+
+	.reviews-slider-b {
+		padding: 130px 0 0;
+	}
+
+	.prices-b {
+		h2 {
+			margin-bottom: 73px;
+		}
+		&__list {
+			--widthCol: 25%;
+			--air-l: 20px;
+			--air-b: 50px;
+		}
+	}
+
+	.price-card {
+		h5 {
+			min-height: getEm(59, 24);
+			font-size: 24px;
+		}
+
+		&__subtitle {
+			font-size: 16px;
+		}
+
+		&__textBox {
+			padding: 25px 18px 35px;
+			font-size: 14px;
+		}
+
+		.custom-list {
+			li {
+				padding-left: 1.7em;
+			}
+		}
+	}
+
+	@include desctop-min {
+		.services-b {
+			padding: 80px 0 0;
+		}
+
+		.band-slider-b,
+		.examples-work-b,
+		.prices-b,
+		.stages-dev-b,
+		.faq-b,
+		.blog-b,
+		.application-b   {
+			padding: 120px 0 0;
+		}
+	
+
+		.prices-b {
+			&__list {
+				--widthCol: 50%;
+				--air-l: 40px;
+			}
+		}
+	}
+
+	@include table {
+		.content-wrap {
+			padding-top: 0;
+		}
+	}
+
+	@include mobile {
+		.services-b {
+			padding: 47px 0 0;
+		}
+
+		.band-slider-b,
+		.examples-work-b,
+		.prices-b,
+		.stages-dev-b,
+		.faq-b,
+		.blog-b,
+		.application-b  {
+			padding: 95px 0 0;
+		}
+		
+		.reviews-slider-b {
+			padding: 95px 0 0;
+		}
+		
+		.prices-b {
+			h2 {
+				margin-bottom: 52px;
+			}
+			&__list {
+				--widthCol: 100%;
+			}
+		}
+	}
+}

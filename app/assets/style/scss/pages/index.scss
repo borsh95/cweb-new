@@ -1,0 +1,103 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~
+INDEX PAGE 
+~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.index-pg {
+	.main-slider__slide {
+		.btn {
+			min-width: 262px;
+		}
+	}
+	.band-slider-b {
+		padding: 109px 0 0;
+	}
+
+	.reviews-slider-b {
+		padding: 67px 0 0;
+	}
+
+	.complexes-b {
+		padding: 105px 0 0;
+	}
+
+	.services-b {
+		padding: 97px 0 0;
+	}
+
+	.cases-b {
+		padding: 97px 0 0;
+	}
+
+	.clients-b {
+		padding: 70px 0 0;
+	}
+
+	.faq-b {
+		padding: 54px 0 0;
+	}
+
+	.partners-b {
+		margin-top: 30px;
+	}
+
+	@include desctop-min {
+		.main-slider__slide {
+			.btn {
+				min-width: 240px;
+			}
+		}
+
+		.band-slider-b {
+			padding-top: 80px;
+		}
+
+		.reviews-slider-b {
+			padding: 50px 0 0;
+		}
+
+		.complexes-b {
+			padding: 85px 0 0;
+		}
+
+		.clients-b {
+			padding: 80px 0 0;
+		}
+
+		.faq-b {
+			padding: 50px 0 0;
+		}
+	}
+
+	@include table {
+		.content-wrap {
+			padding: 0 0 90px;
+		}
+
+		.services-b {
+			padding: 60px 0 0;
+		}
+	}
+
+	@include mobile {
+		.main-slider__slide {
+			.btn {
+				min-width: 220px;
+			}
+		}
+
+		.band-slider-b {
+			padding-top: 56px;
+		}
+
+		.reviews-slider-b {
+			padding: 33px 0 0;
+		}
+
+		.complexes-b {
+			padding: 69px 0 0;
+		}
+
+		.clients-b {
+			padding: 57px 0 0;
+		}
+	}
+}

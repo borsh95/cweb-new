@@ -1,0 +1,11 @@
+<div class="bread-crumb">
+	<div class="bread-crumb__container container">
+		{% for breadcrumb in breadcrumbs %}
+			{% if loop.last %}
+				<span class="bread-crumb__item">{{ breadcrumb.text }}</span>
+			{% else %}
+				<a href="{{ breadcrumb.href|default('#') }}" class="bread-crumb__item">{{ breadcrumb.text|trim }}</a>
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>

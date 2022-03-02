@@ -1,0 +1,967 @@
+{% set title = "О компании" %}
+{% set classPage = "about-pg" %}
+{% extends "./includes/layouts/page.twig" %}
+{# ------ BREADCRUMBS ----- #}
+{% block breadcrumbs %}
+{% include "./includes/molecules/breadcrumbs.twig" with {
+		breadcrumbs: [
+			{text: 'Главная',href: "/"},
+			{text: 'О компании'},
+		]
+	} %}
+{% endblock breadcrumbs %}
+{# ------ CONTENT WRAP ----- #}
+{% block content %}
+<main>
+	<div class="section pt-0">
+		<div class="container">
+			<h1 class="section__title title-1">О КОМПАНИИ</h1>
+			<!-- desc item -->
+			<div class="desc-item">
+				<div class="desc-item__row ais">
+					<div class="desc-item__col desc-item__col--text content text">
+						<p>
+							Crystal Web начал работу в ноябре 2017 года. Первые полгода мы работали в коворкинге. У нас
+							был 1 проект, 2 ноутбука, шумные соседи, дешевый кофе 3в1 и булочки с маком. Их вкус мы не
+							забудем никогда.
+						</p>
+						<p>
+							Речи о деньгах вообще никакой не было, было интересно продвинуть сайты в ТОП. Заработало
+							сарафанное радио, и клиенты рекомендовали нас своим знакомым. Потом первый офис, первый
+							сотрудник, и понеслась!
+						</p>
+						<p>
+							Теперь мы обзавелись уютным просторным офисом, командой единомышленников и десятками
+							проектов. Да, теперь мы пьем зерновой кофе, но все также голодны до новых проектов, знаний и
+							позиций в ТОПе. Мы вышли за пределы РБ и реализовали проекты в Европе, США и РФ. За 2020 год
+							мы углубили знания по веб-аналитике и стали Яндекс партнером по контекстной рекламе.
+						</p>
+					</div>
+					<div class="desc-item__col desc-item__col--img">
+						<div class="label-info label-info--pos_top-right label-info--bgc_primary-alpha">
+							<i>Место, откуда всё началось</i>
+						</div>
+						<img src="assets/img/pages/about/nachalo.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			<!-- desc item -->
+			<div class="desc-item desc-item--reverse">
+				<div class="desc-item__row ais">
+					<div class="desc-item__col desc-item__col--text content text">
+						<p>
+							Наше ключевое преимущество в том, что мы на одинаково высоком уровне можем разработать сайт,
+							продвинуть его в поиске, привести целевой платный трафик, переплести это в единую сеть и
+							отследить результат в реальных цифрах. В своей работе мы используем CRM и EPM системы, что
+							позволяет нам прогнозировать результаты и сроки проектов.
+						</p>
+						<p>
+							Crystal Web - не безликий бренд. Команда — наш главный капитал, в который мы постоянно
+							вкладываем ресурсы. Наша цель - стать номер 1 в создании и продвижении сайтов. Crystal Web -
+							это не сайты клиентов, это наши сайты.
+
+						</p>
+						<p>
+							Мы - не аутсорсинговая компания, а отдел интернет-маркетинга на удаленке, потому что вникаем
+							в ваш бизнес и становимся его неотъемлемой частью. <i class="fw-500 color-primary">CWEB –
+								обещаем только то, что можем выполнить!</i>
+						</p>
+					</div>
+					<div class="desc-item__col desc-item__col--img">
+						<div class="label-info label-info--pos_bottom-right label-info--bgc_white-alpha">
+							<i>Наша DreamTeam </i>
+						</div>
+						<img src="assets/img/pages/about/comanda.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- advantages -->
+	<section class="section pt-80 pt-sm-36">
+		<div class="advantages-b__container container">
+			<h2 class="title-1 section__title mb-sm-44" data-aos="zoom-in" data-aos-duration="2500">
+				Преимущества CWEB
+			</h2>
+			<div class="cards-slider-wrap slider-wrap">
+				<!-- slider -->
+				<div class="cards-slider swiper-container">
+					<div class="swiper-wrapper">
+						<!-- card -->
+						<div class="info-card cards-slider__slide swiper-slide">
+							<div class="info-card__ic">
+								<svg>
+									<use xlink:href="assets/img/pages/about/advantages-sprite.svg#pricing"></use>
+								</svg>
+							</div>
+							<div class="info-card__title">Быстрый результат</div>
+							<div class="info-card__text">
+								<p>
+									Настройка рекламной кампании занимает до 7 рабочих дней.
+								</p>
+							</div>
+						</div>
+						<!-- card -->
+						<div class="info-card cards-slider__slide swiper-slide">
+							<div class="info-card__ic">
+								<svg>
+									<use xlink:href="assets/img/pages/about/advantages-sprite.svg#development"></use>
+								</svg>
+							</div>
+							<div class="info-card__title">Первые продажи для молодого сайта</div>
+							<div class="info-card__text">
+								Бизнесу, недавно начавшему свою работу, реклама поможет повысить узнаваемость бренда и
+								принести первые продажи, в то время пока не будут достигнуты первые результаты по
+								SEO-оптимизации.
+							</div>
+						</div>
+						<!-- card -->
+						<div class="info-card cards-slider__slide swiper-slide">
+							<div class="info-card__ic">
+								<svg>
+									<use xlink:href="assets/img/pages/about/advantages-sprite.svg#complexity"></use>
+								</svg>
+							</div>
+							<div class="info-card__title">Точный таргетинг</div>
+							<div class="info-card__text">
+								<p>
+									Вы сами выбираете, кому показывать вашу рекламу: рекламу можно сегментировать по
+									полу, возрасту, географии, интересам и другим настройкам.
+								</p>
+							</div>
+						</div>
+						<!-- card -->
+						<div class="info-card cards-slider__slide swiper-slide">
+							<div class="info-card__ic">
+								<svg width="75" height="75" viewBox="0 0 75 75">
+									<g clip-path="url(#clip0_1235_24)">
+										<path
+											d="M72.0615 38.4926H57.4413C57.2312 36.7091 56.8197 34.9866 56.2293 33.3485H72.2881C73.4969 33.3485 74.4806 32.3757 74.4938 31.1669C74.685 13.7659 60.6387 0 43.6968 0C42.4786 0 41.4909 0.987647 41.4909 2.20588V19.0473C39.8861 18.5234 38.2058 18.169 36.4703 18.0056V9.68823C36.4703 8.47 35.4827 7.48235 34.2644 7.48235C15.6061 7.48235 0.50415 22.5809 0.50415 41.2413C0.50415 59.8987 15.6043 75 34.2644 75C41.7336 75 48.8118 72.6096 54.734 68.0871C55.7083 67.3431 55.8869 65.949 55.1396 64.9835L50.0537 58.4131C51.5646 57.0226 52.8921 55.4362 53.9955 53.694L60.345 61.8972C61.0872 62.856 62.4643 63.0362 63.4283 62.3C70.2174 57.1148 74.168 49.2509 74.2672 40.7241C74.2813 39.496 73.289 38.4926 72.0615 38.4926ZM45.9027 4.50191C58.6112 5.54559 69.1002 15.7396 70.0187 28.9366H54.0884C52.0547 25.6716 49.2386 22.9425 45.9027 21.0153V4.50191ZM50.2413 65.8631C45.4899 68.9613 40.0105 70.5882 34.2644 70.5882C18.0816 70.5882 4.91591 57.4232 4.91591 41.2412C4.91591 25.8009 16.9018 13.1072 32.0586 11.976V18.0053C20.2189 19.12 10.923 29.1146 10.923 41.241C10.923 54.111 21.3934 64.5815 34.2634 64.5815C38.765 64.5815 42.9721 63.2991 46.5412 61.0826L50.2413 65.8631ZM34.2634 60.1697C23.8261 60.1697 15.3347 51.6784 15.3347 41.241C15.3347 30.8035 23.8261 22.3122 34.2634 22.3122C44.7008 22.3122 53.1921 30.8035 53.1921 41.241C53.1921 51.6784 44.7008 60.1697 34.2634 60.1697ZM62.4303 57.3835L56.1708 49.2965C56.9143 47.2809 57.3862 45.1354 57.544 42.9044H69.724C69.1278 48.4722 66.5552 53.5796 62.4303 57.3835Z"
+											fill="#0749AA" />
+										<path
+											d="M36.6321 39.0351H31.8946C30.7651 39.0351 29.8461 38.1161 29.8461 36.9864C29.8461 35.8533 30.7633 34.9379 31.894 34.9379C31.9049 34.938 31.9155 34.938 31.9261 34.938H36.463C37.2724 34.9461 38.073 35.3097 38.6602 35.9364C39.4934 36.8253 40.8892 36.8707 41.7782 36.0375C42.667 35.2044 42.7124 33.8085 41.8793 32.9195C40.4039 31.3453 38.3834 30.5264 36.4692 30.5264V28.6048C36.4692 27.3866 35.4815 26.3989 34.2633 26.3989C33.0451 26.3989 32.0574 27.3866 32.0574 28.6048V30.5264C28.0807 30.5264 25.4343 33.5998 25.4343 36.9866C25.4343 40.5489 28.3324 43.447 31.8946 43.447H36.6321C37.7617 43.447 38.6806 44.366 38.6806 45.4956C38.6806 46.5845 37.8202 47.5441 36.6006 47.5441H31.6507C31.079 47.5382 30.4717 47.332 29.9399 46.9631C28.9389 46.2683 27.5645 46.5172 26.8701 47.5179C26.1756 48.5189 26.424 49.8932 27.4249 50.5878C28.9729 51.6617 30.3883 51.9559 32.0573 51.9559V53.8775C32.0573 55.0957 33.0449 56.0834 34.2632 56.0834C35.4814 56.0834 36.469 55.0957 36.469 53.8775V51.9559C40.4786 51.9559 43.0923 48.8525 43.0923 45.4956C43.0926 41.9332 40.1945 39.0351 36.6321 39.0351Z"
+											fill="#0749AA" />
+									</g>
+									<defs>
+										<clipPath id="clip0_1235_24">
+											<rect width="75" height="75" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+
+							</div>
+							<div class="info-card__title">Возможность управления бюджетом</div>
+							<div class="info-card__text">
+								<p>
+									Вы можете контролировать распределение рекламного бюджета между используемыми
+									инструментами и категориями рекламируемых товаров.
+								</p>
+							</div>
+						</div>
+						<!-- card -->
+						<div class="info-card cards-slider__slide swiper-slide">
+							<div class="info-card__ic">
+								<svg width="75" height="75" viewBox="0 0 75 75">
+									<path
+										d="M60.793 32.518C59.5794 32.518 58.5956 33.5018 58.5956 34.7153V66.9429C58.5956 68.9623 56.9527 70.6051 54.9334 70.6051H8.0569C6.03755 70.6051 4.39467 68.9623 4.39467 66.9429V20.0664C4.39467 18.0471 6.03755 16.4042 8.0569 16.4042H40.2845C41.498 16.4042 42.4818 15.4204 42.4818 14.2069C42.4818 12.9933 41.498 12.0095 40.2845 12.0095H8.0569C3.61432 12.0095 0 15.6238 0 20.0664V66.9429C0 71.3855 3.61432 74.9998 8.0569 74.9998H54.9334C59.376 74.9998 62.9903 71.3855 62.9903 66.9429V34.7153C62.9903 33.5018 62.0065 32.518 60.793 32.518Z"
+										fill="#0749AA" />
+									<path
+										d="M73.5009 5.64269L69.3574 1.49924C67.3586 -0.499747 64.1059 -0.499747 62.1067 1.49924L28.9601 34.6459C28.6534 34.9527 28.4444 35.3433 28.3591 35.7687L26.2873 46.1271C26.1433 46.8476 26.3687 47.5923 26.8883 48.1118C27.3045 48.528 27.8651 48.7554 28.442 48.7554C28.5854 48.7554 28.7296 48.7414 28.8728 48.7128L39.2312 46.641C39.6566 46.5559 40.0473 46.3467 40.3541 46.04L73.5009 12.8935C73.5009 12.8935 73.501 12.8935 73.501 12.8933C75.4999 10.8945 75.4999 7.64182 73.5009 5.64269ZM37.7171 42.4621L31.2432 43.7571L32.5381 37.2831L59.517 10.3038L64.6963 15.4831L37.7171 42.4621ZM70.3934 9.78598L67.8038 12.3756L62.6245 7.19635L65.214 4.60686C65.4996 4.32121 65.9643 4.32106 66.25 4.60672L70.3932 8.75016C70.6791 9.03567 70.6791 9.50047 70.3934 9.78598Z"
+										fill="#0749AA" />
+								</svg>
+							</div>
+							<div class="info-card__title">Быстрое внесение изменений</div>
+							<div class="info-card__text">
+								<p>
+									Есть возможность моментально откорректировать ставки, стратегию и рекламные слова.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="section pt-sm-56">
+		<div class="container">
+			<h2 class="section__title title-1">Руководство cweb</h2>
+			<!-- desc item -->
+			<div class="desc-item">
+				<div class="desc-item__row">
+					<div class="desc-item__col desc-item__col--text content text">
+						<!-- msg-card -->
+						<div class="msg-card">
+							<div class="msg-card__img">
+								<img src="assets/img/components/band/serg-d_ava.png" alt="">
+							</div>
+							<div class="msg-card__text-box">
+								<div class="msg-card__text">
+									<p>
+										Мы - не аутсорсинговая компания, а отдел интернет-маркетинга на удаленке, потому
+										что вникаем в ваш бизнес и становимся его неотъемлемой частью. <span
+											class="color-primar">CWEB– обещаем только то, что можем выполнить!</span>
+									</p>
+								</div>
+								<p class="msg-card__name">Сергей Дешук - директор</p>
+							</div>
+						</div>
+						<!-- msg-card -->
+						<div class="msg-card mt-28 mt-sm-20">
+							<div class="msg-card__img">
+								<img src="assets/img/components/band/katya-d_ava.png" alt="">
+							</div>
+							<div class="msg-card__text-box">
+								<div class="msg-card__text">
+									<p>
+										Мы - не аутсорсинговая компания, а отдел интернет-маркетинга на удаленке, потому
+										что вникаем в ваш бизнес и становимся его неотъемлемой частью.
+										<span class="color-primar">CWEB– обещаем только то, что можем выполнить!</span>
+									</p>
+								</div>
+								<p class="msg-card__name">Екатерина Десятник - директор</p>
+							</div>
+						</div>
+					</div>
+					<div class="desc-item__col desc-item__col--img">
+						<img class="brs-8" src="assets/img/pages/about/guide.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- band -->
+	<section class="band-b section">
+		<div class="band-b__container container">
+			<h2 class="title-1 section__title">наша команда</h2>
+			<div class="band-b__list b-list">
+				<!-- card -->
+				<article class="band-card b-list__col">
+					<div class="band-card__img"
+						style="background-image: url(./assets/img/components/band/serg-d_ava.png)">
+					</div>
+					<h5 class="band-card__name">Сергей Дешук</h5>
+					<p class="band-card__post">Директор</p>
+					<div class="band-card__info flex">
+						<!-- scills -->
+						<div class="band-card__skills">
+							<button class="band-card__skills-btn btn" data-btn-type="toggleClass" type="button"
+								aria-label="Навыки">Skills</button>
+							<div class="band-card__window band-card__window--scills">
+								<ul class="custom-list">
+									<li>Консалтинг по бизнес-процессам</li>
+									<li>Менеджер проектов</li>
+									<li>Специалист по продажам</li>
+									<li>Планирование и контроль работы,
+										разработка и внедрение стратегии по
+										развитию компании</li>
+								</ul>
+							</div>
+						</div>
+						<!-- certificates -->
+						<div class="band-card__certificates">
+							<button class="band-card__certificates-btn btn btn--secondary" data-btn-type="toggleClass"
+								type="button" aria-label="Сертификаты">Сертификаты</button>
+							<div class="band-card__window band-card__window--certificates">
+								<a href="./assets/img/components/band/serg-d_s-1.jpg" data-fslightbox="gallery">
+									<img src="./assets/img/components/band/serg-d_s-1.jpg" alt="">
+								</a>
+								<a href="./assets/img/components/band/serg-d_s-2.jpg" data-fslightbox="gallery">
+									<img src="./assets/img/components/band/serg-d_s-2.jpg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</article>
+				<!-- card -->
+				<article class="band-card b-list__col">
+					<div class="band-card__img"
+						style="background-image: url(./assets/img/components/band/katya-d_ava.png)">
+					</div>
+					<h5 class="band-card__name">Екатерина Десятник</h5>
+					<p class="band-card__post">Зам. директора </p>
+					<div class="band-card__info flex">
+						<!-- scills -->
+						<div class="band-card__skills">
+							<button class="band-card__skills-btn btn" data-btn-type="toggleClass" type="button"
+								aria-label="Навыки">Skills</button>
+							<div class="band-card__window band-card__window--scills">
+								<ul class="custom-list">
+									<li>Web – аналитика</li>
+									<li>Создание стратегии и постановка</li>
+									<li>SEO/PPC задач</li>
+									<li>Полное ведение ключевых проектов по</li>
+									<li>SEO/PPC</li>
+									<li>Консалтинг по вопросам продвижения</li>
+									<li>Настройка таргетированной рекламы</li>
+								</ul>
+							</div>
+						</div>
+						<!-- certificates -->
+						<div class="band-card__certificates">
+							<button class="band-card__certificates-btn btn btn--secondary" data-btn-type="toggleClass"
+								type="button" aria-label="Сертификаты">Сертификаты</button>
+							<div class="band-card__window band-card__window--certificates">
+								<a href="./assets/img/components/band/katya-d_s-1.jpg" data-fslightbox="katya-d">
+									<img src="./assets/img/components/band/katya-d_s-1.jpg" alt="">
+								</a>
+								<a href="./assets/img/components/band/katya-d_s-2.jpg" data-fslightbox="katya-d">
+									<img src="./assets/img/components/band/katya-d_s-2.jpg" alt="">
+								</a>
+								<a href="./assets/img/components/band/katya-d_s-3.jpg" data-fslightbox="katya-d">
+									<img src="./assets/img/components/band/katya-d_s-3.jpg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</article>
+				<!-- card -->
+				<article class="band-card b-list__col">
+					<div class="band-card__img"
+						style="background-image: url(./assets/img/components/band/dima-v_ava.png)">
+					</div>
+					<h5 class="band-card__name">Дмитрий Высоцкий</h5>
+					<p class="band-card__post">Программист/разработчик</p>
+					<div class="band-card__info flex">
+						<!-- scills -->
+						<div class="band-card__skills">
+							<button class="band-card__skills-btn btn" data-btn-type="toggleClass" type="button"
+								aria-label="Навыки">Skills</button>
+							<div class="band-card__window band-card__window--scills">
+								<ul class="custom-list">
+									<li>Специалист по работе с CMS MODx,
+										WordPress и Bitrix</li>
+									<li>Разработка сайтов</li>
+									<li>Оптимизация работы сайтов</li>
+									<li>Установка сайтов на хостинг</li>
+									<li>Техническая поддержка уже
+										готовых сайтов.</li>
+								</ul>
+							</div>
+						</div>
+						<!-- certificates -->
+						<div class="band-card__certificates">
+							<button class="band-card__certificates-btn btn btn--secondary disable"
+								data-btn-type="toggleClass" type="button" aria-label="Сертификаты">Сертификаты</button>
+						</div>
+					</div>
+				</article>
+				<!-- card -->
+				<article class="band-card b-list__col">
+					<div class="band-card__img"
+						style="background-image: url(./assets/img/components/band/natali-b_ava.png)">
+					</div>
+					<h5 class="band-card__name">Наталья Богдан</h5>
+					<p class="band-card__post">Project-менеджер</p>
+					<div class="band-card__info flex">
+						<!-- scills -->
+						<div class="band-card__skills">
+							<button class="band-card__skills-btn btn" data-btn-type="toggleClass" type="button"
+								aria-label="Навыки">Skills</button>
+							<div class="band-card__window band-card__window--scills">
+								<ul class="custom-list">
+									<li>Ведение проектов по разработке, SEO, PPC</li>
+									<li>Контроль работы ключевых специалистов</li>
+									<li>Анализ и контроль сроков выполнения задач</li>
+									<li>Составление документации</li>
+									<li>Общение с заказчиками</li>
+								</ul>
+							</div>
+						</div>
+						<!-- certificates -->
+						<div class="band-card__certificates">
+							<button class="band-card__certificates-btn btn btn--secondary" data-btn-type="toggleClass"
+								type="button" aria-label="Сертификаты">Сертификаты</button>
+							<div class="band-card__window band-card__window--certificates">
+								<a href="./assets/img/components/band/natali-b_s-1.jpg" data-fslightbox="natali-b">
+									<img src="./assets/img/components/band/natali-b_s-1.jpg" alt="">
+								</a>
+								<a href="./assets/img/components/band/natali-b_s-2.jpg" data-fslightbox="natali-b">
+									<img src="./assets/img/components/band/natali-b_s-2.jpg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</article>
+				<!-- card -->
+				<article class="band-card b-list__col">
+					<div class="band-card__img"
+						style="background-image: url(./assets/img/components/band/masha-s_ava.png)">
+					</div>
+					<h5 class="band-card__name">Мария Шиманович</h5>
+					<p class="band-card__post">Web-дизайнер</p>
+					<div class="band-card__info flex">
+						<!-- scills -->
+						<div class="band-card__skills">
+							<button class="band-card__skills-btn btn" data-btn-type="toggleClass" type="button"
+								aria-label="Навыки">Skills</button>
+							<div class="band-card__window band-card__window--scills">
+								<ul class="custom-list">
+									<li>UI/UX дизайн сайтов</li>
+									<li>Дизайн рекламных креативов</li>
+									<li>Оформление и ведение социальных сетей</li>
+									<li>Редизайн сайтов</li>
+									<li>Создание визуалов</li>
+								</ul>
+							</div>
+						</div>
+						<!-- certificates -->
+						<div class="band-card__certificates">
+							<button class="band-card__certificates-btn btn btn--secondary" data-btn-type="toggleClass"
+								type="button" aria-label="Сертификаты">Сертификаты</button>
+							<div class="band-card__window band-card__window--certificates">
+								<a href="./assets/img/components/band/masha-s_s-1.jpg" data-fslightbox="masha-s">
+									<img src="./assets/img/components/band/masha-s_s-1.jpg" alt="">
+								</a>
+								<a href="./assets/img/components/band/masha-s_s-2.jpg" data-fslightbox="masha-s">
+									<img src="./assets/img/components/band/masha-s_s-2.jpg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</article>
+				<!-- card -->
+				<article class="band-card b-list__col">
+					<div class="band-card__img"
+						style="background-image: url(./assets/img/components/band/kostya-l_ava.png)">
+					</div>
+					<h5 class="band-card__name">Константин Ласый</h5>
+					<p class="band-card__post">PPC специалист/WEB аналитик</p>
+					<div class="band-card__info flex">
+						<!-- scills -->
+						<div class="band-card__skills">
+							<button class="band-card__skills-btn btn" data-btn-type="toggleClass" type="button"
+								aria-label="Навыки">Skills</button>
+							<div class="band-card__window band-card__window--scills">
+								<ul class="custom-list">
+									<li>Настройка контекстной рекламы</li>
+									<li>Настройка сквозной аналитики</li>
+									<li>Внедрение систем аналитики,
+										настройка событий и целей</li>
+									<li>Разработка рекламной стратегии</li>
+									<li>Составление отчетности по PPC
+										проектам</li>
+								</ul>
+							</div>
+						</div>
+						<!-- certificates -->
+						<div class="band-card__certificates">
+							<button class="band-card__certificates-btn btn btn--secondary" data-btn-type="toggleClass"
+								type="button" aria-label="Сертификаты">Сертификаты</button>
+							<div class="band-card__window band-card__window--certificates">
+								<a href="./assets/img/components/band/kostya-l_s-1.jpg" data-fslightbox="kostya">
+									<img src="./assets/img/components/band/kostya-l_s-1.jpg" alt="">
+								</a>
+								<a href="./assets/img/components/band/kostya-l_s-2.jpg" data-fslightbox="kostya">
+									<img src="./assets/img/components/band/kostya-l_s-2.jpg" alt="">
+								</a>
+								<a href="./assets/img/components/band/kostya-l_s-3.jpg" data-fslightbox="kostya">
+									<img src="./assets/img/components/band/kostya-l_s-3.jpg" alt="">
+								</a>
+								<a href="./assets/img/components/band/kostya-l_s-4.jpg" data-fslightbox="kostya">
+									<img src="./assets/img/components/band/kostya-l_s-4.jpg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</article>
+				<!-- card -->
+				<article class="band-card b-list__col">
+					<div class="band-card__img"
+						style="background-image: url(./assets/img/components/band/yura-b_ava.png)">
+					</div>
+					<h5 class="band-card__name">Юрий Безруков</h5>
+					<p class="band-card__post">SEO-специалист</p>
+					<div class="band-card__info flex">
+						<!-- scills -->
+						<div class="band-card__skills">
+							<button class="band-card__skills-btn btn" data-btn-type="toggleClass" type="button"
+								aria-label="Навыки">Skills</button>
+							<div class="band-card__window band-card__window--scills">
+								<ul class="custom-list">
+									<li>Разработка стратегии по оптимизации сайта</li>
+									<li>Работа с семантическим ядром</li>
+									<li>Составление ТЗ на написание текстов</li>
+									<li>Работа по внешней и внутренней оптимизации сайта</li>
+									<li>Составление отчетности по SEO</li>
+								</ul>
+							</div>
+						</div>
+						<!-- certificates -->
+						<div class="band-card__certificates">
+							<button class="band-card__certificates-btn btn btn--secondary" data-btn-type="toggleClass"
+								type="button" aria-label="Сертификаты">Сертификаты</button>
+							<div class="band-card__window band-card__window--certificates">
+								<a href="./assets/img/components/band/kostya-l_s-1.jpg" data-fslightbox="kostya">
+									<img src="./assets/img/components/band/yura-b_s-1.jpg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</article>
+				<!-- card -->
+				<article class="band-card b-list__col">
+					<div class="band-card__img"
+						style="background-image: url(./assets/img/components/band/daria-k_ava.png)">
+					</div>
+					<h5 class="band-card__name">Качур Дарья</h5>
+					<p class="band-card__post">Верстальщик</p>
+					<div class="band-card__info flex">
+						<!-- scills -->
+						<div class="band-card__skills">
+							<button class="band-card__skills-btn btn" data-btn-type="toggleClass" type="button"
+								aria-label="Навыки">Skills</button>
+							<div class="band-card__window band-card__window--scills">
+								<ul class="custom-list">
+									<li>Разработка стратегии по оптимизации сайта</li>
+									<li>Работа с семантическим ядром</li>
+									<li>Составление ТЗ на написание текстов</li>
+									<li>Работа по внешней и внутренней оптимизации сайта</li>
+									<li>Составление отчетности по SEO</li>
+								</ul>
+							</div>
+						</div>
+						<!-- certificates -->
+						<div class="band-card__certificates">
+							<button class="band-card__certificates-btn btn btn--secondary disable"
+								data-btn-type="toggleClass" type="button" aria-label="Сертификаты">Сертификаты</button>
+						</div>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+	<!-- Хотите стать частью команды -->
+	<div class="proposal-bar fz-24 fz-lg-20 fz-sm-14">
+		<div class="container">
+			<div class="row-cols gx-60 gy-20 gy-sm-15 justify-content-center">
+				<div class="d-flex align-items-center color-primary text-transform-uppercase">
+					<svg width="1.54em" height="1.54em" viewBox="0 0 37 37">
+						<path
+							d="M14.8364 14.5963C14.4932 14.5963 14.1524 14.4888 13.861 14.2771C13.3455 13.9025 13.0921 13.2796 13.1999 12.6515L13.7516 9.435L11.4146 7.15704C10.9584 6.71225 10.7971 6.05947 10.9941 5.45338C11.191 4.84722 11.7051 4.41384 12.3357 4.32228L15.5653 3.85299L17.0096 0.926518C17.2916 0.354969 17.8628 0 18.5 0C19.1372 0 19.7084 0.354969 19.9904 0.926445L21.4347 3.85291L24.6643 4.32221C25.2949 4.41384 25.809 4.84722 26.0059 5.45331C26.2029 6.0594 26.0417 6.71218 25.5854 7.15697L23.2484 9.43493L23.8001 12.6515C23.9079 13.2795 23.6545 13.9025 23.1389 14.277C22.6233 14.6516 21.9528 14.7 21.3887 14.4036L18.5 12.885L15.6113 14.4037C15.3661 14.5326 15.1005 14.5963 14.8364 14.5963Z"
+							fill="#0749AA" />
+						<path
+							d="M9.06521 17.616C8.82146 17.616 8.57655 17.5572 8.35014 17.4382L6.21549 16.3159L4.08083 17.4382C3.56038 17.7117 2.94149 17.667 2.46584 17.3215C1.99012 16.9758 1.75634 16.4012 1.85577 15.8216L2.2635 13.4446L0.536494 11.7612C0.115474 11.3508 -0.0332485 10.7485 0.148427 10.1893C0.330103 9.63012 0.804382 9.23013 1.38626 9.1455L3.77298 8.7987L4.84027 6.63608C5.10057 6.10876 5.62746 5.78125 6.21549 5.78125C6.80351 5.78125 7.3304 6.10876 7.59063 6.63608L8.65792 8.7987L11.0445 9.1455C11.6265 9.23013 12.1009 9.63012 12.2825 10.1893C12.4641 10.7485 12.3154 11.3508 11.8944 11.7612L10.1675 13.4446L10.5752 15.8215C10.6746 16.4012 10.4409 16.9758 9.96513 17.3215C9.69638 17.5168 9.3818 17.616 9.06521 17.616Z"
+							fill="#0749AA" />
+						<path
+							d="M33.6342 17.616C33.3905 17.616 33.1456 17.5572 32.9192 17.4382L30.7845 16.3159L28.6499 17.4382C28.1294 17.7117 27.5105 17.667 27.0349 17.3215C26.5591 16.9758 26.3254 16.4012 26.4248 15.8216L26.8325 13.4446L25.1056 11.7612C24.6846 11.3508 24.5358 10.7485 24.7175 10.1893C24.8992 9.63012 25.3735 9.23013 25.9554 9.1455L28.3421 8.7987L29.4094 6.63608C29.6696 6.10876 30.1965 5.78125 30.7845 5.78125C31.3725 5.78125 31.8994 6.10876 32.1596 6.63608L33.227 8.7987L35.6136 9.1455C36.1956 9.23013 36.67 9.63012 36.8516 10.1893C37.0332 10.7485 36.8845 11.3508 36.4635 11.7612L34.7366 13.4446L35.1443 15.8215C35.2437 16.4012 35.01 16.9758 34.5342 17.3215C34.2653 17.5168 33.9508 17.616 33.6342 17.616Z"
+							fill="#0749AA" />
+						<path
+							d="M9.3808 29.7119C8.35318 30.6476 6.98816 31.2189 5.49219 31.2189C3.99622 31.2189 2.63119 30.6476 1.60357 29.7119C0.677563 30.3661 0.0722656 31.4441 0.0722656 32.6642V35.9161C0.0722656 36.5148 0.557602 37.0001 1.15625 37.0001H9.82812C10.4268 37.0001 10.9121 36.5148 10.9121 35.9161V32.6642C10.9121 31.4441 10.3068 30.3661 9.3808 29.7119Z"
+							fill="#0749AA" />
+						<path
+							d="M5.49219 29.0508C3.49982 29.0508 1.87891 27.4299 1.87891 25.4375C1.87891 23.4451 3.49982 21.8242 5.49219 21.8242C7.48455 21.8242 9.10547 23.4451 9.10547 25.4375C9.10547 27.4299 7.48455 29.0508 5.49219 29.0508Z"
+							fill="#0749AA" />
+						<path
+							d="M35.3964 29.7119C34.3688 30.6476 33.0038 31.2189 31.5078 31.2189C30.0118 31.2189 28.6468 30.6476 27.6192 29.7119C26.6932 30.3661 26.0879 31.4441 26.0879 32.6642V35.9161C26.0879 36.5148 26.5732 37.0001 27.1719 37.0001H35.8438C36.4424 37.0001 36.9277 36.5148 36.9277 35.9161V32.6642C36.9277 31.4441 36.3224 30.3661 35.3964 29.7119Z"
+							fill="#0749AA" />
+						<path
+							d="M31.5078 29.0508C29.5154 29.0508 27.8945 27.4299 27.8945 25.4375C27.8945 23.4451 29.5154 21.8242 31.5078 21.8242C33.5002 21.8242 35.1211 23.4451 35.1211 25.4375C35.1211 27.4299 33.5002 29.0508 31.5078 29.0508Z"
+							fill="#0749AA" />
+						<path
+							d="M22.3886 29.7119C21.361 30.6476 19.996 31.2189 18.5 31.2189C17.004 31.2189 15.639 30.6476 14.6114 29.7119C13.6854 30.3661 13.0801 31.4441 13.0801 32.6642V35.9161C13.0801 36.5148 13.5654 37.0001 14.1641 37.0001H22.8359C23.4346 37.0001 23.9199 36.5148 23.9199 35.9161V32.6642C23.9199 31.4441 23.3146 30.3661 22.3886 29.7119Z"
+							fill="#0749AA" />
+						<path
+							d="M18.5 29.0508C16.5076 29.0508 14.8867 27.4299 14.8867 25.4375C14.8867 23.4451 16.5076 21.8242 18.5 21.8242C20.4924 21.8242 22.1133 23.4451 22.1133 25.4375C22.1133 27.4299 20.4924 29.0508 18.5 29.0508Z"
+							fill="#0749AA" />
+					</svg>
+					<p class="ml-24">
+						<b>хотите стать частью команды? </b>
+					</p>
+				</div>
+				<a class="btn" href="#">Посмотреть вакансии</a>
+			</div>
+		</div>
+	</div>
+	<!-- images -->
+	<section class="section">
+		<div class="container">
+			<div class="images row gx-sm-15 gy-sm-10">
+				<a class="images__item images__item--big col-5 col-md-7" href="assets/img/pages/about/komanda/img-1.jpg"
+					data-fslightbox="imgages">
+					<img src="assets/img/pages/about/komanda/img-1.jpg" alt="">
+				</a>
+				<a class="images__item col-3 col-md-5 flex-grow-1" href="assets/img/pages/about/komanda/img-2.jpg"
+					data-fslightbox="imgages">
+					<img src="assets/img/pages/about/komanda/img-2.jpg" alt="">
+				</a>
+				<a class="images__item col-3 col-md-6 flex-grow-1" href="assets/img/pages/about/komanda/img-3.jpg"
+					data-fslightbox="imgages">
+					<img src="assets/img/pages/about/komanda/img-3.jpg" alt="">
+				</a>
+				<a class="images__item col-3 col-md-6 flex-grow-1" href="assets/img/pages/about/komanda/img-4.jpg"
+					data-fslightbox="imgages">
+					<img src="assets/img/pages/about/komanda/img-4.jpg" alt="">
+				</a>
+				<a class="images__item col-3 col-md-5 flex-grow-1" href="assets/img/pages/about/komanda/img-5.jpg"
+					data-fslightbox="imgages">
+					<img src="assets/img/pages/about/komanda/img-5.jpg" alt="">
+				</a>
+				<a class="images__item images__item--big col-5 col-md-7" href="assets/img/pages/about/komanda/img-6.jpg"
+					data-fslightbox="imgages">
+					<img src="assets/img/pages/about/komanda/img-6.jpg" alt="">
+				</a>
+			</div>
+			<div class="btns jcc mt-52 mt-sm-36">
+				<a class="btn-section btn" href="#">Посмотреть ещё</a>
+			</div>
+		</div>
+	</section>
+	<!-- reviews slider -->
+	<section class="reviews-slider-b section" data-aos="fade-up">
+		<div class="reviews-slider-b__container container">
+			<h2 class="section__title	title-1" data-aos="zoom-in" data-aos-delay="800">
+				<span>ОТЗЫВЫ</span>
+			</h2>
+		</div>
+		<div class="reviews-slider-wrap slider-wrap">
+			<div class="container">
+				<!-- slider -->
+				<div class="reviews-slider swiper-container">
+					<div class="swiper-wrapper">
+						<!-- slide -->
+						<a href="assets/img/components/reviews-slider/autobiz-o.jpg"
+							class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+							<span class="review-photo__inner">
+								<img class="review-photo__img" src="assets/img/components/reviews-slider/autobiz-o.jpg"
+									alt="">
+
+								<span class="review-photo__bg">
+									<span class="review-photo__zoom loop-zoom">
+										<img src="assets/img/icons/ui/loop.svg" alt="">
+									</span>
+								</span>
+							</span>
+						</a>
+						<!-- slide -->
+						<a href="assets/img/components/reviews-slider/Blessflowers_ru.jpg"
+							class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+							<span class="review-photo__inner">
+								<img class="review-photo__img"
+									src="assets/img/components/reviews-slider/Blessflowers_ru.jpg" alt="">
+								<span class="review-photo__bg">
+									<span class="review-photo__zoom  loop-zoom">
+										<img src="assets/img/icons/ui/loop.svg" alt="">
+									</span>
+								</span>
+							</span>
+						</a>
+						<!-- slide -->
+						<a href="./assets/img/components/reviews-slider/otzyv-360.jpg"
+							class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+							<span class="review-photo__inner">
+								<img class="review-photo__img"
+									src="./assets/img/components/reviews-slider/otzyv-360.jpg" alt="">
+
+								<span class="review-photo__bg">
+									<span class="review-photo__zoom  loop-zoom">
+										<img src="assets/img/icons/ui/loop.svg" alt="">
+									</span>
+								</span>
+							</span>
+						</a>
+						<!-- slide -->
+						<a href="./assets/img/components/reviews-slider/vettorg.jpg"
+							class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+							<span class="review-photo__inner">
+								<img class="review-photo__img" src="./assets/img/components/reviews-slider/vettorg.jpg"
+									alt="">
+
+								<span class="review-photo__bg">
+									<span class="review-photo__zoom  loop-zoom">
+										<img src="assets/img/icons/ui/loop.svg" alt="">
+									</span>
+								</span>
+							</span>
+						</a>
+						<!-- slide -->
+						<a href="assets/img/components/reviews-slider/autobiz-o.jpg"
+							class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+							<span class="review-photo__inner">
+								<img class="review-photo__img" src="assets/img/components/reviews-slider/autobiz-o.jpg"
+									alt="">
+
+								<span class="review-photo__bg">
+									<span class="review-photo__zoom loop-zoom">
+										<img src="assets/img/icons/ui/loop.svg" alt="">
+									</span>
+								</span>
+							</span>
+						</a>
+						<!-- slide -->
+						<a href="assets/img/components/reviews-slider/Blessflowers_ru.jpg"
+							class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+							<span class="review-photo__inner">
+								<img class="review-photo__img"
+									src="assets/img/components/reviews-slider/Blessflowers_ru.jpg" alt="">
+								<span class="review-photo__bg">
+									<span class="review-photo__zoom  loop-zoom">
+										<img src="assets/img/icons/ui/loop.svg" alt="">
+									</span>
+								</span>
+							</span>
+						</a>
+						<!-- slide -->
+						<a href="assets/img/components/reviews-slider/autobiz-o.jpg"
+							class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+							<span class="review-photo__inner">
+								<img class="review-photo__img" src="assets/img/components/reviews-slider/autobiz-o.jpg"
+									alt="">
+
+								<span class="review-photo__bg">
+									<span class="review-photo__zoom loop-zoom">
+										<img src="assets/img/icons/ui/loop.svg" alt="">
+									</span>
+								</span>
+							</span>
+						</a>
+						<!-- slide -->
+						<a href="assets/img/components/reviews-slider/Blessflowers_ru.jpg"
+							class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+							<span class="review-photo__inner">
+								<img class="review-photo__img"
+									src="assets/img/components/reviews-slider/Blessflowers_ru.jpg" alt="">
+								<span class="review-photo__bg">
+									<span class="review-photo__zoom  loop-zoom">
+										<img src="assets/img/icons/ui/loop.svg" alt="">
+									</span>
+								</span>
+							</span>
+						</a>
+						<!-- slide -->
+						<a href="./assets/img/components/reviews-slider/otzyv-360.jpg"
+							class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+							<span class="review-photo__inner">
+								<img class="review-photo__img"
+									src="./assets/img/components/reviews-slider/otzyv-360.jpg" alt="">
+
+								<span class="review-photo__bg">
+									<span class="review-photo__zoom  loop-zoom">
+										<img src="assets/img/icons/ui/loop.svg" alt="">
+									</span>
+								</span>
+							</span>
+						</a>
+						<!-- slide -->
+						<a href="./assets/img/components/reviews-slider/vettorg.jpg"
+							class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+							<span class="review-photo__inner">
+								<img class="review-photo__img" src="./assets/img/components/reviews-slider/vettorg.jpg"
+									alt="">
+
+								<span class="review-photo__bg">
+									<span class="review-photo__zoom  loop-zoom">
+										<img src="assets/img/icons/ui/loop.svg" alt="">
+									</span>
+								</span>
+							</span>
+						</a>
+						<!-- slide -->
+						<a href="assets/img/components/reviews-slider/autobiz-o.jpg"
+							class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+							<span class="review-photo__inner">
+								<img class="review-photo__img" src="assets/img/components/reviews-slider/autobiz-o.jpg"
+									alt="">
+
+								<span class="review-photo__bg">
+									<span class="review-photo__zoom loop-zoom">
+										<img src="assets/img/icons/ui/loop.svg" alt="">
+									</span>
+								</span>
+							</span>
+						</a>
+						<!-- slide -->
+						<a href="assets/img/components/reviews-slider/Blessflowers_ru.jpg"
+							class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+							<span class="review-photo__inner">
+								<img class="review-photo__img"
+									src="assets/img/components/reviews-slider/Blessflowers_ru.jpg" alt="">
+								<span class="review-photo__bg">
+									<span class="review-photo__zoom  loop-zoom">
+										<img src="assets/img/icons/ui/loop.svg" alt="">
+									</span>
+								</span>
+							</span>
+						</a>
+					</div>
+				</div>
+				<div class="btns jcc mt-52 mt-sm-36">
+					<a class="btn-section btn" href="#">все отзывы</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- gallery slider -->
+	<section class="gallery-slider-b section">
+		<div class="gallery-slider-b__container container">
+			<h2 class="title-1 section__title">
+				Наш офис
+			</h2>
+			<div class="gallery-slider-wrap slider-wrap">
+				<!-- slider -->
+				<div class="gallery-slider swiper-container">
+					<div class="swiper-wrapper">
+						<!-- img -->
+						<a class="gallery-slider__slide swiper-slide" data-fslightbox="gallery-office"
+							href="./assets/img/pages/about/gallery/img-1.jpg">
+							<img src="./assets/img/pages/about/gallery/img-1.jpg" alt="">
+						</a>
+						<!-- img -->
+						<a class="gallery-slider__slide swiper-slide" data-fslightbox="gallery-office"
+							href="./assets/img/pages/about/gallery/img-2.jpg">
+							<img src="./assets/img/pages/about/gallery/img-2.jpg" alt="">
+						</a>
+						<!-- img -->
+						<a class="gallery-slider__slide swiper-slide" data-fslightbox="gallery-office"
+							href="./assets/img/pages/about/gallery/img-3.jpg">
+							<img src="./assets/img/pages/about/gallery/img-3.jpg" alt="">
+						</a>
+						<!-- img -->
+						<a class="gallery-slider__slide swiper-slide" data-fslightbox="gallery-office"
+							href="./assets/img/pages/about/gallery/img-4.jpg">
+							<img src="./assets/img/pages/about/gallery/img-4.jpg" alt="">
+						</a>
+						<!-- img -->
+						<a class="gallery-slider__slide swiper-slide" data-fslightbox="gallery-office"
+							href="./assets/img/pages/about/gallery/img-5.jpg">
+							<img src="./assets/img/pages/about/gallery/img-5.jpg" alt="">
+						</a>
+						<!-- img -->
+						<a class="gallery-slider__slide swiper-slide" data-fslightbox="gallery-office"
+							href="./assets/img/pages/about/gallery/img-6.jpg">
+							<img src="./assets/img/pages/about/gallery/img-6.jpg" alt="">
+						</a>
+					</div>
+				</div>
+				<!-- pagination -->
+				<div class="slider-pagination"></div>
+			</div>
+		</div>
+	</section>
+	<!-- gallery slider -->
+	<section class="gallery-slider-b section">
+		<div class="gallery-slider-b__container container">
+			<h2 class="title-1 section__title">
+				Наш инстаграм
+			</h2>
+			<div class="gallery-slider-wrap slider-wrap">
+				<!-- slider -->
+				<div class="gallery-slider gallery-slider--insta" style=" max-width: none;">
+					<div class="gallery-slider__list">
+						<!-- img -->
+						<a class="gallery-slider__slide" data-fslightbox="gallery-insta"
+							href="./assets/img/pages/about/gallery/img-1.jpg">
+							<img src="./assets/img/pages/about/gallery/img-1.jpg" alt="">
+						</a>
+						<!-- img -->
+						<a class="gallery-slider__slide" data-fslightbox="gallery-insta"
+							href="./assets/img/pages/about/gallery/img-2.jpg">
+							<img src="./assets/img/pages/about/gallery/img-2.jpg" alt="">
+						</a>
+						<!-- img -->
+						<a class="gallery-slider__slide" data-fslightbox="gallery-insta"
+							href="./assets/img/pages/about/gallery/img-3.jpg">
+							<img src="./assets/img/pages/about/gallery/img-3.jpg" alt="">
+						</a>
+						<!-- img -->
+						<a class="gallery-slider__slide" data-fslightbox="gallery-insta"
+							href="./assets/img/pages/about/gallery/img-4.jpg">
+							<img src="./assets/img/pages/about/gallery/img-4.jpg" alt="">
+						</a>
+						<!-- img -->
+						<a class="gallery-slider__slide" data-fslightbox="gallery-insta"
+							href="./assets/img/pages/about/gallery/img-5.jpg">
+							<img src="./assets/img/pages/about/gallery/img-5.jpg" alt="">
+						</a>
+						<!-- img -->
+						<a class="gallery-slider__slide" data-fslightbox="gallery-insta"
+							href="./assets/img/pages/about/gallery/img-6.jpg">
+							<img src="./assets/img/pages/about/gallery/img-6.jpg" alt="">
+						</a>
+					</div>
+				</div>
+				<!-- pagination -->
+				<div class="slider-pagination"></div>
+			</div>
+		</div>
+	</section>
+	<!-- contacts -->
+	<div class="section">
+		<div class="container">
+			<div class="contacts">
+				<!-- sect contacts -->
+				<div class="contacts__sect">
+					<div class="contacts__field justify-content-start">
+						<div>
+							<p>ООО «КристаллВеб» УНП 193312909</p>
+							<p>
+								<span class="color-primary">Юридический адрес:</span> <br>
+								220045, г. Минск, проспект Дзержинского дом 125а, 15 этаж, офис 65Б
+							</p>
+						</div>
+					</div>
+					<div class="contacts__field justify-content-start">
+						<div>
+							<p>ООО «КристаллВеб» УНП 193312909</p>
+							<p>
+								<span class="color-primary">Наш офис:</span> <br>
+								220045, г. Минск, проспект Дзержинского дом 125а, 15 этаж, офис 65Б
+							</p>
+						</div>
+					</div>
+					<div class="row-cols-4 row-cols-xs-12 gx-0 gy-0 text-center">
+						<div class="contacts__field">
+							<div class="sci">
+								<a class="sci__link sci__link--tg" href="https://msngr.link/tg/375447310101">
+									<svg>
+										<use href="./assets/img/headerAndFooter/sprite.svg#telegram-ic"></use>
+									</svg>
+								</a>
+								<a class="sci__link sci__link--viber" href="https://msngr.link/vi/375447310101">
+									<svg>
+										<use href="./assets/img/headerAndFooter/sprite.svg#viber-ic"></use>
+									</svg>
+								</a>
+								<a class="sci__link sci__link--wp" href="https://msngr.link/wa/375447310101">
+									<svg>
+										<use href="./assets/img/headerAndFooter/sprite.svg#wp-ic"></use>
+									</svg>
+								</a>
+								<a class="sci__link sci__link--tel f-underline" href="tel:+375447310101">
+									+375&nbsp;44&nbsp;731&nbsp;01&nbsp;01
+								</a>
+							</div>
+						</div>
+						<div class="contacts__field">
+							<a class="firm-info firm-info--mail" href="mailto:info@cweb.by">
+								<svg class="firm-info__ic" width="16" height="12">
+									<use href="./assets/img/headerAndFooter/sprite.svg#mail-ic"></use>
+								</svg>
+								info@cweb.by
+							</a>
+						</div>
+						<div class="contacts__field">
+							<span class="firm-info firm-info--clock">
+								<svg class="firm-info__ic" width="16" height="16">
+									<use href="./assets/img/headerAndFooter/sprite.svg#clock-ic"></use>
+								</svg>
+								пн-пт 09:00 - 17:00
+							</span>
+						</div>
+					</div>
+				</div>
+				<!-- sect contacts -->
+				<div class="contacts__sect contacts__sect--map">
+					<div class="label-info label-info--pos_top-right label-info--bgc_primary-alpha">
+						<i>Как проехать:
+							<a href="https://yandex.by/maps/-/CCU5Q0WZ9A" target="_blank">Yandex</a>
+							<a href="https://goo.gl/maps/fgxLpF53WiStuasv5" target="_blank">Google</a>
+						</i>
+					</div>
+					<iframe src="https://yandex.by/map-widget/v1/-/CCUezHUt0A" frameborder="1"
+						allowfullscreen="true"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>
+{% endblock content %}

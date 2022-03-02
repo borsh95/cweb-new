@@ -1,0 +1,272 @@
+{% set baseClass = class.base|default('header') %}
+{% set resultClass = createBemClass(baseClass, _context.class) %}
+{% set attrss = "" %}
+
+{% if attrs %}
+{% for key, value in attrs  %}
+{% set attrss = " " ~ attrss ~ key ~ "=" ~ value %}
+{% endfor %}
+{% endif %}
+
+<!-- HEADER -->
+<header class="{{ resultClass }}" {{ attrss }}>
+	<div class="header__container container vt-center">
+		<!-- hamburger -->
+		<button class="header__hamburger hamburger for-table" type="button">
+			<span></span>
+		</button>
+		<div class="header__left">
+			<!-- logo -->
+			<a class="header__logo logo" href="#">
+				<img class="logo__ic" src="assets/img/logo-ic.png" alt="логотип">
+				<span class="logo__text">CWEB</span>
+			</a>
+		</div>
+		<div class="header__row">
+			<div class="header__top vt-center">
+				<!-- sci -->
+				<div class="header__sci sci">
+					<a class="sci__link sci__link--tg" href="https://msngr.link/tg/375447310101">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#telegram-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--viber" href="https://msngr.link/vi/375447310101">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#viber-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--wp" href="https://msngr.link/wa/375447310101">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#wp-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--insta" href="https://msngr.link/wa/375447310101">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#insta-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--tel f-underline"
+						href="tel:+375447310101">+375&nbsp;44&nbsp;731&nbsp;01&nbsp;01</a>
+				</div>
+				<!-- firm information -->
+				<div class="header__firm-info-list firm-info-list flex">
+					<a class="firm-info firm-info--mail" href="mailto:info@cweb.by">
+						<svg class="firm-info__ic" width="16" height="12">
+							<use href="./assets/img/headerAndFooter/sprite.svg#mail-ic"></use>
+						</svg>
+						info@cweb.by
+					</a>
+					<a class="firm-info firm-info--clock">
+						<svg class="firm-info__ic" width="16" height="16">
+							<use href="./assets/img/headerAndFooter/sprite.svg#clock-ic"></use>
+						</svg>
+						ПН-ПТ с 10:00 до 17:00
+
+					</a>
+					<a class="firm-info firm-info--loc">
+						<svg class="firm-info__ic" width="12" height="16">
+							<use href="./assets/img/headerAndFooter/sprite.svg#loc-ic"></use>
+						</svg>
+						г. Минск, проспект Дзержинского 125а</a>
+				</div>
+			</div>
+			<div class="header__bottom header__burger">
+				<div class="header__burger-inner">
+					<!-- navigation -->
+					<nav class="header__nav bro-menu">
+						<ul class="menu bro-menu__container">
+							<li class="menu__item menu__item--drop">
+								<button class="menu__item-toggle hamburger" type="button" aria-label="Открыть подменю">
+									<span></span>
+								</button>
+								<a class="menu__link" href="#"><span>УСЛУГИ</span></a>
+								<ul class="menu__submenu">
+									<li class="menu__item active">
+										<a class="menu__link">
+											<span>seo&nbsp;-&nbsp;продвижение</span>
+											<span class="menu__arr">
+												<svg>
+													<use href="./assets/img/headerAndFooter/sprite.svg#menu-drop-arr">
+													</use>
+												</svg>
+											</span>
+										</a>
+										<ul class="menu__submenu">
+											<li class="menu__item active">
+												<span class="menu__link"><span>Продвижение в
+														Яндексе</span></span>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>Продвижение в
+														google</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>комплексное
+														продвижение</span></a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">
+											<span>Разработка сайтов</span>
+											<span class="menu__arr">
+												<svg>
+													<use href="./assets/img/headerAndFooter/sprite.svg#menu-drop-arr">
+													</use>
+												</svg>
+											</span>
+										</a>
+										<ul class="menu__submenu">
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>landing page</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>интернет-магазин</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>сайт на мodx</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>перенос на другую
+														cms</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>сайт услуги</span></a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">
+											<span>Таргетированная реклама</span>
+											<span class="menu__arr">
+												<svg>
+													<use href="./assets/img/headerAndFooter/sprite.svg#menu-drop-arr">
+													</use>
+												</svg>
+											</span>
+										</a>
+										<ul class="menu__submenu">
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>instagram</span></a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">
+											<span>Контекстная реклама</span>
+											<span class="menu__arr">
+												<svg>
+													<use href="./assets/img/headerAndFooter/sprite.svg#menu-drop-arr">
+													</use>
+												</svg>
+											</span>
+										</a>
+										<ul class="menu__submenu">
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>настройка
+														веб-аналитики</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>пополнение рекламнных
+														кабинетов</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>настройка google
+														merchant
+														centre</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>Настройкай яндекс
+														директ</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>настройка google
+														рекламы</span></a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item active">
+								<span class="menu__link"><span>наши работы</span></span>
+							</li>
+							<li class="menu__item active">
+								<span class="menu__link">
+									<span>Cтудия</span>
+									<span class="menu__item-arr">
+										<svg>
+											<use href="./assets/img/headerAndFooter/sprite.svg#arr-down">
+											</use>
+										</svg>
+									</span>
+								</span>
+								<ul class="menu__submenu">
+									<li class="menu__item">
+										<a class="menu__link" href="#"><span>landing page</span></a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#"><span>интернет-магазин</span></a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#"><span>сайт на мodx</span></a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#"><span>перенос на другую
+												cms</span></a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#"><span>сайт услуги</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#"><span>блог</span></a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#"><span>контакты</span></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<a class="header__sci-link sci-link" href="#">
+					<svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_45_316)">
+							<path
+								d="M32.1986 9.54476C32.12 7.81601 31.847 6.63543 31.4479 5.60255C31.0425 4.51887 30.4068 3.53728 29.5854 2.72594C28.7789 1.89973 27.8027 1.26013 26.7252 0.852228C25.698 0.451019 24.5244 0.17669 22.8055 0.0981339C21.0834 0.0188338 20.5332 0 16.1479 0C11.7625 0 11.2123 0.0188338 9.49022 0.0976382C7.77135 0.17669 6.59777 0.451267 5.57054 0.852724C4.49304 1.26038 3.51707 1.89973 2.71036 2.72594C1.88888 3.53703 1.25293 4.51862 0.847358 5.6023C0.448442 6.63543 0.175681 7.81601 0.0975731 9.54451C0.0187262 11.2767 0 11.8298 0 16.2404C0 20.6512 0.0187262 21.2046 0.0975731 22.9366C0.175927 24.6651 0.448935 25.8456 0.848098 26.8788C1.25342 27.9622 1.88912 28.944 2.71061 29.7551C3.51707 30.5813 4.49329 31.2207 5.57078 31.6283C6.59777 32.03 7.7716 32.3044 9.49046 32.3834C11.2128 32.4625 11.7627 32.4811 16.1481 32.4811C20.5335 32.4811 21.0837 32.4625 22.8057 32.3834C24.5246 32.3044 25.6982 32.03 26.7254 31.6283C28.8945 30.7848 30.6091 29.0603 31.4479 26.8788C31.8473 25.8456 32.12 24.6651 32.1986 22.9366C32.277 21.2043 32.2957 20.6512 32.2957 16.2407C32.2957 11.8298 32.277 11.2767 32.1986 9.54476ZM29.2919 22.8035C29.2202 24.387 28.957 25.2469 28.736 25.8191C28.1927 27.2356 27.0797 28.355 25.6713 28.9014C25.1024 29.1237 24.2474 29.3884 22.6729 29.4605C20.9706 29.5388 20.4598 29.5551 16.1479 29.5551C11.8357 29.5551 11.3251 29.5388 9.62253 29.4605C8.0483 29.3884 7.19331 29.1237 6.62413 28.9014C5.92289 28.641 5.28841 28.2259 4.76753 27.6864C4.23112 27.1625 3.81841 26.5246 3.55945 25.8191C3.33843 25.2469 3.07528 24.387 3.00358 22.8035C2.92596 21.0911 2.90945 20.5774 2.90945 16.2409C2.90945 11.9042 2.92596 11.3907 3.00358 9.67808C3.07552 8.09456 3.33843 7.23465 3.55945 6.66245C3.81841 5.95692 4.23137 5.31881 4.76753 4.79493C5.28841 4.25544 5.92289 3.84035 6.62438 3.58015C7.19331 3.35762 8.0483 3.0932 9.62278 3.02084C11.3254 2.94278 11.8362 2.92617 16.1479 2.92617H16.1476C20.4593 2.92617 20.9701 2.94278 22.6729 3.02109C24.2474 3.0932 25.1022 3.35786 25.6713 3.58015C26.3726 3.8406 27.0071 4.25569 27.5279 4.79493C28.0643 5.31881 28.4771 5.95692 28.7358 6.66245C28.957 7.23465 29.2202 8.09456 29.2919 9.67808C29.3695 11.3905 29.386 11.9042 29.386 16.2407C29.386 20.5774 29.3698 21.0908 29.2919 22.8035Z"
+								fill="url(#paint0_linear_45_316)" />
+							<path
+								d="M16.1476 7.90088C11.5681 7.90088 7.85565 11.6349 7.85565 16.2408C7.85565 20.8466 11.5681 24.5804 16.1476 24.5804C20.7274 24.5804 24.4399 20.8466 24.4399 16.2408C24.4399 11.6349 20.7274 7.90088 16.1476 7.90088ZM16.1476 21.6542C13.1751 21.654 10.7651 19.2304 10.7654 16.2405C10.7654 13.2509 13.1751 10.8271 16.1479 10.8271C19.1207 10.8273 21.5304 13.2509 21.5304 16.2405C21.5304 19.2304 19.1204 21.6542 16.1476 21.6542Z"
+								fill="url(#paint1_linear_45_316)" />
+							<path
+								d="M26.7052 7.57161C26.7052 8.64786 25.8377 9.52041 24.7676 9.52041C23.6972 9.52041 22.8297 8.64786 22.8297 7.57161C22.8297 6.49511 23.6972 5.62256 24.7676 5.62256C25.8377 5.62256 26.7052 6.49511 26.7052 7.57161Z"
+								fill="url(#paint2_linear_45_316)" />
+						</g>
+						<defs>
+							<linearGradient id="paint0_linear_45_316" x1="2.7102" y1="29.7553" x2="29.7395" y2="2.8804"
+								gradientUnits="userSpaceOnUse">
+								<stop stop-color="#FFD600" />
+								<stop offset="0.5" stop-color="#FF0100" />
+								<stop offset="1" stop-color="#D800B9" />
+							</linearGradient>
+							<linearGradient id="paint1_linear_45_316" x1="10.2844" y1="22.1378" x2="22.0784"
+								y2="10.4111" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#FF6400" />
+								<stop offset="0.5" stop-color="#FF0100" />
+								<stop offset="1" stop-color="#FD0056" />
+							</linearGradient>
+							<linearGradient id="paint2_linear_45_316" x1="23.3973" y1="8.94952" x2="26.1533"
+								y2="6.20925" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#F30072" />
+								<stop offset="1" stop-color="#E50097" />
+							</linearGradient>
+							<clipPath id="clip0_45_316">
+								<rect width="32.2957" height="32.4813" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</header>

@@ -1,0 +1,201 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~ COMMON BUTTON ~~~~~~~~~~~~~~~~~~~~~~~~~*/
+%base {
+	cursor: pointer;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 16px;
+	text-align: center;
+}
+
+.btn {
+	--height: 50px;
+	--fz: 18px;
+	--colorText: var(--basick-white);
+	--colorTone: var(--color-primary);
+	@extend %base;
+
+	height: var(--height);
+	font-weight: 700;
+	font-size: var(--fz);
+	color: var(--colorText);
+	box-shadow: 0px 0px 10px rgba($color-primary, 0.4);
+	background-color: var(--colorTone);
+	border: 3px solid var(--colorTone);
+	border-radius: calc(var(--height) / 2);
+	transition: all $duration;
+
+	&.active,
+	&:hover {
+		--colorText: var(--color-primary);
+		background-color: transparent;
+	}
+
+	svg {
+		transition: all $duration;
+	}
+
+	&--circ {
+		padding: 0;
+		width: 36px;
+		height: 36px;
+		border-radius: 50%;
+
+		svg,
+		img {
+			width: getPr(18, 36);
+			height: getPr(18, 36);
+		}
+	}
+
+	&--secondary {
+		--colorTone: var(--basick-white);
+		--colorText: var(--color-primary);
+		border-color: var(--colorTone);
+
+		&.active,
+		&:hover {
+			--colorTone: var(--color-primary);
+			--colorText: var(--basick-white);
+			background-color: var(--colorTone);
+
+			svg {
+				fill: #fff;
+			}
+		}
+
+		svg {
+			fill: var(--color-primary);
+		}
+	}
+}
+
+.btn-text {
+	@extend %base;
+	padding: 0;
+	font-weight: 700;
+	color: var(--color-primary);
+	white-space: nowrap;
+	transition: color $duration;
+
+	&--2 {
+		text-decoration: underline;
+
+		&:hover {
+			color: var(--color-primary);
+		}
+	}
+
+	&:hover {
+		color: var(--basick-dark);
+
+		svg {
+			fill: var(--basick-dark);
+		}
+	}
+
+	svg {
+		flex-shrink: 0;
+		display: inline-block;
+		margin-left: getEm(15, 16);
+		width: getEm(19, 16);
+		height: getEm(19, 16);
+		color: var(--basick-white);
+		fill: var(--color-primary);
+		transition: fill $duration, color $duration;
+	}
+}
+
+.btn-arr {
+	--border-color: var(--color-primary);
+	width: 35px;
+	height: 35px;
+	color: var(--basick-white);
+	fill: var(--color-primary);
+	transition: all $duration;
+
+	&:hover {
+		color: var(--color-primary);
+		fill: var(--basick-white);
+	}
+}
+
+.slider-arr {
+	@extend %base;
+
+	padding: 10px;
+	box-sizing: content-box;
+	position: absolute;
+	top: 50%;
+	width: 23px;
+	height: 44px;
+	transform: translateY(-50%);
+
+	&:hover {
+		svg {
+			fill: var(--color-primary);
+		}
+	}
+
+	&--prev {
+		left: -10px;
+	}
+
+	&--next {
+		right: -10px;
+	}
+
+	svg {
+		fill: #c4c5c7;
+		transition: fill $duration;
+	}
+
+	&--circ {
+		box-sizing: border-box;
+		padding: 0;
+		width: 73px;
+		height: 73px;
+		background-color: var(--basick-white);
+		border-radius: 50%;
+		box-shadow: 0px 0px 5px $color-primary;
+		transition: all $duration;
+
+		&.slider-arr--prev svg {
+			margin-left: -5%;
+		}
+
+		&.slider-arr--next svg {
+			margin-left: 5%;
+		}
+
+		&:hover {
+			box-shadow: 0px 0px 10px $color-primary;
+		}
+
+		svg {
+			width: 43%;
+			height: 45%;
+			fill: var(--color-primary);
+		}
+	}
+
+	@include desctop-min {
+		&--circ {
+			width: 60px;
+			height: 60px;
+		}
+	}
+}
+
+.btn-hash {
+	@extend %base;
+	height: 35px;
+	min-width: 143px;
+	background-color: #f1f1f1;
+	border-radius: 100px;
+	transition: background-color $duration;
+
+	&:hover {
+		background-color: darken(#f1f1f1, 7%);
+	}
+}

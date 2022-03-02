@@ -1,0 +1,20 @@
+/*==================== PRODIVISION PAGE ====================*/
+.prodivision-pg {
+	.table-1.services-table {
+		th,
+		td {
+			border-right-width: 30px;
+		}
+
+		@include mobile {
+			th,
+			td {
+				border-right-width: 6px;
+			}
+		}
+
+		@include tel {
+			font-size: 10px;
+		}
+	}
+}

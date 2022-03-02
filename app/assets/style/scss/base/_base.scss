@@ -1,0 +1,168 @@
+html,
+body {
+	height: 100%;
+	font-family: var(--fm-1);
+	font-size: 16px;
+	font-weight: 400;
+	color: var(--color-text);
+	scrollbar-color: var(--scroll-thumb-color) var(--scroll-bar-color); /* «цвет ползунка» «цвет полосы скроллбара» */
+	scrollbar-width: thin; /* толщина */
+}
+
+::-webkit-scrollbar {
+	width: 0.6rem;
+	background-color: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--scroll-thumb-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: var(--scroll-thumb-color-hover);
+}
+
+.body {
+	height: 1px;
+	min-height: 100vh;
+}
+
+.global-wrap {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.content-wrap {
+	padding: 4rem 0 9rem;
+
+	// @include mobile {
+	// 	padding-top: 3rem 0
+	// }
+
+	.bread-crumb + & {
+		padding-top: 16px;
+	}
+
+	@include desctop-min {
+		padding: 3.5rem 0 7rem;
+	}
+
+	@include mobile {
+		padding: 2.5rem 0 5rem;
+	}
+}
+
+.container {
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	max-width: 1170px;
+
+	@include desctop-min {
+		max-width: 1000px;
+	}
+
+	@include table {
+		max-width: 768px;
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
+	@include mobile {
+		padding-right: 10px;
+		padding-left: 10px;
+		max-width: 100%;
+	}
+}
+
+.section {
+	padding: 4rem 0 2rem;
+
+	&__title {
+		margin-bottom: 3.5rem;
+		text-align: center;
+	}
+
+	&__subtitle {
+		margin-bottom: 50px;
+	}
+
+	@include desctop-min {
+		padding: 4.5rem 0 1.5rem;
+	}
+
+	@include table {
+		padding: 3rem 0 1rem;
+
+		&__title {
+			margin-bottom: 3rem;
+		}
+	}
+
+	@include mobile {
+		padding: 2.3rem 0 1rem;
+
+		&__title {
+			margin-bottom: 2.5rem;
+		}
+	}
+}
+
+.title-wrap {
+	padding-top: 30px;
+}
+
+.title {
+	text-transform: uppercase;
+	color: var(--color-primary);
+
+	&--type-2 {
+		text-align: center;
+
+		span {
+			font-weight: 300;
+			color: #333;
+		}
+	}
+}
+
+.title-1 {
+	@extend .title;
+	font: 700 36px /#{(42/36)} var(--fm-1);
+	text-align: center;
+
+	@include desctop-min {
+		font-size: 30px;
+	}
+
+	@include table {
+		text-align: center;
+	}
+
+	@include mobile {
+		font-size: 24px;
+	}
+}
+
+.title-2 {
+	@extend .title;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: (28/24);
+}
+
+.text {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: (30/18);
+
+	@include mobile {
+		font-size: 16px;
+		line-height: (25/16);
+	}
+}
+
+.content {
+}

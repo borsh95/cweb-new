@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="ArtBro">
+	<title>{{ title|length ? title : 'Cweb' }}</title>
+	<!-- swiper -->
+	<link rel="stylesheet" href="./assets/style/css/libraries/swiper-bundle.min.css">
+	<!-- aos -->
+	<link rel="stylesheet" href="./assets/style/css/libraries/aos.css">
+	<!-- twentytwenty -->
+	<link rel="stylesheet" href="./assets/style/css/libraries/twentytwenty-no-compass.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="./assets/style/css/style.css">
+	<link type="text/css" rel="stylesheet"
+		href="https://cweb.bitrix24.by/bitrix/js/crm/site/form/dist/app.bundle.min.css?19033">
+</head>
+
+<body>
+	<div class="global-wrap{{ classPage|length ? ' ' ~ classPage : '' }}">
+		<!-- modal window - application -->
+		<div class="v-modal">
+			<div class="v-modal__inner">
+				<form action="#">
+					<button class="v-modal__close" data-button-type="closeModal" type="button"
+						aria-label="Закрыть окно"></button>
+					<h5 class="title">
+						начать работу :)
+					</h5>
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="text" name="username" placeholder=" ">
+							<div class="b-input__placeholder">Имя <span>*</span></div>
+							<div class="b-input__ic">
+								<svg>
+									<use href="./assets/img/icons/sprite.svg#input-user-ic"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="tel" name="tel" placeholder=" ">
+							<div class="b-input__placeholder">Телефон <span>*</span></div>
+							<div class="b-input__ic">
+								<svg>
+									<use href="./assets/img/icons/sprite.svg#input-tel-ic"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="email" name="emain" placeholder=" ">
+							<div class="b-input__placeholder">E-mail <span>*</span></div>
+							<div class="b-input__ic">
+								<svg>
+									<use href="./assets/img/icons/sprite.svg#input-mail-ic"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="url" name="url-site" placeholder=" ">
+							<div class="b-input__placeholder">Сайт <span style="color: #A9ABAE;">(необязательно)</span>
+							</div>
+							<div class="b-input__ic">
+								<svg>
+									<use href="./assets/img/icons/sprite.svg#input-build-ic"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="b-input">
+						<div class="b-input__input">
+							<textarea name="message" placeholder=" "></textarea>
+							<div class="b-input__placeholder">Сообщение</div>
+						</div>
+					</div>
+					<button class="btn btn--type-2" type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+		{# ------ HEADER ----- #}
+		{% block header %}
+		{% include "../organisms/header.twig" %}
+		{% endblock %}
+		{# ------ BREADCRUMBS ----- #}
+		{% block breadcrumbs %}{% endblock %}
+		<!-- CONTENT WRAP -->
+		<div class="content-wrap">
+			{% block content %}{% endblock %}
+		</div>
+		{# ------ FOOTTER ----- #}
+		{% block footer %}
+		{% include "../organisms/footer.twig" %}
+		{% endblock %}
+
+		{# ------ COMMON ----- #}
+		{% block common %}{% endblock %}
+	</div>
+	{# ------ SCRIPTS ----- #}
+	{% block scripts %}
+	<!-- jquery -->
+	<script src="assets/js/libraries/jquery.min.js"></script>
+	<!-- jquery event move -->
+	<script src="assets/js/libraries/jquery.event.move.js"></script>
+	<!-- twentytwenty -->
+	<script src="assets/js/libraries/jquery.twentytwenty.js"></script>
+	<!-- aos -->
+	<script src="assets/js/libraries/aos.js"></script>
+	<!-- swiper.js -->
+	<script src="assets/js/libraries/swiper-bundle.min.js"></script>
+	<!-- lightbox -->
+	<script src="assets/js/libraries/fslightbox.js"></script>
+	<script src="assets/js/main.js"></script>
+	{% endblock %}
+</body>
+
+</html>

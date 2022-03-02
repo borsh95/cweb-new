@@ -1,0 +1,240 @@
+{% set title = "Отзывы" %}
+{% set classPage = "reviews-pg" %}
+{% extends "./includes/layouts/page.twig" %}
+{# ------ BREADCRUMBS ----- #}
+{% block breadcrumbs %}
+{% include "./includes/molecules/breadcrumbs.twig" with {
+		breadcrumbs: [
+			{text: 'Главная',href: "/"},
+			{text: 'Отзывы'},
+		]
+	} %}
+{% endblock breadcrumbs %}
+{# ------ CONTENT WRAP ----- #}
+{% block content %}
+	<main>
+		<div class="container">
+			<div class="section pt-0">
+				<h1 class="section__title title-1">Отзывы о компании cweb</h1>
+				<div class="desc-item">
+					<div class="desc-item__row align-items-center">
+						<div class="desc-item__col desc-item__col--text content text">
+							<p>
+								Наше ключевое преимущество в том, что мы на одинаково высоком уровне можем разработать сайт, продвинуть его в поиске, привести целевой платный трафик, переплести это в единую сеть и отследить результат в реальных цифрах. В своей работе мы используем CRM и EPM системы, что позволяет нам прогнозировать результаты и сроки проектов.
+							</p>
+							<p>
+								Crystal Web - не безликий бренд. Команда — наш главный капитал, в который мы постоянно вкладываем ресурсы. Наша цель - стать номер 1 в создании и продвижении сайтов. Crystal Web - это не сайты клиентов, это наши сайты.
+							</p>
+							<p>
+								Мы - не аутсорсинговая компания, а отдел интернет-маркетинга на удаленке, потому что вникаем в ваш бизнес и становимся его неотъемлемой частью. 
+								<b class="color-primary"><i>CWEB– обещаем только то, что можем выполнить!</i></b>
+							</p>
+						</div>
+						<div class="desc-item__col desc-item__col--img">
+							<img src="assets/img/pages/reviews/note-img.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<div class="row-cols-6 row-cols-sm-12 gy-20">
+					<!-- review card -->
+					<div class="review-card">
+						<!-- img box  -->
+						<div class="review-card__img-box">
+							<div class="review-card__logo">
+								<img src="assets/img/components/reviews/composit-logo.png" alt="">
+							</div>
+							<a class="review-card__img" href="assets/img/components/reviews/composit-rev@full.jpg" data-fslightbox="reviews">
+								<img src="assets/img/components/reviews/composit-rev.jpg" alt="">
+								<span class="review-card__img-bg">
+									<span class="review-card__img-zoom loop-zoom">
+										<img src="assets/img/icons/ui/loop.svg" alt="">
+									</span>
+								</span>
+							</a>
+						</div>
+						<!-- text box -->
+						<div class="review-card__text-box">
+							<div class="review-card__title">
+								Общество с ограниченной ответственностью
+								«Композит групп производство»
+							</div>
+							<div class="review-card__text">
+								<p>
+									Компания ООО «Композит групп производство» благодарит за многолетнее и плодотворное сотрудничество всех сотрудников ООО «КристаллВеб», которые ответственно и по всем требованиям качества подошли к каждому нашему проекту. Более чем за 2 года сотрудничества были успешно разработаны сайты: ро|агзра.ги, сотрозИ-роо!з.ги и срЁ1.сош в соответствии со всеми нашими пожеланиями. Отдельная благодарность специалистам по 5ЕО продвижению, контекстной, баннерной и таргетированной рекламы за эффективное продвижение каждого проекта в Яндекс, С008]е и социальных сетях.
+								</p>
+							</div>
+							<div class="review-card__btns btns">
+								<a href="$" class="btn-text btn-text--2">Открыть кейс</a>
+							</div>
+						</div>
+						
+					</div>
+					<!-- review card -->
+					<div class="review-card">
+						<!-- img box  -->
+						<div class="review-card__img-box">
+							<div class="review-card__logo">
+								<img src="assets/img/components/reviews/polar-spa-logo.png" alt="">
+							</div>
+							<a class="review-card__img" href="assets/img/components/reviews/polar-spa-rev@full.jpg" data-fslightbox="reviews">
+								<img src="assets/img/components/reviews/polar-spa-rev.jpg" alt="">
+								<span class="review-card__img-bg">
+									<span class="review-card__img-zoom loop-zoom">
+										<img src="assets/img/icons/ui/loop.svg" alt="">
+									</span>
+								</span>
+							</a>
+						</div>
+						<!-- text box -->
+						<div class="review-card__text-box">
+							<div class="review-card__title">
+								Общество с ограниченной ответственностью
+								«Композит хот спа»
+							</div>
+							<div class="review-card__text">
+								<p>
+									Компания ООО «Композит групп производство» благодарит за многолетнее и плодотворное сотрудничество всех сотрудников ООО «КристаллВеб», которые ответственно и по всем требованиям качества подошли к каждому нашему проекту. Более чем за 2 года сотрудничества были успешно разработаны сайты: ро|агзра.ги, сотрозИ-роо!з.ги и срЁ1.сош в соответствии со всеми нашими пожеланиями. Отдельная благодарность специалистам по 5ЕО продвижению, контекстной, баннерной и таргетированной рекламы за эффективное продвижение каждого проекта в Яндекс, С008]е и социальных сетях.
+								</p>
+							</div>
+							<div class="review-card__btns btns">
+								<a href="$" class="btn-text btn-text--2">Открыть кейс</a>
+							</div>
+						</div>
+					</div>
+					<!-- review card -->
+					<div class="review-card">
+						<!-- img box  -->
+						<div class="review-card__img-box">
+							<div class="review-card__logo">
+								<img src="assets/img/components/reviews/composit-logo.png" alt="">
+							</div>
+							<a class="review-card__img" href="assets/img/components/reviews/composit-rev@full.jpg" data-fslightbox="reviews">
+								<img src="assets/img/components/reviews/composit-rev.jpg" alt="">
+								<span class="review-card__img-bg">
+									<span class="review-card__img-zoom loop-zoom">
+										<img src="assets/img/icons/ui/loop.svg" alt="">
+									</span>
+								</span>
+							</a>
+						</div>
+						<!-- text box -->
+						<div class="review-card__text-box">
+							<div class="review-card__title">
+								Общество с ограниченной ответственностью
+								«Композит групп производство»
+							</div>
+							<div class="review-card__text">
+								<p>
+									Компания ООО «Композит групп производство» благодарит за многолетнее и плодотворное сотрудничество всех сотрудников ООО «КристаллВеб», которые ответственно и по всем требованиям качества подошли к каждому нашему проекту. Более чем за 2 года сотрудничества были успешно разработаны сайты: ро|агзра.ги, сотрозИ-роо!з.ги и срЁ1.сош в соответствии со всеми нашими пожеланиями. Отдельная благодарность специалистам по 5ЕО продвижению, контекстной, баннерной и таргетированной рекламы за эффективное продвижение каждого проекта в Яндекс, С008]е и социальных сетях.
+								</p>
+							</div>
+							<div class="review-card__btns btns">
+								<a href="$" class="btn-text btn-text--2">Открыть кейс</a>
+							</div>
+						</div>
+						
+					</div>
+					<!-- review card -->
+					<div class="review-card">
+						<!-- img box  -->
+						<div class="review-card__img-box">
+							<div class="review-card__logo">
+								<img src="assets/img/components/reviews/polar-spa-logo.png" alt="">
+							</div>
+							<a class="review-card__img" href="assets/img/components/reviews/polar-spa-rev@full.jpg" data-fslightbox="reviews">
+								<img src="assets/img/components/reviews/polar-spa-rev.jpg" alt="">
+								<span class="review-card__img-bg">
+									<span class="review-card__img-zoom loop-zoom">
+										<img src="assets/img/icons/ui/loop.svg" alt="">
+									</span>
+								</span>
+							</a>
+						</div>
+						<!-- text box -->
+						<div class="review-card__text-box">
+							<div class="review-card__title">
+								Общество с ограниченной ответственностью
+								«Композит хот спа»
+							</div>
+							<div class="review-card__text">
+								<p>
+									Компания ООО «Композит групп производство» благодарит за многолетнее и плодотворное сотрудничество всех сотрудников ООО «КристаллВеб», которые ответственно и по всем требованиям качества подошли к каждому нашему проекту. Более чем за 2 года сотрудничества были успешно разработаны сайты: ро|агзра.ги, сотрозИ-роо!з.ги и срЁ1.сош в соответствии со всеми нашими пожеланиями. Отдельная благодарность специалистам по 5ЕО продвижению, контекстной, баннерной и таргетированной рекламы за эффективное продвижение каждого проекта в Яндекс, С008]е и социальных сетях.
+								</p>
+							</div>
+							<div class="review-card__btns btns">
+								<a href="$" class="btn-text btn-text--2">Открыть кейс</a>
+							</div>
+						</div>
+					</div>
+					<!-- review card -->
+					<div class="review-card">
+						<!-- img box  -->
+						<div class="review-card__img-box">
+							<div class="review-card__logo">
+								<img src="assets/img/components/reviews/composit-logo.png" alt="">
+							</div>
+							<a class="review-card__img" href="assets/img/components/reviews/composit-rev@full.jpg" data-fslightbox="reviews">
+								<img src="assets/img/components/reviews/composit-rev.jpg" alt="">
+								<span class="review-card__img-bg">
+									<span class="review-card__img-zoom loop-zoom">
+										<img src="assets/img/icons/ui/loop.svg" alt="">
+									</span>
+								</span>
+							</a>
+						</div>
+						<!-- text box -->
+						<div class="review-card__text-box">
+							<div class="review-card__title">
+								Общество с ограниченной ответственностью
+								«Композит групп производство»
+							</div>
+							<div class="review-card__text">
+								<p>
+									Компания ООО «Композит групп производство» благодарит за многолетнее и плодотворное сотрудничество всех сотрудников ООО «КристаллВеб», которые ответственно и по всем требованиям качества подошли к каждому нашему проекту. Более чем за 2 года сотрудничества были успешно разработаны сайты: ро|агзра.ги, сотрозИ-роо!з.ги и срЁ1.сош в соответствии со всеми нашими пожеланиями. Отдельная благодарность специалистам по 5ЕО продвижению, контекстной, баннерной и таргетированной рекламы за эффективное продвижение каждого проекта в Яндекс, С008]е и социальных сетях.
+								</p>
+							</div>
+							<div class="review-card__btns btns">
+								<a href="$" class="btn-text btn-text--2">Открыть кейс</a>
+							</div>
+						</div>
+						
+					</div>
+					<!-- review card -->
+					<div class="review-card">
+						<!-- img box  -->
+						<div class="review-card__img-box">
+							<div class="review-card__logo">
+								<img src="assets/img/components/reviews/polar-spa-logo.png" alt="">
+							</div>
+							<a class="review-card__img" href="assets/img/components/reviews/polar-spa-rev@full.jpg" data-fslightbox="reviews">
+								<img src="assets/img/components/reviews/polar-spa-rev.jpg" alt="">
+								<span class="review-card__img-bg">
+									<span class="review-card__img-zoom loop-zoom">
+										<img src="assets/img/icons/ui/loop.svg" alt="">
+									</span>
+								</span>
+							</a>
+						</div>
+						<!-- text box -->
+						<div class="review-card__text-box">
+							<div class="review-card__title">
+								Общество с ограниченной ответственностью
+								«Композит хот спа»
+							</div>
+							<div class="review-card__text">
+								<p>
+									Компания ООО «Композит групп производство» благодарит за многолетнее и плодотворное сотрудничество всех сотрудников ООО «КристаллВеб», которые ответственно и по всем требованиям качества подошли к каждому нашему проекту. Более чем за 2 года сотрудничества были успешно разработаны сайты: ро|агзра.ги, сотрозИ-роо!з.ги и срЁ1.сош в соответствии со всеми нашими пожеланиями. Отдельная благодарность специалистам по 5ЕО продвижению, контекстной, баннерной и таргетированной рекламы за эффективное продвижение каждого проекта в Яндекс, С008]е и социальных сетях.
+								</p>
+							</div>
+							<div class="review-card__btns btns">
+								<a href="$" class="btn-text btn-text--2">Открыть кейс</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+{% endblock content %}

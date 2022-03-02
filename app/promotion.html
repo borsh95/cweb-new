@@ -1,0 +1,2569 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="ArtBro">
+	<title>Контекстная реклама</title>
+	<!-- swiper -->
+	<link rel="stylesheet" href="./assets/style/css/libraries/swiper-bundle.min.css">
+	<!-- aos -->
+	<link rel="stylesheet" href="./assets/style/css/libraries/aos.css">
+	<!-- twentytwenty -->
+	<link rel="stylesheet" href="./assets/style/css/libraries/twentytwenty-no-compass.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="./assets/style/css/style.css">
+	<link type="text/css" rel="stylesheet"
+		href="https://cweb.bitrix24.by/bitrix/js/crm/site/form/dist/app.bundle.min.css?19033">
+</head>
+
+<body>
+	<div class="global-wrap promotion-pg">
+		<!-- modal window - application -->
+		<div class="v-modal">
+			<div class="v-modal__inner">
+				<form action="#">
+					<button class="v-modal__close" data-button-type="closeModal" type="button"
+						aria-label="Закрыть окно"></button>
+					<h5 class="title">
+						начать работу :)
+					</h5>
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="text" name="username" placeholder=" ">
+							<div class="b-input__placeholder">Имя <span>*</span></div>
+							<div class="b-input__ic">
+								<svg>
+									<use href="./assets/img/icons/sprite.svg#input-user-ic"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="tel" name="tel" placeholder=" ">
+							<div class="b-input__placeholder">Телефон <span>*</span></div>
+							<div class="b-input__ic">
+								<svg>
+									<use href="./assets/img/icons/sprite.svg#input-tel-ic"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="email" name="emain" placeholder=" ">
+							<div class="b-input__placeholder">E-mail <span>*</span></div>
+							<div class="b-input__ic">
+								<svg>
+									<use href="./assets/img/icons/sprite.svg#input-mail-ic"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="url" name="url-site" placeholder=" ">
+							<div class="b-input__placeholder">Сайт <span style="color: #A9ABAE;">(необязательно)</span>
+							</div>
+							<div class="b-input__ic">
+								<svg>
+									<use href="./assets/img/icons/sprite.svg#input-build-ic"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="b-input">
+						<div class="b-input__input">
+							<textarea name="message" placeholder=" "></textarea>
+							<div class="b-input__placeholder">Сообщение</div>
+						</div>
+					</div>
+					<button class="btn btn--type-2" type="submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+		
+				
+
+<!-- HEADER -->
+<header class="header" >
+	<div class="header__container container vt-center">
+		<!-- hamburger -->
+		<button class="header__hamburger hamburger for-table" type="button">
+			<span></span>
+		</button>
+		<div class="header__left">
+			<!-- logo -->
+			<a class="header__logo logo" href="#">
+				<img class="logo__ic" src="assets/img/logo-ic.png" alt="логотип">
+				<span class="logo__text">CWEB</span>
+			</a>
+		</div>
+		<div class="header__row">
+			<div class="header__top vt-center">
+				<!-- sci -->
+				<div class="header__sci sci">
+					<a class="sci__link sci__link--tg" href="https://msngr.link/tg/375447310101">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#telegram-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--viber" href="https://msngr.link/vi/375447310101">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#viber-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--wp" href="https://msngr.link/wa/375447310101">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#wp-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--insta" href="https://msngr.link/wa/375447310101">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#insta-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--tel f-underline"
+						href="tel:+375447310101">+375&nbsp;44&nbsp;731&nbsp;01&nbsp;01</a>
+				</div>
+				<!-- firm information -->
+				<div class="header__firm-info-list firm-info-list flex">
+					<a class="firm-info firm-info--mail" href="mailto:info@cweb.by">
+						<svg class="firm-info__ic" width="16" height="12">
+							<use href="./assets/img/headerAndFooter/sprite.svg#mail-ic"></use>
+						</svg>
+						info@cweb.by
+					</a>
+					<a class="firm-info firm-info--clock">
+						<svg class="firm-info__ic" width="16" height="16">
+							<use href="./assets/img/headerAndFooter/sprite.svg#clock-ic"></use>
+						</svg>
+						ПН-ПТ с 10:00 до 17:00
+
+					</a>
+					<a class="firm-info firm-info--loc">
+						<svg class="firm-info__ic" width="12" height="16">
+							<use href="./assets/img/headerAndFooter/sprite.svg#loc-ic"></use>
+						</svg>
+						г. Минск, проспект Дзержинского 125а</a>
+				</div>
+			</div>
+			<div class="header__bottom header__burger">
+				<div class="header__burger-inner">
+					<!-- navigation -->
+					<nav class="header__nav bro-menu">
+						<ul class="menu bro-menu__container">
+							<li class="menu__item menu__item--drop">
+								<button class="menu__item-toggle hamburger" type="button" aria-label="Открыть подменю">
+									<span></span>
+								</button>
+								<a class="menu__link" href="#"><span>УСЛУГИ</span></a>
+								<ul class="menu__submenu">
+									<li class="menu__item active">
+										<a class="menu__link">
+											<span>seo&nbsp;-&nbsp;продвижение</span>
+											<span class="menu__arr">
+												<svg>
+													<use href="./assets/img/headerAndFooter/sprite.svg#menu-drop-arr">
+													</use>
+												</svg>
+											</span>
+										</a>
+										<ul class="menu__submenu">
+											<li class="menu__item active">
+												<span class="menu__link"><span>Продвижение в
+														Яндексе</span></span>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>Продвижение в
+														google</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>комплексное
+														продвижение</span></a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">
+											<span>Разработка сайтов</span>
+											<span class="menu__arr">
+												<svg>
+													<use href="./assets/img/headerAndFooter/sprite.svg#menu-drop-arr">
+													</use>
+												</svg>
+											</span>
+										</a>
+										<ul class="menu__submenu">
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>landing page</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>интернет-магазин</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>сайт на мodx</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>перенос на другую
+														cms</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>сайт услуги</span></a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">
+											<span>Таргетированная реклама</span>
+											<span class="menu__arr">
+												<svg>
+													<use href="./assets/img/headerAndFooter/sprite.svg#menu-drop-arr">
+													</use>
+												</svg>
+											</span>
+										</a>
+										<ul class="menu__submenu">
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>instagram</span></a>
+											</li>
+										</ul>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#">
+											<span>Контекстная реклама</span>
+											<span class="menu__arr">
+												<svg>
+													<use href="./assets/img/headerAndFooter/sprite.svg#menu-drop-arr">
+													</use>
+												</svg>
+											</span>
+										</a>
+										<ul class="menu__submenu">
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>настройка
+														веб-аналитики</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>пополнение рекламнных
+														кабинетов</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>настройка google
+														merchant
+														centre</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>Настройкай яндекс
+														директ</span></a>
+											</li>
+											<li class="menu__item">
+												<a class="menu__link" href="#"><span>настройка google
+														рекламы</span></a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item active">
+								<span class="menu__link"><span>наши работы</span></span>
+							</li>
+							<li class="menu__item active">
+								<span class="menu__link">
+									<span>Cтудия</span>
+									<span class="menu__item-arr">
+										<svg>
+											<use href="./assets/img/headerAndFooter/sprite.svg#arr-down">
+											</use>
+										</svg>
+									</span>
+								</span>
+								<ul class="menu__submenu">
+									<li class="menu__item">
+										<a class="menu__link" href="#"><span>landing page</span></a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#"><span>интернет-магазин</span></a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#"><span>сайт на мodx</span></a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#"><span>перенос на другую
+												cms</span></a>
+									</li>
+									<li class="menu__item">
+										<a class="menu__link" href="#"><span>сайт услуги</span></a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#"><span>блог</span></a>
+							</li>
+							<li class="menu__item">
+								<a class="menu__link" href="#"><span>контакты</span></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<a class="header__sci-link sci-link" href="#">
+					<svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_45_316)">
+							<path
+								d="M32.1986 9.54476C32.12 7.81601 31.847 6.63543 31.4479 5.60255C31.0425 4.51887 30.4068 3.53728 29.5854 2.72594C28.7789 1.89973 27.8027 1.26013 26.7252 0.852228C25.698 0.451019 24.5244 0.17669 22.8055 0.0981339C21.0834 0.0188338 20.5332 0 16.1479 0C11.7625 0 11.2123 0.0188338 9.49022 0.0976382C7.77135 0.17669 6.59777 0.451267 5.57054 0.852724C4.49304 1.26038 3.51707 1.89973 2.71036 2.72594C1.88888 3.53703 1.25293 4.51862 0.847358 5.6023C0.448442 6.63543 0.175681 7.81601 0.0975731 9.54451C0.0187262 11.2767 0 11.8298 0 16.2404C0 20.6512 0.0187262 21.2046 0.0975731 22.9366C0.175927 24.6651 0.448935 25.8456 0.848098 26.8788C1.25342 27.9622 1.88912 28.944 2.71061 29.7551C3.51707 30.5813 4.49329 31.2207 5.57078 31.6283C6.59777 32.03 7.7716 32.3044 9.49046 32.3834C11.2128 32.4625 11.7627 32.4811 16.1481 32.4811C20.5335 32.4811 21.0837 32.4625 22.8057 32.3834C24.5246 32.3044 25.6982 32.03 26.7254 31.6283C28.8945 30.7848 30.6091 29.0603 31.4479 26.8788C31.8473 25.8456 32.12 24.6651 32.1986 22.9366C32.277 21.2043 32.2957 20.6512 32.2957 16.2407C32.2957 11.8298 32.277 11.2767 32.1986 9.54476ZM29.2919 22.8035C29.2202 24.387 28.957 25.2469 28.736 25.8191C28.1927 27.2356 27.0797 28.355 25.6713 28.9014C25.1024 29.1237 24.2474 29.3884 22.6729 29.4605C20.9706 29.5388 20.4598 29.5551 16.1479 29.5551C11.8357 29.5551 11.3251 29.5388 9.62253 29.4605C8.0483 29.3884 7.19331 29.1237 6.62413 28.9014C5.92289 28.641 5.28841 28.2259 4.76753 27.6864C4.23112 27.1625 3.81841 26.5246 3.55945 25.8191C3.33843 25.2469 3.07528 24.387 3.00358 22.8035C2.92596 21.0911 2.90945 20.5774 2.90945 16.2409C2.90945 11.9042 2.92596 11.3907 3.00358 9.67808C3.07552 8.09456 3.33843 7.23465 3.55945 6.66245C3.81841 5.95692 4.23137 5.31881 4.76753 4.79493C5.28841 4.25544 5.92289 3.84035 6.62438 3.58015C7.19331 3.35762 8.0483 3.0932 9.62278 3.02084C11.3254 2.94278 11.8362 2.92617 16.1479 2.92617H16.1476C20.4593 2.92617 20.9701 2.94278 22.6729 3.02109C24.2474 3.0932 25.1022 3.35786 25.6713 3.58015C26.3726 3.8406 27.0071 4.25569 27.5279 4.79493C28.0643 5.31881 28.4771 5.95692 28.7358 6.66245C28.957 7.23465 29.2202 8.09456 29.2919 9.67808C29.3695 11.3905 29.386 11.9042 29.386 16.2407C29.386 20.5774 29.3698 21.0908 29.2919 22.8035Z"
+								fill="url(#paint0_linear_45_316)" />
+							<path
+								d="M16.1476 7.90088C11.5681 7.90088 7.85565 11.6349 7.85565 16.2408C7.85565 20.8466 11.5681 24.5804 16.1476 24.5804C20.7274 24.5804 24.4399 20.8466 24.4399 16.2408C24.4399 11.6349 20.7274 7.90088 16.1476 7.90088ZM16.1476 21.6542C13.1751 21.654 10.7651 19.2304 10.7654 16.2405C10.7654 13.2509 13.1751 10.8271 16.1479 10.8271C19.1207 10.8273 21.5304 13.2509 21.5304 16.2405C21.5304 19.2304 19.1204 21.6542 16.1476 21.6542Z"
+								fill="url(#paint1_linear_45_316)" />
+							<path
+								d="M26.7052 7.57161C26.7052 8.64786 25.8377 9.52041 24.7676 9.52041C23.6972 9.52041 22.8297 8.64786 22.8297 7.57161C22.8297 6.49511 23.6972 5.62256 24.7676 5.62256C25.8377 5.62256 26.7052 6.49511 26.7052 7.57161Z"
+								fill="url(#paint2_linear_45_316)" />
+						</g>
+						<defs>
+							<linearGradient id="paint0_linear_45_316" x1="2.7102" y1="29.7553" x2="29.7395" y2="2.8804"
+								gradientUnits="userSpaceOnUse">
+								<stop stop-color="#FFD600" />
+								<stop offset="0.5" stop-color="#FF0100" />
+								<stop offset="1" stop-color="#D800B9" />
+							</linearGradient>
+							<linearGradient id="paint1_linear_45_316" x1="10.2844" y1="22.1378" x2="22.0784"
+								y2="10.4111" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#FF6400" />
+								<stop offset="0.5" stop-color="#FF0100" />
+								<stop offset="1" stop-color="#FD0056" />
+							</linearGradient>
+							<linearGradient id="paint2_linear_45_316" x1="23.3973" y1="8.94952" x2="26.1533"
+								y2="6.20925" gradientUnits="userSpaceOnUse">
+								<stop stop-color="#F30072" />
+								<stop offset="1" stop-color="#E50097" />
+							</linearGradient>
+							<clipPath id="clip0_45_316">
+								<rect width="32.2957" height="32.4813" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</header>				
+		
+<div class="bread-crumb">
+	<div class="bread-crumb__container container">
+									<a href="/" class="bread-crumb__item">Главная</a>
+												<span class="bread-crumb__item">Продвижение</span>
+						</div>
+</div>
+		<!-- CONTENT WRAP -->
+		<div class="content-wrap">
+			
+	<main>
+		<!-- main slider -->
+		<section class="main-slider-b">
+			<div class="main-slider-b__container container">
+				<div class="main-slider-wrap">
+					<!-- slider -->
+					<div class="main-slider swiper-container">
+						<div class="swiper-wrapper">
+							<!-- slide -->
+							<div class="main-slider__slide	swiper-slide">
+								<!-- labels -->
+								<div class="main-slider__labels">
+									<div class="main-slider__label">
+										<img src="assets/img/other/yandex-label.jpg" alt="">
+									</div>
+								</div>
+								<div class="main-slider__slide-textBox">
+									<h1>
+										Контекстная реклама в Минске - настройка и ведение
+									</h1>
+									<p class="mt-20 mt-sm-16">
+										При правильной настройке контекстная реклама — отличный инструмент для привлечения клиентов. Мы берем все заботы по ведению рекламной кампании на себя: соберем семантическое ядро, составим тексты, разместим объявления и будем отслеживать статистику.
+									</p>
+									<div class="main-slider__slide-btns flex mt-24">
+										<button class="btn btn--secondary" type="button" data-button-type="openModal">
+											Оставить заявку на контекст
+										</button>
+									</div>
+									<div class="main-slider__slide-textBox-bg"></div>
+								</div>
+								<div class="main-slider__slide-img">
+									<img src="./assets/img/pages/promotion/main-slider/img-1.jpg"
+										alt="Наша команда">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- slider nav -->
+					<div class="main-slider-nav">
+						<div class="slider-arr slider-arr--circ slider-arr--prev">
+							<svg>
+								<use href="./assets/img/icons/sprite.svg#slider-arr_left"></use>
+							</svg>
+						</div>
+						<div class="slider-arr slider-arr--circ slider-arr--next">
+							<svg>
+								<use href="./assets/img/icons/sprite.svg#slider-arr_right"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- services -->
+		<section class="services-b section" data-aos="fade-up" data-aos-duration="2500">
+			<div class="services-b__container container">
+				<h2 class="section__title title-1">Услуги</h2>
+				<!-- bro menu -->
+				<div class="services-menu bro-menu">
+					<ul class="bro-menu__container">
+						<!-- link -->
+						<li class="bro-menu__item">
+							<a class="bro-menu__link">
+								<span>КОНТЕКСТНАЯ РЕКЛАМА В GOOGLE</span>
+							</a>
+							<!-- content -->
+							<ul class="bro-menu__submenu">
+								<li class="bro-menu__item">
+									<div class="services-menu__content">
+										<div class="services-menu__content-bg"
+											style="background-image: url(./assets/img/pages/promotion/services-tabs/google-adv.png)">
+										</div>
+										<p>
+											Компания ООО «Композит групп производство» благодарит за многолетнее
+											и
+											плодотворное сотрудничество всех сотрудников ООО «КристаллВеб»,
+											которые
+											ответственно и по всем требованиям качества подошли к каждому нашему
+											проекту.
+											Более чем за 2 года сотрудничества были успешно разработаны сайты:
+											polarspa.ru,
+											composit-pools.ru и cpf-i.com в соответствии со всеми нашими
+											пожеланиями.
+										</p>
+										<a href="#" class="btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+
+						<li class="bro-menu__item">
+							<a class="bro-menu__link">
+								<span>КОНТЕКСТНАЯ РЕКЛАМА В YANDEX</span>
+							</a>
+							<!-- contet -->
+							<ul class="bro-menu__submenu">
+								<li class="bro-menu__item">
+									<div class="services-menu__content">
+										<div class="services-menu__content-bg"
+											style="background-image: url(./assets/img/pages/promotion/services-tabs/yandex.png)">
+										</div>
+										<p>
+											Компания ООО «Композит групп производство» благодарит за многолетнее
+											и
+											плодотворное сотрудничество всех сотрудников ООО «КристаллВеб»,
+											которые
+											ответственно и по всем требованиям качества подошли к каждому нашему
+											проекту.
+											Более чем за 2 года сотрудничества были успешно разработаны сайты:
+											polarspa.ru,
+											composit-pools.ru и cpf-i.com в соответствии со всеми нашими
+											пожеланиями.
+										</p>
+										<a href="#" class="btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<!-- link -->
+						<li class="bro-menu__item">
+							<a class="bro-menu__link">
+								<span>настройка Google Merchant Center</span>
+							</a>
+							<!-- content -->
+							<ul class="bro-menu__submenu">
+								<li class="bro-menu__item">
+									<div class="services-menu__content">
+										<div class="services-menu__content-bg"
+											style="background-image: url(./assets/img/pages/promotion/services-tabs/calltracking.png);">
+										</div>
+										<p>
+											Компания ООО «Композит групп производство» благодарит за многолетнее
+											и
+											плодотворное сотрудничество всех сотрудников ООО «КристаллВеб»,
+											которые
+											ответственно и по всем требованиям качества подошли к каждому нашему
+											проекту.
+											Более чем за 2 года сотрудничества были успешно разработаны сайты:
+											polarspa.ru,
+											composit-pools.ru и cpf-i.com в соответствии со всеми нашими
+											пожеланиями.
+										</p>
+										<a href="#" class="btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="bro-menu__item">
+							<a class="bro-menu__link">
+								<span>настройка коллтрекинга</span>
+							</a>
+							<ul class="bro-menu__submenu">
+								<li class="bro-menu__item">
+									<div class="services-menu__content">
+										<div class="services-menu__content-bg"
+											style="background-image: url(./assets/img/pages/promotion/services-tabs/calltracking.png)">
+										</div>
+										<p>
+											Компания ООО «Композит групп производство» благодарит за многолетнее
+											и
+											плодотворное сотрудничество всех сотрудников ООО «КристаллВеб»,
+											которые
+											ответственно и по всем требованиям качества подошли к каждому нашему
+											проекту.
+											Более чем за 2 года сотрудничества были успешно разработаны сайты:
+											polarspa.ru,
+											composit-pools.ru и cpf-i.com в соответствии со всеми нашими
+											пожеланиями.
+										</p>
+										<a href="#" class="btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="bro-menu__item">
+							<a class="bro-menu__link">
+								<span>зачисление стредств на рекламные кабинеты</span>
+							</a>
+							<ul class="bro-menu__submenu">
+								<li class="bro-menu__item">
+									<div class="services-menu__content">
+										<div class="services-menu__content-bg"
+											style="background-image: url(./assets/img/pages/promotion/services-tabs/enrollment.png)">
+										</div>
+										<p>
+											Компания ООО «Композит групп производство» благодарит за многолетнее
+											и
+											плодотворное сотрудничество всех сотрудников ООО «КристаллВеб»,
+											которые
+											ответственно и по всем требованиям качества подошли к каждому нашему
+											проекту.
+											Более чем за 2 года сотрудничества были успешно разработаны сайты:
+											polarspa.ru,
+											composit-pools.ru и cpf-i.com в соответствии со всеми нашими
+											пожеланиями.
+										</p>
+										<a href="#" class="btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li class="bro-menu__item">
+							<a class="bro-menu__link">
+								<span>аудит рекламной кампании</span>
+							</a>
+							<ul class="bro-menu__submenu">
+								<li class="bro-menu__item">
+									<div class="services-menu__content">
+										<div class="services-menu__content-bg"
+											style="background-image: url(./assets/img/pages/promotion/services-tabs/audit.png)">
+										</div>
+										<p>
+											Компания ООО «Композит групп производство» благодарит за многолетнее
+											и
+											плодотворное сотрудничество всех сотрудников ООО «КристаллВеб»,
+											которые
+											ответственно и по всем требованиям качества подошли к каждому нашему
+											проекту.
+											Более чем за 2 года сотрудничества были успешно разработаны сайты:
+											polarspa.ru,
+											composit-pools.ru и cpf-i.com в соответствии со всеми нашими
+											пожеланиями.
+										</p>
+										<a href="#" class="btn">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+		<!-- advantages -->
+		<section class="advantages-b section">
+			<div class="advantages-b__container container">
+				<h2 class="title-1 section__title"  data-aos="zoom-in" data-aos-duration="2500">
+					Преимущества контекстной рекламы
+				</h2>
+				<div class="cards-slider-wrap slider-wrap">
+					<!-- slider -->
+					<div class="cards-slider swiper-container">
+						<div class="swiper-wrapper">
+							<!-- card -->
+							<div class="info-card cards-slider__slide swiper-slide">
+								<div class="info-card__ic">
+									<svg width="67" height="67" viewBox="0 0 67 67">
+										<path d="M47.5624 11.7031V7.71875C47.5624 5.85395 46.8217 4.06552 45.503 2.74691C44.1844 1.42829 42.396 0.6875 40.5312 0.6875H35.8437C33.9789 0.6875 32.1905 1.42829 30.8719 2.74691C29.5532 4.06552 28.8124 5.85395 28.8124 7.71875V11.7031C22.9837 13.7532 17.9923 17.6656 14.6093 22.8359C14.44 23.0945 14.3233 23.3838 14.2659 23.6875C14.2084 23.9911 14.2113 24.3031 14.2745 24.6056C14.4019 25.2166 14.7669 25.7519 15.289 26.0938C15.8112 26.4356 16.4477 26.5561 17.0587 26.4286C17.6696 26.3012 18.2049 25.9362 18.5468 25.4141C20.9947 21.6504 24.4721 18.669 28.5654 16.8245C32.6587 14.9801 37.1957 14.3501 41.6366 15.0095C46.0776 15.6689 50.2358 17.59 53.6165 20.5443C56.9973 23.4986 59.4583 27.3618 60.707 31.6743C61.9557 35.9869 61.9394 40.5673 60.6602 44.8709C59.3809 49.1745 56.8925 53.0201 53.4909 55.9503C50.0893 58.8805 45.9176 60.7721 41.472 61.4C37.0265 62.0279 32.4941 61.3657 28.414 59.4922C27.8484 59.2342 27.2034 59.2115 26.621 59.4291C26.0386 59.6467 25.5665 60.0867 25.3085 60.6523C25.0506 61.218 25.0279 61.863 25.2455 62.4454C25.463 63.0277 25.903 63.4998 26.4687 63.7578C29.9279 65.3847 33.6825 66.2893 37.5031 66.4164C41.3237 66.5435 45.1301 65.8905 48.6898 64.4971C52.2495 63.1037 55.4878 60.9993 58.2069 58.3124C60.926 55.6255 63.0688 52.4125 64.5045 48.8696C65.9401 45.3267 66.6385 41.5284 66.5569 37.7065C66.4752 33.8847 65.6154 30.1196 64.0298 26.6413C62.4442 23.1629 60.1662 20.0443 57.3349 17.4759C54.5036 14.9075 51.1784 12.9433 47.5624 11.7031ZM33.4999 10.5078V7.71875C33.4999 7.09715 33.7469 6.50101 34.1864 6.06147C34.626 5.62193 35.2221 5.375 35.8437 5.375H40.5312C41.1528 5.375 41.7489 5.62193 42.1885 6.06147C42.628 6.50101 42.8749 7.09715 42.8749 7.71875V10.4844C41.327 10.213 39.759 10.0719 38.1874 10.0625C36.6153 10.0807 35.0474 10.2297 33.4999 10.5078Z" fill="#0749AA"/>
+										<path d="M51.7344 27.3595C51.3477 26.8766 50.7857 26.5661 50.171 26.4959C49.5563 26.4256 48.9388 26.6013 48.4531 26.9845L41.8672 32.2345C40.7701 31.5282 39.4923 31.1538 38.1875 31.1564C36.7969 31.1564 35.4374 31.5687 34.2812 32.3413C33.1249 33.1139 32.2237 34.2121 31.6915 35.4969C31.1593 36.7817 31.0201 38.1954 31.2914 39.5593C31.5627 40.9233 32.2323 42.1761 33.2157 43.1595C34.199 44.1428 35.4518 44.8125 36.8158 45.0838C38.1797 45.3551 39.5934 45.2158 40.8782 44.6836C42.163 44.1515 43.2612 43.2503 44.0338 42.094C44.8064 40.9377 45.2187 39.5783 45.2187 38.1876C45.2157 37.3878 45.0729 36.5946 44.7969 35.8439L51.3594 30.5939C51.8288 30.2084 52.1303 29.6558 52.2002 29.0524C52.2702 28.4491 52.1031 27.8421 51.7344 27.3595ZM38.1875 40.5314C37.7239 40.5314 37.2708 40.3939 36.8854 40.1364C36.5 39.8788 36.1996 39.5128 36.0222 39.0845C35.8448 38.6563 35.7984 38.185 35.8888 37.7304C35.9792 37.2757 36.2024 36.8581 36.5302 36.5303C36.858 36.2026 37.2756 35.9793 37.7303 35.8889C38.1849 35.7985 38.6561 35.8449 39.0844 36.0223C39.5127 36.1997 39.8787 36.5001 40.1363 36.8855C40.3938 37.2709 40.5312 37.7241 40.5312 38.1876C40.5312 38.8092 40.2843 39.4054 39.8448 39.8449C39.4052 40.2844 38.8091 40.5314 38.1875 40.5314Z" fill="#0749AA"/>
+										<path d="M21.7812 31.1562H7.71875C7.09715 31.1562 6.50101 31.4032 6.06147 31.8427C5.62193 32.2823 5.375 32.8784 5.375 33.5C5.375 34.1216 5.62193 34.7177 6.06147 35.1573C6.50101 35.5968 7.09715 35.8438 7.71875 35.8438H21.7812C22.4029 35.8438 22.999 35.5968 23.4385 35.1573C23.8781 34.7177 24.125 34.1216 24.125 33.5C24.125 32.8784 23.8781 32.2823 23.4385 31.8427C22.999 31.4032 22.4029 31.1562 21.7812 31.1562Z" fill="#0749AA"/>
+										<path d="M21.7812 40.5312H3.03125C2.40965 40.5312 1.81351 40.7782 1.37397 41.2177C0.93443 41.6573 0.6875 42.2534 0.6875 42.875C0.6875 43.4966 0.93443 44.0927 1.37397 44.5323C1.81351 44.9718 2.40965 45.2188 3.03125 45.2188H21.7812C22.4029 45.2188 22.999 44.9718 23.4385 44.5323C23.8781 44.0927 24.125 43.4966 24.125 42.875C24.125 42.2534 23.8781 41.6573 23.4385 41.2177C22.999 40.7782 22.4029 40.5312 21.7812 40.5312Z" fill="#0749AA"/>
+										<path d="M21.7812 49.9062H7.71875C7.09715 49.9062 6.50101 50.1532 6.06147 50.5927C5.62193 51.0323 5.375 51.6284 5.375 52.25C5.375 52.8716 5.62193 53.4677 6.06147 53.9073C6.50101 54.3468 7.09715 54.5938 7.71875 54.5938H21.7812C22.4029 54.5938 22.999 54.3468 23.4385 53.9073C23.8781 53.4677 24.125 52.8716 24.125 52.25C24.125 51.6284 23.8781 51.0323 23.4385 50.5927C22.999 50.1532 22.4029 49.9062 21.7812 49.9062Z" fill="#0749AA"/>
+										</svg>
+								</div>
+								<div class="info-card__title">Быстрый результат</div>
+								<div class="info-card__text">
+									<p>
+										Настройка рекламной кампании занимает до 7 рабочих дней.
+									</p>
+								</div>
+							</div>
+							<!-- card -->
+							<div class="info-card cards-slider__slide swiper-slide">
+								<div class="info-card__ic">
+									<svg width="75" height="75" viewBox="0 0 75 75">
+										<path d="M74.9798 66.3766L73.2384 41.6804C73.05 39.0076 70.8035 36.9141 68.1242 36.9141H47.7729L46.984 22.7137C46.8332 19.9982 44.5846 17.8711 41.8651 17.8711H37.6053V12.8906C37.6053 5.78276 31.8225 0 24.7147 0C17.6068 0 11.8241 5.78276 11.8241 12.8906V17.8711H7.564C4.84452 17.8711 2.59584 19.9982 2.4451 22.7137L0.0127307 66.4964C-0.109584 68.6977 0.689196 70.8785 2.20428 72.48C3.71908 74.0815 5.85233 75 8.05692 75H66.9432C69.1703 75 71.3185 74.0656 72.837 72.4364C74.3553 70.8069 75.1364 68.5983 74.9798 66.3766ZM69.6221 69.4402C68.9219 70.1917 67.9705 70.6055 66.9432 70.6055H39.5272C38.4999 70.6055 37.5485 70.1917 36.8481 69.44C36.1478 68.6884 35.8018 67.7104 35.8742 66.6857L37.6157 41.9893C37.6427 41.6076 37.9635 41.3084 38.3462 41.3084H68.1243C68.5071 41.3084 68.828 41.6076 68.8548 41.9893L70.5962 66.6855C70.6683 67.7105 70.3224 68.6887 69.6221 69.4402ZM16.2186 12.8906C16.2186 8.20591 20.03 4.39453 24.7147 4.39453C29.3994 4.39453 33.2108 8.20591 33.2108 12.8906V17.8711H16.2186V12.8906ZM5.39662 69.4601C4.69774 68.7214 4.34398 67.7555 4.40038 66.7403L6.83275 22.9575C6.85428 22.5696 7.17552 22.2656 7.564 22.2656H11.8239V24.4629C11.8239 25.6764 12.8077 26.6602 14.0212 26.6602C15.2347 26.6602 16.2184 25.6764 16.2184 24.4629V22.2656H33.2106V24.4629C33.2106 25.6764 34.1944 26.6602 35.4079 26.6602C36.6214 26.6602 37.6052 25.6764 37.6052 24.4629V22.2656H41.8649C42.2534 22.2656 42.5746 22.5696 42.5962 22.9575L43.3717 36.9141H38.3461C35.6667 36.9141 33.4203 39.0076 33.2319 41.6804L31.4903 66.3766C31.3866 67.847 31.696 69.3105 32.3558 70.6055H8.05692C7.04003 70.6055 6.09535 70.1987 5.39662 69.4601Z" fill="#0749AA"/>
+										<path d="M59.5863 45.7031C58.3728 45.7031 57.389 46.6869 57.389 47.9004V50.5579C57.389 52.8081 55.5584 54.6387 53.3084 54.6387C51.0583 54.6387 49.2277 52.8081 49.2277 50.5579V47.9004C49.2277 46.6869 48.2439 45.7031 47.0304 45.7031C45.8169 45.7031 44.8331 46.6869 44.8331 47.9004V50.5579C44.8331 55.2312 48.6351 59.0332 53.3084 59.0332C57.9816 59.0332 61.7836 55.2312 61.7836 50.5579V47.9004C61.7836 46.6869 60.7998 45.7031 59.5863 45.7031Z" fill="#0749AA"/>
+									</svg>
+								</div>
+								<div class="info-card__title">Первые продажи для молодого сайта</div>
+								<div class="info-card__text">
+									Бизнесу, недавно начавшему свою работу, реклама поможет повысить узнаваемость бренда и принести первые продажи, в то время пока не будут достигнуты первые результаты по SEO-оптимизации.
+								</div>
+							</div>
+							<!-- card -->
+							<div class="info-card cards-slider__slide swiper-slide">
+								<div class="info-card__ic">
+									<svg width="101" height="101" viewBox="0 0 101 101">
+										<g clip-path="url(#clip0_1235_2)">
+										<path d="M58.0511 23.0078C55.604 22.3371 53.0635 21.997 50.5 21.997C34.7833 21.997 21.9969 34.7834 21.9969 50.5001C21.9969 66.2168 34.7833 79.0032 50.5 79.0032C66.2167 79.0032 79.0031 66.2168 79.0031 50.5001C79.0031 47.9366 78.663 45.3961 77.9923 42.949C77.5315 41.2679 78.5208 39.5315 80.2019 39.0707C81.882 38.6101 83.6193 39.5992 84.0801 41.2803C84.8998 44.271 85.3156 47.373 85.3156 50.5001C85.3156 69.6974 69.6973 85.3157 50.5 85.3157C31.3027 85.3157 15.6844 69.6974 15.6844 50.5001C15.6844 31.3028 31.3027 15.6845 50.5 15.6845C53.6273 15.6845 56.7291 16.1001 59.7198 16.92C61.1218 17.3042 62.0426 18.5758 62.0424 19.9626C62.0424 20.2386 62.0057 20.5191 61.9294 20.7982C61.4688 22.4793 59.7326 23.4692 58.0511 23.0078ZM95.0067 34.0166C93.3352 34.5115 92.3813 36.2674 92.8762 37.939C94.0781 41.9987 94.6875 46.2248 94.6875 50.5001C94.6875 74.8652 74.8651 94.6876 50.5 94.6876C26.1349 94.6876 6.3125 74.8652 6.3125 50.5001C6.3125 26.135 26.1349 6.31261 50.5 6.31261C54.7755 6.31261 59.0016 6.92196 63.0605 8.1237C64.7321 8.61884 66.488 7.66447 66.9829 5.99324C67.0713 5.69438 67.1135 5.39315 67.1135 5.09666C67.1139 3.73455 66.2252 2.47737 64.8525 2.07081C60.2112 0.696655 55.3825 0.00011056 50.5 0.00011056C37.011 0.00011056 24.3292 5.2531 14.791 14.7911C5.25299 24.3295 0 37.0111 0 50.5001C0 63.9891 5.25299 76.6709 14.791 86.2091C24.329 95.7473 37.011 101 50.5 101C63.989 101 76.6706 95.7471 86.209 86.2091C95.747 76.6709 101 63.9891 101 50.5001C101 45.618 100.303 40.7889 98.9291 36.1471C98.4344 34.4756 96.6779 33.5224 95.0067 34.0166ZM50.5 37.8751C50.9642 37.8751 51.4329 37.9007 51.8933 37.9513C53.6269 38.142 55.1851 36.8908 55.3748 35.1582C55.565 33.4254 54.3145 31.8666 52.5817 31.6766C51.8933 31.6009 51.1932 31.5626 50.5 31.5626C40.0577 31.5626 31.5625 40.0578 31.5625 50.5001C31.5625 60.9424 40.0577 69.4376 50.5 69.4376C60.9423 69.4376 69.4375 60.9424 69.4375 50.5001C69.4375 48.7569 68.0245 47.3439 66.2812 47.3439C64.538 47.3439 63.125 48.7569 63.125 50.5001C63.125 57.4616 57.4615 63.1251 50.5 63.1251C43.5385 63.1251 37.875 57.4616 37.875 50.5001C37.875 43.5386 43.5385 37.8751 50.5 37.8751ZM66.6154 29.9216L68.1876 14.1508C68.2598 13.4252 68.581 12.7474 69.0964 12.232L80.4043 0.924497C81.2754 0.0535695 82.573 -0.231085 83.7288 0.195206C84.8842 0.621497 85.6863 1.68121 85.7827 2.90919L86.6793 14.321L98.0909 15.2174C99.3189 15.3138 100.379 16.1159 100.805 17.2713C101.231 18.4269 100.947 19.7249 100.076 20.5958L88.768 31.9033C88.2527 32.4187 87.5747 32.7399 86.8493 32.8121L71.0789 34.3851L52.7319 52.732C52.1154 53.3482 51.3078 53.6563 50.5 53.6563C49.692 53.6563 48.8846 53.3482 48.2683 52.7318C47.0356 51.4992 47.0356 49.5008 48.2683 48.2682L66.6154 29.9216ZM73.1674 27.8331L85.1012 26.6428L90.7696 20.9744L83.4968 20.4031C81.9487 20.2814 80.7191 19.0516 80.5974 17.5037L80.0261 10.2303L74.3573 15.8989L73.1674 27.8331Z" fill="#0749AA"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_1235_2">
+										<rect width="101" height="101" fill="white"/>
+										</clipPath>
+										</defs>
+										</svg>
+								</div>
+								<div class="info-card__title">Точный таргетинг</div>
+								<div class="info-card__text">
+									<p>
+										Вы сами выбираете, кому показывать вашу рекламу: рекламу можно сегментировать по полу, возрасту, географии, интересам и другим настройкам.
+									</p>
+								</div>
+							</div>
+							<!-- card -->
+							<div class="info-card cards-slider__slide swiper-slide">
+								<div class="info-card__ic">
+									<svg width="75" height="75" viewBox="0 0 75 75">
+										<g clip-path="url(#clip0_1235_24)">
+										<path d="M72.0615 38.4926H57.4413C57.2312 36.7091 56.8197 34.9866 56.2293 33.3485H72.2881C73.4969 33.3485 74.4806 32.3757 74.4938 31.1669C74.685 13.7659 60.6387 0 43.6968 0C42.4786 0 41.4909 0.987647 41.4909 2.20588V19.0473C39.8861 18.5234 38.2058 18.169 36.4703 18.0056V9.68823C36.4703 8.47 35.4827 7.48235 34.2644 7.48235C15.6061 7.48235 0.50415 22.5809 0.50415 41.2413C0.50415 59.8987 15.6043 75 34.2644 75C41.7336 75 48.8118 72.6096 54.734 68.0871C55.7083 67.3431 55.8869 65.949 55.1396 64.9835L50.0537 58.4131C51.5646 57.0226 52.8921 55.4362 53.9955 53.694L60.345 61.8972C61.0872 62.856 62.4643 63.0362 63.4283 62.3C70.2174 57.1148 74.168 49.2509 74.2672 40.7241C74.2813 39.496 73.289 38.4926 72.0615 38.4926ZM45.9027 4.50191C58.6112 5.54559 69.1002 15.7396 70.0187 28.9366H54.0884C52.0547 25.6716 49.2386 22.9425 45.9027 21.0153V4.50191ZM50.2413 65.8631C45.4899 68.9613 40.0105 70.5882 34.2644 70.5882C18.0816 70.5882 4.91591 57.4232 4.91591 41.2412C4.91591 25.8009 16.9018 13.1072 32.0586 11.976V18.0053C20.2189 19.12 10.923 29.1146 10.923 41.241C10.923 54.111 21.3934 64.5815 34.2634 64.5815C38.765 64.5815 42.9721 63.2991 46.5412 61.0826L50.2413 65.8631ZM34.2634 60.1697C23.8261 60.1697 15.3347 51.6784 15.3347 41.241C15.3347 30.8035 23.8261 22.3122 34.2634 22.3122C44.7008 22.3122 53.1921 30.8035 53.1921 41.241C53.1921 51.6784 44.7008 60.1697 34.2634 60.1697ZM62.4303 57.3835L56.1708 49.2965C56.9143 47.2809 57.3862 45.1354 57.544 42.9044H69.724C69.1278 48.4722 66.5552 53.5796 62.4303 57.3835Z" fill="#0749AA"/>
+										<path d="M36.6321 39.0351H31.8946C30.7651 39.0351 29.8461 38.1161 29.8461 36.9864C29.8461 35.8533 30.7633 34.9379 31.894 34.9379C31.9049 34.938 31.9155 34.938 31.9261 34.938H36.463C37.2724 34.9461 38.073 35.3097 38.6602 35.9364C39.4934 36.8253 40.8892 36.8707 41.7782 36.0375C42.667 35.2044 42.7124 33.8085 41.8793 32.9195C40.4039 31.3453 38.3834 30.5264 36.4692 30.5264V28.6048C36.4692 27.3866 35.4815 26.3989 34.2633 26.3989C33.0451 26.3989 32.0574 27.3866 32.0574 28.6048V30.5264C28.0807 30.5264 25.4343 33.5998 25.4343 36.9866C25.4343 40.5489 28.3324 43.447 31.8946 43.447H36.6321C37.7617 43.447 38.6806 44.366 38.6806 45.4956C38.6806 46.5845 37.8202 47.5441 36.6006 47.5441H31.6507C31.079 47.5382 30.4717 47.332 29.9399 46.9631C28.9389 46.2683 27.5645 46.5172 26.8701 47.5179C26.1756 48.5189 26.424 49.8932 27.4249 50.5878C28.9729 51.6617 30.3883 51.9559 32.0573 51.9559V53.8775C32.0573 55.0957 33.0449 56.0834 34.2632 56.0834C35.4814 56.0834 36.469 55.0957 36.469 53.8775V51.9559C40.4786 51.9559 43.0923 48.8525 43.0923 45.4956C43.0926 41.9332 40.1945 39.0351 36.6321 39.0351Z" fill="#0749AA"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_1235_24">
+										<rect width="75" height="75" fill="white"/>
+										</clipPath>
+										</defs>
+										</svg>
+
+								</div>
+								<div class="info-card__title">Возможность управления бюджетом</div>
+								<div class="info-card__text">
+									<p>
+										Вы можете контролировать распределение рекламного бюджета между используемыми инструментами и категориями рекламируемых товаров.
+									</p>
+								</div>
+							</div>
+							<!-- card -->
+							<div class="info-card cards-slider__slide swiper-slide">
+								<div class="info-card__ic">
+									<svg width="75" height="75" viewBox="0 0 75 75">
+										<path d="M60.793 32.518C59.5794 32.518 58.5956 33.5018 58.5956 34.7153V66.9429C58.5956 68.9623 56.9527 70.6051 54.9334 70.6051H8.0569C6.03755 70.6051 4.39467 68.9623 4.39467 66.9429V20.0664C4.39467 18.0471 6.03755 16.4042 8.0569 16.4042H40.2845C41.498 16.4042 42.4818 15.4204 42.4818 14.2069C42.4818 12.9933 41.498 12.0095 40.2845 12.0095H8.0569C3.61432 12.0095 0 15.6238 0 20.0664V66.9429C0 71.3855 3.61432 74.9998 8.0569 74.9998H54.9334C59.376 74.9998 62.9903 71.3855 62.9903 66.9429V34.7153C62.9903 33.5018 62.0065 32.518 60.793 32.518Z" fill="#0749AA"/>
+										<path d="M73.5009 5.64269L69.3574 1.49924C67.3586 -0.499747 64.1059 -0.499747 62.1067 1.49924L28.9601 34.6459C28.6534 34.9527 28.4444 35.3433 28.3591 35.7687L26.2873 46.1271C26.1433 46.8476 26.3687 47.5923 26.8883 48.1118C27.3045 48.528 27.8651 48.7554 28.442 48.7554C28.5854 48.7554 28.7296 48.7414 28.8728 48.7128L39.2312 46.641C39.6566 46.5559 40.0473 46.3467 40.3541 46.04L73.5009 12.8935C73.5009 12.8935 73.501 12.8935 73.501 12.8933C75.4999 10.8945 75.4999 7.64182 73.5009 5.64269ZM37.7171 42.4621L31.2432 43.7571L32.5381 37.2831L59.517 10.3038L64.6963 15.4831L37.7171 42.4621ZM70.3934 9.78598L67.8038 12.3756L62.6245 7.19635L65.214 4.60686C65.4996 4.32121 65.9643 4.32106 66.25 4.60672L70.3932 8.75016C70.6791 9.03567 70.6791 9.50047 70.3934 9.78598Z" fill="#0749AA"/>
+									</svg>
+								</div>
+								<div class="info-card__title">Быстрое внесение изменений</div>
+								<div class="info-card__text">
+									<p>
+										Есть возможность моментально откорректировать ставки, стратегию и рекламные слова.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- stages -->
+		<section class="stages-b">
+			<div class="stages-b__container container">
+				<h2 class="title-1"  data-aos="zoom-in" data-aos-duration="2500">этапы продвижения сайта</h2>
+				<!-- accardion -->
+				<div class="stages-b__accardion accardion">
+					<!-- accardion item -->
+					<div class="accardion__item open">
+						<!-- accardion header -->
+						<div class="accardion__item-header">
+							<span class="accardion__item-num">1</span>
+							<span>
+								Анализируем ваш бизнес и выбираем стратегию
+							</span>
+						</div>
+						<!-- accardion dropdown -->
+						<div class="accardion__item-drop">
+							<div class="accardion__item-content">
+								<p>
+									Определяем цели, КРI, выбираем инструменты контекстной рекламы,
+									согласовываем
+									бюджет.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- accardion item -->
+					<div class="accardion__item">
+						<!-- accardion header -->
+						<div class="accardion__item-header">
+							<span class="accardion__item-num">2</span>
+							<span>
+								Настраиваем аналитику
+							</span>
+						</div>
+						<!-- accardion dropdown -->
+						<div class="accardion__item-drop">
+							<div class="accardion__item-content">
+								<p>
+									Поверяем или настраиваем счетчики Яндекс.Метрики и Google Analytics,
+									устанавливаем системы колл-трекинга.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- accardion item -->
+					<div class="accardion__item">
+						<!-- accardion header -->
+						<div class="accardion__item-header">
+							<span class="accardion__item-num">3</span>
+							<span>
+								Создаем объявления и запускаем рекламу
+							</span>
+						</div>
+						<!-- accardion dropdown -->
+						<div class="accardion__item-drop">
+							<div class="accardion__item-content">
+								<p>
+									Собираем максимальный пул ключевых слов, проводим детальную минусовку не
+									целевых запросов. Согласовываем список с вами. Под каждое ключевое слово
+									составляем отдельное объявление и отдельно согласовываем. Подготавливаем
+									кампании и загружаем в личный кабинет. После настройки параметров кампаний,
+									создания виртуальных визиток, дополнительных ссылок, уточнений и
+									корректировки ставок, отправляем кампанию на модерацию.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- accardion item -->
+					<div class="accardion__item">
+						<!-- accardion header -->
+						<div class="accardion__item-header">
+							<span class="accardion__item-num">4</span>
+							<span>
+								Анализируем и корректируем РК
+							</span>
+						</div>
+						<!-- accardion dropdown -->
+						<div class="accardion__item-drop">
+							<div class="accardion__item-content">
+								<p>
+									В первые месяц проводим еженедельный анализ поисковых запросов, выявляем
+									новые минус-слова. В дальнейшем проделываем эту работу один-два раза в
+									месяц. Проводим работу над повышением CTR и других показателей.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- accardion item -->
+					<div class="accardion__item">
+						<!-- accardion header -->
+						<div class="accardion__item-header">
+							<span class="accardion__item-num">5</span>
+							<span>
+								Постоянно улучшаем рекламную кампанию
+							</span>
+						</div>
+						<!-- accardion dropdown -->
+						<div class="accardion__item-drop">
+							<div class="accardion__item-content">
+								<p>
+									Еженедельно аналитическая группа проводит детальный пост-клик анализ
+									кампаний, пересматривает и корректирует стратегию, и на основе данных
+									колл-трекинга вносит изменения в рекламную кампанию.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- accardion item -->
+					<div class="accardion__item">
+						<!-- accardion header -->
+						<div class="accardion__item-header">
+							<span class="accardion__item-num">6</span>
+							<span>Предоставляем отчеты</span>
+						</div>
+						<!-- accardion dropdown -->
+						<div class="accardion__item-drop">
+							<div class="accardion__item-content">
+								<p>
+									В конце месяца подготавливаем отчет о распределении бюджета и достигнутых
+									показателях, а также даем рекомендации и согласовываем план на следующий
+									месяц. Предоставляем доступы во все рекламные кабинеты, чтобы вы могли
+									видеть кампании в реальном времени.
+
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- band slider -->
+		<section class="band-slider-b section" data-aos="fade-up" data-aos-duration="2500">
+			<div class="band-slider-b__container container">
+				<h2 class="section__title title-1">
+					<span>НАША КОМАНДА</span>
+				</h2>
+				<!-- slider wrap -->
+				<div class="band-slider-wrap slider-wrap">
+					<!-- slider -->
+					<div class="band-slider swiper-container">
+						<div class="swiper-wrapper">
+							<!-- slide -->
+							<div class="band-slider__slide swiper-slide">
+								<article class="band-card">
+									<div class="band-card__img"
+										style="background-image: url(./assets/img/components/band/serg-d_ava.png)">
+									</div>
+									<h5 class="band-card__name">Сергей Дешук</h5>
+									<p class="band-card__post">Директор</p>
+									<div class="band-card__info flex">
+										<!-- scills -->
+										<div class="band-card__skills">
+											<button class="band-card__skills-btn btn" data-btn-type="toggleClass"
+												type="button" aria-label="Навыки">Skills</button>
+											<div class="band-card__window band-card__window--scills">
+												<ul class="custom-list">
+													<li>Консалтинг по бизнес-процессам</li>
+													<li>Менеджер проектов</li>
+													<li>Специалист по продажам</li>
+													<li>Планирование и контроль работы,
+														разработка и внедрение стратегии по
+														развитию компании</li>
+												</ul>
+											</div>
+										</div>
+										<!-- certificates -->
+										<div class="band-card__certificates">
+											<button class="band-card__certificates-btn btn btn--secondary"
+												data-btn-type="toggleClass" type="button"
+												aria-label="Сертификаты">Сертификаты</button>
+											<div class="band-card__window band-card__window--certificates">
+												<a href="./assets/img/components/band/serg-d_s-1.jpg"
+													data-fslightbox="gallery">
+													<img src="./assets/img/components/band/serg-d_s-1.jpg" alt="">
+												</a>
+												<a href="./assets/img/components/band/serg-d_s-2.jpg"
+													data-fslightbox="gallery">
+													<img src="./assets/img/components/band/serg-d_s-2.jpg" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+							<!-- slide -->
+							<div class="band-slider__slide swiper-slide">
+								<article class="band-card">
+									<div class="band-card__img"
+										style="background-image: url(./assets/img/components/band/katya-d_ava.png)">
+									</div>
+									<h5 class="band-card__name">Екатерина Десятник</h5>
+									<p class="band-card__post">Зам. директора </p>
+									<div class="band-card__info flex">
+										<!-- scills -->
+										<div class="band-card__skills">
+											<button class="band-card__skills-btn btn" data-btn-type="toggleClass"
+												type="button" aria-label="Навыки">Skills</button>
+											<div class="band-card__window band-card__window--scills">
+												<ul class="custom-list">
+													<li>Web – аналитика</li>
+													<li>Создание стратегии и постановка</li>
+													<li>SEO/PPC задач</li>
+													<li>Полное ведение ключевых проектов по</li>
+													<li>SEO/PPC</li>
+													<li>Консалтинг по вопросам продвижения</li>
+													<li>Настройка таргетированной рекламы</li>
+												</ul>
+											</div>
+										</div>
+										<!-- certificates -->
+										<div class="band-card__certificates">
+											<button class="band-card__certificates-btn btn btn--secondary"
+												data-btn-type="toggleClass" type="button"
+												aria-label="Сертификаты">Сертификаты</button>
+											<div class="band-card__window band-card__window--certificates">
+												<a href="./assets/img/components/band/katya-d_s-1.jpg"
+													data-fslightbox="katya-d">
+													<img src="./assets/img/components/band/katya-d_s-1.jpg" alt="">
+												</a>
+												<a href="./assets/img/components/band/katya-d_s-2.jpg"
+													data-fslightbox="katya-d">
+													<img src="./assets/img/components/band/katya-d_s-2.jpg" alt="">
+												</a>
+												<a href="./assets/img/components/band/katya-d_s-3.jpg"
+													data-fslightbox="katya-d">
+													<img src="./assets/img/components/band/katya-d_s-3.jpg" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+							<!-- slide -->
+							<div class="band-slider__slide swiper-slide">
+								<article class="band-card">
+									<div class="band-card__img"
+										style="background-image: url(./assets/img/components/band/natali-b_ava.png)">
+									</div>
+									<h5 class="band-card__name">Наталья Богдан</h5>
+									<p class="band-card__post">Project-менеджер</p>
+									<div class="band-card__info flex">
+										<!-- scills -->
+										<div class="band-card__skills">
+											<button class="band-card__skills-btn btn" data-btn-type="toggleClass"
+												type="button" aria-label="Навыки">Skills</button>
+											<div class="band-card__window band-card__window--scills">
+												<ul class="custom-list">
+													<li>Ведение проектов по разработке, SEO, PPC</li>
+													<li>Контроль работы ключевых специалистов</li>
+													<li>Анализ и контроль сроков выполнения задач</li>
+													<li>Составление документации</li>
+													<li>Общение с заказчиками</li>
+												</ul>
+											</div>
+										</div>
+										<!-- certificates -->
+										<div class="band-card__certificates">
+											<button class="band-card__certificates-btn btn btn--secondary"
+												data-btn-type="toggleClass" type="button"
+												aria-label="Сертификаты">Сертификаты</button>
+											<div class="band-card__window band-card__window--certificates">
+												<a href="./assets/img/components/band/natali-b_s-1.jpg"
+													data-fslightbox="natali-b">
+													<img src="./assets/img/components/band/natali-b_s-1.jpg" alt="">
+												</a>
+												<a href="./assets/img/components/band/natali-b_s-2.jpg"
+													data-fslightbox="natali-b">
+													<img src="./assets/img/components/band/natali-b_s-2.jpg" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+							<!-- slide -->
+							<div class="band-slider__slide swiper-slide">
+								<article class="band-card">
+									<div class="band-card__img"
+										style="background-image: url(./assets/img/components/band/masha-s_ava.png)">
+									</div>
+									<h5 class="band-card__name">Мария Шиманович</h5>
+									<p class="band-card__post">Web-дизайнер</p>
+									<div class="band-card__info flex">
+										<!-- scills -->
+										<div class="band-card__skills">
+											<button class="band-card__skills-btn btn" data-btn-type="toggleClass"
+												type="button" aria-label="Навыки">Skills</button>
+											<div class="band-card__window band-card__window--scills">
+												<ul class="custom-list">
+													<li>UI/UX дизайн сайтов</li>
+													<li>Дизайн рекламных креативов</li>
+													<li>Оформление и ведение социальных сетей</li>
+													<li>Редизайн сайтов</li>
+													<li>Создание визуалов</li>
+												</ul>
+											</div>
+										</div>
+										<!-- certificates -->
+										<div class="band-card__certificates">
+											<button class="band-card__certificates-btn btn btn--secondary"
+												data-btn-type="toggleClass" type="button"
+												aria-label="Сертификаты">Сертификаты</button>
+											<div class="band-card__window band-card__window--certificates">
+												<a href="./assets/img/components/band/masha-s_s-1.jpg"
+													data-fslightbox="masha-s">
+													<img src="./assets/img/components/band/masha-s_s-1.jpg" alt="">
+												</a>
+												<a href="./assets/img/components/band/masha-s_s-2.jpg"
+													data-fslightbox="masha-s">
+													<img src="./assets/img/components/band/masha-s_s-2.jpg" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+							<!-- slide -->
+							<div class="band-slider__slide swiper-slide">
+								<article class="band-card">
+									<div class="band-card__img"
+										style="background-image: url(./assets/img/components/band/kostya-l_ava.png)">
+									</div>
+									<h5 class="band-card__name">Контантин Ласый</h5>
+									<p class="band-card__post">PPC специалист/WEB аналитик</p>
+									<div class="band-card__info flex">
+										<!-- scills -->
+										<div class="band-card__skills">
+											<button class="band-card__skills-btn btn" data-btn-type="toggleClass"
+												type="button" aria-label="Навыки">Skills</button>
+											<div class="band-card__window band-card__window--scills">
+												<ul class="custom-list">
+													<li>Настройка контекстной рекламы</li>
+													<li>Настройка сквозной аналитики</li>
+													<li>Внедрение систем аналитики,
+														настройка событий и целей</li>
+													<li>Разработка рекламной стратегии</li>
+													<li>Составление отчетности по PPC
+														проектам</li>
+												</ul>
+											</div>
+										</div>
+										<!-- certificates -->
+										<div class="band-card__certificates">
+											<button class="band-card__certificates-btn btn btn--secondary"
+												data-btn-type="toggleClass" type="button"
+												aria-label="Сертификаты">Сертификаты</button>
+											<div class="band-card__window band-card__window--certificates">
+												<a href="./assets/img/components/band/kostya-l_s-1.jpg"
+													data-fslightbox="kostya">
+													<img src="./assets/img/components/band/kostya-l_s-1.jpg" alt="">
+												</a>
+												<a href="./assets/img/components/band/kostya-l_s-2.jpg"
+													data-fslightbox="kostya">
+													<img src="./assets/img/components/band/kostya-l_s-2.jpg" alt="">
+												</a>
+												<a href="./assets/img/components/band/kostya-l_s-3.jpg"
+													data-fslightbox="kostya">
+													<img src="./assets/img/components/band/kostya-l_s-3.jpg" alt="">
+												</a>
+												<a href="./assets/img/components/band/kostya-l_s-4.jpg"
+													data-fslightbox="kostya">
+													<img src="./assets/img/components/band/kostya-l_s-4.jpg" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+							<!-- slide -->
+							<div class="band-slider__slide swiper-slide">
+								<article class="band-card">
+									<div class="band-card__img"
+										style="background-image: url(./assets/img/components/band/yura-b_ava.png)">
+									</div>
+									<h5 class="band-card__name">Юрий Безруков</h5>
+									<p class="band-card__post">SEO-специалист</p>
+									<div class="band-card__info flex">
+										<!-- scills -->
+										<div class="band-card__skills">
+											<button class="band-card__skills-btn btn" data-btn-type="toggleClass"
+												type="button" aria-label="Навыки">Skills</button>
+											<div class="band-card__window band-card__window--scills">
+												<ul class="custom-list">
+													<li>Разработка стратегии по оптимизации сайта</li>
+													<li>Работа с семантическим ядром</li>
+													<li>Составление ТЗ на написание текстов</li>
+													<li>Работа по внешней и внутренней оптимизации сайта</li>
+													<li>Составление отчетности по SEO</li>
+												</ul>
+											</div>
+										</div>
+										<!-- certificates -->
+										<div class="band-card__certificates">
+											<button class="band-card__certificates-btn btn btn--secondary"
+												data-btn-type="toggleClass" type="button"
+												aria-label="Сертификаты">Сертификаты</button>
+											<div class="band-card__window band-card__window--certificates">
+												<a href="./assets/img/components/band/kostya-l_s-1.jpg"
+													data-fslightbox="kostya">
+													<img src="./assets/img/components/band/yura-b_s-1.jpg" alt="">
+												</a>
+											</div>
+										</div>
+									</div>
+								</article>
+							</div>
+							<!-- slide -->
+							<div class="band-slider__slide swiper-slide">
+								<article class="band-card">
+									<div class="band-card__img"
+										style="background-image: url(./assets/img/components/band/daria-k_ava.png)">
+									</div>
+									<h5 class="band-card__name">Качур Дарья</h5>
+									<p class="band-card__post">Верстальщик</p>
+									<div class="band-card__info flex">
+										<!-- scills -->
+										<div class="band-card__skills">
+											<button class="band-card__skills-btn btn" data-btn-type="toggleClass"
+												type="button" aria-label="Навыки">Skills</button>
+											<div class="band-card__window band-card__window--scills">
+												<ul class="custom-list">
+													<li>Разработка стратегии по оптимизации сайта</li>
+													<li>Работа с семантическим ядром</li>
+													<li>Составление ТЗ на написание текстов</li>
+													<li>Работа по внешней и внутренней оптимизации сайта</li>
+													<li>Составление отчетности по SEO</li>
+												</ul>
+											</div>
+										</div>
+										<!-- certificates -->
+										<div class="band-card__certificates">
+											<button class="band-card__certificates-btn btn btn--secondary disable"
+												data-btn-type="toggleClass" type="button"
+												aria-label="Сертификаты">Сертификаты</button>
+										</div>
+									</div>
+								</article>
+							</div>
+							<!-- slide -->
+							<div class="band-slider__slide swiper-slide">
+								<article class="band-card">
+									<div class="band-card__img"
+										style="background-image: url(./assets/img/components/band/dima-v_ava.png)">
+									</div>
+									<h5 class="band-card__name">Дмитрий Высоцкий</h5>
+									<p class="band-card__post">Программист/разработчик</p>
+									<div class="band-card__info flex">
+										<!-- scills -->
+										<div class="band-card__skills">
+											<button class="band-card__skills-btn btn" data-btn-type="toggleClass"
+												type="button" aria-label="Навыки">Skills</button>
+											<div class="band-card__window band-card__window--scills">
+												<ul class="custom-list">
+													<li>Специалист по работе с CMS MODx,
+														WordPress и Bitrix</li>
+													<li>Разработка сайтов</li>
+													<li>Оптимизация работы сайтов</li>
+													<li>Установка сайтов на хостинг</li>
+													<li>Техническая поддержка уже
+														готовых сайтов.</li>
+												</ul>
+											</div>
+										</div>
+										<!-- certificates -->
+										<div class="band-card__certificates">
+											<button class="band-card__certificates-btn btn btn--secondary disable"
+												data-btn-type="toggleClass" type="button"
+												aria-label="Сертификаты">Сертификаты</button>
+										</div>
+									</div>
+								</article>
+							</div>
+						</div>
+					</div>
+					<!-- slider nav -->
+					<div class="slider-nav">
+						<button class="slider-arr slider-arr--prev" type="button" aria-label="Предыдужий слай">
+							<svg>
+								<use href="./assets/img/icons/sprite.svg#slider-arr_left"></use>
+							</svg>
+						</button>
+						<button class="slider-arr slider-arr--next" type="button" aria-label="Следующий слай">
+							<svg>
+								<use href="./assets/img/icons/sprite.svg#slider-arr_right"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- rates -->
+		<section class="rates-b section">
+			<div class="container">
+				<h2 class="title-1 section__title"  data-aos="zoom-in" data-aos-duration="2500">Цены на контекстную рекламу</h2>
+				<div class="info-bar" style="color: #333; background-color: #EFF2F8;">
+					<b><i>Важно!</i></b>
+					<ul class="list-dots">
+						<li>Минимальный ежемесячный бюджет составляет <b><i>от 800 BYN на все системы</i></b></li>
+						<li>Мы берем в работу только проекты, в которых настраиваем рекламу на обе рекламных системы: Google и Яндекс. </li>
+					</ul>
+				</div>
+				<!-- Базовый тариф -->
+				<article class="rate mt-80 mt-sm-60">
+					<!-- head -->
+					<div class="rate__head">
+						<h3 class="rate__title">
+							Тариф <span class="text-decoration-underline">базовый</span>
+						</h3>
+						<div class="rate__head-ic">
+							<svg width="68" height="68" viewBox="0 0 68 68" xmlns="http://www.w3.org/2000/svg">
+								<path d="M66.4275 42.942L59.2535 37.3149C59.3895 36.2269 59.4915 35.1219 59.4915 33.9999C59.4915 32.8779 59.3895 31.773 59.2535 30.6849L66.4445 25.0579C67.0905 24.5479 67.2776 23.6299 66.8525 22.8819L60.0525 11.1009C59.6274 10.3699 58.7435 10.0639 57.9785 10.3699L49.5125 13.7869C47.7615 12.4438 45.8405 11.3049 43.7666 10.4379L42.4916 1.428C42.3384 0.629053 41.6415 0 40.7916 0H27.1916C26.3417 0 25.6446 0.629053 25.5086 1.428L24.2336 10.4379C22.1597 11.3049 20.2386 12.4269 18.4877 13.7869L10.0217 10.3699C9.25669 10.0809 8.37264 10.3699 7.94774 11.1009L1.14754 22.8819C0.722485 23.613 0.909591 24.531 1.55554 25.0579L8.72948 30.6849C8.59353 31.773 8.49153 32.8779 8.49153 33.9999C8.49153 35.1219 8.59353 36.2269 8.72948 37.3149L1.55554 42.942C0.909591 43.452 0.722485 44.37 1.14754 45.1179L7.94758 56.8989C8.37264 57.63 9.25653 57.936 10.0215 57.63L18.4875 54.213C20.2386 55.556 22.1595 56.6949 24.2335 57.5619L25.5085 66.5718C25.6444 67.3708 26.3415 67.9998 27.1915 67.9998H40.7914C41.6413 67.9998 42.3384 67.3708 42.4744 66.5718L43.7494 57.5619C45.8233 56.6949 47.7444 55.5729 49.4953 54.213L57.9613 57.63C58.7263 57.9189 59.6104 57.63 60.0353 56.8989L66.8353 45.1179C67.2605 44.387 67.0734 43.469 66.4275 42.942ZM33.9915 45.9C27.4125 45.9 22.0915 40.5789 22.0915 33.9999C22.0915 27.4209 27.4125 22.1 33.9915 22.1C40.5705 22.1 45.8915 27.4211 45.8915 34.0001C45.8915 40.5791 40.5705 45.9 33.9915 45.9Z" fill="#0749AA"></path>
+							</svg>
+						</div>
+					</div>
+					<div class="rate__body">
+						<div class="rate__row">
+							<!-- col -->
+							<div class="rate__col">
+								<div class="rate__subtitle">
+									<p>Настройка рекламной кампании</p>
+								</div>
+								<!-- desc -->
+								<div class="rate__desc">
+									<ul class="custom-list js-readmore" data-readmore-height="230">
+										<li>
+											Составление стратегии продвижения и подбор рекламных инструментов
+										</li>
+										<li>
+											Настройка рекламы на поиске: 
+											<ul>
+												<li>сбор ключевых запросов до 100 (не более 3 направлений);</li>
+												<li>написание текстов, настройка таргетинга и запуск объявлений</li>
+											</ul>
+										</li>
+										<li>
+											Настойка рекламы в сетях:
+											<ul>
+												<li>Настройки аудитории до 2 вариантов</li>
+												<li>Создание текстово-графических объявлений до 4 шт.</li>
+											</ul>
+										</li>
+										<li>
+											Настройка Google Merchant Center до 25 товаров  (для каталогов и интернет-магазинов)
+										</li>
+										<li>
+											Настройка динамического ремаркетинга до 25 товаров (для каталогов и интернет-магазинов)
+										</li>
+										<li>
+											Настройка баннера на поиске Яндекс
+										</li>
+										<li>
+											Проверка работоспособности счетчиков аналитики. Настройка целей.
+										</li>
+										<li>
+											Настройка связи между аккаунтами аналитики и рекламы
+										</li>
+										<li>
+											Интерактивный отчет о выполненных работах и результатах в Google Data Studio
+										</li>
+									</ul>
+								</div>
+								<!-- types -->
+								<div class="rate__types">
+									<div class="rate__type">
+										<p>Настройка Google рекламы</p>
+										<p>
+											<b class="rate__type-price">300 BYN</b> <br>
+											<b>единоразово</b>
+										</p>
+									</div>
+									<div class="rate__type">
+										<p>Настройка Яндекс Директ</p>
+										<p>
+											<b class="rate__type-price">300 BYN</b> <br>
+											<b>единоразово</b>
+										</p>
+									</div>
+								</div>
+								<!-- price -->
+								<div class="rate__price-box">
+									<p>
+										Настройка Google + Яндекс
+									</p>
+									<p class="rate__price">
+										599 BYN единоразово
+									</p>
+								</div>
+							</div>
+							<!-- col -->
+							<div class="rate__col">
+								<div class="rate__subtitle">
+									<p>Ведение рекламной кампании</p>
+								</div>
+								<!-- desc -->
+								<div class="rate__desc">
+									<ul class="custom-list js-readmore" data-readmore-height="230">
+										<li>Корректировка ставок при необходимости</li>
+										<li>Пост-клик анализ, минусовка 1 раз в 2 недели</li>
+										<li>Рекомендации по бюджету на рекламу и контроль бюджета</li>
+										<li>Еженедельная обратная связь от менеджера по выполненным  работам и бюджетам аккаунта</li>
+										<li>Интерактивный отчет о выполненных работах и результатах в Google Data Studio ежемесячно</li>
+									</ul>
+								</div>
+								<!-- types -->
+								<div class="rate__types">
+									<div class="rate__type">
+										<p>Ведение Google рекламы</p>
+										<p>
+											<b class="rate__type-price">250 BYN</b> <br>
+											<b>единоразово</b>
+										</p>
+									</div>
+									<div class="rate__type">
+										<p>Ведение Яндекс Директ</p>
+										<p>
+											<b class="rate__type-price">250 BYN</b> <br>
+											<b>единоразово</b>
+										</p>
+									</div>
+								</div>
+								<!-- price -->
+								<div class="rate__price-box">
+									<p>
+										Ведение Google + Яндекс
+									</p>
+									<p class="rate__price">
+										499 BYN единоразово
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<!-- Оптимальный тариф -->
+				<article class="rate mt-80 mt-sm-60">
+					<!-- head -->
+					<div class="rate__head">
+						<h3 class="rate__title">
+							Тариф <span class="text-decoration-underline">Оптимальный</span>
+						</h3>
+						<div class="rate__head-ic">
+							<svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11 17.2825H1.57406C0.708787 17.2825 0.00920502 17.9821 0 18.8565V42.4214C0 43.2959 0.708787 43.9954 1.57406 43.9954H11C11.8745 43.9954 12.5741 43.2866 12.5741 42.4214V18.8565C12.5741 17.9821 11.8653 17.2825 11 17.2825Z" fill="#0749AA"></path>
+									<path d="M26.713 0.00463867H17.2871C16.4218 0.00463867 15.713 0.70422 15.713 1.56949V42.4214C15.713 43.2959 16.4218 43.9954 17.2871 43.9954H26.713C27.5875 43.9954 28.2871 43.2866 28.2871 42.4214V1.5787C28.2871 0.70422 27.5783 0.00463867 26.713 0.00463867Z" fill="#0749AA"></path>
+									<path d="M42.4259 12.5693H33C32.1255 12.5693 31.4259 13.2689 31.4259 14.1434V42.4212C31.4259 43.2957 32.1347 43.9953 33 43.9953H42.4259C43.3004 43.9953 44 43.2865 44 42.4212V14.1434C44 13.2689 43.2912 12.5693 42.4259 12.5693Z" fill="#0749AA"></path>
+								</svg>
+						</div>
+					</div>
+					<div class="rate__body">
+						<div class="rate__row">
+							<!-- col -->
+							<div class="rate__col">
+								<div class="rate__subtitle">
+									<p>Настройка рекламной кампании</p>
+								</div>
+								<!-- desc -->
+								<div class="rate__desc">
+									<ul class="custom-list js-readmore" data-readmore-height="340">
+										<li>
+											Составление стратегии продвижения и подбор рекламных инструментов
+										</li>
+										<li>
+											Настройка рекламы на поиске: 
+											<ul>
+												<li>сбор ключевых запросов до 300 (не более 10 направлений);</li>
+												<li>написание продающих текстов, настройка таргетинга и запуск объявлений</li>
+											</ul>
+										</li>
+										<li>
+											Настойка рекламы в сетях:
+											<ul>
+												<li>Настройки аудитории до 5 вариантов</li>
+												<li>Создание текстово-графических объявлений до 10 шт.</li>
+											</ul>
+										</li>
+										<li>Настройка ремаркетинга до 3 вариантов</li>
+										<li>Отрисовка индивидуального дизайна графических объявлений</li>
+										<li>Рекомендации по посадочным страницам сайта</li>
+										<li>
+											Настройка Google Merchant Center до 100 товаров (для каталогов и интернет-магазинов)
+										</li>
+										<li>
+											Настройка динамического ремаркетинга до 100 товаров (для каталогов и интернет-магазинов)
+										</li>
+										<li>Настройка баннера на поиске Яндекс</li>
+										<li>Проверка работоспособности счетчиков аналитики. Настройка целей.</li>
+										<li>Настройка связи между аккаунтами аналитики и рекламы</li>
+										<li>Интерактивный отчет о выполненных работах и результатах в Google Data Studio</li>
+										<li>*скидка на SEO-продвижение</li>
+									</ul>
+								</div>
+								<!-- types -->
+								<div class="rate__types">
+									<div class="rate__type">
+										<p>Настройка Google рекламы </p>
+										<p>
+											<b class="rate__type-price">350 BYN</b> <br>
+											<b>единоразово</b>
+										</p>
+									</div>
+									<div class="rate__type">
+										<p>Настройка Яндекс Директ</p>
+										<p>
+											<b class="rate__type-price">350 BYN</b> <br>
+											<b>единоразово</b>
+										</p>
+									</div>
+								</div>
+								<!-- price -->
+								<div class="rate__price-box">
+									<p>
+										Настройка Google + Яндекс
+									</p>
+									<p class="rate__price">
+										<del>700</del> 650 BYN единоразово
+									</p>
+								</div>
+							</div>
+							<!-- col -->
+							<div class="rate__col">
+								<div class="rate__subtitle">
+									<p>Ведение рекламной кампании</p>
+								</div>
+								<!-- desc -->
+								<div class="rate__desc">
+									<ul class="custom-list js-readmore" data-readmore-height="340">
+										<li>Корректировка ставок при необходимости</li>
+										<li>Пост-клик анализ, минусовка еженедельно</li>
+										<li>Рекомендации по бюджету на рекламу и контроль бюджета</li>
+										<li>Запуск акций и рекламных предложений по требованию в рамках согласованных направлений и ключевых слов</li>
+										<li>Отрисовка индивидуального дизайна графических объявлений до 5 ежемесячно</li>
+										<li>А/В тесты баннеров</li>
+										<li>Еженедельная обратная связь от менеджера по выполненным  работам и бюджетам аккаунта</li>
+										<li>Интерактивный отчет о выполненных работах и результатах в Google Data Studio ежемесячно</li>
+									</ul>
+								</div>
+								<!-- types -->
+								<div class="rate__types">
+									<div class="rate__type">
+										<p>Ведение Google рекламы</p>
+										<p>
+											<b class="rate__type-price">250 BYN</b> <br>
+											<b>единоразово</b>
+										</p>
+									</div>
+									<div class="rate__type">
+										<p>Ведение Яндекс Директ</p>
+										<p>
+											<b class="rate__type-price">250 BYN</b> <br>
+											<b>единоразово</b>
+										</p>
+									</div>
+								</div>
+								<!-- price -->
+								<div class="rate__price-box">
+									<p>
+										Ведение Google + Яндекс
+									</p>
+									<p class="rate__price">
+										499 BYN единоразово
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+				<!-- Премиальный тариф -->
+				<article class="rate mt-80 mt-sm-60">
+					<!-- head -->
+					<div class="rate__head">
+						<h3 class="rate__title">
+							Тариф <span class="text-decoration-underline">премиальный</span>
+						</h3>
+						<div class="rate__head-ic">
+							<svg width="50" height="36" viewBox="0 0 50 36">
+									<path d="M49.3751 13.9501L44.7626 34.3313C44.6711 34.7578 44.4338 35.139 44.0916 35.4093C43.7494 35.6797 43.3236 35.8223 42.8876 35.8126H6.96259C6.52656 35.8223 6.10079 35.6797 5.75857 35.4093C5.41634 35.139 5.17907 34.7578 5.08759 34.3313L0.625086 13.9501C0.549985 13.6057 0.573477 13.2471 0.692868 12.9155C0.812258 12.5838 1.02271 12.2926 1.30009 12.0751C1.57822 11.8568 1.91241 11.7216 2.26407 11.6852C2.61574 11.6487 2.97056 11.7123 3.28759 11.8688L14.2376 17.1751L23.3126 1.12509C23.4761 0.83653 23.7133 0.596515 23.9998 0.429529C24.2864 0.262542 24.6122 0.174561 24.9438 0.174561C25.2755 0.174561 25.6013 0.262542 25.8878 0.429529C26.1744 0.596515 26.4116 0.83653 26.5751 1.12509L35.6501 17.1938L46.6751 11.8501C46.9944 11.6808 47.3558 11.6075 47.7158 11.6388C48.0758 11.6701 48.4191 11.8048 48.7044 12.0267C48.9897 12.2486 49.2047 12.5481 49.3237 12.8894C49.4427 13.2306 49.4605 13.599 49.3751 13.9501Z" fill="inherit"></path>
+								</svg>
+						</div>
+					</div>
+					<div class="rate__body">
+						<div class="rate__row">
+							<!-- col -->
+							<div class="rate__col">
+								<div class="rate__subtitle">
+									<p>Работы по настройке</p>
+								</div>
+								<!-- desc -->
+								<div class="rate__desc">
+									<ul class="custom-list js-readmore" data-readmore-height="400">
+										<li>
+											Составление стратегии продвижения и подбор рекламных инструментов
+										</li>
+										<li>
+											Анализ конкурентов по тематике, рекомендации по улучшению посадочных страниц
+										</li>
+										<li>
+											Настройка рекламы на поиске: 
+											<ul>
+												<li>сбор ключевых запросов до 1000;</li>
+												<li>написание продающих текстов, настройка таргетинга и запуск объявлений</li>
+											</ul>
+										</li>
+										<li>
+											Настойка рекламы в сетях:
+											<ul>
+												<li>Настройки аудитории до 10 вариантов</li>
+												<li>Создание текстово-графических объявлений до 20 шт.</li>
+											</ul>
+										</li>
+										<li>Настройка ремаркетинга до 5 сценариев</li>
+										<li>Отрисовка индивидуального дизайна графических объявлений до 20 шт.</li>
+										<li>Настройка баннера на поиске Яндекс</li>
+										<li>Настройка Google Merchant Center до 200 товаров (для каталогов и интернет-магазинов)</li>
+										<li>Настройка динамического ремаркетинга до 200 товаров (для каталогов и интернет-магазинов)</li>
+										<li>Установка и настройка call-tracking (закупка номеров оплачивается отдельно)</li>
+										<li>Настройка рекламы на картах</li>
+										<li>Настройка сквозной аналитики</li>
+										<li>Отчет о выполненных работах и результатах</li>
+										<li>*скидка на SEO-продвижение</li>
+									</ul>
+								</div>
+								<!-- price -->
+								<div class="rate__price-box">
+									<p>
+										Настройка Google + Яндекс
+									</p>
+									<p class="rate__price">
+										от 1350 BYN единоразово
+									</p>
+								</div>
+							</div>
+							<!-- col -->
+							<div class="rate__col">
+								<div class="rate__subtitle">
+									<p>Ведение рекламной кампании</p>
+								</div>
+								<!-- desc -->
+								<div class="rate__desc">
+									<ul class="custom-list js-readmore" data-readmore-height="400">
+										<li>Корректировка ставок при необходимости</li>
+										<li>Пост-клик анализ, минусовка и добавление ключевых слов еженедельно</li>
+										<li>Рекомендации по бюджету на рекламу и контроль бюджета</li>
+										<li>Запуск акций и рекламных предложений по требованию в рамках согласованных направлений и ключевых слов</li>
+										<li>Отрисовка индивидуального дизайна графических объявлений до 10 ежемесячно</li>
+										<li>А/В тесты баннеров</li>
+										<li>Еженедельная обратная связь от менеджера по выполненным  работам и бюджетам аккаунта</li>
+										<li>Интерактивный отчет о выполненных работах и результатах в Google Data Studio ежемесячно</li>
+									</ul>
+								</div>
+								<!-- price -->
+								<div class="rate__price-box">
+									<p>
+										Ведение Google + Яндекс
+									</p>
+									<p class="rate__price">
+										от 999 BYN единоразово
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+		<!-- section -->
+		<section class="section">
+			<div class="container">
+				<h2 class="title-1 section__title"  data-aos="zoom-in" data-aos-duration="2500">
+					Дополнительные услуги и инструменты
+				</h2>
+				<div class="table-wrap pt-0">
+					<div class="brs-16" style="min-width: 360px; overflow: hidden">
+						<table class="table-1">
+							<!-- thead -->
+							<thead>
+								<tr>
+									<th>
+										<div>
+											Инструмент
+										</div>
+									</th>
+									<th>
+										<div>
+											Стоимость настройки*
+										</div>
+									</th>
+									<th>
+										<div>
+											Стоимость ведения*
+										</div>
+									</th>
+								</tr>
+							</thead>
+							<!-- tbody -->
+							<tbody>
+								<tr>
+									<td>
+										<div>
+											Настройка рекламы на Youtube
+										</div>
+									</td>
+									<td>
+										<div>
+											250 BYN
+										</div>
+									</td>
+									<td>
+										<div>100 BYN</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div>
+											Реклама в почте  Gmail
+										</div>
+									</td>
+									<td>
+										<div>
+											100 BYN
+										</div>
+									</td>
+									<td>
+										<div>50 BYN</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div>
+											Настройка медийной рекламы в Яндекс
+										</div>
+									</td>
+									<td>
+										<div>
+											130 BYN
+										</div>
+									</td>
+									<td>
+										<div>50 BYN</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div>
+											Настойка рекламы на картах 
+										</div>
+									</td>
+									<td>
+										<div>
+											250 BYN
+										</div>
+									</td>
+									<td>
+										<div>100 BYN</div>
+									</td>
+								</tr>
+							<tfoot>
+								<tr class="fw-700 text-center">
+									<td colspan="4">
+										<div>
+											<p>
+												*стоимость актуальна для текущих клиентов 
+											</p>
+										</div>
+									</td>
+								</tr>
+							</tfoot>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- section -->
+		<div class="section section">
+		    <div class="container">
+				<div class="prices-b__list row-cols-6 row-cols-sm-12 jcc gx-30 gy-50">
+					<!-- price card -->
+					<article class="price-card" style="max-width: none;">
+						<div class="price-card__ic price-card__ic--centered">
+							<svg width="58" height="58" viewBox="0 0 58 58">
+								<path d="M56.26 50.7499L50.46 27.5499C49.88 24.9399 47.56 23.1999 44.95 23.1999H40.6V18.8499C40.6 17.9799 40.02 17.3999 39.15 17.3999H33.35C32.48 17.3999 31.9 17.9799 31.9 18.8499V23.1999H26.1V18.8499C26.1 17.9799 25.52 17.3999 24.65 17.3999H18.85C17.98 17.3999 17.4 17.9799 17.4 18.8499V23.1999H13.34C10.44 23.1999 8.11995 24.9399 7.53995 27.5499L1.73995 50.7499C0.869952 54.5199 3.76995 57.9999 7.53995 57.9999H50.75C54.23 57.9999 57.13 54.5199 56.26 50.7499ZM29 52.1999C22.62 52.1999 17.4 46.9799 17.4 40.5999C17.4 34.2199 22.62 28.9999 29 28.9999C35.38 28.9999 40.6 34.2199 40.6 40.5999C40.6 46.9799 35.38 52.1999 29 52.1999Z" fill="#0749AA"/>
+								<path d="M29 46.3998C32.2032 46.3998 34.8 43.8031 34.8 40.5998C34.8 37.3966 32.2032 34.7998 29 34.7998C25.7967 34.7998 23.2 37.3966 23.2 40.5998C23.2 43.8031 25.7967 46.3998 29 46.3998Z" fill="#0749AA"/>
+								<path d="M29 0C13.05 0 0 5.22 0 11.89V17.4C0 19.14 1.45 20.3 2.9 20.3H11.02C13.34 20.3 14.79 17.98 13.63 15.95C12.76 13.92 14.21 11.6 16.53 11.6H41.76C44.08 11.6 45.53 13.92 44.37 15.95C43.21 17.98 44.66 20.3 46.98 20.3H55.1C56.84 20.3 58 18.85 58 17.4V11.89C58 5.22 44.95 0 29 0Z" fill="#0749AA"/>
+							</svg>
+						</div>
+						<h5>
+							<span>
+								Настройка Call-Tracking
+							</span>
+						</h5>
+						<div class="price-card__textBox" style="margin: 0 auto; max-width: 460px;">
+							<ul class="custom-list js-readmore" data-readmore-height="230">
+								<li>
+									Подбор оптимальной стратегии работы: статический или динамический колл-трекинг, помощь в расчете тарифа
+								</li>
+								<li>
+									Установка кода счетчика на сайт
+								</li>
+								<li>
+									Интеграция кода колл-трекинга со счетчиками веб-аналитики, настройка событий и целей
+								</li>
+							</ul>
+							
+							<div class="price-card__cost">от 200 BYN единоразово</div>
+						</div>
+					</article>
+					<!-- price card -->
+					<article class="price-card" style="max-width: none;">
+						<div class="price-card__ic price-card__ic--centered">
+							<svg width="46" height="43" viewBox="0 0 46 43">
+								<path d="M41.5674 12.0854V23.8098C46.7637 22.0921 46.7682 13.8045 41.5674 12.0854Z" fill="#0749AA"/>
+								<path d="M7.25054 26.1857C9.85096 26.2855 12.4406 26.5576 15 27C15 27 14.9903 8.10523 15 8C12.0545 8.52031 9.06492 8.79035 6.0676 8.80685C4.45789 8.80963 2.91508 9.4105 1.7776 10.4777C0.640112 11.5448 0.000836856 12.9911 0 14.4993V20.4933C0.0498283 24.2236 3.41916 26.5502 7.25054 26.1857Z" fill="#0749AA"/>
+								<path d="M17 27.8744C22.5006 29.0296 27.8632 30.7474 33 33V2C27.8632 4.25254 22.5006 5.97035 17 7.12535C17 7.12535 17.0017 27.5525 17 27.8744Z" fill="#0749AA"/>
+								<path d="M38.9226 0.288423C37.1178 -0.606669 35.857 0.812856 34 1.41292V33.5664C35.5295 34.1094 36.3593 34.8738 37.7489 35C38.3473 34.9951 38.9194 34.7769 39.3408 34.3928C39.7623 34.0087 39.9992 33.4898 40 32.9487V2.03866C40.0024 1.68771 39.9046 1.34213 39.7158 1.03546C39.527 0.7288 39.2538 0.471462 38.9226 0.288423Z" fill="#0749AA"/>
+								<path d="M17.1356 30.0903H15.47V29.8953C14.9337 29.7897 8.20031 28.9329 5.37061 28.896L8.92935 40.5878C9.07857 41.0897 9.38649 41.5296 9.80693 41.8417C10.2274 42.1537 10.7377 42.321 11.2612 42.3184H13.0325C13.6784 42.3166 14.2973 42.0592 14.754 41.6024C15.2107 41.1457 15.4681 40.5268 15.47 39.8809V35.2578H17.1356C17.5568 35.248 17.9569 35.0713 18.2479 34.7666C18.5389 34.4619 18.697 34.0541 18.6875 33.6328V31.7153C18.6971 31.2941 18.539 30.8863 18.248 30.5815C17.9569 30.2768 17.5568 30.1001 17.1356 30.0903Z" fill="#0749AA"/>
+								</svg>
+						</div>
+						<h5>
+							<span>
+								Пополнение рекламных кабинетов
+							</span>
+						</h5>
+						<div class="price-card__textBox"  style="margin: 0 auto; max-width: 460px;">
+							<p>
+								Наша компания осуществляет зачисление, денежных средств для систем Google и Яндекс с НДС. Ежемесячно вы будете получать закрывающие документы по денежным средствам, зачисленным для бюджета рекламных кампаний.
+							</p>
+							
+							<p class="mt-32">
+								<b><i>Комиссия за зачисление в системы Google и Яндекс для наших клиентов - 0%</i></b>
+							</p>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+		<!-- reviews slider -->
+		<section class="reviews-slider-b section" data-aos="fade-up">
+			<div class="reviews-slider-b__container container">
+				<h2 class="section__title	title-1" data-aos="zoom-in" data-aos-delay="800">
+					<span>ОТЗЫВЫ</span>
+				</h2>
+			</div>
+			<div class="reviews-slider-wrap slider-wrap">
+				<div class="container">
+					<!-- slider -->
+					<div class="reviews-slider swiper-container">
+						<div class="swiper-wrapper">
+							<!-- slide -->
+							<a href="assets/img/components/reviews-slider/autobiz-o.jpg"
+								class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+								<span class="review-photo__inner">
+									<img class="review-photo__img" src="assets/img/components/reviews-slider/autobiz-o.jpg"
+										alt="">
+
+									<span class="review-photo__bg">
+										<span class="review-photo__zoom loop-zoom">
+											<img src="assets/img/icons/ui/loop.svg" alt="">
+										</span>
+									</span>
+								</span>
+							</a>
+							<!-- slide -->
+							<a href="assets/img/components/reviews-slider/Blessflowers_ru.jpg"
+								class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+								<span class="review-photo__inner">
+									<img class="review-photo__img"
+										src="assets/img/components/reviews-slider/Blessflowers_ru.jpg" alt="">
+									<span class="review-photo__bg">
+										<span class="review-photo__zoom  loop-zoom">
+											<img src="assets/img/icons/ui/loop.svg" alt="">
+										</span>
+									</span>
+								</span>
+							</a>
+							<!-- slide -->
+							<a href="./assets/img/components/reviews-slider/otzyv-360.jpg"
+								class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+								<span class="review-photo__inner">
+									<img class="review-photo__img"
+										src="./assets/img/components/reviews-slider/otzyv-360.jpg" alt="">
+
+									<span class="review-photo__bg">
+										<span class="review-photo__zoom  loop-zoom">
+											<img src="assets/img/icons/ui/loop.svg" alt="">
+										</span>
+									</span>
+								</span>
+							</a>
+							<!-- slide -->
+							<a href="./assets/img/components/reviews-slider/vettorg.jpg"
+								class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+								<span class="review-photo__inner">
+									<img class="review-photo__img" src="./assets/img/components/reviews-slider/vettorg.jpg"
+										alt="">
+
+									<span class="review-photo__bg">
+										<span class="review-photo__zoom  loop-zoom">
+											<img src="assets/img/icons/ui/loop.svg" alt="">
+										</span>
+									</span>
+								</span>
+							</a>
+							<!-- slide -->
+							<a href="assets/img/components/reviews-slider/autobiz-o.jpg"
+								class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+								<span class="review-photo__inner">
+									<img class="review-photo__img" src="assets/img/components/reviews-slider/autobiz-o.jpg"
+										alt="">
+
+									<span class="review-photo__bg">
+										<span class="review-photo__zoom loop-zoom">
+											<img src="assets/img/icons/ui/loop.svg" alt="">
+										</span>
+									</span>
+								</span>
+							</a>
+							<!-- slide -->
+							<a href="assets/img/components/reviews-slider/Blessflowers_ru.jpg"
+								class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+								<span class="review-photo__inner">
+									<img class="review-photo__img"
+										src="assets/img/components/reviews-slider/Blessflowers_ru.jpg" alt="">
+									<span class="review-photo__bg">
+										<span class="review-photo__zoom  loop-zoom">
+											<img src="assets/img/icons/ui/loop.svg" alt="">
+										</span>
+									</span>
+								</span>
+							</a>
+							<!-- slide -->
+							<a href="assets/img/components/reviews-slider/autobiz-o.jpg"
+								class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+								<span class="review-photo__inner">
+									<img class="review-photo__img" src="assets/img/components/reviews-slider/autobiz-o.jpg"
+										alt="">
+
+									<span class="review-photo__bg">
+										<span class="review-photo__zoom loop-zoom">
+											<img src="assets/img/icons/ui/loop.svg" alt="">
+										</span>
+									</span>
+								</span>
+							</a>
+							<!-- slide -->
+							<a href="assets/img/components/reviews-slider/Blessflowers_ru.jpg"
+								class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+								<span class="review-photo__inner">
+									<img class="review-photo__img"
+										src="assets/img/components/reviews-slider/Blessflowers_ru.jpg" alt="">
+									<span class="review-photo__bg">
+										<span class="review-photo__zoom  loop-zoom">
+											<img src="assets/img/icons/ui/loop.svg" alt="">
+										</span>
+									</span>
+								</span>
+							</a>
+							<!-- slide -->
+							<a href="./assets/img/components/reviews-slider/otzyv-360.jpg"
+								class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+								<span class="review-photo__inner">
+									<img class="review-photo__img"
+										src="./assets/img/components/reviews-slider/otzyv-360.jpg" alt="">
+
+									<span class="review-photo__bg">
+										<span class="review-photo__zoom  loop-zoom">
+											<img src="assets/img/icons/ui/loop.svg" alt="">
+										</span>
+									</span>
+								</span>
+							</a>
+							<!-- slide -->
+							<a href="./assets/img/components/reviews-slider/vettorg.jpg"
+								class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+								<span class="review-photo__inner">
+									<img class="review-photo__img" src="./assets/img/components/reviews-slider/vettorg.jpg"
+										alt="">
+
+									<span class="review-photo__bg">
+										<span class="review-photo__zoom  loop-zoom">
+											<img src="assets/img/icons/ui/loop.svg" alt="">
+										</span>
+									</span>
+								</span>
+							</a>
+							<!-- slide -->
+							<a href="assets/img/components/reviews-slider/autobiz-o.jpg"
+								class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+								<span class="review-photo__inner">
+									<img class="review-photo__img" src="assets/img/components/reviews-slider/autobiz-o.jpg"
+										alt="">
+
+									<span class="review-photo__bg">
+										<span class="review-photo__zoom loop-zoom">
+											<img src="assets/img/icons/ui/loop.svg" alt="">
+										</span>
+									</span>
+								</span>
+							</a>
+							<!-- slide -->
+							<a href="assets/img/components/reviews-slider/Blessflowers_ru.jpg"
+								class="reviews-slider__slide review-photo swiper-slide" data-fslightbox="reviews">
+								<span class="review-photo__inner">
+									<img class="review-photo__img"
+										src="assets/img/components/reviews-slider/Blessflowers_ru.jpg" alt="">
+									<span class="review-photo__bg">
+										<span class="review-photo__zoom  loop-zoom">
+											<img src="assets/img/icons/ui/loop.svg" alt="">
+										</span>
+									</span>
+								</span>
+							</a>
+						</div>
+					</div>
+					<div class="btns jcc mt-52 mt-sm-36">
+						<a class="btn-section btn" href="#">все отзывы</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- clients -->
+		<section class="clients-b section">
+			<div class="clients-b__container container">
+				<h2 class="title-1 section__title">Наши клиенты</h2>
+				<div class="clients-slider-wrap slider-wrap">
+					<!-- slider -->
+					<div class="clients-slider swiper-container">
+						<div class="swiper-wrapper">
+							<!-- slide -->
+							<div class="clients-slider__slide client-card swiper-slide">
+								<a class="client-card__img" href="#">
+									<img src="./assets/img/components/clients-slider/stroy360.png"
+										alt="Строй 360">
+								</a>
+							</div>
+							<!-- slide -->
+							<div class="clients-slider__slide client-card swiper-slide">
+								<a class="client-card__img" href="#">
+									<img src="./assets/img/components/clients-slider/stroy360.png"
+										alt="Строй 360">
+								</a>
+							</div>
+							<!-- slide -->
+							<div class="clients-slider__slide client-card swiper-slide">
+								<a class="client-card__img" href="#">
+									<img src="./assets/img/components/clients-slider/stroy360.png"
+										alt="Строй 360">
+								</a>
+							</div>
+						</div>
+					</div>
+					<!-- slider nav -->
+					<div class="slider-nav">
+						<button class="slider-arr slider-arr--prev" type="button" aria-label="Предыдужий слай">
+							<svg>
+								<use href="./assets/img/icons/sprite.svg#slider-arr_left"></use>
+							</svg>
+						</button>
+						<button class="slider-arr slider-arr--next" type="button" aria-label="Следующий слай">
+							<svg>
+								<use href="./assets/img/icons/sprite.svg#slider-arr_right"></use>
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- partners -->
+		<section class="partners-b section">
+			<div class="partners-b__container container">
+				<h2 class="title-1 section__title">Партнеры</h2>
+				<div class="partners-b__text text text-center" style="margin: 0 auto; max-width: 880px;">
+					<p>
+						Мы являемся официальным партнером Яндекс, <span class="color-primary fw-700">
+							специалисты нашей компании регулярно проходят
+							повышение квалификации и получают сертификаты Яндекс!
+						</span>
+					</p>
+				</div>
+				<div class="partners-b__images">
+					<a class="partners-b__images-link"
+						href="./assets/img/components/partners-b/staff/img-1@2x.png" data-fslightbox="partners">
+						<img class="partners-b__images-img"
+							src="./assets/img/components/partners-b/staff/img-1.png" alt="">
+					</a>
+					<a class="partners-b__images-link"
+						href="./assets/img/components/partners-b/staff/img-1@2x.png" data-fslightbox="partners">
+						<img class="partners-b__images-img"
+							src="./assets/img/components/partners-b/staff/img-1.png" alt="">
+					</a>
+					<a class="partners-b__images-link"
+						href="./assets/img/components/partners-b/staff/img-1@2x.png" data-fslightbox="partners">
+						<img class="partners-b__images-img"
+							src="./assets/img/components/partners-b/staff/img-1.png" alt="">
+					</a>
+					<a class="partners-b__images-link"
+						href="./assets/img/components/partners-b/staff/img-1@2x.png" data-fslightbox="partners">
+						<img class="partners-b__images-img"
+							src="./assets/img/components/partners-b/staff/img-1.png" alt="">
+					</a>
+					<a class="partners-b__images-link"
+						href="./assets/img/components/partners-b/staff/img-1@2x.png" data-fslightbox="partners">
+						<img class="partners-b__images-img"
+							src="./assets/img/components/partners-b/staff/img-1.png" alt="">
+					</a>
+				</div>
+			</div>
+		</section>
+		<!-- faq -->
+		<section class="faq-b section">
+			<div class="faq-b__container container">
+				<h2 class="section__title title-1"  data-aos="zoom-in" data-aos-duration="2500">Faq</h2>
+				<!-- accardion -->
+				<div class="faq-accardion accardion">
+					<!-- accardion item -->
+					<div class="accardion__item">
+						<!-- accardion header -->
+						<div class="accardion__item-header">
+							<span>Можете ли вы гарантировать ТОП-1 в поисковых системах?</span>
+							<span class="accardion__item-arr">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#arr-circ"></use>
+								</svg>
+							</span>
+						</div>
+						<!-- accardion dropdown -->
+						<div class="accardion__item-drop">
+							<div class="accardion__item-content">
+								<p>
+									Позиция Google и Яндекс такова, что никто не может гарантировать попадание
+									сайта в ТОП и неизменность его позиций, включая самих специалистов Google и
+									Яндекс. Однако, зная принципы работы поисковых систем и имея опыт
+									продвижения в различных тематиках, мы можем прогнозировать достижение таких
+									результатов.
+									Часто гарантированный вывод в ТОП-1 используют мошенники в качестве дешевого
+									рекламного хода.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- accardion item -->
+					<div class="accardion__item">
+						<!-- accardion header -->
+						<div class="accardion__item-header">
+							<span>Что эффективнее: SEO или контекстная реклама?</span>
+							<span class="accardion__item-arr">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#arr-circ"></use>
+								</svg>
+							</span>
+						</div>
+						<!-- accardion dropdown -->
+						<div class="accardion__item-drop">
+							<div class="accardion__item-content">
+								<p>
+									Позиция Google и Яндекс такова, что никто не может гарантировать попадание
+									сайта в ТОП и неизменность его позиций, включая самих специалистов Google и
+									Яндекс. Однако, зная принципы работы поисковых систем и имея опыт
+									продвижения в различных тематиках, мы можем прогнозировать достижение таких
+									результатов.
+									Часто гарантированный вывод в ТОП-1 используют мошенники в качестве дешевого
+									рекламного хода.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- accardion item -->
+					<div class="accardion__item">
+						<!-- accardion header -->
+						<div class="accardion__item-header">
+							<span>Можно ли пополнять рекламные аккаунты Google, Яндекс и Facebook по
+								безналу?</span>
+							<span class="accardion__item-arr">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#arr-circ"></use>
+								</svg>
+							</span>
+						</div>
+						<!-- accardion dropdown -->
+						<div class="accardion__item-drop">
+							<div class="accardion__item-content">
+								<p>
+									Позиция Google и Яндекс такова, что никто не может гарантировать попадание
+									сайта в ТОП и неизменность его позиций, включая самих специалистов Google и
+									Яндекс. Однако, зная принципы работы поисковых систем и имея опыт
+									продвижения в различных тематиках, мы можем прогнозировать достижение таких
+									результатов.
+									Часто гарантированный вывод в ТОП-1 используют мошенники в качестве дешевого
+									рекламного хода.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- accardion item -->
+					<div class="accardion__item">
+						<!-- accardion header -->
+						<div class="accardion__item-header">
+							<span>Какая минимальная сумма пополнения?</span>
+							<span class="accardion__item-arr">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#arr-circ"></use>
+								</svg>
+							</span>
+						</div>
+						<!-- accardion dropdown -->
+						<div class="accardion__item-drop">
+							<div class="accardion__item-content">
+								<p>
+									Позиция Google и Яндекс такова, что никто не может гарантировать попадание
+									сайта в ТОП и неизменность его позиций, включая самих специалистов Google и
+									Яндекс. Однако, зная принципы работы поисковых систем и имея опыт
+									продвижения в различных тематиках, мы можем прогнозировать достижение таких
+									результатов.
+									Часто гарантированный вывод в ТОП-1 используют мошенники в качестве дешевого
+									рекламного хода.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- accardion item -->
+					<div class="accardion__item">
+						<!-- accardion header -->
+						<div class="accardion__item-header">
+							<span>Как сэкономить на рекламе, если моя компания работает с НДС?</span>
+							<span class="accardion__item-arr">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#arr-circ"></use>
+								</svg>
+							</span>
+						</div>
+						<!-- accardion dropdown -->
+						<div class="accardion__item-drop">
+							<div class="accardion__item-content">
+								<p>
+									Позиция Google и Яндекс такова, что никто не может гарантировать попадание
+									сайта в ТОП и неизменность его позиций, включая самих специалистов Google и
+									Яндекс. Однако, зная принципы работы поисковых систем и имея опыт
+									продвижения в различных тематиках, мы можем прогнозировать достижение таких
+									результатов.
+									Часто гарантированный вывод в ТОП-1 используют мошенники в качестве дешевого
+									рекламного хода.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- accardion item -->
+					<div class="accardion__item">
+						<!-- accardion header -->
+						<div class="accardion__item-header">
+							<span>Буду ли я иметь доступ к рекламному кабинету?</span>
+							<span class="accardion__item-arr">
+								<svg>
+									<use xlink:href="./assets/img/icons/sprite.svg#arr-circ"></use>
+								</svg>
+							</span>
+						</div>
+						<!-- accardion dropdown -->
+						<div class="accardion__item-drop">
+							<div class="accardion__item-content">
+								<p>
+									Позиция Google и Яндекс такова, что никто не может гарантировать попадание
+									сайта в ТОП и неизменность его позиций, включая самих специалистов Google и
+									Яндекс. Однако, зная принципы работы поисковых систем и имея опыт
+									продвижения в различных тематиках, мы можем прогнозировать достижение таких
+									результатов.
+									Часто гарантированный вывод в ТОП-1 используют мошенники в качестве дешевого
+									рекламного хода.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- application block -->
+		<section class="application-b">
+			<div class="application-b__container container">
+				<h2 class="title-1 section__title" data-aos="zoom-in">Приступить к работе</h2>
+				<div class="application-b__row">
+					<div class="application-b__left">
+						<div class="b24-form">
+							<div id="b24-7738154165522853004949766543470124" data-styles-apllied="true"
+								class="b24-form-style-modern">
+								<div class="b24-form-wrapper b24-form-shadow">
+									<div class="b24-form-header b24-form-padding-side">
+										<div class="b24-form-header-title">ПОЛУЧИТЕ ПРЕДЛОЖЕНИЕ КОНКРЕТНО ДЛЯ ВАШЕГО БИЗНЕСА
+										</div>
+										<!---->
+									</div>
+									<div class="b24-form-content b24-form-padding-side">
+										<form method="post" novalidate="novalidate">
+											<div class="b24-form-progress-container">
+												<div class="b24-form-progress-bar-container"><svg viewport="0 0 44 44"
+														width="44" height="44" class="b24-form-progress">
+														<circle r="20" cx="22" cy="22" stroke-width="4"
+															class="b24-form-progress-track"></circle>
+														<circle r="20" cx="22" cy="22" stroke-width="4"
+															stroke-dasharray="125.60000000000001"
+															stroke-dashoffset="62.800000000000004"
+															class="b24-form-progress-bar"></circle>
+													</svg>
+													<div class="b24-form-progress-bar-counter"><strong>1</strong>/2
+													</div>
+												</div>
+												<div class="b24-form-progress-bar-title">
+													Контакты
+												</div>
+											</div>
+											<div>
+												<div class="b24-form-field b24-form-field-name b24-form-control-string">
+													<div>
+														<div>
+															<div
+																class="b24-form-control-container b24-form-control-icon-after">
+																<input name="name" autocomplete="given-name" type="string"
+																	class="b24-form-control">
+																<div class="b24-form-control-label">
+																	КП: Имя
+																	<span class="b24-form-control-required">*</span>
+																</div>
+																<!---->
+																<!---->
+																<div class="b24-form-control-alert-message"
+																	style="display: none;">
+																	Поле обязательно для заполнения
+																</div>
+															</div>
+														</div>
+														<!---->
+														<!---->
+													</div>
+													<!---->
+												</div>
+												<div
+													class="b24-form-field b24-form-field-phone b24-form-control-string b24-form-control-group">
+													<div>
+														<div>
+															<div
+																class="b24-form-control-container b24-form-control-icon-after">
+																<input name="phone" autocomplete="tel" type="tel"
+																	class="b24-form-control">
+																<div class="b24-form-control-label">
+																	КП: Телефон
+																	<span class="b24-form-control-required">*</span>
+																</div>
+																<!---->
+																<!---->
+																<div class="b24-form-control-alert-message"
+																	style="display: none;">
+																	Поле обязательно для заполнения
+																</div>
+															</div>
+														</div> <a class="b24-form-control-add-btn">
+															Добавить еще
+														</a>
+														<!---->
+													</div>
+													<!---->
+												</div>
+												<div class="b24-form-field b24-form-field-email b24-form-control-string">
+													<div>
+														<div>
+															<div
+																class="b24-form-control-container b24-form-control-icon-after">
+																<input name="email" autocomplete="email" type="email"
+																	class="b24-form-control">
+																<div class="b24-form-control-label">
+																	КП: E-mail
+																	<span class="b24-form-control-required"
+																		style="display: none;">*</span>
+																</div>
+																<!---->
+																<!---->
+																<div class="b24-form-control-alert-message"
+																	style="display: none;">
+
+																</div>
+															</div>
+														</div>
+														<!---->
+														<!---->
+													</div>
+													<!---->
+												</div>
+											</div>
+											<!---->
+											<!---->
+											<div class="b24-form-btn-container">
+												<!---->
+												<div class="b24-form-btn-block"><button type="button" class="b24-form-btn">
+														Далее
+													</button></div>
+												<!---->
+											</div> <span style="color: red; display: none;">
+												Debug: fill fields
+											</span>
+										</form>
+									</div>
+									<div class="b24-form-state-container">
+										<div class="b24-form-loader" style="display: none;">
+											<div class="b24-form-loader-icon"><svg
+													xmlns:xlink="http://www.w3.org/1999/xlink"
+													xmlns="http://www.w3.org/2000/svg" viewBox="0 0 263 174">
+													<defs><svg width="158px" height="158px" viewBox="0 0 158 158"
+															version="1.1" xmlns="http://www.w3.org/2000/svg"
+															xmlns:xlink="http://www.w3.org/1999/xlink">
+															<path id="bxSunLines"
+																d="M79,0 C80.6568542,0 82,1.34314575 82,3 L82,22 C82,23.6568542 80.6568542,25 79,25 C77.3431458,25 76,23.6568542 76,22 L76,3 C76,1.34314575 77.3431458,0 79,0 Z M134.861,23.139 C136.032146,24.3104996 136.032146,26.2095004 134.861,27.381 L121.426,40.816 C120.248863,41.9529166 118.377746,41.9366571 117.220544,40.7794557 C116.063343,39.6222543 116.047083,37.7511367 117.184,36.574 L130.619,23.139 C131.7905,21.9678542 133.6895,21.9678542 134.861,23.139 L134.861,23.139 Z M158,79 C158,80.6568542 156.656854,82 155,82 L136,82 C134.343146,82 133,80.6568542 133,79 C133,77.3431458 134.343146,76 136,76 L155,76 C156.656854,76 158,77.3431458 158,79 Z M134.861,134.861 C133.6895,136.032146 131.7905,136.032146 130.619,134.861 L117.184,121.426 C116.40413,120.672777 116.091362,119.557366 116.365909,118.508478 C116.640455,117.45959 117.45959,116.640455 118.508478,116.365909 C119.557366,116.091362 120.672777,116.40413 121.426,117.184 L134.861,130.619 C136.032146,131.7905 136.032146,133.6895 134.861,134.861 Z M79,158 C77.3431458,158 76,156.656854 76,155 L76,136 C76,134.343146 77.3431458,133 79,133 C80.6568542,133 82,134.343146 82,136 L82,155 C82,156.656854 80.6568542,158 79,158 Z M23.139,134.861 C21.9678542,133.6895 21.9678542,131.7905 23.139,130.619 L36.574,117.184 C37.3272234,116.40413 38.4426337,116.091362 39.491522,116.365909 C40.5404103,116.640455 41.3595451,117.45959 41.6340915,118.508478 C41.9086378,119.557366 41.5958698,120.672777 40.816,121.426 L27.381,134.861 C26.2095004,136.032146 24.3104996,136.032146 23.139,134.861 Z M0,79 C0,77.3431458 1.34314575,76 3,76 L22,76 C23.6568542,76 25,77.3431458 25,79 C25,80.6568542 23.6568542,82 22,82 L3,82 C1.34314575,82 0,80.6568542 0,79 L0,79 Z M23.139,23.139 C24.3104996,21.9678542 26.2095004,21.9678542 27.381,23.139 L40.816,36.574 C41.5958698,37.3272234 41.9086378,38.4426337 41.6340915,39.491522 C41.3595451,40.5404103 40.5404103,41.3595451 39.491522,41.6340915 C38.4426337,41.9086378 37.3272234,41.5958698 36.574,40.816 L23.139,27.381 C21.9678542,26.2095004 21.9678542,24.3104996 23.139,23.139 Z"
+																fill="#FFD110" class="bx-sun-lines-animate"></path>
+														</svg></defs>
+													<g fill="none" fill-rule="evenodd">
+														<path
+															d="M65.745 160.5l.245-.005c13.047-.261 23.51-10.923 23.51-23.995 0-13.255-10.745-24-24-24-3.404 0-6.706.709-9.748 2.062l-.47.21-.196-.477A19.004 19.004 0 0 0 37.5 102.5c-10.493 0-19 8.507-19 19 0 1.154.103 2.295.306 3.413l.108.6-.609-.01A17.856 17.856 0 0 0 18 125.5C8.335 125.5.5 133.335.5 143s7.835 17.5 17.5 17.5h47.745zM166.5 85.5h69v-.316l.422-.066C251.14 82.73 262.5 69.564 262.5 54c0-17.397-14.103-31.5-31.5-31.5-.347 0-.694.006-1.04.017l-.395.013-.103-.382C226.025 9.455 214.63.5 201.5.5c-15.014 0-27.512 11.658-28.877 26.765l-.047.515-.512-.063a29.296 29.296 0 0 0-3.564-.217c-16.016 0-29 12.984-29 29 0 15.101 11.59 27.643 26.542 28.897l.458.039v.064z"
+															stroke-opacity=".05" stroke="#000" fill="#000"></path>
+														<circle stroke="#FFD110" stroke-width="6" cx="131.5" cy="95.5"
+															r="44.5" class="b24-form-loader-icon-sun-ring"></circle>
+													</g>
+													<use xlink:href="#bxSunLines" y="16.5" x="52.5" width="158" height="158"
+														class="b24-form-loader-icon-sun-line"></use>
+												</svg></div>
+										</div>
+										<div class="b24-form-state b24-form-success" style="display: none;">
+											<div class="b24-form-state-inner">
+												<div class="b24-form-state-icon b24-form-success-icon"></div>
+												<div class="b24-form-state-text">
+													<p>Отправлено!</p>
+													<p></p>
+												</div>
+												<!---->
+											</div>
+											<div class="b24-form-inner-box"></div>
+										</div>
+										<div class="b24-form-state b24-form-error" style="display: none;">
+											<div class="b24-form-state-inner">
+												<div class="b24-form-state-icon b24-form-error-icon"></div>
+												<div class="b24-form-state-text">
+													<p></p>
+												</div> <button class="b24-form-btn b24-form-btn-border b24-form-btn-tight">
+													Отправить еще раз
+												</button>
+											</div>
+											<div class="b24-form-inner-box"></div>
+										</div>
+										<div class="b24-form-state b24-form-warning" style="display: none;">
+											<div class="b24-form-state-inner">
+												<div class="b24-form-state-icon b24-form-warning-icon"><svg
+														xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 169 169">
+														<defs>
+															<circle id="a" cx="84.5" cy="84.5" r="65.5"></circle>
+															<filter x="-.8%" y="-.8%" width="101.5%" height="101.5%"
+																filterUnits="objectBoundingBox" id="b">
+																<feGaussianBlur stdDeviation=".5" in="SourceAlpha"
+																	result="shadowBlurInner1"></feGaussianBlur>
+																<feOffset dx="-1" dy="-1" in="shadowBlurInner1"
+																	result="shadowOffsetInner1"></feOffset>
+																<feComposite in="shadowOffsetInner1" in2="SourceAlpha"
+																	operator="arithmetic" k2="-1" k3="1"
+																	result="shadowInnerInner1"></feComposite>
+																<feColorMatrix
+																	values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0886691434 0"
+																	in="shadowInnerInner1" result="shadowMatrixInner1">
+																</feColorMatrix>
+																<feGaussianBlur stdDeviation=".5" in="SourceAlpha"
+																	result="shadowBlurInner2"></feGaussianBlur>
+																<feOffset dx="1" dy="1" in="shadowBlurInner2"
+																	result="shadowOffsetInner2"></feOffset>
+																<feComposite in="shadowOffsetInner2" in2="SourceAlpha"
+																	operator="arithmetic" k2="-1" k3="1"
+																	result="shadowInnerInner2"></feComposite>
+																<feColorMatrix
+																	values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.292285839 0"
+																	in="shadowInnerInner2" result="shadowMatrixInner2">
+																</feColorMatrix>
+																<feMerge>
+																	<feMergeNode in="shadowMatrixInner1"></feMergeNode>
+																	<feMergeNode in="shadowMatrixInner2"></feMergeNode>
+																</feMerge>
+															</filter>
+														</defs>
+														<g fill="none" fill-rule="evenodd">
+															<circle stroke-opacity=".05" stroke="#000" fill-opacity=".07"
+																fill="#000" cx="84.5" cy="84.5" r="84"></circle>
+															<use fill="#FFF" xlink:href="#a"></use>
+															<use fill="#000" filter="url(#b)" xlink:href="#a"></use>
+															<path
+																d="M114.29 99.648L89.214 58.376c-1.932-3.168-6.536-3.168-8.427 0L55.709 99.648c-1.974 3.25.41 7.352 4.234 7.352h50.155c3.782 0 6.166-4.103 4.193-7.352zM81.404 72.756c0-1.828 1.48-3.29 3.33-3.29h.452c1.85 0 3.33 1.462 3.33 3.29v12.309c0 1.827-1.48 3.29-3.33 3.29h-.453c-1.85 0-3.33-1.463-3.33-3.29V72.756zm7.77 23.886c0 2.274-1.892 4.143-4.194 4.143s-4.193-1.869-4.193-4.143c0-2.275 1.891-4.144 4.193-4.144 2.302 0 4.193 1.869 4.193 4.144z"
+																fill="#000" opacity=".4"></path>
+														</g>
+													</svg></div>
+												<div class="b24-form-state-text">
+													<p>Форма не актуальна</p>
+												</div>
+											</div>
+											<div class="b24-form-inner-box"></div>
+										</div>
+									</div>
+									<div class="b24-form-recaptcha">
+										<div>
+											<div class="grecaptcha-badge" data-style="inline"
+												style="width: 256px; height: 60px; box-shadow: gray 0px 0px 5px;">
+												<div class="grecaptcha-logo"><iframe title="reCAPTCHA"
+														src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcHcdEUAAAAACBnH9teNrlEpOQb63k7g1tAFpEW&amp;co=aHR0cHM6Ly9jd2ViLmJ5OjQ0Mw..&amp;hl=ru&amp;v=1p3YWy80wlZ7Q8QFR1gjazwU&amp;size=invisible&amp;badge=inline&amp;cb=2gt1m7v19239"
+														width="256" height="60" role="presentation" name="a-j0brjzso4asy"
+														frameborder="0" scrolling="no"
+														sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+												</div>
+												<div class="grecaptcha-error"></div><textarea id="g-recaptcha-response"
+													name="g-recaptcha-response" class="g-recaptcha-response"
+													style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+											</div>
+										</div>
+									</div>
+									<!---->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="application-b__right">
+						<div class="application-b__img">
+							<img src="./assets/img/components/b-application/application-b-bg.jpg" alt="">
+						</div>
+						<div class="application-b__overlay flex-col">
+							<!-- logo -->
+							<a class="logo" href="#">
+								<img class="logo__ic" src="assets/img/logo-ic.png" alt="логотип">
+								<span class="logo__text">CWEB</span>
+							</a>
+							<p>
+								обещаем только то, что можем выполнить!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+		</div>
+		
+				<!-- FOOTER -->
+<footer>
+	<div class="container">
+		<!-- top -->
+		<div class="footer__top flex">
+			<!-- logo -->
+			<a class="footer__logo logo" href="#">
+				<img class="logo__ic" src="assets/img/logo-ic.png" alt="логотип">
+				<span class="logo__text">CWEB</span>
+			</a>
+		</div>
+		<!-- middle -->
+		<div class="footer__middle">
+			<div class="footer__middle-col">
+				<p class="color-primary">Cоздание и продвижение сайтов</p>
+				<p>ООО «КристаллВеб»</p>
+				<p>УНП 193312909</p>
+			</div>
+			<!-- navigation -->
+			<ul class="footer__middle-col footer__nav">
+				<li><a href="#">Seo-продвижение</a></li>
+				<li><a href="#">Разработка сайтов</a></li>
+				<li><a href="#">Таргетированная реклама</a></li>
+				<li><a href="#">Контекстная реклама</a></li>
+				<li><a href="#">Реклама на youtube</a></li>
+			</ul>
+			<div class="footer__middle-col">
+				<!-- info firm -->
+				<div class="footer__firm-info-list firm-info-list flex-col">
+					<a class="firm-info firm-info--mail" href="mailto:info@cweb.by">
+						<svg class="firm-info__ic" width="16" height="12">
+							<use href="./assets/img/headerAndFooter/sprite.svg#mail-ic"></use>
+						</svg>
+						info@cweb.by
+					</a>
+					<a class="firm-info firm-info--clock">
+						<svg class="firm-info__ic" width="16" height="16">
+							<use href="./assets/img/headerAndFooter/sprite.svg#clock-ic"></use>
+						</svg>
+						ПН-ПТ с 10:00 до 17:00
+
+					</a>
+					<a class="firm-info firm-info--loc">
+						<svg class="firm-info__ic" width="12" height="16">
+							<use href="./assets/img/headerAndFooter/sprite.svg#loc-ic"></use>
+						</svg>
+						г. Минск, проспект Дзержинского 125а</a>
+				</div>
+			</div>
+			<div class="footer__middle-col">
+				<!-- contacts -->
+				<div class="footer__msgrs sci">
+					<a class="sci__link sci__link--tg" href="https://msngr.link/tg/375447310101">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#telegram-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--viber" href="https://msngr.link/vi/375447310101">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#viber-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--wp" href="https://msngr.link/wa/375447310101">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#wp-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--tel f-underline" href="tel:+375447310101">
+						+375&nbsp;44&nbsp;731&nbsp;01&nbsp;01
+					</a>
+				</div>
+				<!-- sci list -->
+				<div class="footer__sci-list">
+					<a class="sci__link sci__link--tiktok" href="https://www.tiktok.com/@cweb.by"
+						target="_blank">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#behance-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--ln" href="https://www.behance.net/cweb/" target="_blank">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#tiktok-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--ln" href="https://www.linkedin.com/company/crystal-web-bel/"
+						target="_blank">
+						<svg>
+							<use href="./assets/img/headerAndFooter/sprite.svg#linkedin-ic"></use>
+						</svg>
+					</a>
+					<a class="sci__link sci__link--insta" href="https://msngr.link/wa/375447310101"
+						target="_blank">
+						<img src="./assets/img/headerAndFooter/svg/insta-ic.svg" alt="">
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- bottom -->
+	<div class="footer__bottom">
+		<div class="container">
+			<div class="footer__bottom-content">
+				<p>Цены, представленные на сайте, не являются публичной офертой и носят исключительно рекламный
+					характер
+				</p>
+				<a href="assets/documents/privacy_policy_kupeliruru.pdf"
+					download="Политика конфиденциальности сайта cweb.by">Политика конфиденциальности</a>
+				<p class="footer__copyright">&copy; Copyright 2017-2021 ООО «Кристалл Веб»</p>
+			</div>
+		</div>
+	</div>
+</footer>		
+		
+			</div>
+	
+		<!-- jquery -->
+	<script src="assets/js/libraries/jquery.min.js"></script>
+	<!-- jquery event move -->
+	<script src="assets/js/libraries/jquery.event.move.js"></script>
+	<!-- twentytwenty -->
+	<script src="assets/js/libraries/jquery.twentytwenty.js"></script>
+	<!-- aos -->
+	<script src="assets/js/libraries/aos.js"></script>
+	<!-- swiper.js -->
+	<script src="assets/js/libraries/swiper-bundle.min.js"></script>
+	<!-- lightbox -->
+	<script src="assets/js/libraries/fslightbox.js"></script>
+	<script src="assets/js/main.js"></script>
+	</body>
+
+</html>

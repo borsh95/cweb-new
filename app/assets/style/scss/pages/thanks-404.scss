@@ -1,0 +1,106 @@
+/*==================== THANKS AND 404 PAGE ====================*/
+.notify-pg {
+	main {
+		flex: 1;
+		padding: 115px 0 80px;
+		text-align: center;
+		background-origin: content-box;
+	
+		h1 {
+			margin-bottom: getEm(24, 64);
+			font-size: 64px;
+			text-transform: uppercase;
+			color: var(--color-primary);
+		}
+	
+		p {
+			font-weight: 300;
+			line-height: (28/24);
+			font-size: 24px;
+		}
+	
+		.btn {
+			--height: #{getEm(46, 18)};
+			margin-top: getEm(55, 18);
+			text-transform: uppercase;
+			min-width: 222px;
+		}
+	}
+
+	@include desctop-min {
+		main {
+			background-size: 150px auto !important;
+
+			h1 {
+				font-size: 52px;
+			}
+		}
+	}
+
+	@include mobile {
+		main {
+			padding: 70px 0 50px;
+			background: none !important;
+
+			h1 {
+				font-size: 36px;
+			}
+
+			p {
+				font-size: 20px;
+			}
+
+			.btn {
+				font-size: 16px;
+			}
+		}
+	}
+
+	@include tel {
+		main {
+
+			h1 {
+				font-size: 32px;
+			}
+
+			p {
+				font-size: 18px;
+			}
+
+			.btn {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+.err-pg {
+	main {
+		h1 {
+			margin-bottom: 0.08em;
+			font-size: 144px;
+		}
+
+		p {
+			margin: 0;
+		}
+	}
+
+	@include desctop-min {
+		main {
+			background-size: 200px auto, 150px auto !important;
+
+			h1 {
+				font-size: 120px;
+			}
+		}
+	}
+
+	@include tel {
+		main {
+			h1 {
+				font-size: 98px;
+			}
+		}
+	}
+}

@@ -1,0 +1,187 @@
+{% set title = "Портфолио таргет" %}
+{% set classPage = "portfolio-fl-pg portfolio-fl-pg--target" %}
+{% extends "./includes/layouts/page.twig" %}
+{# ------ BREADCRUMBS ----- #}
+{% block breadcrumbs %}
+{% include "./includes/molecules/breadcrumbs.twig" with {
+		breadcrumbs: [
+			{text: 'Главная',href: "/"},
+			{text: 'Продвижение'},
+		]
+	} %}
+{% endblock breadcrumbs %}
+{# ------ CONTENT WRAP ----- #}
+{% block content %}
+	<main>
+		<h1 class="title-1 container">Кейс по трагетированной рекламе
+			composit.by</h1>
+		<!-- example task -->
+		<section class="example-task-b section">
+			<div class="example-task-b__container container">
+				<div class="row">
+					<div class="col-6 col-md-7 col-sm-12">
+						<div class="example-task-b__col example-task-b__col--info">
+							<div class="example-task-b__expenses">
+								<p><b>Тематика:</b> <span class="fw-400">продажа и строительство композитных
+										бассейнов</span>
+								</p>
+								<p><b>Аккаунт клиента:</b>
+									<a href="http://composit_group.by/" target="_blank">composit_group.by</a>
+								</p>
+								<p>
+									<b>Период работ:</b>
+									2020 - по настояещее время
+								</p>
+								<p class="vt-center"><b>Бюджет:</b>
+									<span class="example-task-b__coins">
+										<span class="example-task-b__coin"></span>
+										<span class="example-task-b__coin"></span>
+										<span class="example-task-b__coin"></span>
+									</span>
+								</p>
+							</div>
+							<div class="example-task-b__card">
+								<h4>Цели и задачи</h4>
+								<h3>
+									Основной задачей являлось повышение узнаваемости бренда, а также
+									увеличение продаж засчет таргета.
+								</h3>
+								<p>
+									Начать работы было принято с общего оформления BIO, вечных сторис и контент
+									планов.
+								</p>
+								<p>
+									В качестве рекламных креативов используются только авторские фото
+									и тут еще над текстом самим подкмать
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-6 col-md-5 col-sm-12">
+						<div class="example-task-b__col example-task-b__col--creators flex-col">
+							<div class="example-task-b__review-card review-slide">
+								<div class="review-slide__imgBox"
+									style="background-image: url(./assets/img/components/reviews-slider/composit-bg.jpg);">
+									<a class="btn btn--secondary"
+										href="./assets/img/components/reviews-slider/composit-rev.webp"
+										data-fslightbox="composit">
+										Оригинал отзыва
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- project description -->
+		<div class="project-desc-b section">
+			<div class="project-desc-b__container container">
+				<h2 class="title-1 section__title title--type-2">
+					<span>Оформление</span> аккаунта и ленты заказчика
+				</h2>
+				<a class="project-desc-b__img" href="#" target="_blank">
+					<img src="./assets/img/components/project-desc-b/composit.jpg" alt="sdke.by">
+				</a>
+			</div>
+		</div>
+		<!-- metrics -->
+		<section class="metrics-b section">
+			<div class="metrics-b__container container">
+				<h2 class="title-1 section__title title--type-2">
+					<span>Результаты</span> за период работы
+				</h2>
+				<div class="b-row">
+					<div class="col-6 col-sm-12">
+						<div class="metrics-b__item flex-col">
+							<a href="./assets/img/components/metrics-b/composit-target.jpg"
+								data-fslightbox="metric">
+								<img src="./assets/img/components/metrics-b/composit-target.jpg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="col-6 col-sm-12">
+						<div class="metrics-b__item flex-col">
+							<a href="./assets/img/components/metrics-b/composit-target-2.jpg"
+								data-fslightbox="metric">
+								<img src="./assets/img/components/metrics-b/composit-target-2.jpg" alt="">
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- application block -->
+		<section class="application-b">
+			<div class="container">
+				<h2 class="title-1 section__title title--type-2">
+					<span>Приступить</span> к работе
+				</h2>
+			</div>
+			<div class="application-b__container container flex">
+				<div class="application-b__left">
+					<form action="#" class="application-form">
+						<div class="b-input">
+							<div class="b-input__input">
+								<input type="text" name="username" placeholder=" ">
+								<div class="b-input__placeholder">Имя <span>*</span></div>
+								<div class="b-input__ic">
+									<svg>
+										<use href="./assets/img/icons/sprite.svg#input-user-ic"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="b-input">
+							<div class="b-input__input">
+								<input type="tel" name="tel" placeholder=" ">
+								<div class="b-input__placeholder">Телефон <span>*</span></div>
+								<div class="b-input__ic">
+									<svg>
+										<use href="./assets/img/icons/sprite.svg#input-tel-ic"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="b-input">
+							<div class="b-input__input">
+								<input type="url" name="url-site" placeholder=" ">
+								<div class="b-input__placeholder">Сайт <span
+										style="color: #A9ABAE;">(необязательно)</span></div>
+								<div class="b-input__ic">
+									<svg>
+										<use href="./assets/img/icons/sprite.svg#input-build-ic"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<div class="b-input">
+							<div class="b-input__input">
+								<input type="text" name="message" placeholder=" ">
+								<div class="b-input__placeholder">Сообщение</div>
+							</div>
+						</div>
+
+						<button class="btn" type="submit" aria-label="Отправить">Отправить</button>
+					</form>
+				</div>
+				<div class="application-b__right">
+					<div class="applacation-b__img">
+						<img src="./assets/img/components/b-application/application-b-bg.jpg" alt="">
+					</div>
+					<div class="application-b__overlay flex-col">
+						<!-- logo -->
+						<a class="logo" href="#">
+							<img class="logo__ic" src="assets/img/logo-ic.png" alt="логотип">
+							<span class="logo__text">CWEB</span>
+						</a>
+						<p>
+							обещаем только то, что можем выполнить!
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+{% endblock content %}
