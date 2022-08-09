@@ -78,6 +78,38 @@
 		}
 	}
 
+	if (isElem('.img-switch')) {
+		const card = document.querySelectorAll('.band-card');
+
+		if (card.length) {
+			card.forEach(el => {
+				let currentCard = el;
+				const imageSwitchItems = currentCard.querySelectorAll('.img-switch__item');
+				const imagePagination = currentCard.querySelector('.img-pagination');
+
+				if (imageSwitchItems.length > 1 && imagePagination) {
+					imageSwitchItems.forEach((el, index) => {
+						el.setAttribute('data-index', index);
+
+						imagePagination.innerHTML += `<li class="img-pagination__item ${index == 0 ? 'img-pagination__item--active' : ''}" data-index="${index}"></li>`;
+
+						el.addEventListener('mouseenter', (e) => {
+							currentCard.querySelectorAll('.img-pagination__item').forEach(el => { el.classList.remove('img-pagination__item--active') });
+
+							currentCard.querySelector(`.img-pagination__item[data-index="${e.currentTarget.dataset.index}"]`).classList.add('img-pagination__item--active');
+						});
+
+						el.addEventListener('mouseleave', (e) => {
+							currentCard.querySelectorAll('.img-pagination__item').forEach(el => { el.classList.remove('img-pagination__item--active') });
+
+							currentCard.querySelector(`.img-pagination__item[data-index="0"]`).classList.add('img-pagination__item--active');
+						});
+					});
+				}
+			});
+		}
+	}
+
 	/***** CUSTOM PLUGIN ******/
 	document.addEventListener('click', function (e) {
 		const $target = e.target;
@@ -265,6 +297,8 @@
 			spaceBetween: 32,
 			slideToClickedSlide: true,
 			centeredSlides: true,
+			watchSlidesVisibility: true,
+			watchOverflow: true,
 			noSwipingSelector: 'button',
 			speed: 500,
 
@@ -407,7 +441,7 @@
 	if (isElem('.page-slider')) {
 		for (const $slider of document.querySelectorAll('.page-slider')) {
 			const $parent = $slider.closest('.slider-wrap');
-			
+
 			new Swiper($slider, {
 				autoHeight: true,
 				spaceBetween: 60,
@@ -421,7 +455,7 @@
 					renderBullet: function (index, className) {
 						const slides = this.slides;
 						const textBtn = slides[index].getAttribute('aria-label');
-						
+
 						if (textBtn) {
 							return `
 								<button class="${className} btn btn--white">
@@ -506,7 +540,7 @@
 					clickable: true,
 				}
 			})
-		}		
+		}
 	}
 
 	if (isElem('header .bro-menu')) {
@@ -1413,8 +1447,8 @@
 
 	if (isElem('[data-active-coins]')) {
 		const coinParentEls = document.querySelectorAll('[data-active-coins]');
-		
-		
+
+
 		for (const coinParentEl of coinParentEls) {
 			const count = coinParentEl.dataset.activeCoins;
 			const childrenCoinEls = coinParentEl.children;

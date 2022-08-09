@@ -278,8 +278,8 @@
 /*band block*/
 .band-b {
 	&__list {
-		--air-l: 55px;
-		--air-b: 60px;
+		--air-l: 21px;
+		--air-b: 50px;
 
 		justify-content: flex-start;
 	}
@@ -298,28 +298,14 @@
 		}
 	}
 
-	@include from($table) {
-		.band-card {
-			&:hover {
-				box-shadow: 0px 0px 60px rgba(48, 130, 255, 0.1);
-				transform: translateY(-30px);
-			}
-		}
-	}
-
-	@include desctop-min {
-		&__list {
-			--air-l: 30px;
-		}
-
-		.band-card {
-			font-size: 18px;
-
-			.btn {
-				--fz: 16px;
-			}
-		}
-	}
+	// @include from($table) {
+	// 	.band-card {
+	// 		&:hover {
+	// 			box-shadow: 0px 0px 60px rgba(48, 130, 255, 0.1);
+	// 			transform: translateY(-30px);
+	// 		}
+	// 	}
+	// }
 
 	@include table {
 		&__list {
@@ -328,16 +314,6 @@
 		}
 
 		.band-card {
-			box-shadow: 0px 0px 20px rgba(48, 130, 255, 0.1);
-
-			&__info {
-				flex-direction: column;
-			}
-
-			&__skills {
-				margin: 0 0 15px;
-			}
-
 			&__window--certificates {
 				left: auto;
 				right: -20px;
@@ -361,15 +337,6 @@
 
 		.band-card {
 			font-size: 12px;
-
-			&__img {
-				width: 77px;
-				height: 77px;
-			}
-
-			&__info {
-				flex-direction: column;
-			}
 
 			&__info {
 				position: relative;
@@ -439,10 +406,6 @@
 
 /*band block*/
 .band-slider-b {
-	h2 {
-		margin-bottom: 48px;
-	}
-
 	&__subtitle {
 		margin-top: -20px;
 		margin-left: auto;
@@ -463,10 +426,6 @@
 	}
 
 	@include table {
-		h2 {
-			margin-bottom: 30px;
-		}
-
 		&__container {
 			max-width: none;
 		}
@@ -530,6 +489,12 @@
 			}
 		}
 
+		&:not(.swiper-slide-visible) {
+			.band-card {
+				box-shadow: none;
+			}
+		}
+
 		&::before {
 			content: "";
 			position: absolute;
@@ -563,14 +528,6 @@
 
 	@include desctop-min {
 		width: calc(100% - 25px * 2);
-
-		.band-card {
-			font-size: 22px;
-
-			.btn {
-				--fz: 16px;
-			}
-		}
 	}
 
 	@include table {
@@ -587,8 +544,6 @@
 		}
 
 		.band-card {
-			font-size: 20px;
-
 			&__window {
 				left: -40px;
 				max-width: 320px;
@@ -611,176 +566,10 @@
 				left: -20px;
 				max-width: 290px;
 
-				.custom-list {
-					font-size: 15px;
-				}
-
 				&--certificates {
 					left: auto;
 					right: -20px;
 				}
-			}
-		}
-	}
-}
-
-/*band card*/
-.band-card {
-	$this: &;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: getEm(37, 24) getEm(15, 24) getEm(25, 24);
-	font-size: 24px;
-	background-color: var(--basick-white);
-	border-radius: 10px;
-	transition: box-shadow $duration, transform $duration;
-
-	&__img {
-		position: relative;
-		margin: 0 auto getEm(31, 24);
-		width: getPr(248, 344);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: contain;
-		border-radius: 50%;
-		overflow: hidden;
-
-		&::before {
-			content: "";
-			display: block;
-			padding-bottom: 100%;
-		}
-
-		&::after {
-			content: "";
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			border: 2px solid rgba(0, 0, 0, 0.1);
-			border-radius: inherit;
-		}
-	}
-
-	&__name,
-	&__post {
-		font-size: 1em;
-		text-align: center;
-	}
-
-	&__name {
-		font-weight: 700;
-	}
-
-	&__post {
-		margin: getEm(10, 24) 0 auto;
-		color: var(--color-primary);
-	}
-
-	&__info {
-		margin-top: getEm(35, 24);
-		width: 100%;
-
-		&>* {
-			flex: 1;
-		}
-	}
-
-	.btn {
-		--height: #{getEm(36, 18)};
-		width: 100%;
-		border-width: 2px;
-
-		&.disable {
-			pointer-events: none;
-		}
-	}
-
-	&__skills {
-		position: relative;
-		margin-right: 25px;
-
-		&-btn {
-			box-shadow: none;
-		}
-	}
-
-	&__certificates {
-		position: relative;
-
-		&-btn {
-			font-weight: 400;
-			box-shadow: 0px 0px 10px rgba(48, 130, 255, 0.3);
-		}
-	}
-
-	&__window {
-		position: absolute;
-		left: 75%;
-		bottom: calc(100% + 6px);
-		z-index: 5;
-		padding: 15px 30px 25px 25px;
-		max-width: 350px;
-		font-size: 16px;
-		background-color: var(--basick-white);
-		box-shadow: 0px 0px 10px rgba(48, 130, 255, 0.4);
-		border-radius: 10px;
-		opacity: 0;
-		pointer-events: none;
-		transition: opacity $duration;
-
-		&--scills {
-			width: 346px;
-		}
-
-		&--certificates {
-			row-gap: 8px;
-			column-gap: 9px;
-			display: grid;
-			grid-template-columns: repeat(2, auto);
-			padding: 15px 30px 25px;
-
-			img {
-				max-height: 80px;
-				max-width: 80px;
-
-				&:hover {
-					box-shadow: 0px 0px 10px rgba(48, 130, 255, 0.5);
-				}
-			}
-		}
-	}
-
-	.btn.active~&__window {
-		opacity: 1;
-		pointer-events: all;
-	}
-
-	&--min {
-		padding: 5px;
-
-		#{$this}__name,
-		#{$this}__post {
-			font-size: 20px;
-		}
-	}
-
-	@include table {
-		&--min {
-			#{$this}__img {
-				margin-bottom: 15px;
-				width: 110px;
-				height: 110px;
-			}
-
-			#{$this}__name {
-				font-size: 14px;
-			}
-
-			#{$this}__post {
-				font-size: 12px;
 			}
 		}
 	}
