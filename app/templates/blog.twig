@@ -1,0 +1,465 @@
+{% set title = "Блог" %}
+{% set classPage = "blog-pg" %}
+{% extends "./includes/layouts/page.twig" %}
+{# ------ BREADCRUMBS ----- #}
+{% block breadcrumbs %}
+{% include "./includes/molecules/breadcrumbs.twig" with {
+		breadcrumbs: [
+			{text: 'Главная',href: "/"},
+			{text: 'О компании'},
+		]
+	} %}
+{% endblock breadcrumbs %}
+{# ------ CONTENT WRAP ----- #}
+{% block content %}
+	<main>
+		<!-- blog block -->
+		<section class="blog-b">
+			<div class="blog-b__container container">
+				<h1 class="section__title title-1">Блог</h1>
+				<div class="blog-b__head flex">
+					<!-- nav -->
+					<ul class="blog-b__nav">
+						<li class="blog-b__nav-item active">
+							<span class="blog-b__nav-link">Web-аналитика</sp>
+						</li>
+						<li class="blog-b__nav-item">
+							<a class="blog-b__nav-link" href="#">Основы SEO</a>
+						</li>
+						<li class="blog-b__nav-item">
+							<a class="blog-b__nav-link" href="#">Внутренняя оптимизация</a>
+						</li>
+						<li class="blog-b__nav-item">
+							<a class="blog-b__nav-link" href="#">Маркетинг</a>
+						</li>
+						<li class="blog-b__nav-item">
+							<a class="blog-b__nav-link" href="#">Новости</a>
+						</li>
+						<li class="blog-b__nav-item">
+							<a class="blog-b__nav-link" href="#">Техническое SEO</a>
+						</li>
+						<li class="blog-b__nav-item">
+							<a class="blog-b__nav-link" href="#">Менеджмент</a>
+						</li>
+						<li class="blog-b__nav-item">
+							<a class="blog-b__nav-link" href="#">Дизайн</a>
+						</li>
+					</ul>
+					<!-- blog note -->
+					<article class="blog-note b-list__col">
+						<a class="blog-note__img">
+							<img src="./assets/img/components/blog-b/img-1.jpg" alt="">
+						</a>
+						<div class="blog-note__content">
+							<h3>
+								<a href="#">
+									почему мы такие классные? и что делать если вы хотите стать нами
+								</a>
+							</h3>
+							<div class="blog-note__metadata note-metadata">
+								<div class="note-metadata__item note-metadata__item--category">
+									<svg>
+										<use xlink:href="./assets/img/icons/sprite.svg#menu-ic"></use>
+									</svg>
+									Полезное
+								</div>
+								<div class="note-metadata__item note-metadata__item--date">
+									<svg>
+										<use xlink:href="./assets/img/icons/sprite.svg#clock-ic"></use>
+									</svg>
+									19.05.2021
+								</div>
+								<div class="likeBox">
+									<div class="likeBox__item likeBox__item--views">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#views-ic"></use>
+										</svg>
+										1 222
+									</div>
+									<div class="likeBox__item likeBox__item--comment">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#comment-ic"></use>
+										</svg>
+										12
+									</div>
+									<div class="likeBox__item likeBox__item--like">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#like-ic"></use>
+										</svg>
+										107
+									</div>
+								</div>
+							</div>
+							<p>
+								Позиция Google и Яндекс такова, что никто не может гарантировать попадание сайта
+								в ТОП и неизменность его позиций, включая самих специалистов Google и Яндекс.
+								Однако, зная принципы работы поисковых систем и имея
+							</p>
+							<div class="blog-note__bottom flex-wrap vt-center">
+								<div class="blog-note__author">
+									Автор: <span>Мария шиманович</span>
+								</div>
+								<div class="likeBox">
+									<div class="likeBox__item likeBox__item--views">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#views-ic"></use>
+										</svg>
+										1 222
+									</div>
+									<div class="likeBox__item likeBox__item--comment">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#comment-ic"></use>
+										</svg>
+										12
+									</div>
+									<div class="likeBox__item likeBox__item--like">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#like-ic"></use>
+										</svg>
+										107
+									</div>
+								</div>
+								<a class="blog-note__more" href="#">
+									<svg>
+										<use xlink:href="./assets/img/icons/sprite.svg#arr-circ"></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+				</div>
+				<!-- blog notes -->
+				<div class="blog-b__notes b-list">
+					<!-- blog note -->
+					<article class="blog-note b-list__col">
+						<a class="blog-note__link" href="#"></a>
+						<div class="blog-note__img">
+							<img src="./assets/img/components/blog-b/img-1.jpg" alt="">
+						</div>
+						<div class="blog-note__content">
+							<h5>
+								почему мы такие классные? и что делать если вы хотите стать нами
+							</h5>
+							<div class="blog-note__metadata note-metadata">
+								<div class="note-metadata__item note-metadata__item--category">
+									<svg>
+										<use xlink:href="./assets/img/icons/sprite.svg#menu-ic"></use>
+									</svg>
+									Полезное
+								</div>
+								<div class="note-metadata__item note-metadata__item--date">
+									<svg>
+										<use xlink:href="./assets/img/icons/sprite.svg#clock-ic"></use>
+									</svg>
+									19.05.2021
+								</div>
+								<div class="likeBox">
+									<div class="likeBox__item likeBox__item--views">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#views-ic"></use>
+										</svg>
+										1 222
+									</div>
+									<div class="likeBox__item likeBox__item--comment">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#comment-ic"></use>
+										</svg>
+										12
+									</div>
+									<div class="likeBox__item likeBox__item--like">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#like-ic"></use>
+										</svg>
+										107
+									</div>
+								</div>
+							</div>
+							<p>
+								Позиция Google и Яндекс такова, что никто не может гарантировать попадание сайта
+								в ТОП и неизменность его позиций, включая самих специалистов Google и Яндекс.
+								Однако, зная принципы работы поисковых систем и имея
+							</p>
+							<!-- blog note bottom -->
+							<div class="blog-note__bottom vt-center flex-wrap">
+								<div class="blog-note__author">
+									Автор: <span>Мария Шиманович</span>
+								</div>
+								<div class="likeBox">
+									<div class="likeBox__item likeBox__item--views">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#views-ic"></use>
+										</svg>
+										1 222
+									</div>
+									<div class="likeBox__item likeBox__item--comment">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#comment-ic"></use>
+										</svg>
+										12
+									</div>
+									<div class="likeBox__item likeBox__item--like">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#like-ic"></use>
+										</svg>
+										107
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+					<!-- blog note -->
+					<article class="blog-note b-list__col">
+						<a class="blog-note__link" href="#"></a>
+						<div class="blog-note__img">
+							<img src="./assets/img/components/blog-b/img-1.jpg" alt="">
+						</div>
+						<div class="blog-note__content">
+							<h5>
+								почему мы такие классные? и что делать если вы хотите стать нами
+							</h5>
+							<div class="blog-note__metadata note-metadata">
+								<div class="note-metadata__item note-metadata__item--category">
+									<svg>
+										<use xlink:href="./assets/img/icons/sprite.svg#menu-ic"></use>
+									</svg>
+									Полезное
+								</div>
+								<div class="note-metadata__item note-metadata__item--date">
+									<svg>
+										<use xlink:href="./assets/img/icons/sprite.svg#clock-ic"></use>
+									</svg>
+									19.05.2021
+								</div>
+								<div class="likeBox">
+									<div class="likeBox__item likeBox__item--views">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#views-ic"></use>
+										</svg>
+										1 222
+									</div>
+									<div class="likeBox__item likeBox__item--comment">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#comment-ic"></use>
+										</svg>
+										12
+									</div>
+									<div class="likeBox__item likeBox__item--like">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#like-ic"></use>
+										</svg>
+										107
+									</div>
+								</div>
+							</div>
+							<p>
+								Позиция Google и Яндекс такова, что никто не может гарантировать попадание сайта
+								в ТОП и неизменность его позиций, включая самих специалистов Google и Яндекс.
+								Однако, зная принципы работы поисковых систем и имея
+							</p>
+							<!-- blog note bottom -->
+							<div class="blog-note__bottom vt-center flex-wrap">
+								<div class="blog-note__author">
+									Автор: <span>Мария Шиманович</span>
+								</div>
+								<div class="likeBox">
+									<div class="likeBox__item likeBox__item--views">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#views-ic"></use>
+										</svg>
+										1 222
+									</div>
+									<div class="likeBox__item likeBox__item--comment">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#comment-ic"></use>
+										</svg>
+										12
+									</div>
+									<div class="likeBox__item likeBox__item--like">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#like-ic"></use>
+										</svg>
+										107
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+					<!-- blog note -->
+					<article class="blog-note b-list__col">
+						<a class="blog-note__link" href="#"></a>
+						<div class="blog-note__img">
+							<img src="./assets/img/components/blog-b/img-1.jpg" alt="">
+						</div>
+						<div class="blog-note__content">
+							<h5>
+								почему мы такие классные? и что делать если вы хотите стать нами
+							</h5>
+							<div class="blog-note__metadata note-metadata">
+								<div class="note-metadata__item note-metadata__item--category">
+									<svg>
+										<use xlink:href="./assets/img/icons/sprite.svg#menu-ic"></use>
+									</svg>
+									Полезное
+								</div>
+								<div class="note-metadata__item note-metadata__item--date">
+									<svg>
+										<use xlink:href="./assets/img/icons/sprite.svg#clock-ic"></use>
+									</svg>
+									19.05.2021
+								</div>
+								<div class="likeBox">
+									<div class="likeBox__item likeBox__item--views">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#views-ic"></use>
+										</svg>
+										1 222
+									</div>
+									<div class="likeBox__item likeBox__item--comment">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#comment-ic"></use>
+										</svg>
+										12
+									</div>
+									<div class="likeBox__item likeBox__item--like">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#like-ic"></use>
+										</svg>
+										107
+									</div>
+								</div>
+							</div>
+							<p>
+								Позиция Google и Яндекс такова, что никто не может гарантировать попадание сайта
+								в ТОП и неизменность его позиций, включая самих специалистов Google и Яндекс.
+								Однако, зная принципы работы поисковых систем и имея
+							</p>
+							<!-- blog note bottom -->
+							<div class="blog-note__bottom vt-center flex-wrap">
+								<div class="blog-note__author">
+									Автор: <span>Мария Шиманович</span>
+								</div>
+								<div class="likeBox">
+									<div class="likeBox__item likeBox__item--views">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#views-ic"></use>
+										</svg>
+										1 222
+									</div>
+									<div class="likeBox__item likeBox__item--comment">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#comment-ic"></use>
+										</svg>
+										12
+									</div>
+									<div class="likeBox__item likeBox__item--like">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#like-ic"></use>
+										</svg>
+										107
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+					<!-- blog note -->
+					<article class="blog-note b-list__col">
+						<a class="blog-note__link" href="#"></a>
+						<div class="blog-note__img">
+							<img src="./assets/img/components/blog-b/img-1.jpg" alt="">
+						</div>
+						<div class="blog-note__content">
+							<h5>
+								почему мы такие классные? и что делать если вы хотите стать нами
+							</h5>
+							<div class="blog-note__metadata note-metadata">
+								<div class="note-metadata__item note-metadata__item--category">
+									<svg>
+										<use xlink:href="./assets/img/icons/sprite.svg#menu-ic"></use>
+									</svg>
+									Полезное
+								</div>
+								<div class="note-metadata__item note-metadata__item--date">
+									<svg>
+										<use xlink:href="./assets/img/icons/sprite.svg#clock-ic"></use>
+									</svg>
+									19.05.2021
+								</div>
+								<div class="likeBox">
+									<div class="likeBox__item likeBox__item--views">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#views-ic"></use>
+										</svg>
+										1 222
+									</div>
+									<div class="likeBox__item likeBox__item--comment">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#comment-ic"></use>
+										</svg>
+										12
+									</div>
+									<div class="likeBox__item likeBox__item--like">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#like-ic"></use>
+										</svg>
+										107
+									</div>
+								</div>
+							</div>
+							<p>
+								Позиция Google и Яндекс такова, что никто не может гарантировать попадание сайта
+								в ТОП и неизменность его позиций, включая самих специалистов Google и Яндекс.
+								Однако, зная принципы работы поисковых систем и имея
+							</p>
+							<!-- blog note bottom -->
+							<div class="blog-note__bottom vt-center flex-wrap">
+								<div class="blog-note__author">
+									Автор: <span>Мария Шиманович</span>
+								</div>
+								<div class="likeBox">
+									<div class="likeBox__item likeBox__item--views">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#views-ic"></use>
+										</svg>
+										1 222
+									</div>
+									<div class="likeBox__item likeBox__item--comment">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#comment-ic"></use>
+										</svg>
+										12
+									</div>
+									<div class="likeBox__item likeBox__item--like">
+										<svg class="likeBox__item-ic">
+											<use href="./assets/img/icons/likeBox/sprite.svg#like-ic"></use>
+										</svg>
+										107
+									</div>
+								</div>
+							</div>
+						</div>
+					</article>
+
+				</div>
+				<a href="#" class="blog-b__more btn">Посмотреть ещё</a>
+			</div>
+		</section>
+		<ul class="pagination">
+			<li class="page-item disabled">
+				<a class="page-link" href="#">
+					<svg>
+						<use xlink:href="./assets/img/icons/sprite.svg#arr-circ"></use>
+					</svg>
+				</a>
+			</li>
+			<li class="page-item active"><a class="page-link" href="blog/">1</a></li>
+			<li class="page-item"><a class="page-link" href="blog/?page=2">2</a></li>
+			<li class="page-item"><a class="page-link" href="blog/?page=3">3</a></li>
+			<li class="page-item"><a class="page-link" href="#">
+					<svg>
+						<use xlink:href="./assets/img/icons/sprite.svg#arr-circ"></use>
+					</svg>
+				</a>
+			</li>
+		</ul>
+	</main>
+{% endblock content %}

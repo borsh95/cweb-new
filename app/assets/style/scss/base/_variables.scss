@@ -4,6 +4,7 @@ $hue-color: 216;
 $color-primary: #0749aa;
 $color-primary-light: #f2f5f9;
 $color-succes: #4caf50;
+$color-orange: #FFA412;
 $basick-white: #fff;
 
 $color-text: #333;
@@ -17,6 +18,7 @@ $color-text: #333;
 	--basick-dark: #333;
 	--basick-white: #fff;
 	--basick-red: #f44336;
+	--color-orange: #{$color-orange};
 
 	--color-primary: #{$color-primary};
 	--color-primary-light: #{$color-primary-light};

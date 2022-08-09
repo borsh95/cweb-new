@@ -106,3 +106,23 @@
 	overflow: hidden;
 	@content;
 }
+
+@mixin scrollbars($size: 8px, $foreground: #7E7F81, $background: #F8F8F8) {
+    // для firefox
+    scrollbar-color: $foreground $background;
+    /* «цвет ползунка» «цвет полосы скроллбара» */
+    scrollbar-width: thin;
+    /* толщина */
+
+    // Для Chrome
+    &::-webkit-scrollbar {
+        width: $size;
+        height: $size;
+        background-color: $background;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $foreground;
+        border-radius: ($size/2);
+    }
+}

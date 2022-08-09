@@ -11,6 +11,7 @@
 }
 
 @include font-face("Roboto Condensed", 300, "./../../fonts/", "Robotocondensedlight");
+@include font-face("Roboto Condensed", 400, "./../../fonts/", "Roboto-Condensed-Italic", italic);
 @include font-face("Roboto Condensed", 400, "./../../fonts/", "Robotocondensed");
 @include font-face("Roboto Condensed", 700, "./../../fonts/", "Robotocondensedbold");
 @include font-face("Roboto Condensed", 700, "./../../fonts/", "Roboto-Condensed-Bold-Italic", italic);

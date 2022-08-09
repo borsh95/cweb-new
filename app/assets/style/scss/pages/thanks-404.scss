@@ -5,20 +5,20 @@
 		padding: 115px 0 80px;
 		text-align: center;
 		background-origin: content-box;
-	
+
 		h1 {
 			margin-bottom: getEm(24, 64);
 			font-size: 64px;
 			text-transform: uppercase;
 			color: var(--color-primary);
 		}
-	
+
 		p {
 			font-weight: 300;
 			line-height: (28/24);
 			font-size: 24px;
 		}
-	
+
 		.btn {
 			--height: #{getEm(46, 18)};
 			margin-top: getEm(55, 18);
@@ -58,7 +58,6 @@
 
 	@include tel {
 		main {
-
 			h1 {
 				font-size: 32px;
 			}

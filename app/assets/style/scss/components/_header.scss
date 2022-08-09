@@ -335,13 +335,16 @@ header {
 		display: flex;
 		align-items: center;
 
+		& > li > ul {
+			border-radius: 0px 0px 10px 10px;
+		}
+
 		ul {
 			position: absolute;
 			padding: 28px 0;
 			min-width: 320px;
 			max-width: 360px;
 			background-color: var(--basick-white);
-			border-radius: 0px 0px 10px 10px;
 			opacity: 0;
 			pointer-events: none;
 			transition: opacity $duration;
@@ -350,8 +353,6 @@ header {
 
 		ul ul {
 			padding: 0;
-			border-radius: 10px;
-			border-top-left-radius: 0;
 
 			& li:first-child,
 			& li:last-child {
@@ -489,6 +490,7 @@ header {
 				align-items: center;
 				padding-left: 0;
 
+				&:hover > ul,
 				&.active > ul {
 					opacity: 1;
 					pointer-events: all;

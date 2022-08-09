@@ -12,11 +12,12 @@
 
 	ul,
 	ol {
-		padding-left: 1.5em;
+		padding-left: 0;
 
 		li {
 			margin-bottom: 0.4em;
 			list-style-type: disc;
+			list-style-position: inside;
 		}
 	}
 

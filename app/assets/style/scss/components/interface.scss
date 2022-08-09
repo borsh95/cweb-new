@@ -777,8 +777,8 @@
 .v-up {
 	cursor: pointer;
 	position: fixed;
-	right: 53px;
-	bottom: 145px;
+	right: 50px;
+	bottom: 180px;
 	z-index: 250;
 	width: 60px;
 	height: 60px;
@@ -828,6 +828,7 @@
 	}
 
 	@include table {
+		bottom: 140px;
 		right: 13px;
 		width: 60px;
 		height: 60px;
@@ -876,5 +877,93 @@
 		&--more {
 			transform: rotate(0deg);
 		}
+	}
+}
+
+/* tooltip */
+.tooltip {
+	position: fixed;
+	z-index: 11;
+	display: flex;
+	flex-direction: column;
+	padding: 0.93em 2em;
+	max-width: 345px;
+	max-height: 205px;
+	font-weight: 700;
+	font-size: 12px;
+	line-height: (20/12);
+	color: #fff;
+	background-color: rgba(7, 73, 170, 0.6);
+	border-radius: 30px;
+	pointer-events: none;
+	opacity: 0;
+	transition: opacity $duration;
+	width: 300px;
+
+	&::after,
+	&::before {
+		content: "";
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		height: 10px;
+		background-color: transparent;
+	}
+
+	&::before {
+		top: auto;
+		bottom: 100%;
+	}
+
+	// &::before {
+	// 	content: "";
+	// 	position: absolute;
+	// 	top: 100%;
+	// 	left: 50%;
+	// 	width: 18px;
+	// 	height: 18px;
+	// 	border-left: 9px solid transparent;
+	// 	border-right: 9px solid transparent;
+	// 	border-bottom: 9px solid transparent;
+	// 	border-top: 9px solid rgba(7, 73, 170, 0.6);
+	// 	transform: translateX(-50%);
+	// }
+
+	&__inner {
+		overflow: auto;
+		max-height: 100%;
+		scrollbar-width: thin; /* толщина */
+	}
+
+	@at-root [data-tooltip] {
+		position: relative;
+	}
+
+	[data-tooltip]:hover &,
+	&--open {
+		opacity: 1 !important;
+		pointer-events: all;
+	}
+
+	&--open {
+		animation: animation $duration;
+	}
+
+	@keyframes animation {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	@include mobile {
+		padding: 0.6em 1.5em;
+		border-radius: 15px;
+	}
+
+	@include tel {
+		max-width: 80vw;
 	}
 }

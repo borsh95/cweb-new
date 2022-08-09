@@ -1,0 +1,668 @@
+{% set title = "Создание сайтов" %}
+{% set classPage = "development-pg" %}
+{% extends "./includes/layouts/page.twig" %}
+{# ------ BREADCRUMBS ----- #}
+{% block breadcrumbs %}
+{% include "./includes/molecules/breadcrumbs.twig" with {
+		breadcrumbs: [
+			{text: 'Главная',href: "/"},
+			{text: 'Создание сайтов'},
+		]
+	} %}
+{% endblock breadcrumbs %}
+{# ------ CONTENT WRAP ----- #}
+{% block content %}
+<main>
+	<!-- main slider -->
+	<section class="main-slider-b">
+		<div class="main-slider-b__container container">
+			<div class="main-slider-wrap">
+				<!-- slider -->
+				<div class="main-slider swiper-container">
+					<div class="swiper-wrapper">
+						<!-- slide -->
+						<div class="main-slider__slide	swiper-slide">
+							<!-- labels -->
+							<div class="main-slider__labels">
+								<div class="main-slider__label main-slider__label--height_auto client-our client-our--inline">
+									<div class="client-our__img">
+										<img src="assets/img/other/modx-professionals.png" alt="MODX Professionals">
+									</div>
+								</div>
+							</div>
+							<div class="main-slider__slide-textBox">
+								<h1>Разработка сайтов на modx</h1>
+								<p>
+									MODx - бесплатная, SEO-ориентированная CMS-система, позволяющая создавать сайты и приложения любой сложности. MOdx на рынке с 2004 года и имеет развитое сообщество разработчиков в Беларуси.
+								</p>
+								<div class="main-slider__slide-btns flex">
+									<a class="btn btn--secondary" href="#">Заказать интернет-магазин</a>
+								</div>
+								<div class="main-slider__slide-textBox-bg"></div>
+							</div>
+							<div class="main-slider__slide-img">
+								<img src="./assets/img/pages/development/main-slider/img-1.jpg" alt="Наша команда">
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- slider nav -->
+				<div class="main-slider-nav">
+					<div class="slider-arr slider-arr--circ slider-arr--prev">
+						<svg>
+							<use href="./assets/img/icons/sprite.svg#slider-arr_left"></use>
+						</svg>
+					</div>
+					<div class="slider-arr slider-arr--circ slider-arr--next">
+						<svg>
+							<use href="./assets/img/icons/sprite.svg#slider-arr_right"></use>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Недостатки MODx и преимущества -->
+	<div class="section opportunities-b">
+		<div class="container">
+			<style>
+				.opportunities-b .table-1 {
+					--border-spacing-x: 8px;
+					--border-spacing-y: 11px;
+					table-layout: fixed;
+				}
+
+				@media (min-width: 768px) {
+					.opportunities-b .table-1 [rowspan="3"] {
+						border-bottom: none;
+					}
+
+					.opportunities-b .table-1 td:first-child {
+						width: 30%;
+					}
+				}
+			</style>
+			<div class="table-wrap pt-0">
+				<div style="min-width: 320px; overflow: hidden">
+					<table class="table-1">
+						<!-- tbody -->
+						<tbody>
+							<tr>
+								<td class="fw-600" rowspan="3" style="font-size: 1.125em; color: #fff;background-color: #4CAF50 !important;">
+									<div>
+										Достоинства MODx
+									</div>
+								</td>
+								<td>
+									<div>
+										Простая и понятная панель администрирования сайта
+									</div>
+								</td>
+								<td>
+									<div>
+										Большой выбор готовых модулей
+									</div>
+								</td>
+								<td>
+									<div>
+										Гибкость, MODx дает возможность разработать сайт любой сложности
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div>
+										Кроссбраузерность и кроссплатформенность
+									</div>
+								</td>
+								<td>
+									<div>
+										Развитое сообщество разработчиков в Беларуси, низкая стоимость часа программиста по сравнению с Bitrix
+									</div>
+								</td>
+								<td>
+									<div>
+										Бесплатная лицензия и обновления
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<div>
+										Наличие SEO-модуля, обеспечивающего безукоризненную техническую оптимизацию сайта под требования поисковых систем
+									</div>
+								</td>
+								<td colspan="2">
+									<div>
+										Адекватные требования к хостингу. Для работы Modx достаточно наличия базы данных MySQL, веб-сервера Apache или IIS и поддержка PHP.
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="table-wrap mt-32">
+				<div style="min-width: 320px; overflow: hidden">
+					<table class="table-1">
+						<!-- tbody -->
+						<tbody>
+							<tr>
+								<td class="fw-600" rowspan="3" style="font-size: 1.125em; color: #fff;background-color: #FFA412 !important;">
+									<div>
+										Недостатки MODx
+									</div>
+								</td>
+								<td style="background-color: #FFF4E3 !important">
+									<div>
+										Небольшое количество готовых тем, что создает сложности начинающим разработчикам
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- stages -->
+	<section class="stages-b section pt-84 pt-sm-40">
+		<div class="stages-b__container container">
+			<h2 class="title-1 section__title">Этапы разработки сайтов на MODX:</h2>
+			<!-- accardion -->
+			<div class="stages-b__accardion accardion">
+				<!-- accardion item -->
+				<div class="accardion__item open">
+					<!-- accardion header -->
+					<div class="accardion__item-header">
+						<span class="accardion__item-num">1</span>
+						<span>Создание прототипов страниц</span>
+					</div>
+					<!-- accardion dropdown -->
+					<div class="accardion__item-drop">
+						<div class="accardion__item-content">
+							<p class="mb-3e fw-400">
+								Вначале наши менеджеры ознакомятся с вашим бизнесом и целями:
+							</p>
+							<ul>
+								<li>встреча в удобном формате для выявления потребностей и нахождения возможных
+									вариантов сотрудничества.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- accardion item -->
+				<div class="accardion__item">
+					<!-- accardion header -->
+					<div class="accardion__item-header">
+						<span class="accardion__item-num">2</span>
+						<span>Разработка и согласование дизайна</span>
+					</div>
+					<!-- accardion dropdown -->
+					<div class="accardion__item-drop">
+						<div class="accardion__item-content">
+							<p> На данном этапе проводятся работы по устранению всех найденных неполадок и ошибок на
+								сайте: </p>
+							<p>
+							</p>
+							<ul class="list-dots">
+								<li> Настройка и корректировка robots.txt, проверка валидации в вебмастерах. </li>
+								<li> Создание и настройка Sitemap.xml, подключение к вебмастерам. </li>
+								<li> Настройка всех базовых редиректов и главного зеркала. </li>
+								<li> Устранение 404 ошибок, "битых" и цикличных ссылок и т.д. </li>
+								<li> Редактирование Title, Description на всех страницах сайта, в соответствии с
+									семантическим ядром. Для интернет-магазинов мы настраиваем автоматизацию Title и
+									meta-tag. </li>
+								<li> Корректировка заголовков h1-h6. </li>
+								<li> Создание favicon.ico </li>
+								<li> Анализ, заполнение и корректировка атрибутов ALT и Title для картинок. </li>
+								<li> Проверка и создание корректного обработчика 404 ошибок. </li>
+								<li>Проверка кроссбраузерности сайта в популярных браузерах, на различных разрешениях
+									экранов и устрой ств. </li>
+								<li> Настройка ЧПУ (человекопонятные URL-адреса) на сайте. </li>
+								<li> Реализация внутренней перелинковки. </li>
+							</ul>
+							<p></p>
+						</div>
+					</div>
+				</div>
+				<!-- accardion item -->
+				<div class="accardion__item">
+					<!-- accardion header -->
+					<div class="accardion__item-header">
+						<span class="accardion__item-num">3</span>
+						<span>Установка MODx на хостинг</span>
+					</div>
+					<!-- accardion dropdown -->
+					<div class="accardion__item-drop">
+						<div class="accardion__item-content">
+							<p> На данном этапе проводится анализ текстовой составляющей всего сайта. Для исключения
+								ошибок и погрешностей мы используем несколько сервисов. </p>
+							<p> Подробно анализируются тексты на: уникальность, частоту употребления ключевых слов,
+								смысловую адекватность и стилистику, тошноту и грамматические ошибки. </p>
+							<p> После проведения всех необходимых проверок - составляется план по написанию новых
+								текстов и рерайту существующих, если это возможно. </p>
+							<p>
+								<span style="font-weight: 400; ">Важно!</span> Все затраты на написание необходимых
+								текстов включены в стоимость продвижения. Однако, стоимость может увеличиваться, если
+								количество требуемых текстов можно достигать нескольких десятков или сотен.
+							</p>
+							<p> Все новые тексты пишем с упором на полезность для целевой аудитории, а не просто для
+								поисковиков. При этом, очень важно делать тексты живыми, используя подзаголовки h2-h6,
+								списки, картинки. </p>
+							<p> Для интернет-магазинов анализируем описания товаров. </p>
+						</div>
+					</div>
+				</div>
+				<!-- accardion item -->
+				<div class="accardion__item">
+					<!-- accardion header -->
+					<div class="accardion__item-header">
+						<span class="accardion__item-num">4</span>
+						<span>Установка и настройка всех модулей сайта</span>
+					</div>
+					<!-- accardion dropdown -->
+					<div class="accardion__item-drop">
+						<div class="accardion__item-content">
+							<p> Перед началом закупки ссылок, мы проводим анализ ссылочной массы продвигаемого сайта и
+								всех максимально приближенных сайтов-конкурентов в тематике. </p>
+							<p> На основе анализа составляем план по наращиванию ссылочной массы. </p>
+							<p>
+								<span style="font-weight: 400;">Важно!</span> При продвижении мы используем
+								исключительно вечные статейные ссылки, работая с биржей Miralinks, либо напрямую с
+								вебмастерами и владельцами ресурсов.
+							</p>
+							<p> После составления плана по закупке ссылок, работа строится следующим образом: </p>
+							<p>
+							</p>
+							<ul class="list-dots">
+								<li> Заказываем копирайтерам написание новых статей. </li>
+								<li> Ищем подходящих и качественных доноров, ресурсы, на которых можно разместить наши
+									ссылки. </li>
+								<li> Проверяем написанные тексты, вычитываем, верстаем. </li>
+								<li> Проверяем написанные тексты, вычитываем, верстаем. </li>
+								<li> Проводим работы по ускорению индексации. </li>
+							</ul>
+							<p></p>
+							<p> Хотим обратить внимание, что на сегодняшний день ссылки не играют ключевую роль в
+								продвижении сайта. Некоторые сайты при продвижении вообще не требуют закупки ссылок.
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- accardion item -->
+				<div class="accardion__item">
+					<!-- accardion header -->
+					<div class="accardion__item-header">
+						<span class="accardion__item-num">6</span>
+						<span>Наполнение и публикация страниц</span>
+					</div>
+					<!-- accardion dropdown -->
+					<div class="accardion__item-drop">
+						<div class="accardion__item-content">
+							<p> После того, как большая часть запросов уже выведена в ТОП 10, посетителей на сайт
+								приходит с каждым днем все больше и больше, есть смысл работать над показателями сайта!
+							</p>
+							<p> На этом этапе мы проводим глубокую аналитику ресурса, используя: Вебвизор, карты кликов,
+								карты скроллинга, аналитика форм, анализ юзабилити и удобство навигации. </p>
+							<p> Какие показатели мы можем улучшить: </p>
+							<p>
+							</p>
+							<ul class="list-dots">
+								<li> Уменьшить показатель отказов </li>
+								<li>Улучшить время пребывания пользователей на сайте</li>
+								<li>Увеличить процент конверсии</li>
+								<li>Повлиять на глубину просмотра страниц пользователями</li>
+							</ul>
+							<p></p>
+							<p> При грамотной работе с этими показателями - заметно улучшается видимость сайта в
+								поисковых системах, существенно растут позиции по ключевым словам. На сегодняшний день,
+								поведенческие факторы играют ключевую роль при ранжировании сайтов. </p>
+						</div>
+					</div>
+				</div>
+				<!-- accardion item -->
+				<div class="accardion__item">
+					<!-- accardion header -->
+					<div class="accardion__item-header">
+						<span class="accardion__item-num">7</span>
+						<span>Настройка форм обратной связи</span>
+					</div>
+					<!-- accardion dropdown -->
+					<div class="accardion__item-drop">
+						<div class="accardion__item-content">
+							<p> После того, как большая часть запросов уже выведена в ТОП 10, посетителей на сайт
+								приходит с каждым днем все больше и больше, есть смысл работать над показателями сайта!
+							</p>
+							<p> На этом этапе мы проводим глубокую аналитику ресурса, используя: Вебвизор, карты кликов,
+								карты скроллинга, аналитика форм, анализ юзабилити и удобство навигации. </p>
+							<p> Какие показатели мы можем улучшить: </p>
+							<p>
+							</p>
+							<ul class="list-dots">
+								<li> Уменьшить показатель отказов </li>
+								<li>Улучшить время пребывания пользователей на сайте</li>
+								<li>Увеличить процент конверсии</li>
+								<li>Повлиять на глубину просмотра страниц пользователями</li>
+							</ul>
+							<p></p>
+							<p> При грамотной работе с этими показателями - заметно улучшается видимость сайта в
+								поисковых системах, существенно растут позиции по ключевым словам. На сегодняшний день,
+								поведенческие факторы играют ключевую роль при ранжировании сайтов. </p>
+						</div>
+					</div>
+				</div>
+				<!-- accardion item -->
+				<div class="accardion__item">
+					<!-- accardion header -->
+					<div class="accardion__item-header">
+						<span class="accardion__item-num">5</span>
+						<span>Верстка шаблонов страниц, внедрение верстки шаблонов в CMS</span>
+					</div>
+					<!-- accardion dropdown -->
+					<div class="accardion__item-drop">
+						<div class="accardion__item-content">
+							<p> После того, как большая часть запросов уже выведена в ТОП 10, посетителей на сайт
+								приходит с каждым днем все больше и больше, есть смысл работать над показателями сайта!
+							</p>
+							<p> На этом этапе мы проводим глубокую аналитику ресурса, используя: Вебвизор, карты кликов,
+								карты скроллинга, аналитика форм, анализ юзабилити и удобство навигации. </p>
+							<p> Какие показатели мы можем улучшить: </p>
+							<p>
+							</p>
+							<ul class="list-dots">
+								<li> Уменьшить показатель отказов </li>
+								<li>Улучшить время пребывания пользователей на сайте</li>
+								<li>Увеличить процент конверсии</li>
+								<li>Повлиять на глубину просмотра страниц пользователями</li>
+							</ul>
+							<p></p>
+							<p> При грамотной работе с этими показателями - заметно улучшается видимость сайта в
+								поисковых системах, существенно растут позиции по ключевым словам. На сегодняшний день,
+								поведенческие факторы играют ключевую роль при ранжировании сайтов. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- prices -->
+	<section class="prices-b section"  data-aos="fade-up" data-aos-duration="2500">
+		<div class="prices-b__container container">
+			<h2 class="title-1 section__title">Цены</h2>
+			<div class="prices-b__list b-list">
+				<!-- price card -->
+				<article class="price-card b-list__col">
+					<h5>Landing page</h5>
+					<div class="price-card__textBox">
+						<div class="price-card__subtitle">В стоимость входит:</div>
+						<ul class="custom-list">
+							<li>составление структуры страниц на основе анализа конкурентов</li>
+							<li>уникальный дизайн</li>
+							<li>базовая настройка веб-аналитики</li>
+							<li>наполнение контентом</li>
+							<li>техподдержка сайта в течение 1 месяца</li>
+						</ul>
+						<div class="price-card__cost">от 900 BYN</div>
+						<button class="price-card__btn btn" data-button-type="openModal">Запросить КП</button>
+					</div>
+				</article>
+				<!-- price card -->
+				<article class="price-card b-list__col">
+					<h5>Сайт услуг</h5>
+					<div class="price-card__textBox">
+						<div class="price-card__subtitle">В стоимость входит:</div>
+						<ul class="custom-list js-readmore" data-readmore-height="200">
+							<li>составление структуры страниц на основе анализа конкурентов</li>
+							<li>уникальный дизайн</li>
+							<li>настройка веб-аналитики</li>
+							<li>базовая оптимизация для Яндекс и Google </li>
+							<li>написание продающих текстов</li>
+							<li>наполнение контентом</li>
+							<li>техподдержка сайта в течение 1 месяца</li>
+						</ul>
+						<div class="price-card__cost">от 2 300 BYN</div>
+						<button class="price-card__btn btn" data-button-type="openModal">Запросить КП</button>
+					</div>
+				</article>
+				<!-- price card -->
+				<article class="price-card b-list__col">
+					<h5>Сайт каталог</h5>
+					<div class="price-card__textBox">
+						<div class="price-card__subtitle">В стоимость входит:</div>
+						<ul class="custom-list js-readmore" data-readmore-height="200">
+							<li>составление структуры страниц на основе анализа конкурентов</li>
+							<li>уникальный дизайн</li>
+							<li>настройка веб-аналитики</li>
+							<li>базовая оптимизация для поисковых систем</li>
+							<li>написание продающих текстов</li>
+							<li>наполнение контентом</li>
+							<li>инструкция по самостоятельному администрированию сайта</li>
+							<li>техподдержка сайта в течение 1 месяца</li>
+						</ul>
+						<div class="price-card__cost">от 2 300 BYN</div>
+						<button class="price-card__btn btn" data-button-type="openModal">Запросить КП</button>
+					</div>
+				</article>
+				<!-- price card -->
+				<article class="price-card b-list__col">
+					<h5>Интернет-магазин</h5>
+					<div class="price-card__textBox">
+						<div class="price-card__subtitle">В стоимость входит:</div>
+						<ul class="custom-list js-readmore" data-readmore-height="200">
+							<li>составление структуры страниц на основе анализа конкурентов</li>
+							<li>уникальный дизайн</li>
+							<li>настройка веб-аналитики</li>
+							<li>базовая SEO-оптимизация </li>
+							<li>написание продающих текстов</li>
+							<li>наполнение контентом</li>
+							<li>установка модулей фильтрации и корзины</li>
+							<li>подключение электронных платежей</li>
+							<li>инструкция по самостоятельному администрированию сайта</li>
+							<li>техподдержка сайта в течение 1 месяца</li>
+						</ul>
+						<div class="price-card__cost">от 3 000 BYN</div>
+						<button class="price-card__btn btn" data-button-type="openModal">Запросить КП</button>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
+	
+	<!-- faq -->
+	<section class="faq-b section">
+		<div class="faq-b__container container">
+			<h2 class="section__title title-1">Faq</h2>
+			<!-- accardion -->
+			<div class="faq-accardion accardion">
+				<!-- accardion item -->
+				<div class="accardion__item">
+					<!-- accardion header -->
+					<div class="accardion__item-header">
+						<span>В чем преимущество MODx перед Wordpress или Битрикс?</span>
+						<span class="accardion__item-arr">
+							<svg>
+								<use xlink:href="./assets/img/icons/sprite.svg#arr-circ"></use>
+							</svg>
+						</span>
+					</div>
+					<!-- accardion dropdown -->
+					<div class="accardion__item-drop">
+						<div class="accardion__item-content">
+							<p>
+								MODx - бесплатная CMS-система с открытым исходным кодом и большим выбором возможностей, что делает ее выгоднее Битрикса с финансовой точки зрения. Большое количество шаблонов и готовых решений на WP или Битрикс на практике оказывается недостатком, так как часто они избыточны по функционалу и генерируют большое количество мусорного кода. Готовые модули практически невозможно дорабатывать. В то же время сайты на MODx отличаются чистотой кода, гибкостью в плане доработок и отсутствием "костылей" в технических решениях.
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- accardion item -->
+				<div class="accardion__item">
+					<!-- accardion header -->
+					<div class="accardion__item-header">
+						<span>В чем отличия MODx Evo от Revo?</span>
+						<span class="accardion__item-arr">
+							<svg>
+								<use xlink:href="./assets/img/icons/sprite.svg#arr-circ"></use>
+							</svg>
+						</span>
+					</div>
+					<!-- accardion dropdown -->
+					<div class="accardion__item-drop">
+						<div class="accardion__item-content">
+							<p>
+								MODx Evolution (Evo) - первая версия MODX. MODx Revolution (Revo) – усовершенствованная версия Evo, которая подходит для более сложных с технической точки зрения проектов. В своих проектах мы используем MODX Revolution.
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- accardion item -->
+				<div class="accardion__item">
+					<!-- accardion header -->
+					<div class="accardion__item-header">
+						<span>Смогу ли я редактировать товары и цены в интернет-магазине на MODx?</span>
+						<span class="accardion__item-arr">
+							<svg>
+								<use xlink:href="./assets/img/icons/sprite.svg#arr-circ"></use>
+							</svg>
+						</span>
+					</div>
+					<!-- accardion dropdown -->
+					<div class="accardion__item-drop">
+						<div class="accardion__item-content">
+							<p>
+								Да, конечно! Панель администратора на MODx простая и интуитивно понятная. После разработки сайта, мы предоставляем подробную инструкцию работы с контентом. Также в пакет разработки входит 2 часа обучения от нашего контент-менеджера.
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- accardion item -->
+				<div class="accardion__item">
+					<!-- accardion header -->
+					<div class="accardion__item-header">
+						<span>Какие доработки на MODх вы можете сделать?</span>
+						<span class="accardion__item-arr">
+							<svg>
+								<use xlink:href="./assets/img/icons/sprite.svg#arr-circ"></use>
+							</svg>
+						</span>
+					</div>
+					<!-- accardion dropdown -->
+					<div class="accardion__item-drop">
+						<div class="accardion__item-content">
+							<p>
+								MODx дает возможность реализовать практически любой функционал для вашего сайта. Список доработок, которые чаще всего запрашивали наши клиенты, смотрите на странице "Доработки сайта на MODx".
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- accardion item -->
+				<div class="accardion__item">
+					<!-- accardion header -->
+					<div class="accardion__item-header">
+						<span>Безопасна ли MODx?</span>
+						<span class="accardion__item-arr">
+							<svg>
+								<use xlink:href="./assets/img/icons/sprite.svg#arr-circ"></use>
+							</svg>
+						</span>
+					</div>
+					<!-- accardion dropdown -->
+					<div class="accardion__item-drop">
+						<div class="accardion__item-content">
+							<p>
+								Сайты, которые сделаны на MODx, отличаются стабильной работай и устойчивостью к вирусам и вредоносному ПО. Также присутствует возможность реализовать разные уровни доступа в административной панели.  
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- accardion item -->
+				<div class="accardion__item">
+					<!-- accardion header -->
+					<div class="accardion__item-header">
+						<span>Подходят ли сайты на MODx для SEO-продвижения?</span>
+						<span class="accardion__item-arr">
+							<svg>
+								<use xlink:href="./assets/img/icons/sprite.svg#arr-circ"></use>
+							</svg>
+						</span>
+					</div>
+					<!-- accardion dropdown -->
+					<div class="accardion__item-drop">
+						<div class="accardion__item-content">
+							<p>
+								По опыту можем сказать, что MODx идеально подходит для SEO-продвижения. Благодаря чистому коду, высокой скорости загрузки и понятной структуре, сайты на MODx продвигаются легко и быстро.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- application block -->
+	<section class="application-b section">
+		<div class="application-b__container container flex">
+			<div class="application-b__left">
+				<h2 class="title-1">Приступить к работе</h2>
+				<form action="#" class="application-form">
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="text" name="username" placeholder=" ">
+							<div class="b-input__placeholder">Имя <span>*</span></div>
+							<div class="b-input__ic">
+								<svg>
+									<use href="./assets/img/icons/sprite.svg#input-user-ic"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="tel" name="tel" placeholder=" ">
+							<div class="b-input__placeholder">Телефон <span>*</span></div>
+							<div class="b-input__ic">
+								<svg>
+									<use href="./assets/img/icons/sprite.svg#input-tel-ic"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="url" name="url-site" placeholder=" ">
+							<div class="b-input__placeholder">Сайт <span style="color: #A9ABAE;">(необязательно)</span>
+							</div>
+							<div class="b-input__ic">
+								<svg>
+									<use href="./assets/img/icons/sprite.svg#input-build-ic"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="text" name="message" placeholder="Сообщение">
+						</div>
+					</div>
+
+					<button class="btn" type="submit" aria-label="Отправить">Отправить</button>
+				</form>
+			</div>
+			<div class="application-b__right">
+				<div class="applacation-b__img">
+					<img src="./assets/img/components/b-application/application-b-bg.jpg" alt="">
+				</div>
+				<div class="application-b__overlay flex-col">
+					<!-- logo -->
+					<a class="logo" href="#">
+						<img class="logo__ic" src="assets/img/logo-ic.png" alt="логотип">
+						<span class="logo__text">CWEB</span>
+					</a>
+					<p>
+						обещаем только то, что можем выполнить!
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+{% endblock content %}

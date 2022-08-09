@@ -1,31 +1,10 @@
 /*==================== DEVELOPMENT PAGE ====================*/
 .development-pg {
-	.services-b {
-		padding: 103px 0 0;
-	}
-
-	.band-slider-b,
-	.examples-work-b,
-	.prices-b,
-	.stages-dev-b,
-	.faq-b,
-	.blog-b,
-	.application-b {
-		padding: 130px 0 0;
-	}
-
-	.clients-b {
-		padding: 100px 0 0;
-	}
-
-	.reviews-slider-b {
-		padding: 130px 0 0;
-	}
-
 	.prices-b {
 		h2 {
-			margin-bottom: 73px;
+			margin-bottom: 60px;
 		}
+
 		&__list {
 			--widthCol: 25%;
 			--air-l: 20px;
@@ -34,11 +13,6 @@
 	}
 
 	.price-card {
-		h5 {
-			min-height: getEm(59, 24);
-			font-size: 24px;
-		}
-
 		&__subtitle {
 			font-size: 16px;
 		}
@@ -56,21 +30,6 @@
 	}
 
 	@include desctop-min {
-		.services-b {
-			padding: 80px 0 0;
-		}
-
-		.band-slider-b,
-		.examples-work-b,
-		.prices-b,
-		.stages-dev-b,
-		.faq-b,
-		.blog-b,
-		.application-b   {
-			padding: 120px 0 0;
-		}
-	
-
 		.prices-b {
 			&__list {
 				--widthCol: 50%;
@@ -83,30 +42,26 @@
 		.content-wrap {
 			padding-top: 0;
 		}
+
+		.main-slider {
+			&__label {
+				max-width: 170px;
+			}
+
+			@at-root {
+				.main-slider__slide-textBox {
+					.main-slider__labels ~ & {
+						padding-bottom: 125px;
+					}
+				}
+			}
+		}
 	}
 
 	@include mobile {
-		.services-b {
-			padding: 47px 0 0;
-		}
-
-		.band-slider-b,
-		.examples-work-b,
-		.prices-b,
-		.stages-dev-b,
-		.faq-b,
-		.blog-b,
-		.application-b  {
-			padding: 95px 0 0;
-		}
-		
-		.reviews-slider-b {
-			padding: 95px 0 0;
-		}
-		
 		.prices-b {
 			h2 {
-				margin-bottom: 52px;
+				margin-bottom: 50px;
 			}
 			&__list {
 				--widthCol: 100%;

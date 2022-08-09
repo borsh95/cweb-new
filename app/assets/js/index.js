@@ -8,6 +8,7 @@
 		mobile: 768,
 		tel: 480,
 	}
+	const isFixedHeader = true;
 
 	// mobile menu
 	if (isElem('.mobile-menu')) {
@@ -52,7 +53,7 @@
 		AOS.init({
 			//disable: "mobile",
 			duration: 2000,
-			offset: 200,
+			offset: 100,
 			once: true,
 			anchorPlacement: 'bottom-bottom'
 		});
@@ -382,22 +383,56 @@
 
 	// 	band slider 
 	if (isElem('.cards-slider')) {
-		let swiper = slider('.cards-slider', {
-			grabCursor: true,
-			slideToClickedSlide: true,
-			breakpoints: {
-				300: {
-					enabled: true,
-					centeredSlides: true,
-					slidesPerView: 'auto',
-				},
-				[breakPoint.table + 1]: {
-					enabled: false,
-					centeredSlides: false,
-					slidesPerView: 5,
+		for (const $slider of document.querySelectorAll('.cards-slider')) {
+			slider($slider, {
+				grabCursor: true,
+				slideToClickedSlide: true,
+				breakpoints: {
+					300: {
+						enabled: true,
+						centeredSlides: true,
+						slidesPerView: 'auto',
+					},
+					[breakPoint.table + 1]: {
+						enabled: false,
+						centeredSlides: false,
+						slidesPerView: 5,
+					}
 				}
-			}
-		})
+			})
+		}
+	}
+
+	// page-slider 
+	if (isElem('.page-slider')) {
+		for (const $slider of document.querySelectorAll('.page-slider')) {
+			const $parent = $slider.closest('.slider-wrap');
+			
+			new Swiper($slider, {
+				autoHeight: true,
+				spaceBetween: 60,
+				grabCursor: true,
+				slideToClickedSlide: true,
+				lazy: true,
+				speed: 700,
+				pagination: {
+					el: $parent.querySelector('.page-slider__btns'),
+					clickable: true,
+					renderBullet: function (index, className) {
+						const slides = this.slides;
+						const textBtn = slides[index].getAttribute('aria-label');
+						
+						if (textBtn) {
+							return `
+								<button class="${className} btn btn--white">
+									${textBtn}
+								</button>
+							`
+						}
+					},
+				},
+			});
+		}
 	}
 
 	if (isElem(".twenty-b")) {
@@ -440,36 +475,38 @@
 	}
 
 	if (isElem('.examples-work-slider')) {
-		const sliderEl = document.querySelector('.examples-work-slider');
+		const sliderEls = document.querySelectorAll('.examples-work-slider');
 
-		const swiper = new Swiper(sliderEl, {
-			loop: true,
-			slidesPerView: 3,
-			spaceBetween: 32,
-			autoHeight: true,
-			breakpoints: {
-				320: {
-					slidesPerView: 1,
-					slidesPerGroup: 1,
+		for (const slider of sliderEls) {
+			new Swiper(slider, {
+				loop: true,
+				slidesPerView: 3,
+				spaceBetween: 32,
+				autoHeight: true,
+				breakpoints: {
+					320: {
+						slidesPerView: 1,
+						slidesPerGroup: 1,
+					},
+					769: {
+						slidesPerView: 2,
+						slidesPerGroup: 2,
+					},
+					1071: {
+						slidesPerView: 3,
+						slidesPerGroup: 3,
+					}
 				},
-				769: {
-					slidesPerView: 2,
-					slidesPerGroup: 2,
+				navigation: {
+					prevEl: slider.parentElement.querySelector('.slider-arr--prev'),
+					nextEl: slider.parentElement.querySelector('.slider-arr--next'),
 				},
-				1071: {
-					slidesPerView: 3,
-					slidesPerGroup: 3,
+				pagination: {
+					el: slider.parentElement.querySelector('.slider-pagination'),
+					clickable: true,
 				}
-			},
-			navigation: {
-				prevEl: sliderEl.parentElement.querySelector('.slider-arr--prev'),
-				nextEl: sliderEl.parentElement.querySelector('.slider-arr--next'),
-			},
-			pagination: {
-				el: sliderEl.parentElement.querySelector('.slider-pagination'),
-				clickable: true,
-			}
-		})
+			})
+		}		
 	}
 
 	if (isElem('header .bro-menu')) {
@@ -488,6 +525,59 @@
 				menu.destroy();
 			}
 		}
+	}
+
+	if (isElem('[data-tooltip]')) {
+		let tooltipElem;
+
+		document.onmouseover = function (event) {
+			let target = event.target.closest('[data-tooltip]');
+
+			// если у нас есть подсказка...
+			if (!target) return;
+
+			tooltipElem = target.querySelector('.tooltip');
+
+			// если нету dom подсказки но есть текст в атрибуте
+			if (!tooltipElem && target.dataset.tooltip) {
+				tooltipElem = document.createElement('div');
+				tooltipElem.className = 'tooltip tooltip--open';
+				tooltipElem.innerHTML = target.dataset.tooltip;
+				document.body.append(tooltipElem);
+
+				document.onmouseout = function (e) {
+					tooltipElem.classList.remove('tooltip--open');
+					tooltipElem = null;
+					document.onmouseout = null;
+				};
+			} else if (!tooltipElem && !target.dataset.tooltip) {
+				return false;
+			}
+
+			const widthWindow = document.documentElement.clientWidth;
+
+			// спозиционируем его сверху от аннотируемого элемента (top-center)
+			let coords = target.getBoundingClientRect();
+
+			let left = coords.left + (target.offsetWidth - tooltipElem.offsetWidth) / 2;
+			if (left < 0) left = 0; // не заезжать за левый край окна
+
+			let top = (coords.top - tooltipElem.offsetHeight - 5) - 5;
+
+			if (top < 0) { // если подсказка не помещается сверху, то отображать её снизу
+				top = (coords.top + target.offsetHeight + 5) - 5;
+			}
+
+			if (tooltipElem.offsetWidth + left > widthWindow) {
+				tooltipElem.style.left = `auto`;
+				tooltipElem.style.right = `10px`;
+				tooltipElem.style.top = `${top}px`;
+				return;
+			}
+
+			tooltipElem.style.left = `${left}px`;
+			tooltipElem.style.top = `${top}px`;
+		};
 	}
 
 	// обработка событий на кнопок сайта
@@ -646,6 +736,99 @@
 
 	}
 
+	// фиксация навигации продукта
+	if (isElem('.nav-panel')) {
+		const $header = document.querySelector('header') || document.querySelector('.header');
+		const $navPanel = document.querySelector('.nav-panel');
+		let isFixedHeader = true;
+
+		fixedElemTop($navPanel);
+
+		const navLinkSelector = '[href*="#"]';
+		const $navLinks = $navPanel.querySelectorAll(navLinkSelector);
+		const sections = [];
+		let indexActiveLink = null;
+
+		for (const $navLink of $navLinks) {
+			const hash = $navLink.hash;
+			const section = document.querySelector(hash);
+
+			if (section) {
+				sections.push(section);
+			}
+		}
+
+		if (sections.length === 0) return;
+
+		setActiveLinkByScroll();
+
+		window.addEventListener('scroll', setActiveLinkByScroll);
+
+		$navPanel.addEventListener('click', function (e) {
+			const link = e.target.closest('a[href*="#"]');
+
+			if (!link) return;
+
+			e.preventDefault();
+			const sectionId = link.getAttribute('href');
+			const section = document.querySelector(sectionId);
+
+			if (!section) return;
+
+			const sectionOffsetTop = getOffsetTop(section);
+
+			let scrollPoint = sectionOffsetTop - $navPanel.offsetHeight + 10;
+
+			if (isFixedHeader) {
+				scrollPoint = scrollPoint - $header.offsetHeight;
+			}
+
+			window.scrollTo(0, scrollPoint);
+		})
+
+		function setActiveLinkByScroll() {
+			const topSections = sections.map($section => {
+				return getOffsetTop($section);
+			});
+
+			let currentActiveIndex = null;
+			const firstSectionTopCoords = topSections[0];
+			const lastSectionBottomCoords = topSections[topSections.length - 1] + sections[topSections.length - 1].offsetHeight;
+
+			let offsetTopByNodes = pageYOffsetByNodes($navPanel);
+
+			if (isFixedHeader) {
+				offsetTopByNodes = pageYOffsetByNodes($navPanel, $header);
+			}
+
+			if (offsetTopByNodes < firstSectionTopCoords || offsetTopByNodes > lastSectionBottomCoords) {
+				if (indexActiveLink === null) return;
+
+				$navLinks[indexActiveLink].classList.remove('active');
+				indexActiveLink = null;
+				return;
+			}
+
+			for (let i = 0; i < topSections.length; i++) {
+				if (offsetTopByNodes > topSections[i]) {
+					currentActiveIndex = i;
+				}
+			}
+
+			if (indexActiveLink !== currentActiveIndex && currentActiveIndex !== null) {
+				indexActiveLink = currentActiveIndex;
+				changeNavActive($navLinks[indexActiveLink])
+			}
+		}
+
+		function changeNavActive(newNavLinkNode) {
+			for (let i = 0; i < $navLinks.length; i++) {
+				$navLinks[i].classList.remove('active');
+			}
+
+			newNavLinkNode.classList.add('active');
+		}
+	}
 
 	/*
 	  FUNCTIONS PLUGINS	
@@ -882,10 +1065,11 @@
 
 	//accardion
 	function accardion() {
+		let headerDom = document.querySelector('header') || document.querySelector('.header');
+
 		return function () {
 			let _mainElement = {}, // .accordion 
-				_items = {}, // .accordion-item 
-				headerDom = document.querySelector('header');
+				_items = {}; // .accordion-item 
 
 			return {
 				init: function (element) {
@@ -1131,31 +1315,136 @@
 		const $header = document.querySelector('header');
 		$el.insertAdjacentElement('beforebegin', $startingPlace);
 
-		window.addEventListener('scroll', throttle(
-			function () {
-				let pageYOffset = window.pageYOffset;
-				let isFixedHeader = false;
+		window.addEventListener('scroll', throttle(function () {
+			let pageYOffset = window.pageYOffset;
+			let isFixedHeader = false;
 
-				if (getComputedStyle($header).position === 'fixed') {
-					pageYOffset = pageYOffsetByNodes($header);
-					isFixedHeader = true;
-				}
-
-				if (pageYOffset > getOffsetTop($startingPlace)) {
-					$startingPlace.style.height = $el.offsetHeight + 'px';
-					$el.classList.add('fixed');
-					$el.style.top = isFixedHeader ? $header.offsetHeight + 'px' : '';
-				} else {
-					$startingPlace.style.height = '';
-					$el.classList.remove('fixed');
-				}
+			if (getComputedStyle($header).position === 'fixed') {
+				pageYOffset = pageYOffsetByNodes($header);
+				isFixedHeader = true;
 			}
-		), 70)
+
+			if (pageYOffset > getOffsetTop($startingPlace)) {
+				$startingPlace.style.height = $el.offsetHeight + 'px';
+				$el.classList.add('fixed');
+				$el.style.top = isFixedHeader ? $header.offsetHeight + 'px' : '';
+			} else {
+				$startingPlace.style.height = '';
+				$el.classList.remove('fixed');
+			}
+		}, 0
+		))
+	};
+
+	//video
+	(function () {
+		findVideos();
+
+		function findVideos() {
+			let videos = document.querySelectorAll('.video');
+
+			for (let i = 0; i < videos.length; i++) {
+				setupVideo(videos[i]);
+			}
+		}
+
+		// ленивая загрузка видео 
+		function setupVideo(video) {
+			let link = video.querySelector('.video__link');
+			const hrefLink = link.href;
+			let media = video.querySelector('.video__media');
+			let button = video.querySelector('.video__button');
+			let deletedLength = 'https://youtu.be/'.length;
+			let videoId = hrefLink.substring(deletedLength, hrefLink.length);
+			let youtubeImgSrc = 'https://i.ytimg.com/vi/' + videoId + '/maxresdefault.jpg';
+
+			media.src = youtubeImgSrc;
+
+			video.addEventListener('click', () => {
+				let iframe = createIframe(videoId);
+
+				link.remove();
+				button.remove();
+				video.appendChild(iframe);
+			});
+
+			link.removeAttribute('href');
+			video.classList.add('video--enabled');
+		}
+
+		function createIframe(id) {
+			let iframe = document.createElement('iframe');
+
+			iframe.setAttribute('allowfullscreen', '');
+			iframe.setAttribute('allow', 'accelerometer; autoplay; clipboard-write;');
+			iframe.setAttribute('src', generateURL(id));
+			iframe.classList.add('video__media');
+
+			return iframe;
+		}
+
+		function generateURL(id) {
+			let query = '?rel=0&showinfo=1&autoplay=1';
+
+			return 'https://www.youtube.com/embed/' + id + query;
+		}
+	}());
+
+	document.addEventListener('click', function (e) {
+		if (e.target.closest('.scroll-to[href*="#"]')) {
+			const link = e.target.closest('.scroll-to[href*="#"]');
+			const id = link.hash;
+			const $section = document.querySelector(id);
+
+			if (!$section) return;
+
+			e.preventDefault();
+
+			let coordsSection = window.pageYOffset + $section.getBoundingClientRect().top;
+
+			if (isFixedHeader) {
+				const $header = document.querySelector('.header') || document.querySelector('header');
+				coordsSection = coordsSection - $header.offsetHeight;
+			}
+
+			window.scrollTo(0, coordsSection);
+		}
+	})
+
+	if (isElem('[data-active-coins]')) {
+		const coinParentEls = document.querySelectorAll('[data-active-coins]');
+		
+		
+		for (const coinParentEl of coinParentEls) {
+			const count = coinParentEl.dataset.activeCoins;
+			const childrenCoinEls = coinParentEl.children;
+
+			if (!count) return;
+
+			Array.from(childrenCoinEls).filter((item, i) => i >= count).map(item => item.dataset.disabledCoin = "");
+		}
 	}
 
 	/***** UTILS ******/
 	function isElem(selector) {
 		return (document.querySelector(selector)) ? true : false;
+	}
+
+	function throttle(func, ms = 50) {
+		let locked = false;
+
+		return function () {
+			if (locked) return;
+
+			const context = this;
+			const args = arguments;
+			locked = true;
+
+			setTimeout(() => {
+				func.apply(context, args);
+				locked = false;
+			}, ms)
+		}
 	}
 
 	// положение верха вьюпорта от начала документа
@@ -1171,5 +1460,9 @@
 		}
 
 		return window.pageYOffset + summHeight;
+	}
+
+	function getOffsetTop(node) {
+		return window.pageYOffset + node.getBoundingClientRect().top;
 	}
 }(window));

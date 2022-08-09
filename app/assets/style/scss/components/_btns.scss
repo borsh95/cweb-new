@@ -35,6 +35,20 @@
 		transition: all $duration;
 	}
 
+	&__ic {
+		display: inline-block;
+		max-width: 25px;
+		max-height: 25px;
+
+		&:first-child {
+			margin-right: 16px;
+		}
+
+		svg {
+			transition: all 0.2s;
+		}
+	}
+
 	&--circ {
 		padding: 0;
 		width: 36px;
@@ -53,19 +67,48 @@
 		--colorText: var(--color-primary);
 		border-color: var(--colorTone);
 
+		svg {
+			fill: var(--color-primary);
+		}
+	}
+
+	&--white {
+		--colorTone: #fff;
+		--colorText: var(--color-primary);
+		box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
+
 		&.active,
 		&:hover {
 			--colorTone: var(--color-primary);
-			--colorText: var(--basick-white);
-			background-color: var(--colorTone);
+			--colorText: #fff;
 
-			svg {
-				fill: #fff;
+			background-color: var(--colorTone);
+		}
+	}
+
+	&--icon {
+		padding: 10px;
+		border-radius: 5px;
+
+		&:hover {
+			.btn__icon {
+				svg {
+					fill: var(--color-primary);
+				}
 			}
 		}
 
-		svg {
-			fill: var(--color-primary);
+		.btn__icon {
+			display: inline-block;
+			width: 25px;
+			height: 25px;
+			fill: #fff;
+
+			svg {
+				max-width: 100%;
+				max-height: 100%;
+				transition: fill $duration;
+			}
 		}
 	}
 }

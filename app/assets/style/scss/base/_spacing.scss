@@ -1,11 +1,14 @@
-:root {
-	/* spacing */
-	--spacing-side: 30px;
+/*==================== SPACINGS ====================*/
+$spacer: 1rem;
 
-	@include mobile {
-		--spacing-side: 20px;
-	}
-}
+$spacers: (
+	0: 0,
+	1: $spacer * 0.25,
+	2: $spacer * 0.5,
+	3: $spacer,
+	4: $spacer * 1.5,
+	5: $spacer * 3,
+);
 
 // margins
 $m: (
@@ -32,8 +35,20 @@ $p: (
 
 		@for $i from 0 through 100 {
 			@if $i % 4 == 0 {
-				.#{$class}-#{$i} {
-					#{$prop}: #{$i}px !important;
+				@if $class == "mt" or $class == "mb" {
+					.#{$class}-#{$i},
+					.my-#{$i} {
+						#{$prop}: #{$i}px !important;
+					}
+				} @else if $class == "pt" or $class == "pb" {
+					.#{$class}-#{$i},
+					.py-#{$i} {
+						#{$prop}: #{$i}px !important;
+					}
+				} @else {
+					.#{$class}-#{$i} {
+						#{$prop}: #{$i}px !important;
+					}
 				}
 			}
 		}
@@ -46,8 +61,20 @@ $p: (
 
 				@for $i from 0 through 100 {
 					@if $i % 4 == 0 {
-						.#{$class}-#{$break}-#{$i} {
-							#{$prop}: #{$i}px !important;
+						@if $class == "mt" or $class == "mb" {
+							.#{$class}-#{$break}-#{$i},
+							.my-#{$break}-#{$i} {
+								#{$prop}: #{$i}px !important;
+							}
+						} @else if $class == "pt" or $class == "pb" {
+							.#{$class}-#{$break}-#{$i},
+							.py-#{$break}-#{$i} {
+								#{$prop}: #{$i}px !important;
+							}
+						} @else {
+							.#{$class}-#{$break}-#{$i} {
+								#{$prop}: #{$i}px !important;
+							}
 						}
 					}
 				}
@@ -56,5 +83,42 @@ $p: (
 	}
 }
 
+@mixin spacingEm($s) {
+	@each $class, $prop in $s {
+		@each $i, $val in $spacers {
+			.#{$class}-#{$i}e {
+				#{$prop}: #{$val} !important;
+			}
+		}
+	}
+
+	@each $break, $value_break in $breakpoints {
+		@media (max-width: $value_break) {
+			@each $class, $prop in $s {
+				@each $i, $val in $spacers {
+					.#{$class}-#{$break}-#{$i}e {
+						#{$prop}: #{$val} !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+@include spacingEm($m);
 @include spacing($m);
 @include spacing($p);
+
+.mx-auto {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+@each $break, $value_break in $breakpoints {
+	@media (max-width: $value_break) {
+		.mx-#{$break}-auto {
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+	}
+}

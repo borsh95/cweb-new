@@ -3,4 +3,10 @@
 	.info-slider-b {
 		padding-top: 0;
 	}
+
+	@include mobile {
+		.v-up {
+			display: none;
+		}
+	}
 }

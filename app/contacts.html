@@ -130,11 +130,17 @@
 				</div>
 				<!-- firm information -->
 				<div class="header__firm-info-list firm-info-list flex">
-					<a class="firm-info firm-info--mail" href="mailto:info@cweb.by">
+					<a class="firm-info firm-info--mail" data-copy="info@cweb.by">
 						<svg class="firm-info__ic" width="16" height="12">
 							<use href="./assets/img/headerAndFooter/sprite.svg#mail-ic"></use>
 						</svg>
 						info@cweb.by
+						<svg class="firm-info__ic" width="16" height="16" viewBox="0 0 1000 1000">
+							<g>
+								<path
+									d="M886.8,10H267.9c-56.7,0-103.2,46.4-103.2,103.2v51.6h-51.6C56.4,164.7,10,211.2,10,267.9v618.9C10,943.6,56.4,990,113.2,990h618.9c56.7,0,103.2-46.4,103.2-103.2v-51.6h51.6c56.7,0,103.2-46.4,103.2-103.2V113.2C990,56.4,943.6,10,886.8,10z M783.7,886.8c0,30.9-20.6,51.6-51.6,51.6H113.2c-30.9,0-51.6-20.6-51.6-51.6V267.9c0-30.9,20.6-51.6,51.6-51.6h618.9c30.9,0,51.6,20.6,51.6,51.6V886.8z M938.4,732.1c0,30.9-20.6,51.6-51.6,51.6h-51.6V267.9c0-56.7-46.4-103.2-103.2-103.2H216.3v-51.6c0-30.9,20.6-51.6,51.6-51.6h618.9c30.9,0,51.6,20.6,51.6,51.6V732.1z" />
+							</g>
+						</svg>
 					</a>
 					<a class="firm-info firm-info--clock">
 						<svg class="firm-info__ic" width="16" height="16">
@@ -359,148 +365,205 @@
 		<!-- CONTENT WRAP -->
 		<div class="content-wrap">
 			
-	<main>
-		<div class="container">
-			<h1 class="title-1">контакты</h1>
-		</div>
-		<!-- contacts block -->
-		<section class="contacts-b section">
-			<div class="contacts-b__container container">
-				<!-- map -->
-				<div class="contacts-b__map" style="position:relative;overflow:hidden;">
-					<a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps"
-						style="color:#eee;font-size:12px;position:absolute;top:0px;">Минск</a>
-					<a href="https://yandex.by/maps/157/minsk/house/Zk4YcgBmTEIFQFtpfXR1d3RiZA==/?ll=27.476572%2C53.846811&utm_medium=mapframe&utm_source=maps&z=17"
-						style="color:#eee;font-size:12px;position:absolute;top:14px;">Проспект Дзержинского,
-						125А — Яндекс.Карты
-					</a>
-					<iframe src="https://yandex.by/map-widget/v1/-/CCUezHUt0A" frameborder="1"
-						allowfullscreen="true"></iframe>
-				</div>
-				<!-- data -->
-				<div class="contacts-b__data flex-col">
-					<div class="contacts-b__data-col">
-						ООО «КристаллВеб» <br>
-						УНП 193312909 <br>
-						<h5>Юридический адрес:</h5>
-						220045, г. Минск, проспект Дзержинского <br>
-						дом 125а, 15 этаж, офис 65Б
-					</div>
-					<div class="contacts-b__data-col">
-						<h5>Наш офис:</h5>
-						220045, г. Минск, проспект Дзержинского <br>
-						дом 125а, 15 этаж, офис 65Б
-					</div>
-					<div class="contacts-b__data-col contacts-b__data-col--sci flex-wrap">
-						<a class="cweb-tel" href="tel:+375447310101">
-							<svg>
-								<use href="./assets/img/icons/sprite.svg#cweb-tel"></use>
-							</svg>
-							+375 44 731 01 01
-						</a>
-						<span class="sci">
-							<a class="sci__link sci__link--tg" href="https://msngr.link/tg/375447310101">
-								<img src="./assets/img/headerAndFooter/tg-ic.png" alt="viber">
-							</a>
-							<a class="sci__link sci__link--viber" href="https://msngr.link/vi/375447310101">
-								<svg>
-									<use href="./assets/img/headerAndFooter/sprite.svg#viber-ic"></use>
-								</svg>
-							</a>
-							<a class="sci__link sci__link--wp" href="https://msngr.link/wa/375447310101">
-								<svg>
-									<use href="./assets/img/headerAndFooter/sprite.svg#wp-ic"></use>
-								</svg>
-							</a>
-						</span>
-					</div>
-					<div class="contacts-b__data-col contacts-b__data-col--firm-info">
-						<a class="firm-info firm-info--mail" href="mailto:info@cweb.by">
-							<svg class="firm-info__ic" width="16" height="12">
-								<use href="./assets/img/headerAndFooter/sprite.svg#mail-ic"></use>
-							</svg>
-							info@cweb.by
-						</a>
-						- <span data-copy="info@cweb.by">Скопировать</span>
-					</div>
-					<div class="contacts-b__data-col contacts-b__data-col--firm-info">
-						<a class="firm-info firm-info--clock">
-							<svg class="firm-info__ic" width="16" height="16">
-								<use href="./assets/img/headerAndFooter/sprite.svg#clock-ic"></use>
-							</svg>
-							ПН-ПТ 10:00 - 17:00
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- application block -->
-		<section class="application-b">
-			<div class="application-b__container container flex">
-				<div class="application-b__left">
-					<h2 class="title-1">Приступить к работе</h2>
-					<form action="#" class="application-form">
-						<div class="b-input">
-							<div class="b-input__input">
-								<input type="text" name="username" placeholder=" ">
-								<div class="b-input__placeholder">Имя <span>*</span></div>
-								<div class="b-input__ic">
-									<svg>
-										<use href="./assets/img/icons/sprite.svg#input-user-ic"></use>
-									</svg>
-								</div>
-							</div>
-						</div>
-						<div class="b-input">
-							<div class="b-input__input">
-								<input type="tel" name="tel" placeholder=" ">
-								<div class="b-input__placeholder">Телефон <span>*</span></div>
-								<div class="b-input__ic">
-									<svg>
-										<use href="./assets/img/icons/sprite.svg#input-tel-ic"></use>
-									</svg>
-								</div>
-							</div>
-						</div>
-						<div class="b-input">
-							<div class="b-input__input">
-								<input type="url" name="url-site" placeholder=" ">
-								<div class="b-input__placeholder">Сайт <span
-										style="color: #A9ABAE;">(необязательно)</span></div>
-								<div class="b-input__ic">
-									<svg>
-										<use href="./assets/img/icons/sprite.svg#input-build-ic"></use>
-									</svg>
-								</div>
-							</div>
-						</div>
-						<div class="b-input">
-							<div class="b-input__input">
-								<input type="text" name="message" placeholder="Сообщение">
-							</div>
-						</div>
+<style>
+	@media print {
 
-						<button class="btn" type="submit" aria-label="Отправить">Отправить</button>
-					</form>
+		.v-modal,
+		header,
+		.bread-crumb,
+		.application-b,
+		footer {
+			display: none;
+		}
+
+		.contacts-b__data {
+			padding-right: 0;
+			text-align: left
+		}
+
+		.contacts-b__data-col {
+			margin-bottom: 15px !important;
+		}
+
+		.contacts-b__data-col--sci {
+			flex-direction: row;
+		}
+
+		.contacts-b__data .cweb-tel svg {
+			display: inline-block;
+		}
+
+		.contacts-b__btn-print {
+			display: none;
+		}
+
+		.contacts-b__data-col--firm-info {
+			align-self: flex-start;
+		}
+
+		.contacts-b__data .firm-info {
+			flex-direction: row;
+		}
+
+		.contacts-b__data .firm-info__ic {
+			margin: 0 0.5em 0 0;
+			width: 25px;
+			height: 25px;
+		}
+	}
+</style>
+<main>
+	<div class="container">
+		<h1 class="title-1">контакты</h1>
+	</div>
+	<!-- contacts block -->
+	<section id="print-content" class="contacts-b section print">
+		<div class="contacts-b__container container">
+			<!-- map -->
+			<div class="contacts-b__map" style="position:relative;overflow:hidden;">
+				<a href="https://yandex.by/maps/157/minsk/?utm_medium=mapframe&utm_source=maps"
+					style="color:#eee;font-size:12px;position:absolute;top:0px;">Минск</a>
+				<a href="https://yandex.by/maps/157/minsk/house/Zk4YcgBmTEIFQFtpfXR1d3RiZA==/?ll=27.476572%2C53.846811&utm_medium=mapframe&utm_source=maps&z=17"
+					style="color:#eee;font-size:12px;position:absolute;top:14px;">Проспект Дзержинского,
+					125А — Яндекс.Карты
+				</a>
+				<iframe src="https://yandex.by/map-widget/v1/-/CCUezHUt0A" frameborder="1"
+					allowfullscreen="true"></iframe>
+			</div>
+			<!-- data -->
+			<div class="contacts-b__data flex-col">
+				<button class="contacts-b__btn-print" title="Распечатать"
+					onclick="javascript:window.print();">
+					<span class="icon">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+							<path
+								d="M448 192H64C28.65 192 0 220.7 0 256v96c0 17.67 14.33 32 32 32h32v96c0 17.67 14.33 32 32 32h320c17.67 0 32-14.33 32-32v-96h32c17.67 0 32-14.33 32-32V256C512 220.7 483.3 192 448 192zM384 448H128v-96h256V448zM432 296c-13.25 0-24-10.75-24-24c0-13.27 10.75-24 24-24s24 10.73 24 24C456 285.3 445.3 296 432 296zM128 64h229.5L384 90.51V160h64V77.25c0-8.484-3.375-16.62-9.375-22.62l-45.25-45.25C387.4 3.375 379.2 0 370.8 0H96C78.34 0 64 14.33 64 32v128h64V64z" />
+						</svg>
+					</span>
+					<span>Распечатать страницу</span>
+				</button>
+				<div class="contacts-b__data-col">
+					ООО «КристаллВеб» <br>
+					УНП 193312909 <br>
+					<h5>Юридический адрес:</h5>
+					220045, г. Минск, проспект Дзержинского <br>
+					дом 125а, 15 этаж, офис 65Б
 				</div>
-				<div class="application-b__right">
-					<div class="applacation-b__img">
-						<img src="./assets/img/components/b-application/application-b-bg.jpg" alt="">
-					</div>
-					<div class="application-b__overlay flex-col">
-						<!-- logo -->
-						<a class="logo" href="#">
-							<img class="logo__ic" src="assets/img/logo-ic.png" alt="логотип">
-							<span class="logo__text">CWEB</span>
+				<div class="contacts-b__data-col">
+					<h5>Наш офис:</h5>
+					220045, г. Минск, проспект Дзержинского <br>
+					дом 125а, 15 этаж, офис 65Б
+				</div>
+				<div class="contacts-b__data-col contacts-b__data-col--sci flex-wrap">
+					<a class="cweb-tel" href="tel:+375447310101">
+						<svg>
+							<use href="./assets/img/icons/sprite.svg#cweb-tel"></use>
+						</svg>
+						+375 44 731 01 01
+					</a>
+					<span class="sci">
+						<a class="sci__link sci__link--tg" href="https://msngr.link/tg/375447310101">
+							<img src="./assets/img/headerAndFooter/tg-ic.png" alt="viber">
 						</a>
-						<p>
-							обещаем только то, что можем выполнить!
-						</p>
-					</div>
+						<a class="sci__link sci__link--viber" href="https://msngr.link/vi/375447310101">
+							<svg>
+								<use href="./assets/img/headerAndFooter/sprite.svg#viber-ic"></use>
+							</svg>
+						</a>
+						<a class="sci__link sci__link--wp" href="https://msngr.link/wa/375447310101">
+							<svg>
+								<use href="./assets/img/headerAndFooter/sprite.svg#wp-ic"></use>
+							</svg>
+						</a>
+					</span>
+				</div>
+				<div class="contacts-b__data-col contacts-b__data-col--firm-info">
+					<a class="firm-info firm-info--mail" href="mailto:info@cweb.by">
+						<svg class="firm-info__ic" width="16" height="12">
+							<use href="./assets/img/headerAndFooter/sprite.svg#mail-ic"></use>
+						</svg>
+						info@cweb.by
+					</a>
+					- <span data-copy="info@cweb.by">Скопировать</span>
+				</div>
+				<div class="contacts-b__data-col contacts-b__data-col--firm-info">
+					<a class="firm-info firm-info--clock">
+						<svg class="firm-info__ic" width="16" height="16">
+							<use href="./assets/img/headerAndFooter/sprite.svg#clock-ic"></use>
+						</svg>
+						ПН-ПТ 10:00 - 17:00
+					</a>
 				</div>
 			</div>
-		</section>
-	</main>
+		</div>
+	</section>
+	<!-- application block -->
+	<section class="application-b">
+		<div class="application-b__container container flex">
+			<div class="application-b__left">
+				<h2 class="title-1">Приступить к работе</h2>
+				<form action="#" class="application-form">
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="text" name="username" placeholder=" ">
+							<div class="b-input__placeholder">Имя <span>*</span></div>
+							<div class="b-input__ic">
+								<svg>
+									<use href="./assets/img/icons/sprite.svg#input-user-ic"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="tel" name="tel" placeholder=" ">
+							<div class="b-input__placeholder">Телефон <span>*</span></div>
+							<div class="b-input__ic">
+								<svg>
+									<use href="./assets/img/icons/sprite.svg#input-tel-ic"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="url" name="url-site" placeholder=" ">
+							<div class="b-input__placeholder">Сайт <span style="color: #A9ABAE;">(необязательно)</span>
+							</div>
+							<div class="b-input__ic">
+								<svg>
+									<use href="./assets/img/icons/sprite.svg#input-build-ic"></use>
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="b-input">
+						<div class="b-input__input">
+							<input type="text" name="message" placeholder="Сообщение">
+						</div>
+					</div>
+
+					<button class="btn" type="submit" aria-label="Отправить">Отправить</button>
+				</form>
+			</div>
+			<div class="application-b__right">
+				<div class="applacation-b__img">
+					<img src="./assets/img/components/b-application/application-b-bg.jpg" alt="">
+				</div>
+				<div class="application-b__overlay flex-col">
+					<!-- logo -->
+					<a class="logo" href="#">
+						<img class="logo__ic" src="assets/img/logo-ic.png" alt="логотип">
+						<span class="logo__text">CWEB</span>
+					</a>
+					<p>
+						обещаем только то, что можем выполнить!
+					</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
 		</div>
 		
 				<!-- FOOTER -->
@@ -532,12 +595,18 @@
 			<div class="footer__middle-col">
 				<!-- info firm -->
 				<div class="footer__firm-info-list firm-info-list flex-col">
-					<a class="firm-info firm-info--mail" href="mailto:info@cweb.by">
+					<div class="firm-info firm-info--mail" data-copy="info@cweb.by">
 						<svg class="firm-info__ic" width="16" height="12">
 							<use href="./assets/img/headerAndFooter/sprite.svg#mail-ic"></use>
 						</svg>
 						info@cweb.by
-					</a>
+						<svg class="firm-info__ic" width="16" height="16" viewBox="0 0 1000 1000">
+							<g>
+								<path
+									d="M886.8,10H267.9c-56.7,0-103.2,46.4-103.2,103.2v51.6h-51.6C56.4,164.7,10,211.2,10,267.9v618.9C10,943.6,56.4,990,113.2,990h618.9c56.7,0,103.2-46.4,103.2-103.2v-51.6h51.6c56.7,0,103.2-46.4,103.2-103.2V113.2C990,56.4,943.6,10,886.8,10z M783.7,886.8c0,30.9-20.6,51.6-51.6,51.6H113.2c-30.9,0-51.6-20.6-51.6-51.6V267.9c0-30.9,20.6-51.6,51.6-51.6h618.9c30.9,0,51.6,20.6,51.6,51.6V886.8z M938.4,732.1c0,30.9-20.6,51.6-51.6,51.6h-51.6V267.9c0-56.7-46.4-103.2-103.2-103.2H216.3v-51.6c0-30.9,20.6-51.6,51.6-51.6h618.9c30.9,0,51.6,20.6,51.6,51.6V732.1z" />
+							</g>
+						</svg>
+					</div>
 					<a class="firm-info firm-info--clock">
 						<svg class="firm-info__ic" width="16" height="16">
 							<use href="./assets/img/headerAndFooter/sprite.svg#clock-ic"></use>

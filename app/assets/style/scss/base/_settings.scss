@@ -1,5 +1,10 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~ ОБЩИЕ СТИЛИ ~~~~~~~~~~~~~~~~~~~~~~~~~*/
 $utilities: (
+	"position": (
+		property: position,
+		class: pos,
+		values: relative static fixed
+	),
 	"display": (
 		property: display,
 		class: d,
@@ -26,7 +31,6 @@ $utilities: (
 		),
 	),
 	"justify-content": (
-		responsive: false,
 		property: "justify-content",
 		values: (
 			start: "flex-start",

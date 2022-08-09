@@ -1,0 +1,577 @@
+{% set title = "Портфолио таргет" %}
+{% set classPage = "portfolio-fl-pg portfolio-fl-pg--target" %}
+{% extends "./includes/layouts/page.twig" %}
+{# ------ BREADCRUMBS ----- #}
+{% block breadcrumbs %}
+{% include "./includes/molecules/breadcrumbs.twig" with {
+		breadcrumbs: [
+			{text: 'Главная',href: "/"},
+			{text: 'Продвижение'},
+		]
+	} %}
+{% endblock breadcrumbs %}
+{# ------ CONTENT WRAP ----- #}
+{% block content %}
+<style>
+	.title-1 {
+		font-size: 32px;
+	}
+
+	.section__title {
+		margin-bottom: 48px;
+	}
+
+	@media (max-width: 1220px) {
+		.title-1 {
+			font-size: 24px;
+		}
+
+		.section__title {
+			margin-bottom: 32px;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.title-1 {
+			font-size: 18px;
+		}
+
+		.section__title {
+			margin-bottom: 27px;
+		}
+
+		.msg-card {
+			margin: 0 auto;
+			max-width: 90%;
+		}
+	}
+</style>
+<main>
+	<div class="container">
+		<h1 class="title-1 mb-52 mb-lg-32 mb-sm-20 fz-lg-24 fz-sm-16 text-transform-none container"
+			style="font-size: 32px">
+			Разработка интернет-магазина с уникальным дизайном aquilaria
+		</h1>
+
+		<!-- nav panel -->
+		<div class="nav-panel">
+			<div class="nav-panel__container container">
+				<div class="nav-panel__inner">
+					<a class="nav-panel__link" href="#op">Описание</a>
+					<a class="nav-panel__link" href="#komanda">Команда проекта</a>
+					<a class="nav-panel__link" href="#target">Цели</a>
+					<a class="nav-panel__link" href="#works">Выполненные работы</a>
+					<a class="nav-panel__link" href="#results">Результаты</a>
+					<a class="nav-panel__link" href="#creators">Креативы</a>
+				</div>
+			</div>
+		</div>
+		<div id="op" class="section pt-52 pt-sm-28">
+			<div class="container container--sm">
+				<div class="row-cols-6 row-cols-md-12">
+					<div class="col d-flex align-items-center justify-content-center">
+						<div style="max-width: 370px">
+							<img src="assets/img/test/akvilaria-logo.png" alt="">
+						</div>
+					</div>
+					<div class="col text fz-sm-14 fz-xs-10">
+						<p class="mb-4e mb-sm-2e">
+							<b>Заказчик:</b> интернет-каталог домашнего текстиля
+						</p>
+						<p class="mb-4e mb-sm-2e"><b>Заказанная услуга:</b> <a href="#">создание сайта</a></p>
+						<p class="mb-4e mb-sm-2e"><b>Срок исполнения проекта:</b> 20 рабочих дней</p>
+						<p class="mb-4e mb-sm-2e"><b>Адрес сайта:</b> <a class="link" href="https://aquilaria.by/"
+								target="_blank">https://aquilaria.by/</a>
+						</p>
+						<p class="d-flex align-items-center mb-4e mb-sm-2e">
+							<b>Ценовой диапазон:</b>
+							<span class="example-task-b__coins">
+								<span class="example-task-b__coin"></span>
+								<span class="example-task-b__coin"></span>
+							</span>
+						</p>
+						<p>
+							<b class="d-inline-block mb-4e mb-sm-2e">О компании: </b> <br>
+
+							<span class="lh-base">
+								Аквилария - это интернет-каталог домашнего текстиля. Мы начали проект с разработки
+								логотипа
+								компании, который связывает воедино концепцию домашнего уюта и ее название, а именно,
+								заглавную букву А.
+							</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="komanda" class="section">
+			<h2 class="section__title title-1">Команда проекта</h2>
+			<div class="scrollable scrollable--thumb-none">
+				<div class="project-bands-wrap">
+					<div class="project-bands">
+						<article class="band-card band-card--min">
+							<div class="band-card__img"
+								style="background-image: url(./assets/img/components/band/serg-d_ava.png)">
+							</div>
+							<h5 class="band-card__name">Сергей Дешук</h5>
+							<p class="band-card__post">Директор</p>
+						</article>
+						<article class="band-card band-card--min">
+							<div class="band-card__img"
+								style="background-image: url(./assets/img/components/band/serg-d_ava.png)">
+							</div>
+							<h5 class="band-card__name">Сергей Дешук</h5>
+							<p class="band-card__post">Директор</p>
+						</article>
+						<article class="band-card band-card--min">
+							<div class="band-card__img"
+								style="background-image: url(./assets/img/components/band/serg-d_ava.png)">
+							</div>
+							<h5 class="band-card__name">Сергей Дешук</h5>
+							<p class="band-card__post">Директор</p>
+						</article>
+						<article class="band-card band-card--min">
+							<div class="band-card__img"
+								style="background-image: url(./assets/img/components/band/serg-d_ava.png)">
+							</div>
+							<h5 class="band-card__name">Сергей Дешук</h5>
+							<p class="band-card__post">Директор</p>
+						</article>
+						<article class="band-card band-card--min">
+							<div class="band-card__img"
+								style="background-image: url(./assets/img/components/band/serg-d_ava.png)">
+							</div>
+							<h5 class="band-card__name">Сергей Дешук</h5>
+							<p class="band-card__post">Директор</p>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
+		<section id="target" class="section">
+			<div class="container--sm mx-auto">
+				<h2 class="section__title title-1">Цели</h2>
+				<div class="content text">
+					<p>
+						Далее SEO-специалист приступил к составлению проектной документации. В ходе работ мы собрали
+						семантическое ядро, спроектировали структуру каталога, а также согласовали прототипы страниц.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="works" class="section">
+			<div class="container--sm mx-auto">
+				<h2 class="section__title title-1">Выполненные работы</h2>
+				<div class="content text">
+					<div>
+						<h3 class="mb-4e fz-20 fz-sm-16 fw-700 color-primary">1. Супер работа 1</h3>
+						<p>
+							Далее SEO-специалист приступил к составлению проектной документации. В ходе работ мы собрали
+							семантическое ядро, спроектировали структуру каталога, а также согласовали прототипы
+							страниц.
+						</p>
+						<div class="row-cols-6 row-cols-md-12">
+							<fragment>
+								<img class="response-img" src="assets/img/other/target-insta-banner.jpg" alt="">
+							</fragment>
+							<fragment>
+								<img class="response-img" src="assets/img/other/target-insta-banner.jpg" alt="">
+							</fragment>
+						</div>
+					</div>
+					<div class="mt-80 mt-lg-60 mt-sm-32">
+						<h3 class="mb-4e fz-20 fz-sm-16 fw-700 color-primary">2. Супер работа 2</h3>
+						<p>
+							Далее SEO-специалист приступил к составлению проектной документации. В ходе работ мы собрали
+							семантическое ядро, спроектировали структуру каталога, а также согласовали прототипы
+							страниц.
+						</p>
+						<fragment>
+							<img class="response-img" src="assets/img/other/target-insta-banner.jpg" alt="">
+						</fragment>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="results" class="section">
+			<div class="container--sm mx-auto">
+				<h2 class="section__title title-1">Результаты</h2>
+				<style>
+					.table-1 tbody tr td {
+						background-color: #E1E8F3;
+					}
+
+					.table-1 tbody tr .border {
+						position: relative;
+						background-color: transparent;
+					}
+
+					.table-1 tbody tr .border::before {
+						content: "";
+						position: absolute;
+						left: 0;
+						top: 0;
+						width: 100%;
+						height: 100%;
+						border: 2px solid #E1E8F3;
+					}
+				</style>
+				<table class="table-1">
+					<!-- tbody -->
+					<tbody>
+						<colgroup>
+							<col width="50%">
+							<col width="50%">
+						</colgroup>
+						<tr>
+							<td style="background: #FFDEDC;">
+								Каков смысл таблицы?
+							</td>
+							<td style="background: #D8EFD9;">
+								Показать как было и стало?
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Или наименование
+							</td>
+							<td class="border">
+								и результат?
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Или простое перечисление
+							</td>
+							<td>
+								фактов по контекту
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="mt-100 mt-sm-80 pt-48 pt-sm-0">
+					<div class="bg-wings">
+						<div class="bg-wings__left">
+							<img src="assets/img/components/bg/left-wing.png" alt="">
+						</div>
+						<div class="bg-wings__right">
+							<img src="assets/img/components/bg/right-wing.png" alt="">
+						</div>
+						<div class="msg-card msg-card--lg msg-card--review aic">
+							<a href="assets/img/components/reviews-slider/autobiz-o.jpg"
+								class="msg-card__img review-photo" data-fslightbox="msg_review">
+								<span class="review-photo__inner">
+									<img class="review-photo__img"
+										src="assets/img/components/reviews-slider/autobiz-o.jpg" alt="">
+
+									<span class="review-photo__bg">
+										<span class="review-photo__zoom loop-zoom">
+											<img src="assets/img/icons/ui/loop.svg" alt="">
+										</span>
+									</span>
+								</span>
+							</a>
+							<div class="msg-card__text-box">
+								<div class="msg-card__text">
+									<p>
+										Покидая великую страну победившего социализма, мы торжественно клянемся народу
+										великого
+										социалистического государства и вам, любимый отец и гениальный учитель
+										трудящихся
+										всего
+										мира,
+									</p>
+								</div>
+								<p class="msg-card__name">Сергей Дешук - директор</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="creators" class="section">
+			<div class="container">
+				<h2 class="section__title title-1">Креативы</h2>
+				<div class="mt-48 mt-lg-28 mt-sm-16" href="assets/img/test/aqvilaria.jpg" data-fslightbox="design">
+					<fragment>
+						<img src="assets/img/test/aqvilaria.jpg" alt="">
+					</fragment>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- application block -->
+	<div class="mt-100 mt-sm-28 pt-28 pt-md-0">
+		<section id="contacts" class="application-b">
+			<div class="application-b__container container">
+				<div class="application-b__row">
+					<div class="application-b__left">
+						<div class="b24-form">
+							<div id="b24-7738154165522853004949766543470124" data-styles-apllied="true"
+								class="b24-form-style-modern">
+								<div class="b24-form-wrapper b24-form-shadow">
+									<div class="b24-form-header b24-form-padding-side">
+										<div class="b24-form-header-title">ПОЛУЧИТЕ ПРЕДЛОЖЕНИЕ КОНКРЕТНО ДЛЯ ВАШЕГО
+											БИЗНЕСА
+										</div>
+										<!---->
+									</div>
+									<div class="b24-form-content b24-form-padding-side">
+										<form method="post" novalidate="novalidate">
+											<div class="b24-form-progress-container">
+												<div class="b24-form-progress-bar-container"><svg viewport="0 0 44 44"
+														width="44" height="44" class="b24-form-progress">
+														<circle r="20" cx="22" cy="22" stroke-width="4"
+															class="b24-form-progress-track"></circle>
+														<circle r="20" cx="22" cy="22" stroke-width="4"
+															stroke-dasharray="125.60000000000001"
+															stroke-dashoffset="62.800000000000004"
+															class="b24-form-progress-bar"></circle>
+													</svg>
+													<div class="b24-form-progress-bar-counter"><strong>1</strong>/2
+													</div>
+												</div>
+												<div class="b24-form-progress-bar-title">
+													Контакты
+												</div>
+											</div>
+											<div>
+												<div class="b24-form-field b24-form-field-name b24-form-control-string">
+													<div>
+														<div>
+															<div
+																class="b24-form-control-container b24-form-control-icon-after">
+																<input name="name" autocomplete="given-name"
+																	type="string" class="b24-form-control">
+																<div class="b24-form-control-label">
+																	КП: Имя
+																	<span class="b24-form-control-required">*</span>
+																</div>
+																<!---->
+																<!---->
+																<div class="b24-form-control-alert-message"
+																	style="display: none;">
+																	Поле обязательно для заполнения
+																</div>
+															</div>
+														</div>
+														<!---->
+														<!---->
+													</div>
+													<!---->
+												</div>
+												<div
+													class="b24-form-field b24-form-field-phone b24-form-control-string b24-form-control-group">
+													<div>
+														<div>
+															<div
+																class="b24-form-control-container b24-form-control-icon-after">
+																<input name="phone" autocomplete="tel" type="tel"
+																	class="b24-form-control">
+																<div class="b24-form-control-label">
+																	КП: Телефон
+																	<span class="b24-form-control-required">*</span>
+																</div>
+																<!---->
+																<!---->
+																<div class="b24-form-control-alert-message"
+																	style="display: none;">
+																	Поле обязательно для заполнения
+																</div>
+															</div>
+														</div> <a class="b24-form-control-add-btn">
+															Добавить еще
+														</a>
+														<!---->
+													</div>
+													<!---->
+												</div>
+												<div
+													class="b24-form-field b24-form-field-email b24-form-control-string">
+													<div>
+														<div>
+															<div
+																class="b24-form-control-container b24-form-control-icon-after">
+																<input name="email" autocomplete="email" type="email"
+																	class="b24-form-control">
+																<div class="b24-form-control-label">
+																	КП: E-mail
+																	<span class="b24-form-control-required"
+																		style="display: none;">*</span>
+																</div>
+																<!---->
+																<!---->
+																<div class="b24-form-control-alert-message"
+																	style="display: none;">
+
+																</div>
+															</div>
+														</div>
+														<!---->
+														<!---->
+													</div>
+													<!---->
+												</div>
+											</div>
+											<!---->
+											<!---->
+											<div class="b24-form-btn-container">
+												<!---->
+												<div class="b24-form-btn-block"><button type="button"
+														class="b24-form-btn">
+														Далее
+													</button></div>
+												<!---->
+											</div> <span style="color: red; display: none;">
+												Debug: fill fields
+											</span>
+										</form>
+									</div>
+									<div class="b24-form-state-container">
+										<div class="b24-form-loader" style="display: none;">
+											<div class="b24-form-loader-icon"><svg
+													xmlns:xlink="http://www.w3.org/1999/xlink"
+													xmlns="http://www.w3.org/2000/svg" viewBox="0 0 263 174">
+													<defs><svg width="158px" height="158px" viewBox="0 0 158 158"
+															version="1.1" xmlns="http://www.w3.org/2000/svg"
+															xmlns:xlink="http://www.w3.org/1999/xlink">
+															<path id="bxSunLines"
+																d="M79,0 C80.6568542,0 82,1.34314575 82,3 L82,22 C82,23.6568542 80.6568542,25 79,25 C77.3431458,25 76,23.6568542 76,22 L76,3 C76,1.34314575 77.3431458,0 79,0 Z M134.861,23.139 C136.032146,24.3104996 136.032146,26.2095004 134.861,27.381 L121.426,40.816 C120.248863,41.9529166 118.377746,41.9366571 117.220544,40.7794557 C116.063343,39.6222543 116.047083,37.7511367 117.184,36.574 L130.619,23.139 C131.7905,21.9678542 133.6895,21.9678542 134.861,23.139 L134.861,23.139 Z M158,79 C158,80.6568542 156.656854,82 155,82 L136,82 C134.343146,82 133,80.6568542 133,79 C133,77.3431458 134.343146,76 136,76 L155,76 C156.656854,76 158,77.3431458 158,79 Z M134.861,134.861 C133.6895,136.032146 131.7905,136.032146 130.619,134.861 L117.184,121.426 C116.40413,120.672777 116.091362,119.557366 116.365909,118.508478 C116.640455,117.45959 117.45959,116.640455 118.508478,116.365909 C119.557366,116.091362 120.672777,116.40413 121.426,117.184 L134.861,130.619 C136.032146,131.7905 136.032146,133.6895 134.861,134.861 Z M79,158 C77.3431458,158 76,156.656854 76,155 L76,136 C76,134.343146 77.3431458,133 79,133 C80.6568542,133 82,134.343146 82,136 L82,155 C82,156.656854 80.6568542,158 79,158 Z M23.139,134.861 C21.9678542,133.6895 21.9678542,131.7905 23.139,130.619 L36.574,117.184 C37.3272234,116.40413 38.4426337,116.091362 39.491522,116.365909 C40.5404103,116.640455 41.3595451,117.45959 41.6340915,118.508478 C41.9086378,119.557366 41.5958698,120.672777 40.816,121.426 L27.381,134.861 C26.2095004,136.032146 24.3104996,136.032146 23.139,134.861 Z M0,79 C0,77.3431458 1.34314575,76 3,76 L22,76 C23.6568542,76 25,77.3431458 25,79 C25,80.6568542 23.6568542,82 22,82 L3,82 C1.34314575,82 0,80.6568542 0,79 L0,79 Z M23.139,23.139 C24.3104996,21.9678542 26.2095004,21.9678542 27.381,23.139 L40.816,36.574 C41.5958698,37.3272234 41.9086378,38.4426337 41.6340915,39.491522 C41.3595451,40.5404103 40.5404103,41.3595451 39.491522,41.6340915 C38.4426337,41.9086378 37.3272234,41.5958698 36.574,40.816 L23.139,27.381 C21.9678542,26.2095004 21.9678542,24.3104996 23.139,23.139 Z"
+																fill="#FFD110" class="bx-sun-lines-animate"></path>
+														</svg></defs>
+													<g fill="none" fill-rule="evenodd">
+														<path
+															d="M65.745 160.5l.245-.005c13.047-.261 23.51-10.923 23.51-23.995 0-13.255-10.745-24-24-24-3.404 0-6.706.709-9.748 2.062l-.47.21-.196-.477A19.004 19.004 0 0 0 37.5 102.5c-10.493 0-19 8.507-19 19 0 1.154.103 2.295.306 3.413l.108.6-.609-.01A17.856 17.856 0 0 0 18 125.5C8.335 125.5.5 133.335.5 143s7.835 17.5 17.5 17.5h47.745zM166.5 85.5h69v-.316l.422-.066C251.14 82.73 262.5 69.564 262.5 54c0-17.397-14.103-31.5-31.5-31.5-.347 0-.694.006-1.04.017l-.395.013-.103-.382C226.025 9.455 214.63.5 201.5.5c-15.014 0-27.512 11.658-28.877 26.765l-.047.515-.512-.063a29.296 29.296 0 0 0-3.564-.217c-16.016 0-29 12.984-29 29 0 15.101 11.59 27.643 26.542 28.897l.458.039v.064z"
+															stroke-opacity=".05" stroke="#000" fill="#000"></path>
+														<circle stroke="#FFD110" stroke-width="6" cx="131.5" cy="95.5"
+															r="44.5" class="b24-form-loader-icon-sun-ring"></circle>
+													</g>
+													<use xlink:href="#bxSunLines" y="16.5" x="52.5" width="158"
+														height="158" class="b24-form-loader-icon-sun-line"></use>
+												</svg></div>
+										</div>
+										<div class="b24-form-state b24-form-success" style="display: none;">
+											<div class="b24-form-state-inner">
+												<div class="b24-form-state-icon b24-form-success-icon"></div>
+												<div class="b24-form-state-text">
+													<p>Отправлено!</p>
+													<p></p>
+												</div>
+												<!---->
+											</div>
+											<div class="b24-form-inner-box"></div>
+										</div>
+										<div class="b24-form-state b24-form-error" style="display: none;">
+											<div class="b24-form-state-inner">
+												<div class="b24-form-state-icon b24-form-error-icon"></div>
+												<div class="b24-form-state-text">
+													<p></p>
+												</div> <button
+													class="b24-form-btn b24-form-btn-border b24-form-btn-tight">
+													Отправить еще раз
+												</button>
+											</div>
+											<div class="b24-form-inner-box"></div>
+										</div>
+										<div class="b24-form-state b24-form-warning" style="display: none;">
+											<div class="b24-form-state-inner">
+												<div class="b24-form-state-icon b24-form-warning-icon"><svg
+														xmlns="http://www.w3.org/2000/svg"
+														xmlns:xlink="http://www.w3.org/1999/xlink"
+														viewBox="0 0 169 169">
+														<defs>
+															<circle id="a" cx="84.5" cy="84.5" r="65.5"></circle>
+															<filter x="-.8%" y="-.8%" width="101.5%" height="101.5%"
+																filterUnits="objectBoundingBox" id="b">
+																<feGaussianBlur stdDeviation=".5" in="SourceAlpha"
+																	result="shadowBlurInner1"></feGaussianBlur>
+																<feOffset dx="-1" dy="-1" in="shadowBlurInner1"
+																	result="shadowOffsetInner1"></feOffset>
+																<feComposite in="shadowOffsetInner1" in2="SourceAlpha"
+																	operator="arithmetic" k2="-1" k3="1"
+																	result="shadowInnerInner1"></feComposite>
+																<feColorMatrix
+																	values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.0886691434 0"
+																	in="shadowInnerInner1" result="shadowMatrixInner1">
+																</feColorMatrix>
+																<feGaussianBlur stdDeviation=".5" in="SourceAlpha"
+																	result="shadowBlurInner2"></feGaussianBlur>
+																<feOffset dx="1" dy="1" in="shadowBlurInner2"
+																	result="shadowOffsetInner2"></feOffset>
+																<feComposite in="shadowOffsetInner2" in2="SourceAlpha"
+																	operator="arithmetic" k2="-1" k3="1"
+																	result="shadowInnerInner2"></feComposite>
+																<feColorMatrix
+																	values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.292285839 0"
+																	in="shadowInnerInner2" result="shadowMatrixInner2">
+																</feColorMatrix>
+																<feMerge>
+																	<feMergeNode in="shadowMatrixInner1"></feMergeNode>
+																	<feMergeNode in="shadowMatrixInner2"></feMergeNode>
+																</feMerge>
+															</filter>
+														</defs>
+														<g fill="none" fill-rule="evenodd">
+															<circle stroke-opacity=".05" stroke="#000"
+																fill-opacity=".07" fill="#000" cx="84.5" cy="84.5"
+																r="84"></circle>
+															<use fill="#FFF" xlink:href="#a"></use>
+															<use fill="#000" filter="url(#b)" xlink:href="#a"></use>
+															<path
+																d="M114.29 99.648L89.214 58.376c-1.932-3.168-6.536-3.168-8.427 0L55.709 99.648c-1.974 3.25.41 7.352 4.234 7.352h50.155c3.782 0 6.166-4.103 4.193-7.352zM81.404 72.756c0-1.828 1.48-3.29 3.33-3.29h.452c1.85 0 3.33 1.462 3.33 3.29v12.309c0 1.827-1.48 3.29-3.33 3.29h-.453c-1.85 0-3.33-1.463-3.33-3.29V72.756zm7.77 23.886c0 2.274-1.892 4.143-4.194 4.143s-4.193-1.869-4.193-4.143c0-2.275 1.891-4.144 4.193-4.144 2.302 0 4.193 1.869 4.193 4.144z"
+																fill="#000" opacity=".4"></path>
+														</g>
+													</svg></div>
+												<div class="b24-form-state-text">
+													<p>Форма не актуальна</p>
+												</div>
+											</div>
+											<div class="b24-form-inner-box"></div>
+										</div>
+									</div>
+									<div class="b24-form-recaptcha">
+										<div>
+											<div class="grecaptcha-badge" data-style="inline"
+												style="width: 256px; height: 60px; box-shadow: gray 0px 0px 5px;">
+												<div class="grecaptcha-logo"><iframe title="reCAPTCHA"
+														src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LcHcdEUAAAAACBnH9teNrlEpOQb63k7g1tAFpEW&amp;co=aHR0cHM6Ly9jd2ViLmJ5OjQ0Mw..&amp;hl=ru&amp;v=1p3YWy80wlZ7Q8QFR1gjazwU&amp;size=invisible&amp;badge=inline&amp;cb=2gt1m7v19239"
+														width="256" height="60" role="presentation"
+														name="a-j0brjzso4asy" frameborder="0" scrolling="no"
+														sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe>
+												</div>
+												<div class="grecaptcha-error"></div><textarea id="g-recaptcha-response"
+													name="g-recaptcha-response" class="g-recaptcha-response"
+													style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+											</div>
+										</div>
+									</div>
+									<!---->
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="application-b__right">
+						<div class="application-b__img">
+							<img src="./assets/img/components/b-application/application-b-bg.jpg" alt="">
+						</div>
+						<div class="application-b__overlay flex-col">
+							<!-- logo -->
+							<a class="logo" href="#">
+								<img class="logo__ic" src="assets/img/logo-ic.png" alt="логотип">
+								<span class="logo__text">CWEB</span>
+							</a>
+							<p>
+								обещаем только то, что можем выполнить!
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</main>
+{% endblock content %}

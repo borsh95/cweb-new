@@ -1,12 +1,5 @@
 /*==================== PORTFOLIO FULL ====================*/
 .portfolio-fl-pg {
-	.section:not(.example-task-b) {
-		padding: 120px 0 0;
-	}
-	.application-b {
-		padding: 167px 0 0;
-	}
-
 	.case-card {
 		--air-side: 10%;
 		.twentytwenty-horizontal {
@@ -42,31 +35,11 @@
 		}
 	}
 
-	@include desctop-min {
-		.section:not(.example-task-b) {
-			padding: 90px 0 0;
-		}
-
-		.application-b {
-			padding: 120px 0 0;
-		}
-	}
-
 	@include table {
 		.case-card {
 			.twentytwenty-horizontal {
 				width: 100%;
 			}
-		}
-	}
-
-	@include mobile {
-		.section:not(.example-task-b) {
-			padding: 67px 0 0;
-		}
-
-		.application-b {
-			padding: 84px 0 0;
 		}
 	}
 }
