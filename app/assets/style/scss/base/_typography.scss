@@ -3,7 +3,7 @@
 	ul,
 	ol,
 	p {
-		margin-bottom: getEm(28, 16);
+		margin-bottom: getEm(28, 18);
 
 		&:last-child {
 			margin-bottom: 0;
@@ -27,7 +27,8 @@
 
 	a:not(.btn) {
 		font-weight: 500;
-		color: var(--primary-color);
+		color: var(--color-primary);
+		font-style: italic;
 		text-decoration: underline;
 
 		&:hover {
