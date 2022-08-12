@@ -5,6 +5,7 @@ body {
 	font-size: 16px;
 	font-weight: 400;
 	color: var(--color-text);
+	scrollbar-gutter: stable;
 	scrollbar-color: var(--scroll-thumb-color) var(--scroll-bar-color); /* «цвет ползунка» «цвет полосы скроллбара» */
 	scrollbar-width: thin; /* толщина */
 }

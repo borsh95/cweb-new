@@ -2258,7 +2258,8 @@
 		}
 	}
 
-	&__link {
+	&__link[href] {
+		color: var(--color-primary);
 		text-decoration: underline;
 
 		&:hover {
@@ -2274,6 +2275,15 @@
 		text-transform: uppercase;
 		color: var(--color-primary);
 		text-align: center;
+
+		&[href] {
+			color: var(--color-primary);
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
 	}
 
 	&__text-box {
@@ -2498,11 +2508,33 @@
 
 	&__img {
 		position: absolute;
+		z-index: -1;
 		pointer-events: none;
+		overflow: hidden;
+		max-width: 30vw;
 
+		&--pos_top-left,
 		&--pos_top-right {
 			top: -10%;
+		}
+
+		&--pos_top-right {
 			right: 1.5%;
+		}
+
+		&--pos_top-left {
+			left: 1.5%;
+		}
+	}
+
+	@include mobile {
+		&__img {
+			max-width: 40vw;
+
+			&--pos_top-left,
+			&--pos_top-right {
+				top: -20px;
+			}
 		}
 	}
 }

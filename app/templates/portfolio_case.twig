@@ -1,0 +1,113 @@
+{% set title = "Портфолио таргет" %}
+{% set classPage = "portfolio-fl-pg portfolio-fl-pg--target" %}
+{% extends "./includes/layouts/page.twig" %}
+{# ------ BREADCRUMBS ----- #}
+{% block breadcrumbs %}
+{% include "./includes/molecules/breadcrumbs.twig" with {
+		breadcrumbs: [
+			{text: 'Главная',href: "/"},
+			{text: 'Продвижение'},
+		]
+	} %}
+{% endblock breadcrumbs %}
+{# ------ CONTENT WRAP ----- #}
+{% block content %}
+
+<main>
+	<div class="container">
+		<h1 class="title-1 mb-52 mb-lg-32 mb-sm-20 fz-lg-24 fz-sm-16 text-transform-none container"
+			style="font-size: 32px">
+			Разработка интернет-магазина с уникальным дизайном aquilaria
+		</h1>
+
+		<!-- nav panel -->
+		<div class="nav-panel">
+			<div class="nav-panel__container container">
+				<div class="nav-panel__inner">
+					<a class="nav-panel__link" href="#prod">Поисковое продвижение</a>
+					<a class="nav-panel__link" href="#context">Контекстная реклама</a>
+					<a class="nav-panel__link" href="#advantage">Что дал комплекс?</a>
+				</div>
+			</div>
+		</div>
+
+		<section id="prod" class="section pt-52 pt-sm-28">
+			<h2 class="section__title title-1">Поисковое продвижение</h2>
+			<div class="row-cols-6 justify-content-center ais gy-20">
+				<!-- img -->
+				<div class="order-md-2 d-flex">
+					<div class="pos-relative d-inline-flex jcc bg-pseudoel-blue-alpha mx-auto">
+						<a class="zoom-photo" href="assets/img/test/structura.jpg" data-fslightbox="struktura">
+							<span class="zoom-photo__text">Увеличить</span>
+							<svg class="zoom-photo__icon" width="16" height="16" viewBox="0 0 16 16">
+								<path d="M15.4888 14.5735L11.6808 10.6129C12.6599 9.44901 13.1964 7.98455 13.1964 6.45999C13.1964 2.89801 10.2983 0 6.73636 0C3.17438 0 0.276367 2.89801 0.276367 6.45999C0.276367 10.022 3.17438 12.92 6.73636 12.92C8.07358 12.92 9.34788 12.5167 10.4374 11.751L14.2743 15.7416C14.4347 15.9082 14.6504 16 14.8816 16C15.1004 16 15.3079 15.9166 15.4655 15.7649C15.8003 15.4428 15.811 14.9085 15.4888 14.5735ZM6.73636 1.68522C9.36923 1.68522 11.5111 3.82713 11.5111 6.45999C11.5111 9.09286 9.36923 11.2348 6.73636 11.2348C4.10349 11.2348 1.96158 9.09286 1.96158 6.45999C1.96158 3.82713 4.10349 1.68522 6.73636 1.68522Z"></path>
+							</svg>
+						</a>
+						<img src="assets/img/test/structura.jpg" alt="">
+					</div>
+				</div>
+				<!-- text -->
+				<div class="content text fz-18 fz-sm-14">
+					<p>
+						Далее SEO-специалист приступил к составлению проектной документации. В ходе работ мы собрали семантическое ядро, спроектировали структуру каталога, а также согласовали прототипы страниц.
+					</p>
+					<p>
+						Далее SEO-специалист приступил к составлению проектной документации. В ходе работ мы собрали семантическое ядро, спроектировали структуру каталога, а также согласовали прототипы страниц.
+					</p>
+					<p>
+						Далее SEO-специалист приступил к составлению проектной документации.
+					</p>
+					<p><a href="#">Читайте подробнее в кейсе по seo</a></p>
+				</div>
+			</div>
+		</section>
+
+		<section id="context" class="section">
+			<h2 class="section__title title-1">Поисковое продвижение</h2>
+			<div class="row-cols-6 justify-content-center ais gy-20">
+				<!-- text -->
+				<div class="content text fz-18 fz-sm-14">
+					<p>
+						Далее SEO-специалист приступил к составлению проектной документации. В ходе работ мы собрали семантическое ядро, спроектировали структуру каталога, а также согласовали прототипы страниц.
+					</p>
+					<p>
+						Далее SEO-специалист приступил к составлению проектной документации. В ходе работ мы собрали семантическое ядро, спроектировали структуру каталога, а также согласовали прототипы страниц.
+					</p>
+					<p>
+						Далее SEO-специалист приступил к составлению проектной документации.
+					</p>
+					<p><a href="#">Читайте подробнее в кейсе по seo</a></p>
+				</div>
+				<!-- img -->
+				<div class="d-flex">
+					<div class="pos-relative d-inline-flex jcc mx-auto">
+						<img src="assets/img/test/structura.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="advantage" class="section">
+			<h2 class="section__title title-1">Что дал комплекс?</h2>
+			<div class="text content">
+				<p>
+					Далее SEO-специалист приступил к составлению проектной документации. В ходе работ мы собрали семантическое ядро, спроектировали структуру каталога, а также согласовали прототипы страниц.
+				</p>
+			</div>
+			<div class="mt-4e row-cols-6 row-cols-md-12">
+				<fragment>
+					<a href="assets/img/other/target-insta-banner.jpg" data-fslightbox="image">
+						<img class="response-img" src="assets/img/other/target-insta-banner.jpg" alt="">
+					</a>
+				</fragment>
+				<fragment>
+					<a href="assets/img/other/target-insta-banner.jpg" data-fslightbox="image">
+						<img class="response-img" src="assets/img/other/target-insta-banner.jpg" alt="">
+					</a>
+				</fragment>
+			</div>
+		</section>
+	</div>
+
+</main>
+{% endblock content %}
